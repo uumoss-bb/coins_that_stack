@@ -1,6 +1,6 @@
 const cap_2022 = [
   {
-    "Transaction Date": "2022-11-07",
+    "Transaction_Date": "2022-11-07",
     "Posted Date": "2022-11-08",
     "Card No.": 5550,
     "Description": "THE DOG PAWLOUR",
@@ -9,7 +9,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-11-07",
+    "Transaction_Date": "2022-11-07",
     "Posted Date": "2022-11-08",
     "Card No.": 5550,
     "Description": "AMZN Mktp US*H28AX9KW1",
@@ -18,7 +18,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-11-07",
+    "Transaction_Date": "2022-11-07",
     "Posted Date": "2022-11-07",
     "Card No.": 5550,
     "Description": "Amazon.com*H26CB3R50",
@@ -27,7 +27,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-11-05",
+    "Transaction_Date": "2022-11-05",
     "Posted Date": "2022-11-07",
     "Card No.": 5550,
     "Description": "SQ *ALGIERS HOOKAH AND",
@@ -36,7 +36,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-11-05",
+    "Transaction_Date": "2022-11-05",
     "Posted Date": "2022-11-07",
     "Card No.": 5550,
     "Description": "The Original Pancake H",
@@ -45,7 +45,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-11-04",
+    "Transaction_Date": "2022-11-04",
     "Posted Date": "2022-11-05",
     "Card No.": 5550,
     "Description": "WWW.THEREALWORLD.AI TI",
@@ -54,7 +54,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-11-04",
+    "Transaction_Date": "2022-11-04",
     "Posted Date": "2022-11-05",
     "Card No.": 5550,
     "Description": "RIO GRANDE MEXICAN RES",
@@ -63,7 +63,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-11-04",
+    "Transaction_Date": "2022-11-04",
     "Posted Date": "2022-11-05",
     "Card No.": 5550,
     "Description": "RIO GRANDE MEXICAN RES",
@@ -72,7 +72,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-11-05",
+    "Transaction_Date": "2022-11-05",
     "Posted Date": "2022-11-05",
     "Card No.": 5550,
     "Description": "AMZN Mktp US*H27F29G61",
@@ -81,7 +81,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-11-04",
+    "Transaction_Date": "2022-11-04",
     "Posted Date": "2022-11-05",
     "Card No.": 5550,
     "Description": "MULNIX ANIMAL CLINIC",
@@ -90,7 +90,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-11-03",
+    "Transaction_Date": "2022-11-03",
     "Posted Date": "2022-11-05",
     "Card No.": 5550,
     "Description": "SCRUMPY`S",
@@ -99,7 +99,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-11-03",
+    "Transaction_Date": "2022-11-03",
     "Posted Date": "2022-11-05",
     "Card No.": 5550,
     "Description": "7-ELEVEN 35506",
@@ -108,7 +108,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-11-04",
+    "Transaction_Date": "2022-11-04",
     "Posted Date": "2022-11-05",
     "Card No.": 5550,
     "Description": "AMZN Mktp US*H23LH70A1",
@@ -117,7 +117,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-11-04",
+    "Transaction_Date": "2022-11-04",
     "Posted Date": "2022-11-04",
     "Card No.": 5550,
     "Description": "CASH ADVANCE FEE",
@@ -126,7 +126,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-11-03",
+    "Transaction_Date": "2022-11-03",
     "Posted Date": "2022-11-04",
     "Card No.": 5550,
     "Description": "VENMO",
@@ -135,7 +135,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-11-04",
+    "Transaction_Date": "2022-11-04",
     "Posted Date": "2022-11-04",
     "Card No.": 5550,
     "Description": "CASH ADVANCE FEE",
@@ -144,7 +144,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-11-03",
+    "Transaction_Date": "2022-11-03",
     "Posted Date": "2022-11-04",
     "Card No.": 5550,
     "Description": "VENMO",
@@ -153,7 +153,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-11-03",
+    "Transaction_Date": "2022-11-03",
     "Posted Date": "2022-11-04",
     "Card No.": 5550,
     "Description": "AMAZON.COM*H07RR6D42 A",
@@ -162,7 +162,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-11-02",
+    "Transaction_Date": "2022-11-02",
     "Posted Date": "2022-11-04",
     "Card No.": 5550,
     "Description": "CONOCO - ALTA CONVENIE",
@@ -171,7 +171,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-11-02",
+    "Transaction_Date": "2022-11-02",
     "Posted Date": "2022-11-02",
     "Card No.": 5550,
     "Description": "AMZN Mktp US*H212270S0",
@@ -180,7 +180,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-11-02",
+    "Transaction_Date": "2022-11-02",
     "Posted Date": "2022-11-02",
     "Card No.": 5550,
     "Description": "AMZN Mktp US*H20TO24S1",
@@ -189,7 +189,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-11-02",
+    "Transaction_Date": "2022-11-02",
     "Posted Date": "2022-11-02",
     "Card No.": 5550,
     "Description": "GRUBHUBBUFFALOWILDWIN",
@@ -198,7 +198,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-11-01",
+    "Transaction_Date": "2022-11-01",
     "Posted Date": "2022-11-01",
     "Card No.": 5550,
     "Description": "CAPITAL ONE MOBILE PYMT",
@@ -207,7 +207,7 @@ const cap_2022 = [
     "Credit": 1314.22
   },
   {
-    "Transaction Date": "2022-10-29",
+    "Transaction_Date": "2022-10-29",
     "Posted Date": "2022-10-29",
     "Card No.": 5550,
     "Description": "AMZN Mktp US*H07W97GZ1",
@@ -216,7 +216,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-10-26",
+    "Transaction_Date": "2022-10-26",
     "Posted Date": "2022-10-27",
     "Card No.": 5550,
     "Description": "AMZN MKTP US*H09236ES0",
@@ -225,7 +225,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-10-25",
+    "Transaction_Date": "2022-10-25",
     "Posted Date": "2022-10-26",
     "Card No.": 5550,
     "Description": "AMZN Mktp US*H87US1RX1",
@@ -234,7 +234,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-10-23",
+    "Transaction_Date": "2022-10-23",
     "Posted Date": "2022-10-24",
     "Card No.": 5550,
     "Description": "AMZN Mktp US*H849X5IR0",
@@ -243,7 +243,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-10-23",
+    "Transaction_Date": "2022-10-23",
     "Posted Date": "2022-10-24",
     "Card No.": 5550,
     "Description": "AMAZON.COM*H843I9UF0 A",
@@ -252,7 +252,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-10-23",
+    "Transaction_Date": "2022-10-23",
     "Posted Date": "2022-10-24",
     "Card No.": 5550,
     "Description": "AMZN Mktp US*H80U25CX2",
@@ -261,7 +261,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-10-19",
+    "Transaction_Date": "2022-10-19",
     "Posted Date": "2022-10-20",
     "Card No.": 5550,
     "Description": "AMZN Mktp US*H87JX5FX1",
@@ -270,7 +270,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-10-18",
+    "Transaction_Date": "2022-10-18",
     "Posted Date": "2022-10-19",
     "Card No.": 5550,
     "Description": "USA LIBERTY ARMS LLC",
@@ -279,7 +279,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-10-19",
+    "Transaction_Date": "2022-10-19",
     "Posted Date": "2022-10-19",
     "Card No.": 5550,
     "Description": "AMZN Mktp US*H85WZ2TL0",
@@ -288,7 +288,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-10-19",
+    "Transaction_Date": "2022-10-19",
     "Posted Date": "2022-10-19",
     "Card No.": 5550,
     "Description": "CAPITAL ONE ONLINE PYMT",
@@ -297,7 +297,7 @@ const cap_2022 = [
     "Credit": 134.5
   },
   {
-    "Transaction Date": "2022-10-17",
+    "Transaction_Date": "2022-10-17",
     "Posted Date": "2022-10-17",
     "Card No.": 5550,
     "Description": "CAPITAL ONE MOBILE PYMT",
@@ -306,7 +306,7 @@ const cap_2022 = [
     "Credit": 919.32
   },
   {
-    "Transaction Date": "2022-10-16",
+    "Transaction_Date": "2022-10-16",
     "Posted Date": "2022-10-17",
     "Card No.": 5550,
     "Description": "WENDY'S #3706",
@@ -315,7 +315,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-10-16",
+    "Transaction_Date": "2022-10-16",
     "Posted Date": "2022-10-17",
     "Card No.": 5550,
     "Description": "CONOCO - SEI 13171",
@@ -324,7 +324,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-10-15",
+    "Transaction_Date": "2022-10-15",
     "Posted Date": "2022-10-17",
     "Card No.": 5550,
     "Description": "USCCA/DELTA DEFENSE LL",
@@ -333,7 +333,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-10-15",
+    "Transaction_Date": "2022-10-15",
     "Posted Date": "2022-10-17",
     "Card No.": 5550,
     "Description": "7-ELEVEN 35506",
@@ -342,7 +342,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-10-15",
+    "Transaction_Date": "2022-10-15",
     "Posted Date": "2022-10-17",
     "Card No.": 5550,
     "Description": "SQ *ALGIERS HOOKAH AND",
@@ -351,7 +351,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-10-13",
+    "Transaction_Date": "2022-10-13",
     "Posted Date": "2022-10-15",
     "Card No.": 5550,
     "Description": "THE DARK HORSE",
@@ -360,7 +360,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-10-13",
+    "Transaction_Date": "2022-10-13",
     "Posted Date": "2022-10-15",
     "Card No.": 5550,
     "Description": "SAFEWAY #1615",
@@ -369,7 +369,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-10-13",
+    "Transaction_Date": "2022-10-13",
     "Posted Date": "2022-10-14",
     "Card No.": 5550,
     "Description": "B TOWN WINE + SPIRITS",
@@ -378,7 +378,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-10-13",
+    "Transaction_Date": "2022-10-13",
     "Posted Date": "2022-10-14",
     "Card No.": 5550,
     "Description": "AMZN MKTP US*1K30F02K2",
@@ -387,7 +387,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-10-10",
+    "Transaction_Date": "2022-10-10",
     "Posted Date": "2022-10-12",
     "Card No.": 5550,
     "Description": "HOMETOWN PIZZA",
@@ -396,7 +396,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-10-10",
+    "Transaction_Date": "2022-10-10",
     "Posted Date": "2022-10-12",
     "Card No.": 5550,
     "Description": "CONOCO - SEI 37221",
@@ -405,7 +405,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-10-10",
+    "Transaction_Date": "2022-10-10",
     "Posted Date": "2022-10-12",
     "Card No.": 5550,
     "Description": "CHICK FIL A",
@@ -414,7 +414,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-10-11",
+    "Transaction_Date": "2022-10-11",
     "Posted Date": "2022-10-11",
     "Card No.": 5550,
     "Description": "CAPITAL ONE AUTOPAY PYMT",
@@ -423,7 +423,7 @@ const cap_2022 = [
     "Credit": 14.14
   },
   {
-    "Transaction Date": "2022-10-10",
+    "Transaction_Date": "2022-10-10",
     "Posted Date": "2022-10-11",
     "Card No.": 5550,
     "Description": "MCDONALD'S F37116",
@@ -432,7 +432,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-10-09",
+    "Transaction_Date": "2022-10-09",
     "Posted Date": "2022-10-10",
     "Card No.": 5550,
     "Description": "TST* Mad Anthonys Aubu",
@@ -441,7 +441,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-10-09",
+    "Transaction_Date": "2022-10-09",
     "Posted Date": "2022-10-10",
     "Card No.": 5550,
     "Description": "Amazon Prime*1K4YG65V1",
@@ -450,7 +450,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-10-09",
+    "Transaction_Date": "2022-10-09",
     "Posted Date": "2022-10-10",
     "Card No.": 5550,
     "Description": "Amazon.com*1K0L286F0",
@@ -459,7 +459,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-10-07",
+    "Transaction_Date": "2022-10-07",
     "Posted Date": "2022-10-08",
     "Card No.": 5550,
     "Description": "Amazon.com*1K8MF83X1",
@@ -468,7 +468,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-10-05",
+    "Transaction_Date": "2022-10-05",
     "Posted Date": "2022-10-06",
     "Card No.": 5550,
     "Description": "AMZN Mktp US*1K6S89FL0",
@@ -477,7 +477,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-10-05",
+    "Transaction_Date": "2022-10-05",
     "Posted Date": "2022-10-05",
     "Card No.": 5550,
     "Description": "CAPITAL ONE MOBILE PYMT",
@@ -486,7 +486,7 @@ const cap_2022 = [
     "Credit": 455
   },
   {
-    "Transaction Date": "2022-10-03",
+    "Transaction_Date": "2022-10-03",
     "Posted Date": "2022-10-04",
     "Card No.": 5550,
     "Description": "AMZN MKTP US*1465H9BF1",
@@ -495,7 +495,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-10-03",
+    "Transaction_Date": "2022-10-03",
     "Posted Date": "2022-10-04",
     "Card No.": 5550,
     "Description": "AMZN Mktp US*145FI0HV1",
@@ -504,7 +504,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-10-01",
+    "Transaction_Date": "2022-10-01",
     "Posted Date": "2022-10-03",
     "Card No.": 5550,
     "Description": "THE HOME DEPOT #1512",
@@ -513,7 +513,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-10-01",
+    "Transaction_Date": "2022-10-01",
     "Posted Date": "2022-10-03",
     "Card No.": 5550,
     "Description": "TASTY HARMONY",
@@ -522,7 +522,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-10-01",
+    "Transaction_Date": "2022-10-01",
     "Posted Date": "2022-10-03",
     "Card No.": 5550,
     "Description": "7-ELEVEN 35506",
@@ -531,7 +531,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-10-02",
+    "Transaction_Date": "2022-10-02",
     "Posted Date": "2022-10-03",
     "Card No.": 5550,
     "Description": "AMZN Mktp US*144MC5VR1",
@@ -540,7 +540,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-10-01",
+    "Transaction_Date": "2022-10-01",
     "Posted Date": "2022-10-03",
     "Card No.": 5550,
     "Description": "AFW-FT COLLINS #15",
@@ -549,7 +549,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-10-01",
+    "Transaction_Date": "2022-10-01",
     "Posted Date": "2022-10-03",
     "Card No.": 5550,
     "Description": "SP HAUNTED GAME CAFE",
@@ -558,7 +558,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-10-01",
+    "Transaction_Date": "2022-10-01",
     "Posted Date": "2022-10-03",
     "Card No.": 5550,
     "Description": "JOANN STORES #2228",
@@ -567,7 +567,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-10-01",
+    "Transaction_Date": "2022-10-01",
     "Posted Date": "2022-10-03",
     "Card No.": 5550,
     "Description": "Burke Cleaners 53",
@@ -576,7 +576,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-30",
+    "Transaction_Date": "2022-09-30",
     "Posted Date": "2022-09-30",
     "Card No.": 5550,
     "Description": "CAPITAL ONE MOBILE PYMT",
@@ -585,7 +585,7 @@ const cap_2022 = [
     "Credit": 1126.38
   },
   {
-    "Transaction Date": "2022-09-29",
+    "Transaction_Date": "2022-09-29",
     "Posted Date": "2022-09-30",
     "Card No.": 5550,
     "Description": "AMZN Mktp US*146XY1Z21",
@@ -594,7 +594,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-29",
+    "Transaction_Date": "2022-09-29",
     "Posted Date": "2022-09-29",
     "Card No.": 5550,
     "Description": "AMZN Mktp US*1414O2CV0",
@@ -603,7 +603,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-27",
+    "Transaction_Date": "2022-09-27",
     "Posted Date": "2022-09-29",
     "Card No.": 5550,
     "Description": "7-ELEVEN 35506",
@@ -612,7 +612,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-25",
+    "Transaction_Date": "2022-09-25",
     "Posted Date": "2022-09-27",
     "Card No.": 5550,
     "Description": "7-ELEVEN 26803",
@@ -621,7 +621,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-25",
+    "Transaction_Date": "2022-09-25",
     "Posted Date": "2022-09-27",
     "Card No.": 5550,
     "Description": "7-ELEVEN 26803",
@@ -630,7 +630,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-25",
+    "Transaction_Date": "2022-09-25",
     "Posted Date": "2022-09-27",
     "Card No.": 5550,
     "Description": "SPROUTS FARMERS MARK",
@@ -639,7 +639,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-25",
+    "Transaction_Date": "2022-09-25",
     "Posted Date": "2022-09-27",
     "Card No.": 5550,
     "Description": "THE HOME DEPOT #1512",
@@ -648,7 +648,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-25",
+    "Transaction_Date": "2022-09-25",
     "Posted Date": "2022-09-27",
     "Card No.": 5550,
     "Description": "7-ELEVEN 35506",
@@ -657,7 +657,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-25",
+    "Transaction_Date": "2022-09-25",
     "Posted Date": "2022-09-26",
     "Card No.": 5550,
     "Description": "POUDRE PET & FEED SUPP",
@@ -666,7 +666,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-23",
+    "Transaction_Date": "2022-09-23",
     "Posted Date": "2022-09-26",
     "Card No.": 5550,
     "Description": "ACE GILLETTS",
@@ -675,7 +675,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-25",
+    "Transaction_Date": "2022-09-25",
     "Posted Date": "2022-09-26",
     "Card No.": 5550,
     "Description": "AMZN Mktp US*1U13T2TJ2",
@@ -684,7 +684,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-25",
+    "Transaction_Date": "2022-09-25",
     "Posted Date": "2022-09-26",
     "Card No.": 5550,
     "Description": "AMZN Mktp US*1U1GI5VW0",
@@ -693,7 +693,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-24",
+    "Transaction_Date": "2022-09-24",
     "Posted Date": "2022-09-26",
     "Card No.": 5550,
     "Description": "TST* Gibs Bagels - Har",
@@ -702,7 +702,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-24",
+    "Transaction_Date": "2022-09-24",
     "Posted Date": "2022-09-26",
     "Card No.": 5550,
     "Description": "PHILLIPS 66 - FLATIRON",
@@ -711,7 +711,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-24",
+    "Transaction_Date": "2022-09-24",
     "Posted Date": "2022-09-24",
     "Card No.": 5550,
     "Description": "SQ *ALGIERS HOOKAH AND",
@@ -720,7 +720,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-22",
+    "Transaction_Date": "2022-09-22",
     "Posted Date": "2022-09-24",
     "Card No.": 5550,
     "Description": "7-ELEVEN 35506",
@@ -729,7 +729,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-22",
+    "Transaction_Date": "2022-09-22",
     "Posted Date": "2022-09-23",
     "Card No.": 5550,
     "Description": "MARKLEY MOTORS",
@@ -738,7 +738,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-21",
+    "Transaction_Date": "2022-09-21",
     "Posted Date": "2022-09-23",
     "Card No.": 5550,
     "Description": "7-ELEVEN 35506",
@@ -747,7 +747,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-21",
+    "Transaction_Date": "2022-09-21",
     "Posted Date": "2022-09-23",
     "Card No.": 5550,
     "Description": "SAFEWAY #2913",
@@ -756,7 +756,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-20",
+    "Transaction_Date": "2022-09-20",
     "Posted Date": "2022-09-22",
     "Card No.": 5550,
     "Description": "7-ELEVEN 35506",
@@ -765,7 +765,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-21",
+    "Transaction_Date": "2022-09-21",
     "Posted Date": "2022-09-21",
     "Card No.": 5550,
     "Description": "AMZN Mktp US*1M1JM5R80",
@@ -774,7 +774,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-20",
+    "Transaction_Date": "2022-09-20",
     "Posted Date": "2022-09-21",
     "Card No.": 5550,
     "Description": "Amazon.com*1M8Y24BJ2",
@@ -783,7 +783,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-19",
+    "Transaction_Date": "2022-09-19",
     "Posted Date": "2022-09-21",
     "Card No.": 5550,
     "Description": "THE HOME DEPOT #1512",
@@ -792,7 +792,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-19",
+    "Transaction_Date": "2022-09-19",
     "Posted Date": "2022-09-20",
     "Card No.": 5550,
     "Description": "POUDRE PET & FEED SUPP",
@@ -801,7 +801,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-20",
+    "Transaction_Date": "2022-09-20",
     "Posted Date": "2022-09-20",
     "Card No.": 5550,
     "Description": "AMZN Mktp US*1M90M5WC1",
@@ -810,7 +810,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-18",
+    "Transaction_Date": "2022-09-18",
     "Posted Date": "2022-09-20",
     "Card No.": 5550,
     "Description": "7-ELEVEN 35506",
@@ -819,7 +819,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-19",
+    "Transaction_Date": "2022-09-19",
     "Posted Date": "2022-09-20",
     "Card No.": 5550,
     "Description": "Subway 279",
@@ -828,7 +828,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-19",
+    "Transaction_Date": "2022-09-19",
     "Posted Date": "2022-09-19",
     "Card No.": 5550,
     "Description": "AMZN Mktp US*1M1V038C0",
@@ -837,7 +837,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-18",
+    "Transaction_Date": "2022-09-18",
     "Posted Date": "2022-09-19",
     "Card No.": 5550,
     "Description": "AMZN Mktp US*1M8CV5M30",
@@ -846,7 +846,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-18",
+    "Transaction_Date": "2022-09-18",
     "Posted Date": "2022-09-19",
     "Card No.": 5550,
     "Description": "AMZN Mktp US*1M0NT43N2",
@@ -855,7 +855,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-17",
+    "Transaction_Date": "2022-09-17",
     "Posted Date": "2022-09-19",
     "Card No.": 5550,
     "Description": "TST* Chippers Horsetoo",
@@ -864,7 +864,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-16",
+    "Transaction_Date": "2022-09-16",
     "Posted Date": "2022-09-19",
     "Card No.": 5550,
     "Description": "THE HOME DEPOT #1512",
@@ -873,7 +873,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-16",
+    "Transaction_Date": "2022-09-16",
     "Posted Date": "2022-09-17",
     "Card No.": 5550,
     "Description": "TST* Austins American",
@@ -882,7 +882,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-16",
+    "Transaction_Date": "2022-09-16",
     "Posted Date": "2022-09-17",
     "Card No.": 5550,
     "Description": "SQ *DAM GOOD TACOS",
@@ -891,7 +891,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-17",
+    "Transaction_Date": "2022-09-17",
     "Posted Date": "2022-09-17",
     "Card No.": 5550,
     "Description": "SQ *ALGIERS HOOKAH AND",
@@ -900,7 +900,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-16",
+    "Transaction_Date": "2022-09-16",
     "Posted Date": "2022-09-17",
     "Card No.": 5550,
     "Description": "AMZN Mktp US*1M9YZ9581",
@@ -909,7 +909,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-15",
+    "Transaction_Date": "2022-09-15",
     "Posted Date": "2022-09-15",
     "Card No.": 5550,
     "Description": "CAPITAL ONE ONLINE PYMT",
@@ -918,7 +918,7 @@ const cap_2022 = [
     "Credit": 757.33
   },
   {
-    "Transaction Date": "2022-09-13",
+    "Transaction_Date": "2022-09-13",
     "Posted Date": "2022-09-15",
     "Card No.": 5550,
     "Description": "7-ELEVEN 35506",
@@ -927,7 +927,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-14",
+    "Transaction_Date": "2022-09-14",
     "Posted Date": "2022-09-14",
     "Card No.": 5550,
     "Description": "AMZN Mktp US*1F6SV6YH0",
@@ -936,7 +936,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-12",
+    "Transaction_Date": "2022-09-12",
     "Posted Date": "2022-09-14",
     "Card No.": 5550,
     "Description": "SPROUTS FARMERS MARK",
@@ -945,7 +945,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-11",
+    "Transaction_Date": "2022-09-11",
     "Posted Date": "2022-09-12",
     "Card No.": 5550,
     "Description": "CAPITAL ONE AUTOPAY PYMT",
@@ -954,7 +954,7 @@ const cap_2022 = [
     "Credit": 25
   },
   {
-    "Transaction Date": "2022-09-11",
+    "Transaction_Date": "2022-09-11",
     "Posted Date": "2022-09-12",
     "Card No.": 5550,
     "Description": "TST* Smokin Fins - For",
@@ -963,7 +963,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-10",
+    "Transaction_Date": "2022-09-10",
     "Posted Date": "2022-09-12",
     "Card No.": 5550,
     "Description": "SAFEWAY FUEL2913",
@@ -972,7 +972,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-10",
+    "Transaction_Date": "2022-09-10",
     "Posted Date": "2022-09-12",
     "Card No.": 5550,
     "Description": "SAFEWAY #2913",
@@ -981,7 +981,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-10",
+    "Transaction_Date": "2022-09-10",
     "Posted Date": "2022-09-12",
     "Card No.": 5550,
     "Description": "SAFEWAY #2913",
@@ -990,7 +990,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-08",
+    "Transaction_Date": "2022-09-08",
     "Posted Date": "2022-09-10",
     "Card No.": 5550,
     "Description": "SPROUTS FARMERS MARK",
@@ -999,7 +999,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-09",
+    "Transaction_Date": "2022-09-09",
     "Posted Date": "2022-09-10",
     "Card No.": 5550,
     "Description": "AMZN Mktp US*1F7YD11J0",
@@ -1008,7 +1008,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-09",
+    "Transaction_Date": "2022-09-09",
     "Posted Date": "2022-09-10",
     "Card No.": 5550,
     "Description": "SQ *BARBER VANLOVING",
@@ -1017,7 +1017,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-09",
+    "Transaction_Date": "2022-09-09",
     "Posted Date": "2022-09-10",
     "Card No.": 5550,
     "Description": "Amazon Prime*1F4CX7160",
@@ -1026,7 +1026,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-08",
+    "Transaction_Date": "2022-09-08",
     "Posted Date": "2022-09-09",
     "Card No.": 5550,
     "Description": "POUDRE PET & FEED SUPP",
@@ -1035,7 +1035,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-08",
+    "Transaction_Date": "2022-09-08",
     "Posted Date": "2022-09-08",
     "Card No.": 5550,
     "Description": "CREDIT-REWARD REDEMPTION",
@@ -1044,7 +1044,7 @@ const cap_2022 = [
     "Credit": 322.18
   },
   {
-    "Transaction Date": "2022-09-07",
+    "Transaction_Date": "2022-09-07",
     "Posted Date": "2022-09-07",
     "Card No.": 5550,
     "Description": "AMZN Mktp US*1F3XG90E1",
@@ -1053,7 +1053,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-06",
+    "Transaction_Date": "2022-09-06",
     "Posted Date": "2022-09-07",
     "Card No.": 5550,
     "Description": "AMZN Mktp US*1F4DU8TI1",
@@ -1062,7 +1062,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-06",
+    "Transaction_Date": "2022-09-06",
     "Posted Date": "2022-09-07",
     "Card No.": 5550,
     "Description": "Amazon.com*1V8GE0VZ2",
@@ -1071,7 +1071,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-06",
+    "Transaction_Date": "2022-09-06",
     "Posted Date": "2022-09-06",
     "Card No.": 5550,
     "Description": "CAPITAL ONE ONLINE PYMT",
@@ -1080,7 +1080,7 @@ const cap_2022 = [
     "Credit": 857.35
   },
   {
-    "Transaction Date": "2022-09-06",
+    "Transaction_Date": "2022-09-06",
     "Posted Date": "2022-09-06",
     "Card No.": 5550,
     "Description": "AMZN Mktp US*1V2MK49J0",
@@ -1089,7 +1089,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-06",
+    "Transaction_Date": "2022-09-06",
     "Posted Date": "2022-09-06",
     "Card No.": 5550,
     "Description": "AMZN Mktp US*1F17H0JO1",
@@ -1098,7 +1098,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-04",
+    "Transaction_Date": "2022-09-04",
     "Posted Date": "2022-09-06",
     "Card No.": 5550,
     "Description": "THE HOME DEPOT #1512",
@@ -1107,7 +1107,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-03",
+    "Transaction_Date": "2022-09-03",
     "Posted Date": "2022-09-05",
     "Card No.": 5550,
     "Description": "BERRY BLENDZ - SHIELDS",
@@ -1116,7 +1116,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-03",
+    "Transaction_Date": "2022-09-03",
     "Posted Date": "2022-09-05",
     "Card No.": 5550,
     "Description": "THE HOME DEPOT #1512",
@@ -1125,7 +1125,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-04",
+    "Transaction_Date": "2022-09-04",
     "Posted Date": "2022-09-05",
     "Card No.": 5550,
     "Description": "CONOCO - ALTA CONVENIE",
@@ -1134,7 +1134,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-04",
+    "Transaction_Date": "2022-09-04",
     "Posted Date": "2022-09-05",
     "Card No.": 5550,
     "Description": "AMZN Mktp US*199T49TJ3",
@@ -1143,7 +1143,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-02",
+    "Transaction_Date": "2022-09-02",
     "Posted Date": "2022-09-05",
     "Card No.": 5550,
     "Description": "SPROUTS FARMERS MARK",
@@ -1152,7 +1152,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-02",
+    "Transaction_Date": "2022-09-02",
     "Posted Date": "2022-09-05",
     "Card No.": 5550,
     "Description": "SPROUTS FARMERS MARK",
@@ -1161,7 +1161,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-02",
+    "Transaction_Date": "2022-09-02",
     "Posted Date": "2022-09-05",
     "Card No.": 5550,
     "Description": "7-ELEVEN 35506",
@@ -1170,7 +1170,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-03",
+    "Transaction_Date": "2022-09-03",
     "Posted Date": "2022-09-05",
     "Card No.": 5550,
     "Description": "AMZN Mktp US*1V9EN5X10",
@@ -1179,7 +1179,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-02",
+    "Transaction_Date": "2022-09-02",
     "Posted Date": "2022-09-03",
     "Card No.": 5550,
     "Description": "POUDRE PET & FEED SUPP",
@@ -1188,7 +1188,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-01",
+    "Transaction_Date": "2022-09-01",
     "Posted Date": "2022-09-02",
     "Card No.": 5550,
     "Description": "U-HAULKINGS AUTO CENTE",
@@ -1197,7 +1197,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-01",
+    "Transaction_Date": "2022-09-01",
     "Posted Date": "2022-09-02",
     "Card No.": 5550,
     "Description": "THE CART",
@@ -1206,7 +1206,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-09-01",
+    "Transaction_Date": "2022-09-01",
     "Posted Date": "2022-09-02",
     "Card No.": 5550,
     "Description": "KING SOOPERS #0018",
@@ -1215,7 +1215,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-31",
+    "Transaction_Date": "2022-08-31",
     "Posted Date": "2022-09-01",
     "Card No.": 5550,
     "Description": "DOMINO'S 6238",
@@ -1224,7 +1224,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-31",
+    "Transaction_Date": "2022-08-31",
     "Posted Date": "2022-08-31",
     "Card No.": 5550,
     "Description": "CAPITAL ONE MOBILE PYMT",
@@ -1233,7 +1233,7 @@ const cap_2022 = [
     "Credit": 1081.98
   },
   {
-    "Transaction Date": "2022-08-30",
+    "Transaction_Date": "2022-08-30",
     "Posted Date": "2022-08-31",
     "Card No.": 5550,
     "Description": "MAVERIK #490",
@@ -1242,7 +1242,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-31",
+    "Transaction_Date": "2022-08-31",
     "Posted Date": "2022-08-31",
     "Card No.": 5550,
     "Description": "HERTZ TOLL 812897691",
@@ -1251,7 +1251,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-29",
+    "Transaction_Date": "2022-08-29",
     "Posted Date": "2022-08-30",
     "Card No.": 5550,
     "Description": "ISLAND GRILL",
@@ -1260,7 +1260,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-29",
+    "Transaction_Date": "2022-08-29",
     "Posted Date": "2022-08-30",
     "Card No.": 5550,
     "Description": "POUDRE PET & FEED SUPP",
@@ -1269,7 +1269,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-27",
+    "Transaction_Date": "2022-08-27",
     "Posted Date": "2022-08-29",
     "Card No.": 5550,
     "Description": "SPROUTS FARMERS MARK",
@@ -1278,7 +1278,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-27",
+    "Transaction_Date": "2022-08-27",
     "Posted Date": "2022-08-29",
     "Card No.": 5550,
     "Description": "MOONDANCE WINE & SPIRI",
@@ -1287,7 +1287,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-26",
+    "Transaction_Date": "2022-08-26",
     "Posted Date": "2022-08-27",
     "Card No.": 5550,
     "Description": "MCDONALD'S F190",
@@ -1296,7 +1296,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-26",
+    "Transaction_Date": "2022-08-26",
     "Posted Date": "2022-08-27",
     "Card No.": 5550,
     "Description": "AMAZON.COM*LG6J72QP3 A",
@@ -1305,7 +1305,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-25",
+    "Transaction_Date": "2022-08-25",
     "Posted Date": "2022-08-26",
     "Card No.": 5550,
     "Description": "POUDRE PET & FEED SUPP",
@@ -1314,7 +1314,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-24",
+    "Transaction_Date": "2022-08-24",
     "Posted Date": "2022-08-26",
     "Card No.": 5550,
     "Description": "THE DARK HORSE",
@@ -1323,7 +1323,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-24",
+    "Transaction_Date": "2022-08-24",
     "Posted Date": "2022-08-25",
     "Card No.": 5550,
     "Description": "THE CART",
@@ -1332,7 +1332,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-25",
+    "Transaction_Date": "2022-08-25",
     "Posted Date": "2022-08-25",
     "Card No.": 5550,
     "Description": "AMZN Mktp US*L130B62U3",
@@ -1341,7 +1341,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-25",
+    "Transaction_Date": "2022-08-25",
     "Posted Date": "2022-08-25",
     "Card No.": 5550,
     "Description": "AMZN Mktp US*G52OW5GK3",
@@ -1350,7 +1350,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-24",
+    "Transaction_Date": "2022-08-24",
     "Posted Date": "2022-08-25",
     "Card No.": 5550,
     "Description": "MURPHY EXPRESS 8813",
@@ -1359,7 +1359,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-23",
+    "Transaction_Date": "2022-08-23",
     "Posted Date": "2022-08-25",
     "Card No.": 5550,
     "Description": "YUM YUM SOCIAL",
@@ -1368,7 +1368,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-23",
+    "Transaction_Date": "2022-08-23",
     "Posted Date": "2022-08-25",
     "Card No.": 5550,
     "Description": "YUM YUM SOCIAL",
@@ -1377,7 +1377,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-23",
+    "Transaction_Date": "2022-08-23",
     "Posted Date": "2022-08-24",
     "Card No.": 5550,
     "Description": "MCDONALD'S F190",
@@ -1386,7 +1386,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-22",
+    "Transaction_Date": "2022-08-22",
     "Posted Date": "2022-08-24",
     "Card No.": 5550,
     "Description": "SPROUTS FARMERS MARK",
@@ -1395,7 +1395,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-24",
+    "Transaction_Date": "2022-08-24",
     "Posted Date": "2022-08-24",
     "Card No.": 5550,
     "Description": "Amazon.com*F637Q5IW3",
@@ -1404,7 +1404,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-22",
+    "Transaction_Date": "2022-08-22",
     "Posted Date": "2022-08-23",
     "Card No.": 5550,
     "Description": "ISLAND GRILL",
@@ -1413,7 +1413,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-22",
+    "Transaction_Date": "2022-08-22",
     "Posted Date": "2022-08-23",
     "Card No.": 5550,
     "Description": "THE CART",
@@ -1422,7 +1422,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-22",
+    "Transaction_Date": "2022-08-22",
     "Posted Date": "2022-08-23",
     "Card No.": 5550,
     "Description": "SQ *ORGANIC CBD NUGS",
@@ -1431,7 +1431,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-21",
+    "Transaction_Date": "2022-08-21",
     "Posted Date": "2022-08-22",
     "Card No.": 5550,
     "Description": "THE CART",
@@ -1440,7 +1440,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-20",
+    "Transaction_Date": "2022-08-20",
     "Posted Date": "2022-08-22",
     "Card No.": 5550,
     "Description": "SPROUTS FARMERS MARK",
@@ -1449,7 +1449,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-19",
+    "Transaction_Date": "2022-08-19",
     "Posted Date": "2022-08-22",
     "Card No.": 5550,
     "Description": "SPROUTS FARMERS MARK",
@@ -1458,7 +1458,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-19",
+    "Transaction_Date": "2022-08-19",
     "Posted Date": "2022-08-20",
     "Card No.": 5550,
     "Description": "POUDRE PET & FEED SUPP",
@@ -1467,7 +1467,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-17",
+    "Transaction_Date": "2022-08-17",
     "Posted Date": "2022-08-19",
     "Card No.": 5550,
     "Description": "BACKYARD TAP",
@@ -1476,7 +1476,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-17",
+    "Transaction_Date": "2022-08-17",
     "Posted Date": "2022-08-18",
     "Card No.": 5550,
     "Description": "TST* Pourhouse Bar and",
@@ -1485,7 +1485,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-16",
+    "Transaction_Date": "2022-08-16",
     "Posted Date": "2022-08-18",
     "Card No.": 5550,
     "Description": "DOCTOR JOHN`S LINGERIE",
@@ -1494,7 +1494,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-17",
+    "Transaction_Date": "2022-08-17",
     "Posted Date": "2022-08-18",
     "Card No.": 5550,
     "Description": "AMZN Mktp US*RV5X53K43",
@@ -1503,7 +1503,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-16",
+    "Transaction_Date": "2022-08-16",
     "Posted Date": "2022-08-17",
     "Card No.": 5550,
     "Description": "ISLAND GRILL",
@@ -1512,7 +1512,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-16",
+    "Transaction_Date": "2022-08-16",
     "Posted Date": "2022-08-17",
     "Card No.": 5550,
     "Description": "LS GOLDEN POPPY HERBAL",
@@ -1521,7 +1521,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-16",
+    "Transaction_Date": "2022-08-16",
     "Posted Date": "2022-08-17",
     "Card No.": 5550,
     "Description": "POUDRE PET & FEED SUPP",
@@ -1530,7 +1530,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-16",
+    "Transaction_Date": "2022-08-16",
     "Posted Date": "2022-08-17",
     "Card No.": 5550,
     "Description": "POUDRE PET & FEED SUPP",
@@ -1539,7 +1539,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-16",
+    "Transaction_Date": "2022-08-16",
     "Posted Date": "2022-08-17",
     "Card No.": 5550,
     "Description": "SQ *RAMAMAMA",
@@ -1548,7 +1548,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-15",
+    "Transaction_Date": "2022-08-15",
     "Posted Date": "2022-08-15",
     "Card No.": 5550,
     "Description": "CAPITAL ONE ONLINE PYMT",
@@ -1557,7 +1557,7 @@ const cap_2022 = [
     "Credit": 936.37
   },
   {
-    "Transaction Date": "2022-08-12",
+    "Transaction_Date": "2022-08-12",
     "Posted Date": "2022-08-13",
     "Card No.": 5550,
     "Description": "AMZN Mktp US*C560W1FV3",
@@ -1566,7 +1566,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-11",
+    "Transaction_Date": "2022-08-11",
     "Posted Date": "2022-08-12",
     "Card No.": 5550,
     "Description": "HERTZ #0577129",
@@ -1575,7 +1575,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-11",
+    "Transaction_Date": "2022-08-11",
     "Posted Date": "2022-08-11",
     "Card No.": 5550,
     "Description": "CAPITAL ONE AUTOPAY PYMT",
@@ -1584,7 +1584,7 @@ const cap_2022 = [
     "Credit": 25
   },
   {
-    "Transaction Date": "2022-08-09",
+    "Transaction_Date": "2022-08-09",
     "Posted Date": "2022-08-11",
     "Card No.": 5550,
     "Description": "IN *BIRDS SURF SHED, I",
@@ -1593,7 +1593,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-10",
+    "Transaction_Date": "2022-08-10",
     "Posted Date": "2022-08-11",
     "Card No.": 5550,
     "Description": "LYFT   1 RIDE 08-09",
@@ -1602,7 +1602,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-09",
+    "Transaction_Date": "2022-08-09",
     "Posted Date": "2022-08-10",
     "Card No.": 5550,
     "Description": "NEWBREAK COFFEE-ABBOTT",
@@ -1611,7 +1611,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-08",
+    "Transaction_Date": "2022-08-08",
     "Posted Date": "2022-08-10",
     "Card No.": 5550,
     "Description": "KRISP",
@@ -1620,7 +1620,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-08",
+    "Transaction_Date": "2022-08-08",
     "Posted Date": "2022-08-10",
     "Card No.": 5550,
     "Description": "IN *BIRDS SURF SHED, I",
@@ -1629,7 +1629,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-08",
+    "Transaction_Date": "2022-08-08",
     "Posted Date": "2022-08-10",
     "Card No.": 5550,
     "Description": "IN *BIRDS SURF SHED, I",
@@ -1638,7 +1638,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-09",
+    "Transaction_Date": "2022-08-09",
     "Posted Date": "2022-08-10",
     "Card No.": 5550,
     "Description": "LYFT   1 RIDE 08-08",
@@ -1647,7 +1647,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-08",
+    "Transaction_Date": "2022-08-08",
     "Posted Date": "2022-08-10",
     "Card No.": 5550,
     "Description": "ABBOTT MARKET",
@@ -1656,7 +1656,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-09",
+    "Transaction_Date": "2022-08-09",
     "Posted Date": "2022-08-10",
     "Card No.": 5550,
     "Description": "Amazon Prime*BT3AL4YY3",
@@ -1665,7 +1665,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-08",
+    "Transaction_Date": "2022-08-08",
     "Posted Date": "2022-08-09",
     "Card No.": 5550,
     "Description": "LYFT   1 RIDE 08-07",
@@ -1674,7 +1674,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-07",
+    "Transaction_Date": "2022-08-07",
     "Posted Date": "2022-08-09",
     "Card No.": 5550,
     "Description": "WALKING ON WATER CAFE",
@@ -1683,7 +1683,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-07",
+    "Transaction_Date": "2022-08-07",
     "Posted Date": "2022-08-09",
     "Card No.": 5550,
     "Description": "WOODY CREEK BAKERY & C",
@@ -1692,7 +1692,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-08",
+    "Transaction_Date": "2022-08-08",
     "Posted Date": "2022-08-09",
     "Card No.": 5550,
     "Description": "TST* WALKING ON WATER",
@@ -1701,7 +1701,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-07",
+    "Transaction_Date": "2022-08-07",
     "Posted Date": "2022-08-08",
     "Card No.": 5550,
     "Description": "OLD TOWNHOUSE RESTAURA",
@@ -1710,7 +1710,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-08",
+    "Transaction_Date": "2022-08-08",
     "Posted Date": "2022-08-08",
     "Card No.": 5550,
     "Description": "Spin Mobility",
@@ -1719,7 +1719,7 @@ const cap_2022 = [
     "Credit": 44.09
   },
   {
-    "Transaction Date": "2022-08-07",
+    "Transaction_Date": "2022-08-07",
     "Posted Date": "2022-08-08",
     "Card No.": 5550,
     "Description": "TARGET        00002014",
@@ -1728,7 +1728,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-08",
+    "Transaction_Date": "2022-08-08",
     "Posted Date": "2022-08-08",
     "Card No.": 5550,
     "Description": "Spin Mobility",
@@ -1737,7 +1737,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-07",
+    "Transaction_Date": "2022-08-07",
     "Posted Date": "2022-08-08",
     "Card No.": 5550,
     "Description": "Spin Mobility",
@@ -1746,7 +1746,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-06",
+    "Transaction_Date": "2022-08-06",
     "Posted Date": "2022-08-08",
     "Card No.": 5550,
     "Description": "BIG D #50",
@@ -1755,7 +1755,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-06",
+    "Transaction_Date": "2022-08-06",
     "Posted Date": "2022-08-08",
     "Card No.": 5550,
     "Description": "BIG D #50",
@@ -1764,7 +1764,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-06",
+    "Transaction_Date": "2022-08-06",
     "Posted Date": "2022-08-08",
     "Card No.": 5550,
     "Description": "PETCO 1434    63514343",
@@ -1773,7 +1773,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-04",
+    "Transaction_Date": "2022-08-04",
     "Posted Date": "2022-08-06",
     "Card No.": 5550,
     "Description": "YI RU MASSAGE LLC",
@@ -1782,7 +1782,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-05",
+    "Transaction_Date": "2022-08-05",
     "Posted Date": "2022-08-05",
     "Card No.": 5550,
     "Description": "CAPITAL ONE MOBILE PYMT",
@@ -1791,7 +1791,7 @@ const cap_2022 = [
     "Credit": 924
   },
   {
-    "Transaction Date": "2022-08-04",
+    "Transaction_Date": "2022-08-04",
     "Posted Date": "2022-08-05",
     "Card No.": 5550,
     "Description": "THE CART",
@@ -1800,7 +1800,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-03",
+    "Transaction_Date": "2022-08-03",
     "Posted Date": "2022-08-05",
     "Card No.": 5550,
     "Description": "SPROUTS FARMERS MARK",
@@ -1809,7 +1809,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-03",
+    "Transaction_Date": "2022-08-03",
     "Posted Date": "2022-08-04",
     "Card No.": 5550,
     "Description": "LYRICCINEMA.COM",
@@ -1818,7 +1818,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-03",
+    "Transaction_Date": "2022-08-03",
     "Posted Date": "2022-08-04",
     "Card No.": 5550,
     "Description": "AMZN Mktp US*MJ1WC0P83",
@@ -1827,7 +1827,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-03",
+    "Transaction_Date": "2022-08-03",
     "Posted Date": "2022-08-03",
     "Card No.": 5550,
     "Description": "AMZN MKTP US*QZ66O7N73",
@@ -1836,7 +1836,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-02",
+    "Transaction_Date": "2022-08-02",
     "Posted Date": "2022-08-03",
     "Card No.": 5550,
     "Description": "PETCO 489     63504898",
@@ -1845,7 +1845,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-02",
+    "Transaction_Date": "2022-08-02",
     "Posted Date": "2022-08-03",
     "Card No.": 5550,
     "Description": "FITNESS GALLERY",
@@ -1854,7 +1854,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-02",
+    "Transaction_Date": "2022-08-02",
     "Posted Date": "2022-08-03",
     "Card No.": 5550,
     "Description": "JOANN STORES #2228",
@@ -1863,7 +1863,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-02",
+    "Transaction_Date": "2022-08-02",
     "Posted Date": "2022-08-03",
     "Card No.": 5550,
     "Description": "KING SOOPERS #0018",
@@ -1872,7 +1872,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-08-02",
+    "Transaction_Date": "2022-08-02",
     "Posted Date": "2022-08-03",
     "Card No.": 5550,
     "Description": "Amazon Prime*7W48U3OP3",
@@ -1881,7 +1881,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-07-31",
+    "Transaction_Date": "2022-07-31",
     "Posted Date": "2022-08-02",
     "Card No.": 5550,
     "Description": "SPROUTS FARMERS MARK",
@@ -1890,7 +1890,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-07-31",
+    "Transaction_Date": "2022-07-31",
     "Posted Date": "2022-08-01",
     "Card No.": 5550,
     "Description": "MCDONALD'S F11148",
@@ -1899,7 +1899,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-07-30",
+    "Transaction_Date": "2022-07-30",
     "Posted Date": "2022-08-01",
     "Card No.": 5550,
     "Description": "THE CART",
@@ -1908,7 +1908,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-07-30",
+    "Transaction_Date": "2022-07-30",
     "Posted Date": "2022-08-01",
     "Card No.": 5550,
     "Description": "NOSH DELIVERY",
@@ -1917,7 +1917,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-07-30",
+    "Transaction_Date": "2022-07-30",
     "Posted Date": "2022-08-01",
     "Card No.": 5550,
     "Description": "POUDRE PET & FEED SUPP",
@@ -1926,7 +1926,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-07-29",
+    "Transaction_Date": "2022-07-29",
     "Posted Date": "2022-08-01",
     "Card No.": 5550,
     "Description": "ISLAND GRILL",
@@ -1935,7 +1935,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-07-29",
+    "Transaction_Date": "2022-07-29",
     "Posted Date": "2022-07-30",
     "Card No.": 5550,
     "Description": "TST* Smokin Fins - For",
@@ -1944,7 +1944,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-07-29",
+    "Transaction_Date": "2022-07-29",
     "Posted Date": "2022-07-30",
     "Card No.": 5550,
     "Description": "TST* Cafe Vino",
@@ -1953,7 +1953,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-07-29",
+    "Transaction_Date": "2022-07-29",
     "Posted Date": "2022-07-29",
     "Card No.": 5550,
     "Description": "CAPITAL ONE MOBILE PYMT",
@@ -1962,7 +1962,7 @@ const cap_2022 = [
     "Credit": 1021.82
   },
   {
-    "Transaction Date": "2022-07-25",
+    "Transaction_Date": "2022-07-25",
     "Posted Date": "2022-07-27",
     "Card No.": 5550,
     "Description": "SPROUTS FARMERS MARK",
@@ -1971,7 +1971,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-07-25",
+    "Transaction_Date": "2022-07-25",
     "Posted Date": "2022-07-26",
     "Card No.": 5550,
     "Description": "PETCO 489     63504898",
@@ -1980,7 +1980,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-07-24",
+    "Transaction_Date": "2022-07-24",
     "Posted Date": "2022-07-26",
     "Card No.": 5550,
     "Description": "SPROUTS FARMERS MARK",
@@ -1989,7 +1989,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-07-23",
+    "Transaction_Date": "2022-07-23",
     "Posted Date": "2022-07-25",
     "Card No.": 5550,
     "Description": "CHIRO NOW",
@@ -1998,7 +1998,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-07-23",
+    "Transaction_Date": "2022-07-23",
     "Posted Date": "2022-07-25",
     "Card No.": 5550,
     "Description": "THE HOME DEPOT 1512",
@@ -2007,7 +2007,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-07-23",
+    "Transaction_Date": "2022-07-23",
     "Posted Date": "2022-07-25",
     "Card No.": 5550,
     "Description": "TST* TEN PIN ALLEY",
@@ -2016,7 +2016,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-07-23",
+    "Transaction_Date": "2022-07-23",
     "Posted Date": "2022-07-25",
     "Card No.": 5550,
     "Description": "MURPHY EXPRESS 8723",
@@ -2025,7 +2025,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-07-22",
+    "Transaction_Date": "2022-07-22",
     "Posted Date": "2022-07-25",
     "Card No.": 5550,
     "Description": "ISLAND GRILL",
@@ -2034,7 +2034,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-07-21",
+    "Transaction_Date": "2022-07-21",
     "Posted Date": "2022-07-23",
     "Card No.": 5550,
     "Description": "SPROUTS FARMERS MARK",
@@ -2043,7 +2043,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-07-21",
+    "Transaction_Date": "2022-07-21",
     "Posted Date": "2022-07-23",
     "Card No.": 5550,
     "Description": "SPROUTS FARMERS MARK",
@@ -2052,7 +2052,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-07-21",
+    "Transaction_Date": "2022-07-21",
     "Posted Date": "2022-07-23",
     "Card No.": 5550,
     "Description": "SPROUTS FARMERS MARK",
@@ -2061,7 +2061,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-07-22",
+    "Transaction_Date": "2022-07-22",
     "Posted Date": "2022-07-23",
     "Card No.": 5550,
     "Description": "SQ *THE FOX AND THE CR",
@@ -2070,7 +2070,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-07-22",
+    "Transaction_Date": "2022-07-22",
     "Posted Date": "2022-07-23",
     "Card No.": 5550,
     "Description": "TST* The Moot House",
@@ -2079,7 +2079,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-07-22",
+    "Transaction_Date": "2022-07-22",
     "Posted Date": "2022-07-23",
     "Card No.": 5550,
     "Description": "AMZN Mktp US*7A7WJ1CF3",
@@ -2088,7 +2088,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-07-19",
+    "Transaction_Date": "2022-07-19",
     "Posted Date": "2022-07-21",
     "Card No.": 5550,
     "Description": "SPROUTS FARMERS MARK",
@@ -2097,7 +2097,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-07-18",
+    "Transaction_Date": "2022-07-18",
     "Posted Date": "2022-07-19",
     "Card No.": 5550,
     "Description": "COLORADO DERMATOLOGY G",
@@ -2106,7 +2106,7 @@ const cap_2022 = [
     "Credit": 130.68
   },
   {
-    "Transaction Date": "2022-07-18",
+    "Transaction_Date": "2022-07-18",
     "Posted Date": "2022-07-19",
     "Card No.": 5550,
     "Description": "THE CART",
@@ -2115,7 +2115,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-07-17",
+    "Transaction_Date": "2022-07-17",
     "Posted Date": "2022-07-18",
     "Card No.": 5550,
     "Description": "TST* Loveland 29th Str",
@@ -2124,7 +2124,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-07-17",
+    "Transaction_Date": "2022-07-17",
     "Posted Date": "2022-07-18",
     "Card No.": 5550,
     "Description": "KING SOOPERS #0018",
@@ -2133,7 +2133,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-07-17",
+    "Transaction_Date": "2022-07-17",
     "Posted Date": "2022-07-18",
     "Card No.": 5550,
     "Description": "PETCO 489     63504898",
@@ -2142,7 +2142,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-07-16",
+    "Transaction_Date": "2022-07-16",
     "Posted Date": "2022-07-18",
     "Card No.": 5550,
     "Description": "JERRYS ARTARAMA",
@@ -2151,7 +2151,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-07-16",
+    "Transaction_Date": "2022-07-16",
     "Posted Date": "2022-07-18",
     "Card No.": 5550,
     "Description": "THE CART",
@@ -2160,7 +2160,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-07-16",
+    "Transaction_Date": "2022-07-16",
     "Posted Date": "2022-07-18",
     "Card No.": 5550,
     "Description": "KUM&GO 0994 LOVELAND",
@@ -2169,7 +2169,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-07-16",
+    "Transaction_Date": "2022-07-16",
     "Posted Date": "2022-07-18",
     "Card No.": 5550,
     "Description": "KING SOOPERS # 0107",
@@ -2178,7 +2178,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-07-16",
+    "Transaction_Date": "2022-07-16",
     "Posted Date": "2022-07-18",
     "Card No.": 5550,
     "Description": "RAISING CANE'S #324",
@@ -2187,7 +2187,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-07-15",
+    "Transaction_Date": "2022-07-15",
     "Posted Date": "2022-07-16",
     "Card No.": 5550,
     "Description": "COLORADO DERMATOLOGY G",
@@ -2196,7 +2196,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-07-16",
+    "Transaction_Date": "2022-07-16",
     "Posted Date": "2022-07-16",
     "Card No.": 5550,
     "Description": "AMZN Mktp US*Y33HW98A3",
@@ -2205,7 +2205,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-07-15",
+    "Transaction_Date": "2022-07-15",
     "Posted Date": "2022-07-15",
     "Card No.": 5550,
     "Description": "CAPITAL ONE MOBILE PYMT",
@@ -2214,7 +2214,7 @@ const cap_2022 = [
     "Credit": 995.89
   },
   {
-    "Transaction Date": "2022-07-11",
+    "Transaction_Date": "2022-07-11",
     "Posted Date": "2022-07-11",
     "Card No.": 5550,
     "Description": "CAPITAL ONE AUTOPAY PYMT",
@@ -2223,7 +2223,7 @@ const cap_2022 = [
     "Credit": 25
   },
   {
-    "Transaction Date": "2022-07-09",
+    "Transaction_Date": "2022-07-09",
     "Posted Date": "2022-07-11",
     "Card No.": 5550,
     "Description": "THE HOME DEPOT #1544",
@@ -2232,7 +2232,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-07-08",
+    "Transaction_Date": "2022-07-08",
     "Posted Date": "2022-07-09",
     "Card No.": 5550,
     "Description": "PETCO 489     63504898",
@@ -2241,7 +2241,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-07-07",
+    "Transaction_Date": "2022-07-07",
     "Posted Date": "2022-07-09",
     "Card No.": 5550,
     "Description": "SPROUTS FARMERS MARK",
@@ -2250,7 +2250,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-07-07",
+    "Transaction_Date": "2022-07-07",
     "Posted Date": "2022-07-08",
     "Card No.": 5550,
     "Description": "COLORADO DERMATOLOGY G",
@@ -2259,7 +2259,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-07-07",
+    "Transaction_Date": "2022-07-07",
     "Posted Date": "2022-07-08",
     "Card No.": 5550,
     "Description": "THE CART",
@@ -2268,7 +2268,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-07-06",
+    "Transaction_Date": "2022-07-06",
     "Posted Date": "2022-07-08",
     "Card No.": 5550,
     "Description": "SPROUTS FARMERS MARK",
@@ -2277,7 +2277,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-07-06",
+    "Transaction_Date": "2022-07-06",
     "Posted Date": "2022-07-07",
     "Card No.": 5550,
     "Description": "THE CART",
@@ -2286,7 +2286,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-07-06",
+    "Transaction_Date": "2022-07-06",
     "Posted Date": "2022-07-07",
     "Card No.": 5550,
     "Description": "SHEIN.COM",
@@ -2295,7 +2295,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-07-05",
+    "Transaction_Date": "2022-07-05",
     "Posted Date": "2022-07-07",
     "Card No.": 5550,
     "Description": "SPROUTS FARMERS MARK",
@@ -2304,7 +2304,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-07-05",
+    "Transaction_Date": "2022-07-05",
     "Posted Date": "2022-07-07",
     "Card No.": 5550,
     "Description": "RIO GRANDE MEXICAN RES",
@@ -2313,7 +2313,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-07-05",
+    "Transaction_Date": "2022-07-05",
     "Posted Date": "2022-07-06",
     "Card No.": 5550,
     "Description": "THE CART",
@@ -2322,7 +2322,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-07-05",
+    "Transaction_Date": "2022-07-05",
     "Posted Date": "2022-07-06",
     "Card No.": 5550,
     "Description": "PETCO 489     63504898",
@@ -2331,7 +2331,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-07-05",
+    "Transaction_Date": "2022-07-05",
     "Posted Date": "2022-07-06",
     "Card No.": 5550,
     "Description": "URBAN EGG FORT COLLINS",
@@ -2340,7 +2340,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-07-04",
+    "Transaction_Date": "2022-07-04",
     "Posted Date": "2022-07-05",
     "Card No.": 5550,
     "Description": "KING SOOPERS #0707 FUE",
@@ -2349,7 +2349,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-07-02",
+    "Transaction_Date": "2022-07-02",
     "Posted Date": "2022-07-04",
     "Card No.": 5550,
     "Description": "THE CART",
@@ -2358,7 +2358,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-07-02",
+    "Transaction_Date": "2022-07-02",
     "Posted Date": "2022-07-04",
     "Card No.": 5550,
     "Description": "WM SUPERCENTER #3177",
@@ -2367,7 +2367,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-07-02",
+    "Transaction_Date": "2022-07-02",
     "Posted Date": "2022-07-04",
     "Card No.": 5550,
     "Description": "POUDRE PET & FEED SUPP",
@@ -2376,7 +2376,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-07-02",
+    "Transaction_Date": "2022-07-02",
     "Posted Date": "2022-07-04",
     "Card No.": 5550,
     "Description": "ISLAND GRILL",
@@ -2385,7 +2385,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-07-02",
+    "Transaction_Date": "2022-07-02",
     "Posted Date": "2022-07-04",
     "Card No.": 5550,
     "Description": "WAL-MART #3177",
@@ -2394,7 +2394,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-07-01",
+    "Transaction_Date": "2022-07-01",
     "Posted Date": "2022-07-04",
     "Card No.": 5550,
     "Description": "TASTY HARMONY",
@@ -2403,7 +2403,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-07-01",
+    "Transaction_Date": "2022-07-01",
     "Posted Date": "2022-07-02",
     "Card No.": 5550,
     "Description": "SULLIVAN JEWELERS INC",
@@ -2412,7 +2412,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-06-30",
+    "Transaction_Date": "2022-06-30",
     "Posted Date": "2022-06-30",
     "Card No.": 5550,
     "Description": "CAPITAL ONE MOBILE PYMT",
@@ -2421,7 +2421,7 @@ const cap_2022 = [
     "Credit": 981.77
   },
   {
-    "Transaction Date": "2022-06-26",
+    "Transaction_Date": "2022-06-26",
     "Posted Date": "2022-06-27",
     "Card No.": 5550,
     "Description": "CARIBOU COFFEE CO #129",
@@ -2430,7 +2430,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-06-25",
+    "Transaction_Date": "2022-06-25",
     "Posted Date": "2022-06-27",
     "Card No.": 5550,
     "Description": "TIME PARK LLC LOT 7",
@@ -2439,7 +2439,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-06-25",
+    "Transaction_Date": "2022-06-25",
     "Posted Date": "2022-06-27",
     "Card No.": 5550,
     "Description": "DAVE & BUSTERS #12",
@@ -2448,7 +2448,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-06-25",
+    "Transaction_Date": "2022-06-25",
     "Posted Date": "2022-06-27",
     "Card No.": 5550,
     "Description": "DAVE & BUSTERS #12",
@@ -2457,7 +2457,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-06-25",
+    "Transaction_Date": "2022-06-25",
     "Posted Date": "2022-06-27",
     "Card No.": 5550,
     "Description": "DENVER PRIDE",
@@ -2466,7 +2466,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-06-25",
+    "Transaction_Date": "2022-06-25",
     "Posted Date": "2022-06-27",
     "Card No.": 5550,
     "Description": "DENVER ART MUSEUM ADMI",
@@ -2475,7 +2475,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-06-24",
+    "Transaction_Date": "2022-06-24",
     "Posted Date": "2022-06-27",
     "Card No.": 5550,
     "Description": "LUCILES",
@@ -2484,7 +2484,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-06-24",
+    "Transaction_Date": "2022-06-24",
     "Posted Date": "2022-06-25",
     "Card No.": 5550,
     "Description": "THE CART",
@@ -2493,7 +2493,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-06-23",
+    "Transaction_Date": "2022-06-23",
     "Posted Date": "2022-06-25",
     "Card No.": 5550,
     "Description": "RISE!  A BREAKFAST PLA",
@@ -2502,7 +2502,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-06-23",
+    "Transaction_Date": "2022-06-23",
     "Posted Date": "2022-06-24",
     "Card No.": 5550,
     "Description": "ISLAND GRILL",
@@ -2511,7 +2511,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-06-23",
+    "Transaction_Date": "2022-06-23",
     "Posted Date": "2022-06-24",
     "Card No.": 5550,
     "Description": "THE CART",
@@ -2520,7 +2520,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-06-23",
+    "Transaction_Date": "2022-06-23",
     "Posted Date": "2022-06-24",
     "Card No.": 5550,
     "Description": "THE CART",
@@ -2529,7 +2529,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-06-23",
+    "Transaction_Date": "2022-06-23",
     "Posted Date": "2022-06-24",
     "Card No.": 5550,
     "Description": "SQ *ALGIERS HOOKAH AND",
@@ -2538,7 +2538,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-06-22",
+    "Transaction_Date": "2022-06-22",
     "Posted Date": "2022-06-23",
     "Card No.": 5550,
     "Description": "THE CART",
@@ -2547,7 +2547,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-06-22",
+    "Transaction_Date": "2022-06-22",
     "Posted Date": "2022-06-23",
     "Card No.": 5550,
     "Description": "KING SOOPERS #0018",
@@ -2556,7 +2556,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-06-22",
+    "Transaction_Date": "2022-06-22",
     "Posted Date": "2022-06-23",
     "Card No.": 5550,
     "Description": "PETCO 489     63504898",
@@ -2565,7 +2565,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-06-22",
+    "Transaction_Date": "2022-06-22",
     "Posted Date": "2022-06-23",
     "Card No.": 5550,
     "Description": "URBAN EGG FORT COLLINS",
@@ -2574,7 +2574,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-06-21",
+    "Transaction_Date": "2022-06-21",
     "Posted Date": "2022-06-22",
     "Card No.": 5550,
     "Description": "THE CART",
@@ -2583,7 +2583,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-06-20",
+    "Transaction_Date": "2022-06-20",
     "Posted Date": "2022-06-22",
     "Card No.": 5550,
     "Description": "EMPIRE 3594",
@@ -2592,7 +2592,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-06-20",
+    "Transaction_Date": "2022-06-20",
     "Posted Date": "2022-06-22",
     "Card No.": 5550,
     "Description": "BARNES & NOBLE #2611",
@@ -2601,7 +2601,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-06-19",
+    "Transaction_Date": "2022-06-19",
     "Posted Date": "2022-06-21",
     "Card No.": 5550,
     "Description": "SMOOTHIE KING - 1886",
@@ -2610,7 +2610,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-06-20",
+    "Transaction_Date": "2022-06-20",
     "Posted Date": "2022-06-21",
     "Card No.": 5550,
     "Description": "THE CART",
@@ -2619,7 +2619,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-06-20",
+    "Transaction_Date": "2022-06-20",
     "Posted Date": "2022-06-21",
     "Card No.": 5550,
     "Description": "SQ *ALGIERS HOOKAH AND",
@@ -2628,7 +2628,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-06-19",
+    "Transaction_Date": "2022-06-19",
     "Posted Date": "2022-06-21",
     "Card No.": 5550,
     "Description": "SPROUTS FARMERS MARK",
@@ -2637,7 +2637,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-06-19",
+    "Transaction_Date": "2022-06-19",
     "Posted Date": "2022-06-20",
     "Card No.": 5550,
     "Description": "THE CART",
@@ -2646,7 +2646,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-06-19",
+    "Transaction_Date": "2022-06-19",
     "Posted Date": "2022-06-20",
     "Card No.": 5550,
     "Description": "THE CART",
@@ -2655,7 +2655,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-06-17",
+    "Transaction_Date": "2022-06-17",
     "Posted Date": "2022-06-20",
     "Card No.": 5550,
     "Description": "RISE!  A BREAKFAST PLA",
@@ -2664,7 +2664,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-06-18",
+    "Transaction_Date": "2022-06-18",
     "Posted Date": "2022-06-20",
     "Card No.": 5550,
     "Description": "THE CART",
@@ -2673,7 +2673,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-06-18",
+    "Transaction_Date": "2022-06-18",
     "Posted Date": "2022-06-20",
     "Card No.": 5550,
     "Description": "MCDONALD'S F11148",
@@ -2682,7 +2682,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-06-17",
+    "Transaction_Date": "2022-06-17",
     "Posted Date": "2022-06-18",
     "Card No.": 5550,
     "Description": "THE CART",
@@ -2691,7 +2691,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-06-17",
+    "Transaction_Date": "2022-06-17",
     "Posted Date": "2022-06-18",
     "Card No.": 5550,
     "Description": "POUDRE PET & FEED SUPP",
@@ -2700,7 +2700,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-06-16",
+    "Transaction_Date": "2022-06-16",
     "Posted Date": "2022-06-18",
     "Card No.": 5550,
     "Description": "SCRUMPY`S",
@@ -2709,7 +2709,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-06-16",
+    "Transaction_Date": "2022-06-16",
     "Posted Date": "2022-06-18",
     "Card No.": 5550,
     "Description": "SCRUMPY`S",
@@ -2718,7 +2718,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-06-16",
+    "Transaction_Date": "2022-06-16",
     "Posted Date": "2022-06-17",
     "Card No.": 5550,
     "Description": "THE CART",
@@ -2727,7 +2727,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-06-16",
+    "Transaction_Date": "2022-06-16",
     "Posted Date": "2022-06-17",
     "Card No.": 5550,
     "Description": "THE CART",
@@ -2736,7 +2736,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-06-16",
+    "Transaction_Date": "2022-06-16",
     "Posted Date": "2022-06-17",
     "Card No.": 5550,
     "Description": "SQ *ALGIERS HOOKAH AND",
@@ -2745,7 +2745,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-06-16",
+    "Transaction_Date": "2022-06-16",
     "Posted Date": "2022-06-17",
     "Card No.": 5550,
     "Description": "PETCO 489     63504898",
@@ -2754,7 +2754,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-06-15",
+    "Transaction_Date": "2022-06-15",
     "Posted Date": "2022-06-16",
     "Card No.": 5550,
     "Description": "THE CART",
@@ -2763,7 +2763,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-06-15",
+    "Transaction_Date": "2022-06-15",
     "Posted Date": "2022-06-16",
     "Card No.": 5550,
     "Description": "POUDRE PET & FEED SUPP",
@@ -2772,7 +2772,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-06-15",
+    "Transaction_Date": "2022-06-15",
     "Posted Date": "2022-06-16",
     "Card No.": 5550,
     "Description": "JE JU JAPANESE RESTAUR",
@@ -2781,7 +2781,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-06-15",
+    "Transaction_Date": "2022-06-15",
     "Posted Date": "2022-06-15",
     "Card No.": 5550,
     "Description": "CAPITAL ONE MOBILE PYMT",
@@ -2790,7 +2790,7 @@ const cap_2022 = [
     "Credit": 667.76
   },
   {
-    "Transaction Date": "2022-06-14",
+    "Transaction_Date": "2022-06-14",
     "Posted Date": "2022-06-15",
     "Card No.": 5550,
     "Description": "THE CART",
@@ -2799,7 +2799,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-06-14",
+    "Transaction_Date": "2022-06-14",
     "Posted Date": "2022-06-15",
     "Card No.": 5550,
     "Description": "THE CART",
@@ -2808,7 +2808,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-06-14",
+    "Transaction_Date": "2022-06-14",
     "Posted Date": "2022-06-15",
     "Card No.": 5550,
     "Description": "POUDRE PET & FEED SUPP",
@@ -2817,7 +2817,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-06-14",
+    "Transaction_Date": "2022-06-14",
     "Posted Date": "2022-06-15",
     "Card No.": 5550,
     "Description": "SQ *RAMAMAMA",
@@ -2826,7 +2826,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-06-13",
+    "Transaction_Date": "2022-06-13",
     "Posted Date": "2022-06-15",
     "Card No.": 5550,
     "Description": "THE HOME DEPOT #1512",
@@ -2835,7 +2835,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-06-13",
+    "Transaction_Date": "2022-06-13",
     "Posted Date": "2022-06-14",
     "Card No.": 5550,
     "Description": "THE CART",
@@ -2844,7 +2844,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-06-12",
+    "Transaction_Date": "2022-06-12",
     "Posted Date": "2022-06-14",
     "Card No.": 5550,
     "Description": "SPROUTS FARMERS MARK",
@@ -2853,7 +2853,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-06-12",
+    "Transaction_Date": "2022-06-12",
     "Posted Date": "2022-06-14",
     "Card No.": 5550,
     "Description": "THE HOME DEPOT #1512",
@@ -2862,7 +2862,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-06-12",
+    "Transaction_Date": "2022-06-12",
     "Posted Date": "2022-06-14",
     "Card No.": 5550,
     "Description": "THE HOME DEPOT #1512",
@@ -2871,7 +2871,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-06-12",
+    "Transaction_Date": "2022-06-12",
     "Posted Date": "2022-06-13",
     "Card No.": 5550,
     "Description": "THE CART",
@@ -2880,7 +2880,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-06-12",
+    "Transaction_Date": "2022-06-12",
     "Posted Date": "2022-06-13",
     "Card No.": 5550,
     "Description": "MCDONALD'S F190",
@@ -2889,7 +2889,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-06-12",
+    "Transaction_Date": "2022-06-12",
     "Posted Date": "2022-06-13",
     "Card No.": 5550,
     "Description": "POUDRE PET & FEED SUPP",
@@ -2898,7 +2898,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-06-12",
+    "Transaction_Date": "2022-06-12",
     "Posted Date": "2022-06-13",
     "Card No.": 5550,
     "Description": "SCHMICKELS",
@@ -2907,7 +2907,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-06-11",
+    "Transaction_Date": "2022-06-11",
     "Posted Date": "2022-06-13",
     "Card No.": 5550,
     "Description": "TOP GOLF THORNTON 69-2",
@@ -2916,7 +2916,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-06-11",
+    "Transaction_Date": "2022-06-11",
     "Posted Date": "2022-06-13",
     "Card No.": 5550,
     "Description": "TOP GOLF THORNTON 69-2",
@@ -2925,7 +2925,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-06-12",
+    "Transaction_Date": "2022-06-12",
     "Posted Date": "2022-06-13",
     "Card No.": 5550,
     "Description": "TST* HUHOT MONGOLIAN G",
@@ -2934,7 +2934,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-06-11",
+    "Transaction_Date": "2022-06-11",
     "Posted Date": "2022-06-13",
     "Card No.": 5550,
     "Description": "THE CART",
@@ -2943,7 +2943,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-06-11",
+    "Transaction_Date": "2022-06-11",
     "Posted Date": "2022-06-13",
     "Card No.": 5550,
     "Description": "RAISING CANE'S #324",
@@ -2952,7 +2952,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-06-11",
+    "Transaction_Date": "2022-06-11",
     "Posted Date": "2022-06-11",
     "Card No.": 5550,
     "Description": "CAPITAL ONE AUTOPAY PYMT",
@@ -2961,7 +2961,7 @@ const cap_2022 = [
     "Credit": 25
   },
   {
-    "Transaction Date": "2022-06-10",
+    "Transaction_Date": "2022-06-10",
     "Posted Date": "2022-06-11",
     "Card No.": 5550,
     "Description": "THE CART",
@@ -2970,7 +2970,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-06-10",
+    "Transaction_Date": "2022-06-10",
     "Posted Date": "2022-06-11",
     "Card No.": 5550,
     "Description": "CONOCO - SEI 26927",
@@ -2979,7 +2979,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-06-09",
+    "Transaction_Date": "2022-06-09",
     "Posted Date": "2022-06-11",
     "Card No.": 5550,
     "Description": "SCRUMPY`S",
@@ -2988,7 +2988,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-06-09",
+    "Transaction_Date": "2022-06-09",
     "Posted Date": "2022-06-11",
     "Card No.": 5550,
     "Description": "ACE GILLETTS",
@@ -2997,7 +2997,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-06-08",
+    "Transaction_Date": "2022-06-08",
     "Posted Date": "2022-06-10",
     "Card No.": 5550,
     "Description": "SPROUTS FARMERS MARK",
@@ -3006,7 +3006,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-06-08",
+    "Transaction_Date": "2022-06-08",
     "Posted Date": "2022-06-09",
     "Card No.": 5550,
     "Description": "POUDRE PET & FEED SUPP",
@@ -3015,7 +3015,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-05-19",
+    "Transaction_Date": "2022-05-19",
     "Posted Date": "2022-05-19",
     "Card No.": 5550,
     "Description": "CAPITAL ONE MOBILE PYMT",
@@ -3024,7 +3024,7 @@ const cap_2022 = [
     "Credit": 27.43
   },
   {
-    "Transaction Date": "2022-05-13",
+    "Transaction_Date": "2022-05-13",
     "Posted Date": "2022-05-13",
     "Card No.": 5158,
     "Description": "CAPITAL ONE MOBILE PYMT",
@@ -3033,7 +3033,7 @@ const cap_2022 = [
     "Credit": 958.53
   },
   {
-    "Transaction Date": "2022-05-11",
+    "Transaction_Date": "2022-05-11",
     "Posted Date": "2022-05-13",
     "Card No.": 5158,
     "Description": "RISE!  A BREAKFAST PLA",
@@ -3042,7 +3042,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-05-12",
+    "Transaction_Date": "2022-05-12",
     "Posted Date": "2022-05-12",
     "Card No.": 5158,
     "Description": "SQ *ANHEUSER BUSCH FOR",
@@ -3051,7 +3051,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-05-11",
+    "Transaction_Date": "2022-05-11",
     "Posted Date": "2022-05-12",
     "Card No.": 5158,
     "Description": "KING SOOPERS #0018",
@@ -3060,7 +3060,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-05-11",
+    "Transaction_Date": "2022-05-11",
     "Posted Date": "2022-05-11",
     "Card No.": 5158,
     "Description": "CAPITAL ONE AUTOPAY PYMT",
@@ -3069,7 +3069,7 @@ const cap_2022 = [
     "Credit": 25
   },
   {
-    "Transaction Date": "2022-05-10",
+    "Transaction_Date": "2022-05-10",
     "Posted Date": "2022-05-11",
     "Card No.": 5158,
     "Description": "CINEMARK THEATRES 1125",
@@ -3078,7 +3078,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-05-10",
+    "Transaction_Date": "2022-05-10",
     "Posted Date": "2022-05-11",
     "Card No.": 5158,
     "Description": "KING SOOPERS #0018",
@@ -3087,7 +3087,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-05-09",
+    "Transaction_Date": "2022-05-09",
     "Posted Date": "2022-05-10",
     "Card No.": 5158,
     "Description": "JIFFY LUBE #17",
@@ -3096,7 +3096,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-05-09",
+    "Transaction_Date": "2022-05-09",
     "Posted Date": "2022-05-10",
     "Card No.": 5158,
     "Description": "SQ *ALGIERS HOOKAH AND",
@@ -3105,7 +3105,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-05-08",
+    "Transaction_Date": "2022-05-08",
     "Posted Date": "2022-05-10",
     "Card No.": 5158,
     "Description": "SPROUTS FARMERS MARK",
@@ -3114,7 +3114,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-05-09",
+    "Transaction_Date": "2022-05-09",
     "Posted Date": "2022-05-10",
     "Card No.": 5158,
     "Description": "SWEETHEART INC/TAVERN",
@@ -3123,7 +3123,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-05-09",
+    "Transaction_Date": "2022-05-09",
     "Posted Date": "2022-05-10",
     "Card No.": 5158,
     "Description": "SWEETHEART INC/TAVERN",
@@ -3132,7 +3132,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-05-08",
+    "Transaction_Date": "2022-05-08",
     "Posted Date": "2022-05-09",
     "Card No.": 5158,
     "Description": "LOAF N JUG # 0826",
@@ -3141,7 +3141,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-05-08",
+    "Transaction_Date": "2022-05-08",
     "Posted Date": "2022-05-09",
     "Card No.": 5158,
     "Description": "MCDONALD'S F190",
@@ -3150,7 +3150,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-05-07",
+    "Transaction_Date": "2022-05-07",
     "Posted Date": "2022-05-09",
     "Card No.": 5158,
     "Description": "WENDY'S-SO COLLEGE",
@@ -3159,7 +3159,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-05-07",
+    "Transaction_Date": "2022-05-07",
     "Posted Date": "2022-05-09",
     "Card No.": 5158,
     "Description": "LYRICCINEMA.COM",
@@ -3168,7 +3168,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-05-05",
+    "Transaction_Date": "2022-05-05",
     "Posted Date": "2022-05-07",
     "Card No.": 5158,
     "Description": "DOCTOR JOHN`S LINGERIE",
@@ -3177,7 +3177,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-05-06",
+    "Transaction_Date": "2022-05-06",
     "Posted Date": "2022-05-07",
     "Card No.": 5158,
     "Description": "LOVELAND MASSAGE AND E",
@@ -3186,7 +3186,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-05-05",
+    "Transaction_Date": "2022-05-05",
     "Posted Date": "2022-05-06",
     "Card No.": 5158,
     "Description": "KING SOOPERS #0018",
@@ -3195,7 +3195,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-05-04",
+    "Transaction_Date": "2022-05-04",
     "Posted Date": "2022-05-05",
     "Card No.": 5158,
     "Description": "PENROSE TAPHOUSE AND",
@@ -3204,7 +3204,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-05-04",
+    "Transaction_Date": "2022-05-04",
     "Posted Date": "2022-05-05",
     "Card No.": 5158,
     "Description": "DISCOUNT-TIRE-CO CON-0",
@@ -3213,7 +3213,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-05-03",
+    "Transaction_Date": "2022-05-03",
     "Posted Date": "2022-05-04",
     "Card No.": 5158,
     "Description": "RIO GRANDE MEXICAN RES",
@@ -3222,7 +3222,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-05-02",
+    "Transaction_Date": "2022-05-02",
     "Posted Date": "2022-05-04",
     "Card No.": 5158,
     "Description": "SPROUTS FARMERS MARK",
@@ -3231,7 +3231,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-05-02",
+    "Transaction_Date": "2022-05-02",
     "Posted Date": "2022-05-04",
     "Card No.": 5158,
     "Description": "SPROUTS FARMERS MARK",
@@ -3240,7 +3240,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-05-03",
+    "Transaction_Date": "2022-05-03",
     "Posted Date": "2022-05-03",
     "Card No.": 5158,
     "Description": "CAPITAL ONE ONLINE PYMT",
@@ -3249,7 +3249,7 @@ const cap_2022 = [
     "Credit": 930.84
   },
   {
-    "Transaction Date": "2022-05-02",
+    "Transaction_Date": "2022-05-02",
     "Posted Date": "2022-05-03",
     "Card No.": 5158,
     "Description": "WAL-MART #3177",
@@ -3258,7 +3258,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-05-01",
+    "Transaction_Date": "2022-05-01",
     "Posted Date": "2022-05-02",
     "Card No.": 5158,
     "Description": "TST* Stuft Burger Bar",
@@ -3267,7 +3267,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-04-30",
+    "Transaction_Date": "2022-04-30",
     "Posted Date": "2022-05-02",
     "Card No.": 5158,
     "Description": "SPROUTS FARMERS MARK",
@@ -3276,7 +3276,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-05-01",
+    "Transaction_Date": "2022-05-01",
     "Posted Date": "2022-05-02",
     "Card No.": 5158,
     "Description": "SQ *ALGIERS HOOKAH AND",
@@ -3285,7 +3285,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-04-30",
+    "Transaction_Date": "2022-04-30",
     "Posted Date": "2022-05-02",
     "Card No.": 5158,
     "Description": "THE CART",
@@ -3294,7 +3294,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-04-30",
+    "Transaction_Date": "2022-04-30",
     "Posted Date": "2022-05-02",
     "Card No.": 5158,
     "Description": "POUDRE PET & FEED SUPP",
@@ -3303,7 +3303,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-04-30",
+    "Transaction_Date": "2022-04-30",
     "Posted Date": "2022-05-02",
     "Card No.": 5158,
     "Description": "SQ *FITNESS GALLERY, L",
@@ -3312,7 +3312,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-04-29",
+    "Transaction_Date": "2022-04-29",
     "Posted Date": "2022-04-30",
     "Card No.": 5158,
     "Description": "LOAF N JUG # 0816",
@@ -3321,7 +3321,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-04-29",
+    "Transaction_Date": "2022-04-29",
     "Posted Date": "2022-04-30",
     "Card No.": 5158,
     "Description": "TST* Stuft Burger Bar",
@@ -3330,7 +3330,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-04-28",
+    "Transaction_Date": "2022-04-28",
     "Posted Date": "2022-04-30",
     "Card No.": 5158,
     "Description": "KING SOOPERS #609 FUEL",
@@ -3339,7 +3339,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-04-28",
+    "Transaction_Date": "2022-04-28",
     "Posted Date": "2022-04-29",
     "Card No.": 5158,
     "Description": "SQ *HORSETOOTH STEM AN",
@@ -3348,7 +3348,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-04-26",
+    "Transaction_Date": "2022-04-26",
     "Posted Date": "2022-04-28",
     "Card No.": 5158,
     "Description": "SPROUTS FARMERS MARK",
@@ -3357,7 +3357,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-04-27",
+    "Transaction_Date": "2022-04-27",
     "Posted Date": "2022-04-28",
     "Card No.": 5158,
     "Description": "KING SOOPERS #0018",
@@ -3366,7 +3366,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-04-27",
+    "Transaction_Date": "2022-04-27",
     "Posted Date": "2022-04-28",
     "Card No.": 5158,
     "Description": "LYRICCINEMA.COM",
@@ -3375,7 +3375,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-04-25",
+    "Transaction_Date": "2022-04-25",
     "Posted Date": "2022-04-27",
     "Card No.": 5158,
     "Description": "SPROUTS FARMERS MARK",
@@ -3384,7 +3384,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-04-26",
+    "Transaction_Date": "2022-04-26",
     "Posted Date": "2022-04-27",
     "Card No.": 5158,
     "Description": "SQ *FOCOCO EVENTS",
@@ -3393,7 +3393,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-04-26",
+    "Transaction_Date": "2022-04-26",
     "Posted Date": "2022-04-27",
     "Card No.": 5158,
     "Description": "SQ *XOCHITL ARREOLA",
@@ -3402,7 +3402,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-04-26",
+    "Transaction_Date": "2022-04-26",
     "Posted Date": "2022-04-27",
     "Card No.": 5158,
     "Description": "RAISING CANE'S #324",
@@ -3411,7 +3411,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-04-26",
+    "Transaction_Date": "2022-04-26",
     "Posted Date": "2022-04-26",
     "Card No.": 5158,
     "Description": "CAPITAL ONE ONLINE PYMT",
@@ -3420,7 +3420,7 @@ const cap_2022 = [
     "Credit": 814.45
   },
   {
-    "Transaction Date": "2022-04-22",
+    "Transaction_Date": "2022-04-22",
     "Posted Date": "2022-04-25",
     "Card No.": 5158,
     "Description": "LA RUMBA",
@@ -3429,7 +3429,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-04-24",
+    "Transaction_Date": "2022-04-24",
     "Posted Date": "2022-04-25",
     "Card No.": 5158,
     "Description": "POUDRE PET & FEED SUPP",
@@ -3438,7 +3438,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-04-24",
+    "Transaction_Date": "2022-04-24",
     "Posted Date": "2022-04-25",
     "Card No.": 5158,
     "Description": "DOCTOR JOHN`S LINGERIE",
@@ -3447,7 +3447,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-04-23",
+    "Transaction_Date": "2022-04-23",
     "Posted Date": "2022-04-25",
     "Card No.": 5158,
     "Description": "KING SOOPERS #0018",
@@ -3456,7 +3456,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-04-22",
+    "Transaction_Date": "2022-04-22",
     "Posted Date": "2022-04-23",
     "Card No.": 5158,
     "Description": "STARBUCKS STORE 14451",
@@ -3465,7 +3465,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-04-22",
+    "Transaction_Date": "2022-04-22",
     "Posted Date": "2022-04-23",
     "Card No.": 5158,
     "Description": "WAL-MART #2729",
@@ -3474,7 +3474,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-04-21",
+    "Transaction_Date": "2022-04-21",
     "Posted Date": "2022-04-23",
     "Card No.": 5158,
     "Description": "EXXONMOBIL    99355943",
@@ -3483,7 +3483,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-04-20",
+    "Transaction_Date": "2022-04-20",
     "Posted Date": "2022-04-22",
     "Card No.": 5158,
     "Description": "SPROUTS FARMERS MARK",
@@ -3492,7 +3492,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-04-20",
+    "Transaction_Date": "2022-04-20",
     "Posted Date": "2022-04-22",
     "Card No.": 5158,
     "Description": "SPROUTS FARMERS MARK",
@@ -3501,7 +3501,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-04-20",
+    "Transaction_Date": "2022-04-20",
     "Posted Date": "2022-04-21",
     "Card No.": 5158,
     "Description": "POUDRE PET & FEED SUPP",
@@ -3510,7 +3510,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-04-19",
+    "Transaction_Date": "2022-04-19",
     "Posted Date": "2022-04-20",
     "Card No.": 5158,
     "Description": "CINEMARK THEATRES 1125",
@@ -3519,7 +3519,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-04-18",
+    "Transaction_Date": "2022-04-18",
     "Posted Date": "2022-04-20",
     "Card No.": 5158,
     "Description": "SPROUTS FARMERS MARK",
@@ -3528,7 +3528,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-04-18",
+    "Transaction_Date": "2022-04-18",
     "Posted Date": "2022-04-19",
     "Card No.": 5158,
     "Description": "THE CART",
@@ -3537,7 +3537,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-04-18",
+    "Transaction_Date": "2022-04-18",
     "Posted Date": "2022-04-19",
     "Card No.": 5158,
     "Description": "SQ *ALGIERS HOOKAH AND",
@@ -3546,7 +3546,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-04-17",
+    "Transaction_Date": "2022-04-17",
     "Posted Date": "2022-04-19",
     "Card No.": 5158,
     "Description": "WINE AND LIQUOR SPECIA",
@@ -3555,7 +3555,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-04-17",
+    "Transaction_Date": "2022-04-17",
     "Posted Date": "2022-04-18",
     "Card No.": 5158,
     "Description": "LOAF N JUG # 0816",
@@ -3564,7 +3564,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-04-17",
+    "Transaction_Date": "2022-04-17",
     "Posted Date": "2022-04-18",
     "Card No.": 5158,
     "Description": "Edwards Pipe & Cigar S",
@@ -3573,7 +3573,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-04-16",
+    "Transaction_Date": "2022-04-16",
     "Posted Date": "2022-04-18",
     "Card No.": 5158,
     "Description": "BISON LIQUORS",
@@ -3582,7 +3582,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-04-17",
+    "Transaction_Date": "2022-04-17",
     "Posted Date": "2022-04-18",
     "Card No.": 5158,
     "Description": "KING SOOPERS #0018",
@@ -3591,7 +3591,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-04-16",
+    "Transaction_Date": "2022-04-16",
     "Posted Date": "2022-04-18",
     "Card No.": 5158,
     "Description": "LAMARS DONUTS 38",
@@ -3600,7 +3600,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-04-16",
+    "Transaction_Date": "2022-04-16",
     "Posted Date": "2022-04-18",
     "Card No.": 5158,
     "Description": "KING SOOPERS #0018",
@@ -3609,7 +3609,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-04-14",
+    "Transaction_Date": "2022-04-14",
     "Posted Date": "2022-04-15",
     "Card No.": 5158,
     "Description": "URBAN EGG FORT COLLINS",
@@ -3618,7 +3618,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-04-14",
+    "Transaction_Date": "2022-04-14",
     "Posted Date": "2022-04-15",
     "Card No.": 5158,
     "Description": "SQ *THE LITTLE BIRD BA",
@@ -3627,7 +3627,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-04-12",
+    "Transaction_Date": "2022-04-12",
     "Posted Date": "2022-04-14",
     "Card No.": 5158,
     "Description": "TONYS",
@@ -3636,7 +3636,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-04-13",
+    "Transaction_Date": "2022-04-13",
     "Posted Date": "2022-04-14",
     "Card No.": 5158,
     "Description": "ISLAND GRILL",
@@ -3645,7 +3645,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-04-13",
+    "Transaction_Date": "2022-04-13",
     "Posted Date": "2022-04-14",
     "Card No.": 5158,
     "Description": "POUDRE PET & FEED SUPP",
@@ -3654,7 +3654,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-04-13",
+    "Transaction_Date": "2022-04-13",
     "Posted Date": "2022-04-14",
     "Card No.": 5158,
     "Description": "SQ *ALGIERS HOOKAH AND",
@@ -3663,7 +3663,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-04-12",
+    "Transaction_Date": "2022-04-12",
     "Posted Date": "2022-04-13",
     "Card No.": 5158,
     "Description": "TAP AND HANDLE - FORT",
@@ -3672,7 +3672,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-04-12",
+    "Transaction_Date": "2022-04-12",
     "Posted Date": "2022-04-13",
     "Card No.": 5158,
     "Description": "MCDONALD'S F190",
@@ -3681,7 +3681,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-04-13",
+    "Transaction_Date": "2022-04-13",
     "Posted Date": "2022-04-13",
     "Card No.": 5158,
     "Description": "SQ *ANHEUSER BUSCH FOR",
@@ -3690,7 +3690,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-04-12",
+    "Transaction_Date": "2022-04-12",
     "Posted Date": "2022-04-13",
     "Card No.": 5158,
     "Description": "COFC N. AZTLAN",
@@ -3699,7 +3699,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-04-11",
+    "Transaction_Date": "2022-04-11",
     "Posted Date": "2022-04-13",
     "Card No.": 5158,
     "Description": "SPROUTS FARMERS MARK",
@@ -3708,7 +3708,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-04-12",
+    "Transaction_Date": "2022-04-12",
     "Posted Date": "2022-04-13",
     "Card No.": 5158,
     "Description": "SQ *FOCOCO EVENTS",
@@ -3717,7 +3717,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-04-11",
+    "Transaction_Date": "2022-04-11",
     "Posted Date": "2022-04-11",
     "Card No.": 5158,
     "Description": "CAPITAL ONE AUTOPAY PYMT",
@@ -3726,7 +3726,7 @@ const cap_2022 = [
     "Credit": 25
   },
   {
-    "Transaction Date": "2022-04-09",
+    "Transaction_Date": "2022-04-09",
     "Posted Date": "2022-04-11",
     "Card No.": 5158,
     "Description": "SPROUTS FARMERS MARK",
@@ -3735,7 +3735,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-04-09",
+    "Transaction_Date": "2022-04-09",
     "Posted Date": "2022-04-11",
     "Card No.": 5158,
     "Description": "THE HOME DEPOT #1512",
@@ -3744,7 +3744,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-04-10",
+    "Transaction_Date": "2022-04-10",
     "Posted Date": "2022-04-11",
     "Card No.": 5158,
     "Description": "TST* CHIPPERS HORSETOO",
@@ -3753,7 +3753,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-04-10",
+    "Transaction_Date": "2022-04-10",
     "Posted Date": "2022-04-11",
     "Card No.": 5158,
     "Description": "RAISING CANE'S #324",
@@ -3762,7 +3762,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-04-08",
+    "Transaction_Date": "2022-04-08",
     "Posted Date": "2022-04-08",
     "Card No.": 5158,
     "Description": "CAPITAL ONE MOBILE PYMT",
@@ -3771,7 +3771,7 @@ const cap_2022 = [
     "Credit": 962.99
   },
   {
-    "Transaction Date": "2022-04-07",
+    "Transaction_Date": "2022-04-07",
     "Posted Date": "2022-04-08",
     "Card No.": 5158,
     "Description": "POUDRE PET & FEED SUPP",
@@ -3780,7 +3780,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-04-05",
+    "Transaction_Date": "2022-04-05",
     "Posted Date": "2022-04-07",
     "Card No.": 5158,
     "Description": "SPROUTS FARMERS MARK",
@@ -3789,7 +3789,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-04-02",
+    "Transaction_Date": "2022-04-02",
     "Posted Date": "2022-04-04",
     "Card No.": 5158,
     "Description": "SPROUTS FARMERS MARK",
@@ -3798,7 +3798,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-04-03",
+    "Transaction_Date": "2022-04-03",
     "Posted Date": "2022-04-04",
     "Card No.": 5158,
     "Description": "KING SOOPERS #0018",
@@ -3807,7 +3807,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-04-02",
+    "Transaction_Date": "2022-04-02",
     "Posted Date": "2022-04-04",
     "Card No.": 5158,
     "Description": "BARNES & NOBLE #2611",
@@ -3816,7 +3816,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-04-02",
+    "Transaction_Date": "2022-04-02",
     "Posted Date": "2022-04-04",
     "Card No.": 5158,
     "Description": "POUDRE PET & FEED SUPP",
@@ -3825,7 +3825,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-04-01",
+    "Transaction_Date": "2022-04-01",
     "Posted Date": "2022-04-04",
     "Card No.": 5158,
     "Description": "KING SOOPERS #0018",
@@ -3834,7 +3834,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-03-31",
+    "Transaction_Date": "2022-03-31",
     "Posted Date": "2022-04-02",
     "Card No.": 5158,
     "Description": "Edwards Pipe & Cigar S",
@@ -3843,7 +3843,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-04-01",
+    "Transaction_Date": "2022-04-01",
     "Posted Date": "2022-04-02",
     "Card No.": 5158,
     "Description": "TST* Jax Fish House -",
@@ -3852,7 +3852,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-04-01",
+    "Transaction_Date": "2022-04-01",
     "Posted Date": "2022-04-02",
     "Card No.": 5158,
     "Description": "SQ *ALGIERS HOOKAH AND",
@@ -3861,7 +3861,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-03-30",
+    "Transaction_Date": "2022-03-30",
     "Posted Date": "2022-03-31",
     "Card No.": 5158,
     "Description": "THE CART",
@@ -3870,7 +3870,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-03-30",
+    "Transaction_Date": "2022-03-30",
     "Posted Date": "2022-03-31",
     "Card No.": 5158,
     "Description": "KING SOOPERS #0018",
@@ -3879,7 +3879,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-03-29",
+    "Transaction_Date": "2022-03-29",
     "Posted Date": "2022-03-30",
     "Card No.": 5158,
     "Description": "ISLAND GRILL",
@@ -3888,7 +3888,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-03-29",
+    "Transaction_Date": "2022-03-29",
     "Posted Date": "2022-03-30",
     "Card No.": 5158,
     "Description": "POUDRE PET & FEED SUPP",
@@ -3897,7 +3897,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-03-29",
+    "Transaction_Date": "2022-03-29",
     "Posted Date": "2022-03-30",
     "Card No.": 5158,
     "Description": "THE HEARING PLACE",
@@ -3906,7 +3906,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-03-29",
+    "Transaction_Date": "2022-03-29",
     "Posted Date": "2022-03-30",
     "Card No.": 5158,
     "Description": "SQ *XOCHITL ARREOLA",
@@ -3915,7 +3915,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-03-28",
+    "Transaction_Date": "2022-03-28",
     "Posted Date": "2022-03-29",
     "Card No.": 5158,
     "Description": "THE HEARING PLACE",
@@ -3924,7 +3924,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-03-26",
+    "Transaction_Date": "2022-03-26",
     "Posted Date": "2022-03-28",
     "Card No.": 5158,
     "Description": "POUDRE PET & FEED SUPP",
@@ -3933,7 +3933,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-03-26",
+    "Transaction_Date": "2022-03-26",
     "Posted Date": "2022-03-28",
     "Card No.": 5158,
     "Description": "THE CART",
@@ -3942,7 +3942,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-03-24",
+    "Transaction_Date": "2022-03-24",
     "Posted Date": "2022-03-26",
     "Card No.": 5158,
     "Description": "SPROUTS FARMERS MARK",
@@ -3951,7 +3951,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-03-25",
+    "Transaction_Date": "2022-03-25",
     "Posted Date": "2022-03-26",
     "Card No.": 5158,
     "Description": "KING SOOPERS #0018",
@@ -3960,7 +3960,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-03-25",
+    "Transaction_Date": "2022-03-25",
     "Posted Date": "2022-03-25",
     "Card No.": 5158,
     "Description": "CAPITAL ONE MOBILE PYMT",
@@ -3969,7 +3969,7 @@ const cap_2022 = [
     "Credit": 480.54
   },
   {
-    "Transaction Date": "2022-03-24",
+    "Transaction_Date": "2022-03-24",
     "Posted Date": "2022-03-25",
     "Card No.": 5158,
     "Description": "POUDRE PET & FEED SUPP",
@@ -3978,7 +3978,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-03-23",
+    "Transaction_Date": "2022-03-23",
     "Posted Date": "2022-03-24",
     "Card No.": 5158,
     "Description": "THE CART",
@@ -3987,7 +3987,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-03-23",
+    "Transaction_Date": "2022-03-23",
     "Posted Date": "2022-03-24",
     "Card No.": 5158,
     "Description": "THE CART",
@@ -3996,7 +3996,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-03-22",
+    "Transaction_Date": "2022-03-22",
     "Posted Date": "2022-03-24",
     "Card No.": 5158,
     "Description": "CHICK-FIL-A #02346",
@@ -4005,7 +4005,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-03-22",
+    "Transaction_Date": "2022-03-22",
     "Posted Date": "2022-03-24",
     "Card No.": 5158,
     "Description": "KING SOOPERS #0018",
@@ -4014,7 +4014,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-03-20",
+    "Transaction_Date": "2022-03-20",
     "Posted Date": "2022-03-22",
     "Card No.": 5158,
     "Description": "EMPIRE 3594",
@@ -4023,7 +4023,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-03-20",
+    "Transaction_Date": "2022-03-20",
     "Posted Date": "2022-03-22",
     "Card No.": 5158,
     "Description": "SPROUTS FARMERS MARK",
@@ -4032,7 +4032,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-03-20",
+    "Transaction_Date": "2022-03-20",
     "Posted Date": "2022-03-21",
     "Card No.": 5158,
     "Description": "POUDRE PET & FEED SUPP",
@@ -4041,7 +4041,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-03-20",
+    "Transaction_Date": "2022-03-20",
     "Posted Date": "2022-03-21",
     "Card No.": 5158,
     "Description": "SQ *ALGIERS HOOKAH AND",
@@ -4050,7 +4050,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-03-18",
+    "Transaction_Date": "2022-03-18",
     "Posted Date": "2022-03-21",
     "Card No.": 5158,
     "Description": "SPROUTS FARMERS MARK",
@@ -4059,7 +4059,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-03-17",
+    "Transaction_Date": "2022-03-17",
     "Posted Date": "2022-03-19",
     "Card No.": 5158,
     "Description": "BONDI BEACH BAR",
@@ -4068,7 +4068,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-03-17",
+    "Transaction_Date": "2022-03-17",
     "Posted Date": "2022-03-19",
     "Card No.": 5158,
     "Description": "BONDI BEACH BAR",
@@ -4077,7 +4077,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-03-17",
+    "Transaction_Date": "2022-03-17",
     "Posted Date": "2022-03-19",
     "Card No.": 5158,
     "Description": "TST* Lucky Joes Sidewa",
@@ -4086,7 +4086,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-03-17",
+    "Transaction_Date": "2022-03-17",
     "Posted Date": "2022-03-18",
     "Card No.": 5158,
     "Description": "MCDONALD'S F190",
@@ -4095,7 +4095,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-03-17",
+    "Transaction_Date": "2022-03-17",
     "Posted Date": "2022-03-18",
     "Card No.": 5158,
     "Description": "147 FORT COLLINS, INC.",
@@ -4104,7 +4104,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-03-16",
+    "Transaction_Date": "2022-03-16",
     "Posted Date": "2022-03-18",
     "Card No.": 5158,
     "Description": "COLORADO CONVENTION CE",
@@ -4113,7 +4113,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-03-17",
+    "Transaction_Date": "2022-03-17",
     "Posted Date": "2022-03-17",
     "Card No.": 5158,
     "Description": "CNK*CINEMARK.COM 1125",
@@ -4122,7 +4122,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-03-14",
+    "Transaction_Date": "2022-03-14",
     "Posted Date": "2022-03-16",
     "Card No.": 5158,
     "Description": "SPROUTS FARMERS MARK",
@@ -4131,7 +4131,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-03-12",
+    "Transaction_Date": "2022-03-12",
     "Posted Date": "2022-03-14",
     "Card No.": 5158,
     "Description": "THE HOME DEPOT #1512",
@@ -4140,7 +4140,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-03-12",
+    "Transaction_Date": "2022-03-12",
     "Posted Date": "2022-03-14",
     "Card No.": 5158,
     "Description": "KING SOOPERS #0018",
@@ -4149,7 +4149,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-03-12",
+    "Transaction_Date": "2022-03-12",
     "Posted Date": "2022-03-14",
     "Card No.": 5158,
     "Description": "CONOCO - SEI 26803",
@@ -4158,7 +4158,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-03-10",
+    "Transaction_Date": "2022-03-10",
     "Posted Date": "2022-03-12",
     "Card No.": 5158,
     "Description": "SPROUTS FARMERS MARK",
@@ -4167,7 +4167,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-03-11",
+    "Transaction_Date": "2022-03-11",
     "Posted Date": "2022-03-11",
     "Card No.": 5158,
     "Description": "CAPITAL ONE ONLINE PYMT",
@@ -4176,7 +4176,7 @@ const cap_2022 = [
     "Credit": 673.6
   },
   {
-    "Transaction Date": "2022-03-11",
+    "Transaction_Date": "2022-03-11",
     "Posted Date": "2022-03-11",
     "Card No.": 5158,
     "Description": "CAPITAL ONE AUTOPAY PYMT",
@@ -4185,7 +4185,7 @@ const cap_2022 = [
     "Credit": 25
   },
   {
-    "Transaction Date": "2022-03-10",
+    "Transaction_Date": "2022-03-10",
     "Posted Date": "2022-03-11",
     "Card No.": 5158,
     "Description": "THE CART",
@@ -4194,7 +4194,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-03-09",
+    "Transaction_Date": "2022-03-09",
     "Posted Date": "2022-03-10",
     "Card No.": 5158,
     "Description": "THE CART",
@@ -4203,7 +4203,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-03-09",
+    "Transaction_Date": "2022-03-09",
     "Posted Date": "2022-03-10",
     "Card No.": 5158,
     "Description": "ISLAND GRILL",
@@ -4212,7 +4212,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-03-08",
+    "Transaction_Date": "2022-03-08",
     "Posted Date": "2022-03-09",
     "Card No.": 5158,
     "Description": "LOAF N JUG # 0812",
@@ -4221,7 +4221,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-03-08",
+    "Transaction_Date": "2022-03-08",
     "Posted Date": "2022-03-09",
     "Card No.": 5158,
     "Description": "JAX - 01",
@@ -4230,7 +4230,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-03-08",
+    "Transaction_Date": "2022-03-08",
     "Posted Date": "2022-03-09",
     "Card No.": 5158,
     "Description": "MCDONALD'S F190",
@@ -4239,7 +4239,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-03-07",
+    "Transaction_Date": "2022-03-07",
     "Posted Date": "2022-03-09",
     "Card No.": 5158,
     "Description": "AUTOZONE #0836",
@@ -4248,7 +4248,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-03-06",
+    "Transaction_Date": "2022-03-06",
     "Posted Date": "2022-03-08",
     "Card No.": 5158,
     "Description": "KING SOOPERS #0018",
@@ -4257,7 +4257,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-03-04",
+    "Transaction_Date": "2022-03-04",
     "Posted Date": "2022-03-07",
     "Card No.": 5158,
     "Description": "RISE!  A BREAKFAST PLA",
@@ -4266,7 +4266,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-03-06",
+    "Transaction_Date": "2022-03-06",
     "Posted Date": "2022-03-07",
     "Card No.": 5158,
     "Description": "SQ *ALGIERS HOOKAH AND",
@@ -4275,7 +4275,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-03-05",
+    "Transaction_Date": "2022-03-05",
     "Posted Date": "2022-03-07",
     "Card No.": 5158,
     "Description": "TST* SLATERS 5050 - DE",
@@ -4284,7 +4284,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-03-05",
+    "Transaction_Date": "2022-03-05",
     "Posted Date": "2022-03-07",
     "Card No.": 5158,
     "Description": "GOOD DAY PHARMACY 10 S",
@@ -4293,7 +4293,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-03-05",
+    "Transaction_Date": "2022-03-05",
     "Posted Date": "2022-03-07",
     "Card No.": 5158,
     "Description": "BIG D #50",
@@ -4302,7 +4302,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-03-05",
+    "Transaction_Date": "2022-03-05",
     "Posted Date": "2022-03-07",
     "Card No.": 5158,
     "Description": "BIG D #50",
@@ -4311,7 +4311,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-03-03",
+    "Transaction_Date": "2022-03-03",
     "Posted Date": "2022-03-04",
     "Card No.": 5158,
     "Description": "KING SOOPERS #0018",
@@ -4320,7 +4320,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-02-28",
+    "Transaction_Date": "2022-02-28",
     "Posted Date": "2022-03-02",
     "Card No.": 5158,
     "Description": "SPROUTS FARMERS MARK",
@@ -4329,7 +4329,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-02-28",
+    "Transaction_Date": "2022-02-28",
     "Posted Date": "2022-03-01",
     "Card No.": 5158,
     "Description": "SQ *FORT COLLINS COFFE",
@@ -4338,7 +4338,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-02-27",
+    "Transaction_Date": "2022-02-27",
     "Posted Date": "2022-02-28",
     "Card No.": 5158,
     "Description": "PARAMOUNT THEATER",
@@ -4347,7 +4347,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-02-27",
+    "Transaction_Date": "2022-02-27",
     "Posted Date": "2022-02-28",
     "Card No.": 5158,
     "Description": "BIG D #50",
@@ -4356,7 +4356,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-02-26",
+    "Transaction_Date": "2022-02-26",
     "Posted Date": "2022-02-26",
     "Card No.": 5158,
     "Description": "CAPITAL ONE ONLINE PYMT",
@@ -4365,7 +4365,7 @@ const cap_2022 = [
     "Credit": 968.26
   },
   {
-    "Transaction Date": "2022-02-22",
+    "Transaction_Date": "2022-02-22",
     "Posted Date": "2022-02-24",
     "Card No.": 5158,
     "Description": "SPROUTS FARMERS MARK",
@@ -4374,7 +4374,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-02-22",
+    "Transaction_Date": "2022-02-22",
     "Posted Date": "2022-02-23",
     "Card No.": 5158,
     "Description": "CAFE RIO 0050 FT COLLI",
@@ -4383,7 +4383,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-02-22",
+    "Transaction_Date": "2022-02-22",
     "Posted Date": "2022-02-23",
     "Card No.": 5158,
     "Description": "SQ *XOCHITL ARREOLA",
@@ -4392,7 +4392,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-02-20",
+    "Transaction_Date": "2022-02-20",
     "Posted Date": "2022-02-21",
     "Card No.": 5158,
     "Description": "THE WHISKEY",
@@ -4401,7 +4401,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-02-20",
+    "Transaction_Date": "2022-02-20",
     "Posted Date": "2022-02-21",
     "Card No.": 5158,
     "Description": "THE CART",
@@ -4410,7 +4410,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-02-20",
+    "Transaction_Date": "2022-02-20",
     "Posted Date": "2022-02-21",
     "Card No.": 5158,
     "Description": "POUDRE PET & FEED SUPP",
@@ -4419,7 +4419,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-02-19",
+    "Transaction_Date": "2022-02-19",
     "Posted Date": "2022-02-21",
     "Card No.": 5158,
     "Description": "THE CART",
@@ -4428,7 +4428,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-02-20",
+    "Transaction_Date": "2022-02-20",
     "Posted Date": "2022-02-21",
     "Card No.": 5158,
     "Description": "SQ *SLYCE PIZZA CO.",
@@ -4437,7 +4437,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-02-14",
+    "Transaction_Date": "2022-02-14",
     "Posted Date": "2022-02-21",
     "Card No.": 5158,
     "Description": "BROWN PALACE F&BRETAIL",
@@ -4446,7 +4446,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-02-18",
+    "Transaction_Date": "2022-02-18",
     "Posted Date": "2022-02-21",
     "Card No.": 5158,
     "Description": "SPROUTS FARMERS MARK",
@@ -4455,7 +4455,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-02-18",
+    "Transaction_Date": "2022-02-18",
     "Posted Date": "2022-02-21",
     "Card No.": 5158,
     "Description": "MOONDANCE WINE & SPIRI",
@@ -4464,7 +4464,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-02-17",
+    "Transaction_Date": "2022-02-17",
     "Posted Date": "2022-02-19",
     "Card No.": 5158,
     "Description": "SCRUMPY`S",
@@ -4473,7 +4473,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-02-15",
+    "Transaction_Date": "2022-02-15",
     "Posted Date": "2022-02-18",
     "Card No.": 5158,
     "Description": "CHIPPERS HORSETOOTH",
@@ -4482,7 +4482,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-02-16",
+    "Transaction_Date": "2022-02-16",
     "Posted Date": "2022-02-17",
     "Card No.": 5158,
     "Description": "MCDONALD'S F190",
@@ -4491,7 +4491,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-02-16",
+    "Transaction_Date": "2022-02-16",
     "Posted Date": "2022-02-17",
     "Card No.": 5158,
     "Description": "KING SOOPERS #0018",
@@ -4500,7 +4500,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-02-15",
+    "Transaction_Date": "2022-02-15",
     "Posted Date": "2022-02-17",
     "Card No.": 5158,
     "Description": "CHIPPERS HORSETOOTH",
@@ -4509,7 +4509,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-02-15",
+    "Transaction_Date": "2022-02-15",
     "Posted Date": "2022-02-17",
     "Card No.": 5158,
     "Description": "CHIPPERS HORSETOOTH",
@@ -4518,7 +4518,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-02-15",
+    "Transaction_Date": "2022-02-15",
     "Posted Date": "2022-02-16",
     "Card No.": 5158,
     "Description": "POUDRE PET & FEED SUPP",
@@ -4527,7 +4527,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-02-14",
+    "Transaction_Date": "2022-02-14",
     "Posted Date": "2022-02-16",
     "Card No.": 5158,
     "Description": "SPROUTS FARMERS MARK",
@@ -4536,7 +4536,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-02-15",
+    "Transaction_Date": "2022-02-15",
     "Posted Date": "2022-02-16",
     "Card No.": 5158,
     "Description": "KING SOOPERS #0073",
@@ -4545,7 +4545,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-02-13",
+    "Transaction_Date": "2022-02-13",
     "Posted Date": "2022-02-15",
     "Card No.": 5158,
     "Description": "LA RUMBA",
@@ -4554,7 +4554,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-02-13",
+    "Transaction_Date": "2022-02-13",
     "Posted Date": "2022-02-15",
     "Card No.": 5158,
     "Description": "TIME PARK LLC LOT 6",
@@ -4563,7 +4563,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-02-13",
+    "Transaction_Date": "2022-02-13",
     "Posted Date": "2022-02-14",
     "Card No.": 5158,
     "Description": "RIOJA",
@@ -4572,7 +4572,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-02-13",
+    "Transaction_Date": "2022-02-13",
     "Posted Date": "2022-02-14",
     "Card No.": 5158,
     "Description": "PITA GRILL AND HOOKAH",
@@ -4581,7 +4581,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-02-12",
+    "Transaction_Date": "2022-02-12",
     "Posted Date": "2022-02-14",
     "Card No.": 5158,
     "Description": "TIME PARK LLC LOT 6",
@@ -4590,7 +4590,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-02-12",
+    "Transaction_Date": "2022-02-12",
     "Posted Date": "2022-02-14",
     "Card No.": 5158,
     "Description": "CRYSTALS LIQUOR",
@@ -4599,7 +4599,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-02-12",
+    "Transaction_Date": "2022-02-12",
     "Posted Date": "2022-02-14",
     "Card No.": 5158,
     "Description": "SQ *COLORADO SAKE CO",
@@ -4608,7 +4608,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-02-12",
+    "Transaction_Date": "2022-02-12",
     "Posted Date": "2022-02-12",
     "Card No.": 5158,
     "Description": "CAPITAL ONE ONLINE PYMT",
@@ -4617,7 +4617,7 @@ const cap_2022 = [
     "Credit": 747.8
   },
   {
-    "Transaction Date": "2022-02-11",
+    "Transaction_Date": "2022-02-11",
     "Posted Date": "2022-02-12",
     "Card No.": 5158,
     "Description": "POUDRE PET & FEED SUPP",
@@ -4626,7 +4626,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-02-11",
+    "Transaction_Date": "2022-02-11",
     "Posted Date": "2022-02-12",
     "Card No.": 5158,
     "Description": "SQ *BINDLE COFFEE",
@@ -4635,7 +4635,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-02-11",
+    "Transaction_Date": "2022-02-11",
     "Posted Date": "2022-02-11",
     "Card No.": 5158,
     "Description": "CAPITAL ONE AUTOPAY PYMT",
@@ -4644,7 +4644,7 @@ const cap_2022 = [
     "Credit": 25
   },
   {
-    "Transaction Date": "2022-02-11",
+    "Transaction_Date": "2022-02-11",
     "Posted Date": "2022-02-11",
     "Card No.": 5158,
     "Description": "CHEBA HUT - LAUREL ST",
@@ -4653,7 +4653,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-02-10",
+    "Transaction_Date": "2022-02-10",
     "Posted Date": "2022-02-11",
     "Card No.": 5158,
     "Description": "HOSPITAL AUTOMOTIVE",
@@ -4662,7 +4662,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-02-09",
+    "Transaction_Date": "2022-02-09",
     "Posted Date": "2022-02-11",
     "Card No.": 5158,
     "Description": "SPROUTS FARMERS MARK",
@@ -4671,7 +4671,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-02-09",
+    "Transaction_Date": "2022-02-09",
     "Posted Date": "2022-02-11",
     "Card No.": 5158,
     "Description": "KING SOOPERS #0018",
@@ -4680,7 +4680,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-02-10",
+    "Transaction_Date": "2022-02-10",
     "Posted Date": "2022-02-11",
     "Card No.": 5158,
     "Description": "SQ *ALGIERS HOOKAH AND",
@@ -4689,7 +4689,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-02-10",
+    "Transaction_Date": "2022-02-10",
     "Posted Date": "2022-02-11",
     "Card No.": 5158,
     "Description": "RAISING CANE'S #324",
@@ -4698,7 +4698,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-02-09",
+    "Transaction_Date": "2022-02-09",
     "Posted Date": "2022-02-10",
     "Card No.": 5158,
     "Description": "THE CART",
@@ -4707,7 +4707,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-02-09",
+    "Transaction_Date": "2022-02-09",
     "Posted Date": "2022-02-10",
     "Card No.": 5158,
     "Description": "SQ *NEW MOON PUB AND K",
@@ -4716,7 +4716,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-02-09",
+    "Transaction_Date": "2022-02-09",
     "Posted Date": "2022-02-10",
     "Card No.": 5158,
     "Description": "SQ *ALGIERS HOOKAH AND",
@@ -4725,7 +4725,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-02-08",
+    "Transaction_Date": "2022-02-08",
     "Posted Date": "2022-02-09",
     "Card No.": 5158,
     "Description": "THE CART",
@@ -4734,7 +4734,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-02-08",
+    "Transaction_Date": "2022-02-08",
     "Posted Date": "2022-02-09",
     "Card No.": 5158,
     "Description": "MCDONALD'S F190",
@@ -4743,7 +4743,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-02-06",
+    "Transaction_Date": "2022-02-06",
     "Posted Date": "2022-02-07",
     "Card No.": 5158,
     "Description": "THE CART",
@@ -4752,7 +4752,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-02-06",
+    "Transaction_Date": "2022-02-06",
     "Posted Date": "2022-02-07",
     "Card No.": 5158,
     "Description": "POUDRE PET & FEED SUPP",
@@ -4761,7 +4761,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-02-05",
+    "Transaction_Date": "2022-02-05",
     "Posted Date": "2022-02-07",
     "Card No.": 5158,
     "Description": "KING SOOPERS # 0107",
@@ -4770,7 +4770,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-02-05",
+    "Transaction_Date": "2022-02-05",
     "Posted Date": "2022-02-07",
     "Card No.": 5158,
     "Description": "KING SOOPERS # 0107",
@@ -4779,7 +4779,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-02-05",
+    "Transaction_Date": "2022-02-05",
     "Posted Date": "2022-02-07",
     "Card No.": 5158,
     "Description": "SQ *ALGIERS HOOKAH AND",
@@ -4788,7 +4788,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-02-04",
+    "Transaction_Date": "2022-02-04",
     "Posted Date": "2022-02-07",
     "Card No.": 5158,
     "Description": "THE HOME DEPOT #1512",
@@ -4797,7 +4797,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-02-05",
+    "Transaction_Date": "2022-02-05",
     "Posted Date": "2022-02-07",
     "Card No.": 5158,
     "Description": "CAFE RIO 0050 FT COLLI",
@@ -4806,7 +4806,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-02-04",
+    "Transaction_Date": "2022-02-04",
     "Posted Date": "2022-02-05",
     "Card No.": 5158,
     "Description": "POUDRE PET & FEED SUPP",
@@ -4815,7 +4815,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-02-03",
+    "Transaction_Date": "2022-02-03",
     "Posted Date": "2022-02-05",
     "Card No.": 5158,
     "Description": "SPROUTS FARMERS MARK",
@@ -4824,7 +4824,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-02-02",
+    "Transaction_Date": "2022-02-02",
     "Posted Date": "2022-02-04",
     "Card No.": 5158,
     "Description": "THE SUMMIT WINDSOR",
@@ -4833,7 +4833,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-02-03",
+    "Transaction_Date": "2022-02-03",
     "Posted Date": "2022-02-04",
     "Card No.": 5158,
     "Description": "BCF Etsy Uplift",
@@ -4842,7 +4842,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-02-03",
+    "Transaction_Date": "2022-02-03",
     "Posted Date": "2022-02-04",
     "Card No.": 5158,
     "Description": "Etsy.com - PureCountry",
@@ -4851,7 +4851,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-02-02",
+    "Transaction_Date": "2022-02-02",
     "Posted Date": "2022-02-04",
     "Card No.": 5158,
     "Description": "THE SUMMIT",
@@ -4860,7 +4860,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-02-02",
+    "Transaction_Date": "2022-02-02",
     "Posted Date": "2022-02-04",
     "Card No.": 5158,
     "Description": "THE SUMMIT",
@@ -4869,7 +4869,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-02-02",
+    "Transaction_Date": "2022-02-02",
     "Posted Date": "2022-02-04",
     "Card No.": 5158,
     "Description": "RISE!  A BREAKFAST PLA",
@@ -4878,7 +4878,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-02-01",
+    "Transaction_Date": "2022-02-01",
     "Posted Date": "2022-02-02",
     "Card No.": 5158,
     "Description": "MCDONALD'S F190",
@@ -4887,7 +4887,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-01-31",
+    "Transaction_Date": "2022-01-31",
     "Posted Date": "2022-02-02",
     "Card No.": 5158,
     "Description": "SPROUTS FARMERS MARK",
@@ -4896,7 +4896,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-01-30",
+    "Transaction_Date": "2022-01-30",
     "Posted Date": "2022-02-01",
     "Card No.": 5158,
     "Description": "CHIPPERS HORSETOOTH ON",
@@ -4905,7 +4905,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-01-29",
+    "Transaction_Date": "2022-01-29",
     "Posted Date": "2022-01-31",
     "Card No.": 5158,
     "Description": "MCDONALD'S F190",
@@ -4914,7 +4914,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-01-29",
+    "Transaction_Date": "2022-01-29",
     "Posted Date": "2022-01-31",
     "Card No.": 5158,
     "Description": "KING SOOPERS #0018",
@@ -4923,7 +4923,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-01-28",
+    "Transaction_Date": "2022-01-28",
     "Posted Date": "2022-01-28",
     "Card No.": 5158,
     "Description": "CAPITAL ONE ONLINE PYMT",
@@ -4932,7 +4932,7 @@ const cap_2022 = [
     "Credit": 261.04
   },
   {
-    "Transaction Date": "2022-01-27",
+    "Transaction_Date": "2022-01-27",
     "Posted Date": "2022-01-28",
     "Card No.": 5158,
     "Description": "THE CART",
@@ -4941,7 +4941,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-01-26",
+    "Transaction_Date": "2022-01-26",
     "Posted Date": "2022-01-28",
     "Card No.": 5158,
     "Description": "SPROUTS FARMERS MARK",
@@ -4950,7 +4950,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-01-26",
+    "Transaction_Date": "2022-01-26",
     "Posted Date": "2022-01-27",
     "Card No.": 5158,
     "Description": "LOAF N JUG # 0812",
@@ -4959,7 +4959,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-01-26",
+    "Transaction_Date": "2022-01-26",
     "Posted Date": "2022-01-27",
     "Card No.": 5158,
     "Description": "KING SOOPERS #0018",
@@ -4968,7 +4968,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-01-26",
+    "Transaction_Date": "2022-01-26",
     "Posted Date": "2022-01-27",
     "Card No.": 5158,
     "Description": "SQ *ALGIERS HOOKAH AND",
@@ -4977,7 +4977,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-01-23",
+    "Transaction_Date": "2022-01-23",
     "Posted Date": "2022-01-25",
     "Card No.": 5158,
     "Description": "CHIPPERS HORSETOOTH",
@@ -4986,7 +4986,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-01-24",
+    "Transaction_Date": "2022-01-24",
     "Posted Date": "2022-01-24",
     "Card No.": 5158,
     "Description": "CAPITAL ONE MOBILE PYMT",
@@ -4995,7 +4995,7 @@ const cap_2022 = [
     "Credit": 983.94
   },
   {
-    "Transaction Date": "2022-01-22",
+    "Transaction_Date": "2022-01-22",
     "Posted Date": "2022-01-24",
     "Card No.": 5158,
     "Description": "TST* LOOKING GLASS ESC",
@@ -5004,7 +5004,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-01-20",
+    "Transaction_Date": "2022-01-20",
     "Posted Date": "2022-01-22",
     "Card No.": 5158,
     "Description": "SPROUTS FARMERS MARK",
@@ -5013,7 +5013,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-01-20",
+    "Transaction_Date": "2022-01-20",
     "Posted Date": "2022-01-22",
     "Card No.": 5158,
     "Description": "Social - Fort Collins",
@@ -5022,7 +5022,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-01-16",
+    "Transaction_Date": "2022-01-16",
     "Posted Date": "2022-01-18",
     "Card No.": 5158,
     "Description": "CHIPPERS HORSETOOTH ON",
@@ -5031,7 +5031,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-01-15",
+    "Transaction_Date": "2022-01-15",
     "Posted Date": "2022-01-17",
     "Card No.": 5158,
     "Description": "SPROUTS FARMERS MARK",
@@ -5040,7 +5040,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-01-15",
+    "Transaction_Date": "2022-01-15",
     "Posted Date": "2022-01-17",
     "Card No.": 5158,
     "Description": "KING SOOPERS #0018",
@@ -5049,7 +5049,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-01-15",
+    "Transaction_Date": "2022-01-15",
     "Posted Date": "2022-01-17",
     "Card No.": 5158,
     "Description": "SQ *ALGIERS HOOKAH AND",
@@ -5058,7 +5058,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-01-12",
+    "Transaction_Date": "2022-01-12",
     "Posted Date": "2022-01-14",
     "Card No.": 5158,
     "Description": "SPROUTS FARMERS MARK",
@@ -5067,7 +5067,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-01-12",
+    "Transaction_Date": "2022-01-12",
     "Posted Date": "2022-01-14",
     "Card No.": 5158,
     "Description": "MOONDANCE WINE & SPIRI",
@@ -5076,7 +5076,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-01-13",
+    "Transaction_Date": "2022-01-13",
     "Posted Date": "2022-01-13",
     "Card No.": 5158,
     "Description": "INSOMNIA COOKIES - FOR",
@@ -5085,7 +5085,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-01-12",
+    "Transaction_Date": "2022-01-12",
     "Posted Date": "2022-01-13",
     "Card No.": 5158,
     "Description": "LAMARS DONUTS 38S",
@@ -5094,7 +5094,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-01-12",
+    "Transaction_Date": "2022-01-12",
     "Posted Date": "2022-01-13",
     "Card No.": 5158,
     "Description": "KING SOOPERS #0018",
@@ -5103,7 +5103,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-01-12",
+    "Transaction_Date": "2022-01-12",
     "Posted Date": "2022-01-13",
     "Card No.": 5158,
     "Description": "KING SOOPERS #0018",
@@ -5112,7 +5112,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-01-11",
+    "Transaction_Date": "2022-01-11",
     "Posted Date": "2022-01-13",
     "Card No.": 5158,
     "Description": "THE HOME DEPOT #1512",
@@ -5121,7 +5121,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-01-12",
+    "Transaction_Date": "2022-01-12",
     "Posted Date": "2022-01-12",
     "Card No.": 5158,
     "Description": "INSOMNIA COOKIES - FOR",
@@ -5130,7 +5130,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-01-11",
+    "Transaction_Date": "2022-01-11",
     "Posted Date": "2022-01-12",
     "Card No.": 5158,
     "Description": "JOANN STORES #2228",
@@ -5139,7 +5139,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-01-10",
+    "Transaction_Date": "2022-01-10",
     "Posted Date": "2022-01-12",
     "Card No.": 5158,
     "Description": "LUCILES",
@@ -5148,7 +5148,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-01-11",
+    "Transaction_Date": "2022-01-11",
     "Posted Date": "2022-01-11",
     "Card No.": 5158,
     "Description": "CAPITAL ONE AUTOPAY PYMT",
@@ -5157,7 +5157,7 @@ const cap_2022 = [
     "Credit": 25
   },
   {
-    "Transaction Date": "2022-01-10",
+    "Transaction_Date": "2022-01-10",
     "Posted Date": "2022-01-11",
     "Card No.": 5158,
     "Description": "KING SOOPERS #0018",
@@ -5166,7 +5166,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-01-07",
+    "Transaction_Date": "2022-01-07",
     "Posted Date": "2022-01-10",
     "Card No.": 5158,
     "Description": "LOGO SHOP #515",
@@ -5175,7 +5175,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-01-08",
+    "Transaction_Date": "2022-01-08",
     "Posted Date": "2022-01-08",
     "Card No.": 5158,
     "Description": "CAPITAL ONE MOBILE PYMT",
@@ -5184,7 +5184,7 @@ const cap_2022 = [
     "Credit": 746.77
   },
   {
-    "Transaction Date": "2022-01-06",
+    "Transaction_Date": "2022-01-06",
     "Posted Date": "2022-01-08",
     "Card No.": 5158,
     "Description": "RIO STARBUCKS HOTEL",
@@ -5193,7 +5193,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-01-06",
+    "Transaction_Date": "2022-01-06",
     "Posted Date": "2022-01-08",
     "Card No.": 5158,
     "Description": "PARIS CREPERIE",
@@ -5202,7 +5202,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-01-06",
+    "Transaction_Date": "2022-01-06",
     "Posted Date": "2022-01-08",
     "Card No.": 5158,
     "Description": "CAESERS BACCHANAL BUFF",
@@ -5211,7 +5211,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-01-06",
+    "Transaction_Date": "2022-01-06",
     "Posted Date": "2022-01-08",
     "Card No.": 5158,
     "Description": "HARRAH'S WINE AND SPIR",
@@ -5220,7 +5220,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-01-06",
+    "Transaction_Date": "2022-01-06",
     "Posted Date": "2022-01-08",
     "Card No.": 5158,
     "Description": "REY LAS VEGAS",
@@ -5229,7 +5229,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-01-06",
+    "Transaction_Date": "2022-01-06",
     "Posted Date": "2022-01-07",
     "Card No.": 5158,
     "Description": "MON AMI GABI VEGAS",
@@ -5238,7 +5238,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-01-06",
+    "Transaction_Date": "2022-01-06",
     "Posted Date": "2022-01-07",
     "Card No.": 5158,
     "Description": "WALGREENS #21159",
@@ -5247,7 +5247,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-01-05",
+    "Transaction_Date": "2022-01-05",
     "Posted Date": "2022-01-07",
     "Card No.": 5158,
     "Description": "DENNY'S #6091",
@@ -5256,7 +5256,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-01-06",
+    "Transaction_Date": "2022-01-06",
     "Posted Date": "2022-01-07",
     "Card No.": 5158,
     "Description": "T-SHIRT PLUS 2",
@@ -5265,7 +5265,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-01-05",
+    "Transaction_Date": "2022-01-05",
     "Posted Date": "2022-01-07",
     "Card No.": 5158,
     "Description": "CAESARS APOSTROPHE BAR",
@@ -5274,7 +5274,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-01-06",
+    "Transaction_Date": "2022-01-06",
     "Posted Date": "2022-01-07",
     "Card No.": 5158,
     "Description": "TST* CAFE AMERICANO VE",
@@ -5283,7 +5283,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-01-05",
+    "Transaction_Date": "2022-01-05",
     "Posted Date": "2022-01-06",
     "Card No.": 5158,
     "Description": "CVS/PHARMACY #10348",
@@ -5292,7 +5292,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-01-05",
+    "Transaction_Date": "2022-01-05",
     "Posted Date": "2022-01-06",
     "Card No.": 5158,
     "Description": "MCDONALD'S F26091",
@@ -5301,7 +5301,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-01-05",
+    "Transaction_Date": "2022-01-05",
     "Posted Date": "2022-01-06",
     "Card No.": 5158,
     "Description": "76 - VIRGIN VALLEY FOO",
@@ -5310,7 +5310,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-01-04",
+    "Transaction_Date": "2022-01-04",
     "Posted Date": "2022-01-06",
     "Card No.": 5158,
     "Description": "7-ELEVEN 39033",
@@ -5319,7 +5319,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-01-04",
+    "Transaction_Date": "2022-01-04",
     "Posted Date": "2022-01-06",
     "Card No.": 5158,
     "Description": "7-ELEVEN 39033",
@@ -5328,7 +5328,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-01-04",
+    "Transaction_Date": "2022-01-04",
     "Posted Date": "2022-01-05",
     "Card No.": 5158,
     "Description": "LEMAY VET CLINIC",
@@ -5337,7 +5337,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-01-04",
+    "Transaction_Date": "2022-01-04",
     "Posted Date": "2022-01-05",
     "Card No.": 5158,
     "Description": "POUDRE PET & FEED SUPP",
@@ -5346,7 +5346,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-01-03",
+    "Transaction_Date": "2022-01-03",
     "Posted Date": "2022-01-05",
     "Card No.": 5158,
     "Description": "SPROUTS FARMERS MARK",
@@ -5355,7 +5355,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-01-03",
+    "Transaction_Date": "2022-01-03",
     "Posted Date": "2022-01-05",
     "Card No.": 5158,
     "Description": "ARBY'S 5009024",
@@ -5364,7 +5364,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-01-03",
+    "Transaction_Date": "2022-01-03",
     "Posted Date": "2022-01-04",
     "Card No.": 5158,
     "Description": "THE CART",
@@ -5373,7 +5373,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-01-03",
+    "Transaction_Date": "2022-01-03",
     "Posted Date": "2022-01-04",
     "Card No.": 5158,
     "Description": "THE CART",
@@ -5382,7 +5382,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-01-03",
+    "Transaction_Date": "2022-01-03",
     "Posted Date": "2022-01-04",
     "Card No.": 5158,
     "Description": "POUDRE PET & FEED SUPP",
@@ -5391,7 +5391,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-01-02",
+    "Transaction_Date": "2022-01-02",
     "Posted Date": "2022-01-04",
     "Card No.": 5158,
     "Description": "MOONDANCE WINE & SPIRI",
@@ -5400,7 +5400,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-01-03",
+    "Transaction_Date": "2022-01-03",
     "Posted Date": "2022-01-04",
     "Card No.": 5158,
     "Description": "CAFE RIO 0050 FT COLLI",
@@ -5409,7 +5409,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-01-02",
+    "Transaction_Date": "2022-01-02",
     "Posted Date": "2022-01-04",
     "Card No.": 5158,
     "Description": "SPROUTS FARMERS MARK",
@@ -5418,7 +5418,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-01-03",
+    "Transaction_Date": "2022-01-03",
     "Posted Date": "2022-01-03",
     "Card No.": 5158,
     "Description": "CAPITAL ONE ONLINE PYMT",
@@ -5427,7 +5427,7 @@ const cap_2022 = [
     "Credit": 613.58
   },
   {
-    "Transaction Date": "2022-01-02",
+    "Transaction_Date": "2022-01-02",
     "Posted Date": "2022-01-03",
     "Card No.": 5158,
     "Description": "FT COLLINS ARC THRIFT",
@@ -5436,7 +5436,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2022-01-01",
+    "Transaction_Date": "2022-01-01",
     "Posted Date": "2022-01-03",
     "Card No.": 5158,
     "Description": "TST* CANDLELIGHT DINNE",
@@ -5445,7 +5445,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2021-12-31",
+    "Transaction_Date": "2021-12-31",
     "Posted Date": "2022-01-03",
     "Card No.": 5158,
     "Description": "BIG D #50",
@@ -5454,7 +5454,7 @@ const cap_2022 = [
     "Credit": ""
   },
   {
-    "Transaction Date": "2021-12-30",
+    "Transaction_Date": "2021-12-30",
     "Posted Date": "2022-01-03",
     "Card No.": 5158,
     "Description": "COOPERSMITHS PUB AND B",

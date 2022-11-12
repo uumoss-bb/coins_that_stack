@@ -1,11 +1,22 @@
-.App {
+.App * {
+  padding: 0;
+  margin: auto 0;
+}
+
+.groups {
   width: 30%;
-  padding: .5%;
-  text-align: center;
-  border: solid red 1px;
+  margin-left: 1%;
+  display: inline-block;
+  height: 100vh;
+  overflow: scroll;
+  border: solid blue 1px;
 }
 
 .transactions {
-  display: flex;
-  border: solid blue 1px;
+  width: 60%;
+  margin-left: 5%;
+  display: inline-block;
+  height: 100vh;
+  overflow: scroll;
+  border: solid green 1px;
 }

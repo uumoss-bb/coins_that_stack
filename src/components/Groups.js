@@ -97,10 +97,9 @@ const DeleteGroup = ({ removeGroup }) => {
 
 const Group = ({ name, transactions, index}) => {
   return (
-    <Panel Key={index + name} title={name} disabled={transactions.length ? false : true}>
-      { transactions.map(transaction => {
-        console.log(transaction)
-        return (<Transaction props={{}}/>)
+    <Panel key={index + name} title={name} disabled={transactions.length ? false : true}>
+      { transactions.map(trans => {
+        return (<Transaction props={{...trans}}/>)
       })}
     </Panel>
   )
