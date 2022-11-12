@@ -15,6 +15,11 @@ const Storage = {
     })
     
     return items
+  },
+
+  delete({key}) {
+    localStorage.removeItem(key)
+    console.log("successfully deleted", key)
   }
 }
 

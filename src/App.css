@@ -4,3 +4,8 @@
   text-align: center;
   border: solid red 1px;
 }
+
+.transactions {
+  display: flex;
+  border: solid blue 1px;
+}

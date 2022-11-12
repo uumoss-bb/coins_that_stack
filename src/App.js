@@ -1,92 +1,169 @@
 import * as React from 'react';
 import './App.css';
+import Storage from './workers/Storage'
+import uuid from './workers/uuid'
 import {
   capitalOne,
   elevations
 } from './transactions'
 import { Input } from "baseui/input";
 import { Button } from "baseui/button";
-import Storage from './Storage'
+import { StatelessAccordion, Panel } from "baseui/accordion";
+import { ListItem, ListItemLabel } from "baseui/list";
 
-const groups = {}
-
-const GroupCreationInput = ({ props: { newGroupName, setGroupName} }) => {
-
-  return (
-    <Input
-      value={newGroupName}
-      onChange={e => setGroupName(e.target.value)}
-      placeholder="Create a Group"
-      clearOnEscape
-      endEnhancer={<Button onClick={() => setGroup({ name: newGroupName, transactions: [] })}>Set</Button>}
-    />
-  );
+const setGroupsFromStorage = () => {
+  const storedGroups = Storage.getAll()
+  
+  return storedGroups.reduce((groups, group) => ({
+    ...groups,
+    [group.name] : group
+  }), {})
 }
 
-const setGroup = ({ name, transactions }) => {
-  groups[name] = {
+const SaveGroup = ({ groups, setGroups }) => ({ name, transactions }) => {
+  const newGroup = {
     name: name,
     transactions: transactions
   }
+
+  Storage.post({key: name, value: newGroup})
+
+  setGroups({
+    ...groups,
+    newGroup
+  })
 }
 
-const saveGroups = () => {
-  console.log({groups})
-  for (const name in groups) {
-    const group = groups[name]
-    Storage.post({key: name, value: group})
-  }
-}
+const CreateGroup = ({ saveGroup }) => {
+  const [ newName, setNewName ] = React.useState("");
 
-const SaveButton = () => {
   const style = {
     'display': 'flex',
-    margin: '1%'
+    width: '95%',
+    margin: '2.5%'
   }
+
   return (
-    <Button 
-      overrides={{
-        BaseButton: {
-          style
-        }
-      }} 
-      onClick={() => saveGroups()}
-    >
-      Save!
-    </Button>
+    <Panel Key={'CreateGroup'} title='Create a Group'>
+      <Input
+        value={newName}
+        onChange={e => setNewName(e.target.value)}
+        placeholder="New Group Name..."
+        clearOnEscape
+      />
+      <Button 
+        overrides={{
+          BaseButton: {
+            style
+          }
+        }} 
+        onClick={() => {
+          setNewName('')
+          saveGroup({ name: newName, transactions: [] })
+        }}
+      >
+        create
+      </Button>
+    </Panel>
   );
 }
-// const Groups = () => {
-//   return (
-//     <Accordion
-//       onChange={({ expanded }) => console.log(expanded)}
-//       accordion
-//     >
-//     </Accordion>
-//   );
-// }
 
-// const Group = ({title}) => {
-//   <Panel title >
+const RemoveGroup = ({ setGroups }) => ({ name }) => {
 
-//   </Panel>
-// }
+  Storage.delete({ key: name })
 
-// const TransactionInGroup = () => {
-//   return (
-//     <ListItem>
-//       <ListItemLabel>Label</ListItemLabel>
-//     </ListItem>
-//   );
+  setGroups(setGroupsFromStorage())
+}
+
+const DeleteGroup = ({ removeGroup }) => {
+  const [ deleteName, setDeleteName ] = React.useState("");
+
+  const style = {
+    'display': 'flex',
+    width: '95%',
+    margin: '2.5%'
+  }
+
+  return (
+    <Panel Key={'deleteGroup'} title='Delete a Group'>
+      <Input
+        value={deleteName}
+        onChange={e => setDeleteName(e.target.value)}
+        placeholder="Name of group to delete"
+        clearOnEscape
+      />
+      <Button 
+        overrides={{
+          BaseButton: {
+            style
+          }
+        }} 
+        onClick={() => {
+          setDeleteName('')
+          removeGroup({ name: deleteName })
+        }}
+      >
+        delete
+      </Button>
+    </Panel>
+  );
+}
+
+const Groups = ({props: {groups, setGroups}}) => {
+  const groupsArr = Object.values(groups)
+  const saveGroup = SaveGroup({ groups, setGroups })
+  const removeGroup = RemoveGroup({ setGroups })
+
+  const [expanded, setExpanded] = React.useState([]);
+
+  return (
+    <StatelessAccordion
+      expanded={expanded}
+      onChange={({ expanded }) => setExpanded(expanded)}
+    >
+      {CreateGroup({ saveGroup })}
+      {DeleteGroup({ removeGroup })}
+      {groupsArr.map((group, index) => Group({...group, index}) )}
+    </StatelessAccordion>
+  );
+}
+
+const Group = ({ name, transactions, index}) => {
+  return (
+    <Panel Key={index + name} title={name} disabled={transactions.length ? false : true}>
+      { transactions.map(transaction => {
+        console.log(transaction)
+        return (<Transaction props={{}}/>)
+      })}
+    </Panel>
+  )
+}
+
+const Transaction = ({ props: { Description } }) => {
+  return (
+    <ListItem Key={uuid()}>
+      <ListItemLabel>Label</ListItemLabel>
+    </ListItem>
+  );
+}
+
+// const Transactions = () => {
+//   const allTransactions = [
+//     ...cap_2021,
+//     ...cap_2022,
+//     ...elevations_22_21
+//   ]
 // }
 
 function App() {
-  const [ newGroupName, setGroupName ] = React.useState("");
+  const [ groups, setGroups ] = React.useState(setGroupsFromStorage());
 
   return (
     <div className="App">
-      <GroupCreationInput props={{ newGroupName, setGroupName }}/>
-      <SaveButton/>
+      <Groups props={{ groups, setGroups }}/>
+
+      <div className='transactions'>
+      </div>
     </div>
   );
 }
