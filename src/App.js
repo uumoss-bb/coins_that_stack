@@ -2,31 +2,36 @@ import * as React from 'react';
 import './App.css';
 import Groups from './components/Groups';
 import setGroupsFromStorage from './workers/setGroupsFromStorage';
-import Transaction from './components/Transacion';
+import { Table } from "baseui/table-semantic";
 import {
   capitalOne,
   elevations
 } from './transactions'
 
-const normalizeElevationsData = ({ Memo, Date, Amount_Debit, Balance}) => ({
-  source: 'elevations',
-  title: Memo,
-  transaction: Amount_Debit,
-  balance: Balance,
-  date: Date
-})
-
-const normalizeCapitalOneData = ({ Description, Transaction_Date, Debit }) => ({
-  source: 'capitalOne',
-  title: Description,
-  transaction: - Debit,
-  date: Transaction_Date
-})
-
-const Transactions = () => ([
-  ...elevations.map((trans) => <Transaction props={normalizeElevationsData(trans)}/>),
-  ...capitalOne.map((trans) => <Transaction props={normalizeCapitalOneData(trans)}/>)
+const normalizeElevationsData = ({ Memo, Date, Amount_Debit }) => ([
+  'elevations',
+  Memo,
+  Amount_Debit,
+  Date
 ])
+
+const normalizeCapitalOneData = ({ Description, Transaction_Date, Debit }) => ([
+  'capitalOne',
+  Description,
+  `- ${Debit}`,
+  Transaction_Date
+])
+
+const Transactions = () => {
+  return (
+    <Table
+      columns={['Source', 'title', 'transaction', 'date']}
+      data={[
+        ...elevations.map(trans => normalizeElevationsData(trans))
+      ]}
+    />
+  )
+}
 
 function App() {
   const [ groups, setGroups ] = React.useState(setGroupsFromStorage());
