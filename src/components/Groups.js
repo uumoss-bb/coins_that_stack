@@ -1,22 +1,24 @@
 import * as React from 'react';
+import * as R from 'ramda'
 import Storage from '../workers/Storage'
 import { Input } from "baseui/input";
 import { Button } from "baseui/button";
 import { StatelessAccordion, Panel } from "baseui/accordion";
 import setGroupsFromStorage from '../workers/setGroupsFromStorage';
-import Transaction from './Transacion';
+import Transactions from './/Transactions';
 
-const SaveGroup = ({ groups, setGroups }) => ({ name, transactions }) => {
+const SaveGroup = ({ groups, setGroups }) => ({ name, keywords = [] }) => {
+  console.log(keywords)
   const newGroup = {
-    name: name,
-    transactions: transactions
+    name,
+    keywords
   }
 
   Storage.post({key: name, value: newGroup})
 
   setGroups({
     ...groups,
-    newGroup
+    [name]: newGroup
   })
 }
 
@@ -44,7 +46,7 @@ const CreateGroup = ({ saveGroup }) => {
           }
         }} 
         onClick={() => {
-          saveGroup({ name: newName, transactions: [] })
+          saveGroup({ name: newName })
           setNewName('')
         }}
       >
@@ -95,12 +97,48 @@ const DeleteGroup = ({ removeGroup }) => {
   );
 }
 
-const Group = ({ name, transactions, index}) => {
+const SetKeyword = ({ saveGroup, name, keywords }) => {
+  const [ newKeywords, setKeywords ] = React.useState(keywords);
+
+  const style = {}
+
   return (
-    <Panel key={index + name} title={name} disabled={transactions.length ? false : true}>
-      { transactions.map(trans => {
-        return (<Transaction props={{...trans}}/>)
-      })}
+    <>
+      <Input
+        value={newKeywords}
+        onChange={e => setKeywords(e.target.value)}
+        placeholder="Set a key word"
+        clearOnEscape
+        endEnhancer={() => (
+          <Button 
+            overrides={{
+              BaseButton: {
+                style
+              }
+            }} 
+            onClick={() => {
+              saveGroup({ 
+                name, 
+                keywords: newKeywords.split(', ')
+              })
+            }}
+          >
+          set
+          </Button>
+        )}
+      />
+    </>
+  );
+}
+
+const Group = ({ name, keywords, index, saveGroup }) => {
+  const _keywords = keywords.join(', ')
+  return (
+    <Panel key={index + name} title={`${name} ( keywords: ${_keywords} )`}>
+      {SetKeyword({ saveGroup, name, keywords: _keywords })}
+      {/* { transactions.map(trans => {
+        return (<Transactions props={{...trans}}/>)
+      })} */}
     </Panel>
   )
 }
@@ -119,7 +157,7 @@ const Groups = ({props: {groups, setGroups}}) => {
     >
       {CreateGroup({ saveGroup })}
       {DeleteGroup({ removeGroup })}
-      {groupsArr.map((group, index) => Group({...group, index}) )}
+      {groupsArr.map((group, index) => Group({...group, index, saveGroup }) )}
     </StatelessAccordion>
   );
 }

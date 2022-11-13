@@ -2,36 +2,11 @@ import * as React from 'react';
 import './App.css';
 import Groups from './components/Groups';
 import setGroupsFromStorage from './workers/setGroupsFromStorage';
-import { Table } from "baseui/table-semantic";
+import Transactions from './components/Transactions'
 import {
   capitalOne,
   elevations
 } from './transactions'
-
-const normalizeElevationsData = ({ Memo, Date, Amount_Debit }) => ([
-  'elevations',
-  Memo,
-  Amount_Debit,
-  Date
-])
-
-const normalizeCapitalOneData = ({ Description, Transaction_Date, Debit }) => ([
-  'capitalOne',
-  Description,
-  `- ${Debit}`,
-  Transaction_Date
-])
-
-const Transactions = () => {
-  return (
-    <Table
-      columns={['Source', 'title', 'transaction', 'date']}
-      data={[
-        ...elevations.map(trans => normalizeElevationsData(trans))
-      ]}
-    />
-  )
-}
 
 function App() {
   const [ groups, setGroups ] = React.useState(setGroupsFromStorage());
@@ -43,7 +18,10 @@ function App() {
       </div>
 
       <div className='transactions'>
-        <Transactions/>
+        <Transactions props={{
+          elevations,
+          capitalOne
+        }}/>
       </div>
     </div>
   );
