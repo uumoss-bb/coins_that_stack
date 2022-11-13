@@ -18,10 +18,10 @@ function App() {
       </div>
 
       <div className='transactions'>
-        <Transactions props={{
-          elevations,
-          capitalOne
-        }}/>
+        <Transactions transactions={[
+          ...elevations,
+          ...capitalOne
+        ]}/>
       </div>
     </div>
   );

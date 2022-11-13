@@ -8,7 +8,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 4806.87,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221101000000[-7:MST]*-9.50*42**Withdrawal",
@@ -19,7 +19,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 4881.87,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221101000000[-7:MST]*-15.00*42**Withdrawal",
@@ -30,7 +30,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 4891.37,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221101000000[-7:MST]*-15.00*42**Withdrawal*1",
@@ -41,7 +41,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 4906.37,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221031000000[-7:MST]*-45.28*42**Withdrawal",
@@ -52,7 +52,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 4921.37,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221031000000[-7:MST]*2000.00*512**Deposit Home Banking Transfer",
@@ -63,7 +63,7 @@ const elevations_22_21 = [
     "Amount_Credit": 2000,
     "Balance": 4966.65,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221031000000[-7:MST]*-562.00*12**Withdrawal Home Banking",
@@ -74,7 +74,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2966.65,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221031000000[-7:MST]*-38.25*15**Withdrawal VENMO",
@@ -85,7 +85,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 3528.65,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221031000000[-7:MST]*-18.48*15**Withdrawal VENMO",
@@ -96,7 +96,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 3566.9,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221031000000[-7:MST]*3466.47*515**Deposit LIVE NATION WORL",
@@ -107,7 +107,7 @@ const elevations_22_21 = [
     "Amount_Credit": 3466.47,
     "Balance": 3585.38,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221030000000[-7:MST]*-62.99*42**Withdrawal",
@@ -118,7 +118,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 118.91,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221030000000[-7:MST]*-26.00*42**Withdrawal",
@@ -129,7 +129,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 181.9,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221029000000[-7:MST]*-94.85*42**Withdrawal",
@@ -140,7 +140,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 207.9,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221029000000[-7:MST]*-16.08*42**Withdrawal",
@@ -151,7 +151,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 302.75,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221029000000[-7:MST]*-90.35*42**Withdrawal",
@@ -162,7 +162,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 318.83,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221029000000[-7:MST]*-67.62*42**Withdrawal",
@@ -173,7 +173,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 409.18,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221029000000[-7:MST]*-11.60*42**Withdrawal",
@@ -184,7 +184,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 476.8,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221029000000[-7:MST]*-11.60*42**Withdrawal*1",
@@ -195,7 +195,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 488.4,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221028000000[-7:MST]*500.00*512**Deposit Home Banking Transfer",
@@ -206,7 +206,7 @@ const elevations_22_21 = [
     "Amount_Credit": 500,
     "Balance": 500,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221028000000[-7:MST]*-179.00*42**Withdrawal",
@@ -217,7 +217,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 0,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221027000000[-7:MST]*-6.10*13**Withdrawal #000000621627",
@@ -228,7 +228,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 179,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221027000000[-7:MST]*6.10*501**Deposit Transfer From Share 0000",
@@ -239,7 +239,7 @@ const elevations_22_21 = [
     "Amount_Credit": 6.1,
     "Balance": 185.1,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221027000000[-7:MST]*-31.00*15**Withdrawal PAYPAL",
@@ -250,7 +250,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 179,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221027000000[-7:MST]*210.00*501**Deposit Transfer From Share 0000",
@@ -261,7 +261,7 @@ const elevations_22_21 = [
     "Amount_Credit": 210,
     "Balance": 210,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221026000000[-7:MST]*-115.00*13**Withdrawal #000012325855",
@@ -272,7 +272,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 0,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221026000000[-7:MST]*-8.65*42**Withdrawal",
@@ -283,7 +283,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 115,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221026000000[-7:MST]*-56.30*42**Withdrawal",
@@ -294,7 +294,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 123.65,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221026000000[-7:MST]*45.17*501**Deposit Transfer From Share 0000",
@@ -305,7 +305,7 @@ const elevations_22_21 = [
     "Amount_Credit": 45.17,
     "Balance": 179.95,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221025000000[-7:MST]*-50.00*15**Withdrawal PAYPAL",
@@ -316,7 +316,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 134.78,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221024000000[-7:MST]*-11.83*42**Withdrawal",
@@ -327,7 +327,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 184.78,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221024000000[-7:MST]*-15.05*42**Withdrawal",
@@ -338,7 +338,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 196.61,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221024000000[-7:MST]*-52.25*42**Withdrawal",
@@ -349,7 +349,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 211.66,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221023000000[-7:MST]*-21.51*13**Withdrawal #229617853452",
@@ -360,7 +360,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 263.91,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221023000000[-7:MST]*-84.64*42**Withdrawal",
@@ -371,7 +371,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 285.42,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221023000000[-7:MST]*-1.93*13**Withdrawal #000000011086",
@@ -382,7 +382,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 370.06,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221022000000[-7:MST]*-10.87*42**Withdrawal",
@@ -393,7 +393,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 371.99,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221022000000[-7:MST]*-10.14*13**Withdrawal #000000647126",
@@ -404,7 +404,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 382.86,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221022000000[-7:MST]*-2.00*42**Withdrawal",
@@ -415,7 +415,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 393,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221022000000[-7:MST]*-14.61*42**Withdrawal",
@@ -426,7 +426,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 395,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221021000000[-7:MST]*-15.60*42**Withdrawal",
@@ -437,7 +437,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 409.61,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221021000000[-7:MST]*-6.60*42**Withdrawal",
@@ -448,7 +448,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 425.21,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221021000000[-7:MST]*-8.04*13**Withdrawal #000000008395",
@@ -459,7 +459,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 431.81,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221021000000[-7:MST]*-51.62*42**Withdrawal",
@@ -470,7 +470,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 439.85,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221021000000[-7:MST]*-38.00*15**Withdrawal PAYPAL",
@@ -481,7 +481,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 491.47,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221021000000[-7:MST]*-13.97*15**Withdrawal PAYPAL",
@@ -492,7 +492,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 529.47,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221021000000[-7:MST]*5.60*515**Deposit COMCAST",
@@ -503,7 +503,7 @@ const elevations_22_21 = [
     "Amount_Credit": 5.6,
     "Balance": 543.44,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221021000000[-7:MST]*-107.51*42**Withdrawal",
@@ -514,7 +514,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 537.84,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221021000000[-7:MST]*-36.50*42**Withdrawal",
@@ -525,7 +525,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 645.35,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221020000000[-7:MST]*-2.24*21**Debit Card Fee",
@@ -536,7 +536,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 681.85,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221020000000[-7:MST]*-279.65*42**Withdrawal",
@@ -547,7 +547,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 684.09,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221020000000[-7:MST]*-134.50*15**Withdrawal CAPITAL ONE",
@@ -558,7 +558,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 963.74,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221020000000[-7:MST]*-52.00*15**Withdrawal PAYPAL",
@@ -569,7 +569,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1098.24,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221019000000[-7:MST]*88.00*515**Deposit VENMO",
@@ -580,7 +580,7 @@ const elevations_22_21 = [
     "Amount_Credit": 88,
     "Balance": 1150.24,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221019000000[-7:MST]*-61.38*42**Withdrawal",
@@ -591,7 +591,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1062.24,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221018000000[-7:MST]*-1000.00*12**Withdrawal Home Banking",
@@ -602,7 +602,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1123.62,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221018000000[-7:MST]*-14.77*42**Withdrawal",
@@ -613,7 +613,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2123.62,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221018000000[-7:MST]*-10.14*13**Withdrawal #000000828976",
@@ -624,7 +624,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2138.39,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221018000000[-7:MST]*-919.32*15**Withdrawal CAPITAL ONE",
@@ -635,7 +635,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2148.53,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221018000000[-7:MST]*-30.29*14**Withdrawal Bill Payment",
@@ -646,7 +646,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 3067.85,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221017000000[-7:MST]*-14.92*42**Withdrawal",
@@ -657,7 +657,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 3098.14,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221017000000[-7:MST]*-11.25*42**Withdrawal",
@@ -668,7 +668,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 3113.06,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221017000000[-7:MST]*-32.50*42**Withdrawal",
@@ -679,7 +679,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 3124.31,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221017000000[-7:MST]*-4.50*42**Withdrawal",
@@ -690,7 +690,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 3156.81,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221017000000[-7:MST]*-81.43*42**Withdrawal",
@@ -701,7 +701,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 3161.31,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221017000000[-7:MST]*-26.84*42**Withdrawal",
@@ -712,7 +712,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 3242.74,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221017000000[-7:MST]*-60.00*15**Withdrawal PAYPAL",
@@ -723,7 +723,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 3269.58,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221017000000[-7:MST]*-1.93*13**Withdrawal #000000705851",
@@ -734,7 +734,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 3329.58,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221016000000[-7:MST]*-3.20*13**Withdrawal #000000347246",
@@ -745,7 +745,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 3331.51,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221016000000[-7:MST]*-80.36*42**Withdrawal",
@@ -756,7 +756,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 3334.71,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221015000000[-7:MST]*-0.99*42**Withdrawal",
@@ -767,7 +767,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 3415.07,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221015000000[-7:MST]*-21.46*13**Withdrawal #000010391420",
@@ -778,7 +778,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 3416.06,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221014000000[-7:MST]*3380.61*515**Deposit LIVE NATION WORL",
@@ -789,7 +789,7 @@ const elevations_22_21 = [
     "Amount_Credit": 3380.61,
     "Balance": 3437.52,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221012000000[-7:MST]*-14.14*15**Withdrawal CAPITAL ONE",
@@ -800,7 +800,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 56.91,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221007000000[-7:MST]*-12.05*13**Withdrawal #228021888931",
@@ -811,7 +811,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 71.05,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221007000000[-7:MST]*-40.50*13**Withdrawal #000036033854",
@@ -822,7 +822,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 83.1,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221007000000[-7:MST]*-10.80*13**Withdrawal #000062033840",
@@ -833,7 +833,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 123.6,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221007000000[-7:MST]*-55.21*13**Withdrawal #000018033836",
@@ -844,7 +844,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 134.4,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221007000000[-7:MST]*-77.08*42**Withdrawal",
@@ -855,7 +855,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 189.61,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221007000000[-7:MST]*-22.42*42**Withdrawal",
@@ -866,7 +866,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 266.69,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221006000000[-7:MST]*-455.00*15**Withdrawal CAPITAL ONE",
@@ -877,7 +877,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 289.11,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221006000000[-7:MST]*-35.00*42**Withdrawal",
@@ -888,7 +888,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 744.11,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221004000000[-7:MST]*-1.93*13**Withdrawal #000000373843",
@@ -899,7 +899,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 779.11,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221004000000[-7:MST]*-4.29*13**Withdrawal #000000737440",
@@ -910,7 +910,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 781.04,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221004000000[-7:MST]*-3.50*42**Withdrawal",
@@ -921,7 +921,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 785.33,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221003000000[-7:MST]*-7.51*13**Withdrawal #000000486263",
@@ -932,7 +932,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 788.83,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221003000000[-7:MST]*-2047.91*15**Withdrawal PL*HelixProperty",
@@ -943,7 +943,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 796.34,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221003000000[-7:MST]*-1126.38*15**Withdrawal CAPITAL ONE",
@@ -954,7 +954,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2844.25,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221003000000[-7:MST]*-73.00*15**Withdrawal PAYPAL",
@@ -965,7 +965,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 3970.63,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221003000000[-7:MST]*-38.00*15**Withdrawal PAYPAL",
@@ -976,7 +976,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 4043.63,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221003000000[-7:MST]*-35.00*15**Withdrawal VENMO",
@@ -987,7 +987,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 4081.63,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221003000000[-7:MST]*-14.47*15**Withdrawal XCEL ENERGY-PSCO",
@@ -998,7 +998,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 4116.63,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221003000000[-7:MST]*-11.99*15**Withdrawal PAYPAL",
@@ -1009,7 +1009,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 4131.1,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221003000000[-7:MST]*-10.00*15**Withdrawal VENMO",
@@ -1020,7 +1020,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 4143.09,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221002000000[-7:MST]*-8.97*42**Withdrawal",
@@ -1031,7 +1031,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 4153.09,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221002000000[-7:MST]*-47.36*13**Withdrawal #000000002763",
@@ -1042,7 +1042,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 4162.06,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221002000000[-7:MST]*-15.00*42**Withdrawal",
@@ -1053,7 +1053,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 4209.42,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221002000000[-7:MST]*-16.87*13**Withdrawal #000000857658",
@@ -1064,7 +1064,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 4224.42,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20221001000000[-7:MST]*-10.96*13**Withdrawal #000000750829",
@@ -1075,7 +1075,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 4241.29,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220930000000[-7:MST]*-1.50*21**ATM Fee",
@@ -1086,7 +1086,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 4252.25,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220930000000[-7:MST]*-201.10*11**Withdrawal at ATM #000000000431",
@@ -1097,7 +1097,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 4253.75,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220930000000[-7:MST]*-1.93*13**Withdrawal #000000087198",
@@ -1108,7 +1108,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 4454.85,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220930000000[-7:MST]*3430.63*515**Deposit LIVE NATION WORL",
@@ -1119,7 +1119,7 @@ const elevations_22_21 = [
     "Amount_Credit": 3430.63,
     "Balance": 4456.78,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220929000000[-7:MST]*-16.08*42**Withdrawal",
@@ -1130,7 +1130,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1026.15,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220929000000[-7:MST]*-12.45*14**Withdrawal Bill Payment",
@@ -1141,7 +1141,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1042.23,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220929000000[-7:MST]*-20.58*42**Withdrawal",
@@ -1152,7 +1152,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1054.68,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220929000000[-7:MST]*-25.75*42**Withdrawal",
@@ -1163,7 +1163,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1075.26,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220929000000[-7:MST]*-58.00*15**Withdrawal COMCAST 8497606",
@@ -1174,7 +1174,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1101.01,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220928000000[-7:MST]*-74.85*42**Withdrawal",
@@ -1185,7 +1185,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1159.01,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220928000000[-7:MST]*-1.93*13**Withdrawal #000000981870",
@@ -1196,7 +1196,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1233.86,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220928000000[-7:MST]*-1.28*13**Withdrawal #000000947695",
@@ -1207,7 +1207,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1235.79,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220928000000[-7:MST]*-12.77*42**Withdrawal",
@@ -1218,7 +1218,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1237.07,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220928000000[-7:MST]*-179.00*42**Withdrawal",
@@ -1229,7 +1229,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1249.84,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220927000000[-7:MST]*-63.13*15**Withdrawal VENMO",
@@ -1240,7 +1240,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1428.84,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220926000000[-7:MST]*-325.00*15**Withdrawal VENMO",
@@ -1251,7 +1251,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1491.97,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220926000000[-7:MST]*-72.00*15**Withdrawal PAYPAL",
@@ -1262,7 +1262,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1816.97,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220926000000[-7:MST]*-29.00*15**Withdrawal PAYPAL",
@@ -1273,7 +1273,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1888.97,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220926000000[-7:MST]*-25.00*15**Withdrawal PAYPAL",
@@ -1284,7 +1284,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1917.97,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220924000000[-7:MST]*-929.70*13**Withdrawal #000054037302",
@@ -1295,7 +1295,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1942.97,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220924000000[-7:MST]*2000.00*512**Deposit Home Banking Transfer",
@@ -1306,7 +1306,7 @@ const elevations_22_21 = [
     "Amount_Credit": 2000,
     "Balance": 2872.67,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220921000000[-7:MST]*-13.97*15**Withdrawal PAYPAL",
@@ -1317,7 +1317,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 872.67,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220920000000[-7:MST]*-36.00*15**Withdrawal PAYPAL",
@@ -1328,7 +1328,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 886.64,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220919000000[-7:MST]*-5.80*42**Withdrawal",
@@ -1339,7 +1339,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 922.64,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220919000000[-7:MST]*-51.50*15**Withdrawal PAYPAL",
@@ -1350,7 +1350,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 928.44,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220919000000[-7:MST]*-38.00*15**Withdrawal PAYPAL",
@@ -1361,7 +1361,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 979.94,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220918000000[-7:MST]*-30.29*14**Withdrawal Bill Payment",
@@ -1372,7 +1372,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1017.94,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220916000000[-7:MST]*-757.33*15**Withdrawal CAPITAL ONE",
@@ -1383,7 +1383,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1048.23,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220915000000[-7:MST]*-2000.00*12**Withdrawal Home Banking",
@@ -1394,7 +1394,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1805.56,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220915000000[-7:MST]*3380.63*515**Deposit LIVE NATION WORL",
@@ -1405,7 +1405,7 @@ const elevations_22_21 = [
     "Amount_Credit": 3380.63,
     "Balance": 3805.56,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220915000000[-7:MST]*-21.46*13**Withdrawal #000002106044",
@@ -1416,7 +1416,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 424.93,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220914000000[-7:MST]*-0.99*42**Withdrawal",
@@ -1427,7 +1427,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 446.39,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220914000000[-7:MST]*-8.30*14**Withdrawal Bill Payment",
@@ -1438,7 +1438,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 447.38,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220914000000[-7:MST]*-45.00*15**Withdrawal PAYPAL",
@@ -1449,7 +1449,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 455.68,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220913000000[-7:MST]*-25.00*15**Withdrawal CAPITAL ONE",
@@ -1460,7 +1460,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 500.68,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220913000000[-7:MST]*-37.64*42**Withdrawal",
@@ -1471,7 +1471,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 525.68,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220912000000[-7:MST]*-61.00*15**Withdrawal PAYPAL",
@@ -1482,7 +1482,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 563.32,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220912000000[-7:MST]*-29.00*15**Withdrawal PAYPAL",
@@ -1493,7 +1493,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 624.32,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220909000000[-7:MST]*-38.00*15**Withdrawal PAYPAL",
@@ -1504,7 +1504,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 653.32,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220908000000[-7:MST]*-20.33*42**Withdrawal",
@@ -1515,7 +1515,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 691.32,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220908000000[-7:MST]*-1.00*42**Withdrawal",
@@ -1526,7 +1526,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 711.65,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220907000000[-7:MST]*-2430.00*15**Withdrawal PL*HelixProperty",
@@ -1537,7 +1537,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 712.65,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220907000000[-7:MST]*-857.35*15**Withdrawal CAPITAL ONE",
@@ -1548,7 +1548,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 3142.65,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220906000000[-7:MST]*4000.00*512**Deposit Home Banking Transfer",
@@ -1559,7 +1559,7 @@ const elevations_22_21 = [
     "Amount_Credit": 4000,
     "Balance": 4000,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220906000000[-7:MST]*-60.00*15**Withdrawal PAYPAL",
@@ -1570,7 +1570,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 0,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220906000000[-7:MST]*-3.00*21**Transfer fee",
@@ -1581,7 +1581,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 60,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220906000000[-7:MST]*56.67*501**Deposit Transfer From Share 0000",
@@ -1592,7 +1592,7 @@ const elevations_22_21 = [
     "Amount_Credit": 56.67,
     "Balance": 63,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220906000000[-7:MST]*-37.00*15**Withdrawal PAYPAL",
@@ -1603,7 +1603,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 6.33,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220906000000[-7:MST]*-11.99*15**Withdrawal PAYPAL",
@@ -1614,7 +1614,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 43.33,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220905000000[-7:MST]*-30.29*13**Withdrawal #000000880597",
@@ -1625,7 +1625,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 55.32,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220905000000[-7:MST]*-55.91*42**Withdrawal",
@@ -1636,7 +1636,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 85.61,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220904000000[-7:MST]*-12.35*13**Withdrawal #224714866804",
@@ -1647,7 +1647,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 141.52,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220904000000[-7:MST]*-68.50*11**Withdrawal at ATM #000000001965",
@@ -1658,7 +1658,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 153.87,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220903000000[-7:MST]*-381.66*13**Withdrawal #224618668927",
@@ -1669,7 +1669,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 222.37,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220903000000[-7:MST]*-9.73*42**Withdrawal",
@@ -1680,7 +1680,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 604.03,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220902000000[-7:MST]*-15.00*42**Withdrawal",
@@ -1691,7 +1691,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 613.76,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220902000000[-7:MST]*-30.00*15**Withdrawal VENMO",
@@ -1702,7 +1702,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 628.76,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220902000000[-7:MST]*236.00*515**Deposit VENMO",
@@ -1713,7 +1713,7 @@ const elevations_22_21 = [
     "Amount_Credit": 236,
     "Balance": 658.76,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220902000000[-7:MST]*-53.93*42**Withdrawal",
@@ -1724,7 +1724,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 422.76,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220901000000[-7:MST]*-108.50*11**Withdrawal at ATM #000000004396",
@@ -1735,7 +1735,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 476.69,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220901000000[-7:MST]*-1081.98*15**Withdrawal CAPITAL ONE",
@@ -1746,7 +1746,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 585.19,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220901000000[-7:MST]*-221.06*15**Withdrawal FORTCOLUTILITIES",
@@ -1757,7 +1757,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1667.17,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220901000000[-7:MST]*-125.00*15**Withdrawal VENMO",
@@ -1768,7 +1768,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1888.23,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220901000000[-7:MST]*-30.70*15**Withdrawal XCEL ENERGY-PSCO",
@@ -1779,7 +1779,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2013.23,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220831000000[-7:MST]*-1657.80*12**Withdrawal Home Banking",
@@ -1790,7 +1790,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2043.93,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220831000000[-7:MST]*-650.00*15**Withdrawal VENMO",
@@ -1801,7 +1801,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 3701.73,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220831000000[-7:MST]*3430.62*515**Deposit LIVE NATION WORL",
@@ -1812,7 +1812,7 @@ const elevations_22_21 = [
     "Amount_Credit": 3430.62,
     "Balance": 4351.73,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220830000000[-7:MST]*-38.40*42**Withdrawal",
@@ -1823,7 +1823,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 921.11,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220829000000[-7:MST]*-16.08*42**Withdrawal",
@@ -1834,7 +1834,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 959.51,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220829000000[-7:MST]*-86.00*15**Withdrawal PAYPAL",
@@ -1845,7 +1845,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 975.59,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220829000000[-7:MST]*-58.00*15**Withdrawal COMCAST 8497606",
@@ -1856,7 +1856,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1061.59,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220828000000[-7:MST]*-179.00*42**Withdrawal",
@@ -1867,7 +1867,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1119.59,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220822000000[-7:MST]*-13.97*15**Withdrawal PAYPAL",
@@ -1878,7 +1878,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1298.59,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220818000000[-7:MST]*-30.29*14**Withdrawal Bill Payment",
@@ -1889,7 +1889,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1312.56,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220818000000[-7:MST]*-47.00*15**Withdrawal PAYPAL",
@@ -1900,7 +1900,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1342.85,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220818000000[-7:MST]*500.00*515**Deposit VENMO",
@@ -1911,7 +1911,7 @@ const elevations_22_21 = [
     "Amount_Credit": 500,
     "Balance": 1389.85,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220817000000[-7:MST]*-50.00*15**Withdrawal VENMO",
@@ -1922,7 +1922,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 889.85,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220817000000[-7:MST]*-40.00*42**Withdrawal",
@@ -1933,7 +1933,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 939.85,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220816000000[-7:MST]*-4.50*42**Withdrawal",
@@ -1944,7 +1944,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 979.85,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220816000000[-7:MST]*-936.37*15**Withdrawal CAPITAL ONE",
@@ -1955,7 +1955,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 984.35,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220816000000[-7:MST]*-73.00*15**Withdrawal PAYPAL",
@@ -1966,7 +1966,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1920.72,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220816000000[-7:MST]*-30.10*42**Withdrawal",
@@ -1977,7 +1977,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1993.72,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220815000000[-7:MST]*-74.31*42**Withdrawal",
@@ -1988,7 +1988,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2023.82,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220815000000[-7:MST]*-6.78*42**Withdrawal",
@@ -1999,7 +1999,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2098.13,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220815000000[-7:MST]*-74.24*42**Withdrawal",
@@ -2010,7 +2010,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2104.91,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220815000000[-7:MST]*-1847.91*12**Withdrawal Home Banking",
@@ -2021,7 +2021,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2179.15,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220815000000[-7:MST]*-33.18*42**Withdrawal",
@@ -2032,7 +2032,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 4027.06,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220815000000[-7:MST]*-14.91*15**Withdrawal VENMO",
@@ -2043,7 +2043,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 4060.24,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220815000000[-7:MST]*-5.00*15**Withdrawal VENMO",
@@ -2054,7 +2054,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 4075.15,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220815000000[-7:MST]*3380.62*515**Deposit LIVE NATION WORL",
@@ -2065,7 +2065,7 @@ const elevations_22_21 = [
     "Amount_Credit": 3380.62,
     "Balance": 4080.15,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220815000000[-7:MST]*-21.46*13**Withdrawal #000011325011",
@@ -2076,7 +2076,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 699.53,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220814000000[-7:MST]*-70.26*42**Withdrawal",
@@ -2087,7 +2087,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 720.99,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220814000000[-7:MST]*-30.66*42**Withdrawal",
@@ -2098,7 +2098,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 791.25,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220814000000[-7:MST]*-0.99*14**Withdrawal Bill Payment",
@@ -2109,7 +2109,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 821.91,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220814000000[-7:MST]*-4.14*14**Withdrawal Bill Payment",
@@ -2120,7 +2120,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 822.9,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220814000000[-7:MST]*-12.08*42**Withdrawal",
@@ -2131,7 +2131,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 827.04,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220814000000[-7:MST]*-104.00*42**Withdrawal",
@@ -2142,7 +2142,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 839.12,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220814000000[-7:MST]*-0.23*21**Debit Card Fee",
@@ -2153,7 +2153,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 943.12,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220814000000[-7:MST]*-29.12*42**Withdrawal",
@@ -2164,7 +2164,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 943.35,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220814000000[-7:MST]*-39.58*42**Withdrawal",
@@ -2175,7 +2175,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 972.47,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220813000000[-7:MST]*-17.27*42**Withdrawal",
@@ -2186,7 +2186,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1012.05,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220813000000[-7:MST]*-40.00*42**Withdrawal",
@@ -2197,7 +2197,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1029.32,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220813000000[-7:MST]*-39.90*42**Withdrawal",
@@ -2208,7 +2208,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1069.32,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220813000000[-7:MST]*-5.23*42**Withdrawal",
@@ -2219,7 +2219,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1109.22,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220813000000[-7:MST]*-20.10*42**Withdrawal",
@@ -2230,7 +2230,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1114.45,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220813000000[-7:MST]*-7.20*42**Withdrawal",
@@ -2241,7 +2241,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1134.55,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220813000000[-7:MST]*-4.86*13**Withdrawal #000003274261",
@@ -2252,7 +2252,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1141.75,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220813000000[-7:MST]*-30.00*13**Withdrawal #222513909139",
@@ -2263,7 +2263,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1146.61,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220813000000[-7:MST]*-67.04*42**Withdrawal",
@@ -2274,7 +2274,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1176.61,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220812000000[-7:MST]*-4.30*13**Withdrawal #222418664923",
@@ -2285,7 +2285,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1243.65,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220812000000[-7:MST]*-8.88*42**Withdrawal",
@@ -2296,7 +2296,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1247.95,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220812000000[-7:MST]*-2.76*13**Withdrawal #000005270066",
@@ -2307,7 +2307,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1256.83,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220812000000[-7:MST]*-50.56*42**Withdrawal",
@@ -2318,7 +2318,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1259.59,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220812000000[-7:MST]*-119.79*42**Withdrawal",
@@ -2329,7 +2329,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1310.15,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220812000000[-7:MST]*-25.00*15**Withdrawal CAPITAL ONE",
@@ -2340,7 +2340,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1429.94,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220811000000[-7:MST]*-3.60*13**Withdrawal #000003277264",
@@ -2351,7 +2351,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1454.94,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220811000000[-7:MST]*-38.73*13**Withdrawal #000000162054",
@@ -2362,7 +2362,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1458.54,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220811000000[-7:MST]*-4.44*13**Withdrawal #000003275834",
@@ -2373,7 +2373,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1497.27,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220811000000[-7:MST]*-63.68*13**Withdrawal #000000723998",
@@ -2384,7 +2384,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1501.71,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220811000000[-7:MST]*-48.80*42**Withdrawal",
@@ -2395,7 +2395,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1565.39,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220811000000[-7:MST]*-48.38*13**Withdrawal #222303767643",
@@ -2406,7 +2406,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1614.19,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220810000000[-7:MST]*-11.58*42**Withdrawal",
@@ -2417,7 +2417,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1662.57,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220810000000[-7:MST]*-13.14*13**Withdrawal #222223287620",
@@ -2428,7 +2428,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1674.15,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220810000000[-7:MST]*-76.63*13**Withdrawal #222220265279",
@@ -2439,7 +2439,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1687.29,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220810000000[-7:MST]*-64.61*13**Withdrawal #222217953730",
@@ -2450,7 +2450,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1763.92,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220810000000[-7:MST]*-26.50*13**Withdrawal #000000634984",
@@ -2461,7 +2461,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1828.53,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220810000000[-7:MST]*-124.24*42**Withdrawal",
@@ -2472,7 +2472,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1855.03,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220810000000[-7:MST]*-25.00*42**Withdrawal",
@@ -2483,7 +2483,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1979.27,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220809000000[-7:MST]*-7.48*42**Withdrawal",
@@ -2494,7 +2494,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2004.27,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220809000000[-7:MST]*-13.20*42**Withdrawal",
@@ -2505,7 +2505,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2011.75,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220808000000[-7:MST]*-924.00*15**Withdrawal CAPITAL ONE",
@@ -2516,7 +2516,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2024.95,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220808000000[-7:MST]*-316.00*15**Withdrawal VENMO",
@@ -2527,7 +2527,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2948.95,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220808000000[-7:MST]*671.00*515**Deposit VENMO",
@@ -2538,7 +2538,7 @@ const elevations_22_21 = [
     "Amount_Credit": 671,
     "Balance": 3264.95,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220808000000[-7:MST]*42.23*513**Withdrawal Adjustment",
@@ -2549,7 +2549,7 @@ const elevations_22_21 = [
     "Amount_Credit": 42.23,
     "Balance": 2593.95,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220808000000[-7:MST]*1.00*513**Withdrawal Adjustment",
@@ -2560,7 +2560,7 @@ const elevations_22_21 = [
     "Amount_Credit": 1,
     "Balance": 2551.72,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220807000000[-7:MST]*-1.00*13**Withdrawal #000004109661",
@@ -2571,7 +2571,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2550.72,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220807000000[-7:MST]*-42.23*13**Withdrawal #000006046492",
@@ -2582,7 +2582,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2551.72,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220807000000[-7:MST]*-10.00*13**Withdrawal #000004324792",
@@ -2593,7 +2593,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2593.95,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220807000000[-7:MST]*-44.00*11**Withdrawal at ATM #000000008505",
@@ -2604,7 +2604,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2603.95,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220807000000[-7:MST]*-8.00*42**Withdrawal",
@@ -2615,7 +2615,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2647.95,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220806000000[-7:MST]*-17.89*13**Withdrawal #221722767893",
@@ -2626,7 +2626,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2655.95,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220805000000[-7:MST]*-81.14*13**Withdrawal #000020472028",
@@ -2637,7 +2637,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2673.84,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220805000000[-7:MST]*-38.00*15**Withdrawal PAYPAL",
@@ -2648,7 +2648,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2754.98,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220805000000[-7:MST]*-22.00*15**Withdrawal VENMO",
@@ -2659,7 +2659,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2792.98,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220803000000[-7:MST]*-0.71*42**Withdrawal",
@@ -2670,7 +2670,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2814.98,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220803000000[-7:MST]*-22.00*15**Withdrawal PAYPAL",
@@ -2681,7 +2681,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2815.69,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220803000000[-7:MST]*-11.99*15**Withdrawal PAYPAL",
@@ -2692,7 +2692,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2837.69,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220803000000[-7:MST]*-19.12*14**Withdrawal Bill Payment",
@@ -2703,7 +2703,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2849.68,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220802000000[-7:MST]*-15.00*42**Withdrawal",
@@ -2714,7 +2714,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2868.8,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220801000000[-7:MST]*-1021.82*15**Withdrawal CAPITAL ONE",
@@ -2725,7 +2725,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2883.8,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220801000000[-7:MST]*-675.00*15**Withdrawal VENMO",
@@ -2736,7 +2736,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 3905.62,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220801000000[-7:MST]*-125.00*15**Withdrawal VENMO",
@@ -2747,7 +2747,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 4580.62,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220801000000[-7:MST]*-117.99*15**Withdrawal FORTCOLUTILITIES",
@@ -2758,7 +2758,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 4705.62,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220801000000[-7:MST]*-40.00*15**Withdrawal PAYPAL",
@@ -2769,7 +2769,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 4823.61,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220801000000[-7:MST]*-28.29*15**Withdrawal XCEL ENERGY-PSCO",
@@ -2780,7 +2780,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 4863.61,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220801000000[-7:MST]*-22.50*15**Withdrawal PAYPAL",
@@ -2791,7 +2791,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 4891.9,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220730000000[-7:MST]*-36.73*42**Withdrawal",
@@ -2802,7 +2802,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 4914.4,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220729000000[-7:MST]*-16.08*42**Withdrawal",
@@ -2813,7 +2813,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 4951.13,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220729000000[-7:MST]*3430.62*515**Deposit LIVE NATION WORL",
@@ -2824,7 +2824,7 @@ const elevations_22_21 = [
     "Amount_Credit": 3430.62,
     "Balance": 4967.21,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220729000000[-7:MST]*-12.00*42**Withdrawal",
@@ -2835,7 +2835,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1536.59,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220729000000[-7:MST]*-43.32*42**Withdrawal",
@@ -2846,7 +2846,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1548.59,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220729000000[-7:MST]*-10.92*13**Withdrawal #220922044237",
@@ -2857,7 +2857,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1591.91,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220728000000[-7:MST]*-21.49*13**Withdrawal #220913173719",
@@ -2868,7 +2868,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1602.83,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220728000000[-7:MST]*-7.45*42**Withdrawal",
@@ -2879,7 +2879,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1624.32,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220728000000[-7:MST]*-179.00*42**Withdrawal",
@@ -2890,7 +2890,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1631.77,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220728000000[-7:MST]*-40.00*15**Withdrawal PAYPAL",
@@ -2901,7 +2901,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1810.77,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220727000000[-7:MST]*-38.00*15**Withdrawal PAYPAL",
@@ -2912,7 +2912,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1850.77,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220727000000[-7:MST]*-158.05*42**Withdrawal",
@@ -2923,7 +2923,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1888.77,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220726000000[-7:MST]*-36.03*15**Withdrawal PAYPAL",
@@ -2934,7 +2934,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2046.82,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220725000000[-7:MST]*-30.60*42**Withdrawal",
@@ -2945,7 +2945,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2082.85,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220725000000[-7:MST]*-100.00*15**Withdrawal VENMO",
@@ -2956,7 +2956,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2113.45,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220725000000[-7:MST]*-20.00*15**Withdrawal VENMO",
@@ -2967,7 +2967,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2213.45,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220724000000[-7:MST]*-431.20*42**Withdrawal",
@@ -2978,7 +2978,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2233.45,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220722000000[-7:MST]*-4.28*14**Withdrawal Bill Payment",
@@ -2989,7 +2989,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2664.65,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220721000000[-7:MST]*-269.32*42**Withdrawal",
@@ -3000,7 +3000,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2668.93,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220721000000[-7:MST]*-13.97*15**Withdrawal PAYPAL",
@@ -3011,7 +3011,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2938.25,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220720000000[-7:MST]*-201.10*11**Withdrawal at ATM #000000005914",
@@ -3022,7 +3022,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2952.22,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220718000000[-7:MST]*-30.29*14**Withdrawal Bill Payment",
@@ -3033,7 +3033,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 3153.32,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220718000000[-7:MST]*-995.89*15**Withdrawal CAPITAL ONE",
@@ -3044,7 +3044,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 3183.61,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220716000000[-7:MST]*-4.50*42**Withdrawal",
@@ -3055,7 +3055,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 4179.5,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220716000000[-7:MST]*-23.66*42**Withdrawal",
@@ -3066,7 +3066,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 4184,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220716000000[-7:MST]*-6.60*42**Withdrawal",
@@ -3077,7 +3077,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 4207.66,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220715000000[-7:MST]*-28.66*42**Withdrawal",
@@ -3088,7 +3088,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 4214.26,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220715000000[-7:MST]*-4.50*42**Withdrawal",
@@ -3099,7 +3099,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 4242.92,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220715000000[-7:MST]*-1995.00*15**Withdrawal PL*HelixProperty",
@@ -3110,7 +3110,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 4247.42,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220715000000[-7:MST]*3380.63*515**Deposit LIVE NATION WORL",
@@ -3121,7 +3121,7 @@ const elevations_22_21 = [
     "Amount_Credit": 3380.63,
     "Balance": 6242.42,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220715000000[-7:MST]*-0.99*42**Withdrawal",
@@ -3132,7 +3132,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2861.79,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220715000000[-7:MST]*-21.46*13**Withdrawal #000011053603",
@@ -3143,7 +3143,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2862.78,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220714000000[-7:MST]*-2.68*13**Withdrawal #219521604817",
@@ -3154,7 +3154,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2884.24,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220714000000[-7:MST]*2000.00*512**Deposit Home Banking Transfer",
@@ -3165,7 +3165,7 @@ const elevations_22_21 = [
     "Amount_Credit": 2000,
     "Balance": 2886.92,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220714000000[-7:MST]*-4.50*42**Withdrawal",
@@ -3176,7 +3176,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 886.92,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220714000000[-7:MST]*-41.18*42**Withdrawal",
@@ -3187,7 +3187,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 891.42,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220713000000[-7:MST]*-100.02*13**Withdrawal #000000009789",
@@ -3198,7 +3198,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 932.6,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220713000000[-7:MST]*-4.50*42**Withdrawal",
@@ -3209,7 +3209,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1032.62,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220713000000[-7:MST]*-30.10*42**Withdrawal",
@@ -3220,7 +3220,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1037.12,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220712000000[-7:MST]*-13.43*13**Withdrawal #219321003871",
@@ -3231,7 +3231,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1067.22,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220712000000[-7:MST]*-25.00*15**Withdrawal CAPITAL ONE",
@@ -3242,7 +3242,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1080.65,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220711000000[-7:MST]*-67.83*13**Withdrawal #219222971070",
@@ -3253,7 +3253,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1105.65,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220707000000[-7:MST]*-47.61*15**Withdrawal COMCAST",
@@ -3264,7 +3264,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1173.48,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220706000000[-7:MST]*-27.15*13**Withdrawal #000000000018",
@@ -3275,7 +3275,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1221.09,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220706000000[-7:MST]*-201.10*11**Withdrawal at ATM #000000004916",
@@ -3286,7 +3286,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1248.24,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220706000000[-7:MST]*-675.00*15**Withdrawal VENMO",
@@ -3297,7 +3297,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1449.34,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220706000000[-7:MST]*-78.14*15**Withdrawal FORTCOLUTILITIES",
@@ -3308,7 +3308,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2124.34,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220706000000[-7:MST]*-58.90*15**Withdrawal XCEL ENERGY-PSCO",
@@ -3319,7 +3319,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2202.48,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220705000000[-7:MST]*-11.99*15**Withdrawal PAYPAL",
@@ -3330,7 +3330,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2261.38,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220702000000[-7:MST]*-15.56*42**Withdrawal",
@@ -3341,7 +3341,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2273.37,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220702000000[-7:MST]*-0.21*42**Withdrawal",
@@ -3352,7 +3352,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2288.93,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220702000000[-7:MST]*-4.50*42**Withdrawal",
@@ -3363,7 +3363,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2289.14,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220702000000[-7:MST]*-37.80*42**Withdrawal",
@@ -3374,7 +3374,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2293.64,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220701000000[-7:MST]*-29.74*42**Withdrawal",
@@ -3385,7 +3385,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2331.44,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220701000000[-7:MST]*-43.75*42**Withdrawal",
@@ -3396,7 +3396,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2361.18,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220701000000[-7:MST]*-4.50*42**Withdrawal",
@@ -3407,7 +3407,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2404.93,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220701000000[-7:MST]*-981.77*15**Withdrawal CAPITAL ONE",
@@ -3418,7 +3418,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2409.43,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220630000000[-7:MST]*-7.51*13**Withdrawal #000000843897",
@@ -3429,7 +3429,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 3391.2,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220630000000[-7:MST]*-23.12*13**Withdrawal #000000380130",
@@ -3440,7 +3440,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 3398.71,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220630000000[-7:MST]*-7.45*42**Withdrawal",
@@ -3451,7 +3451,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 3421.83,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220630000000[-7:MST]*-4.50*42**Withdrawal",
@@ -3462,7 +3462,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 3429.28,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220630000000[-7:MST]*-52.79*42**Withdrawal",
@@ -3473,7 +3473,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 3433.78,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220630000000[-7:MST]*3430.63*515**Deposit LIVE NATION WORL",
@@ -3484,7 +3484,7 @@ const elevations_22_21 = [
     "Amount_Credit": 3430.63,
     "Balance": 3486.57,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220630000000[-7:MST]*-60.61*13**Withdrawal #218022036157",
@@ -3495,7 +3495,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 55.94,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220630000000[-7:MST]*-3.00*21**Transfer fee",
@@ -3506,7 +3506,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 116.55,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220630000000[-7:MST]*107.60*501**Deposit Transfer From Share 0000",
@@ -3517,7 +3517,7 @@ const elevations_22_21 = [
     "Amount_Credit": 107.6,
     "Balance": 119.55,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220629000000[-7:MST]*-16.08*42**Withdrawal",
@@ -3528,7 +3528,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 11.95,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220629000000[-7:MST]*-3.00*21**Transfer fee",
@@ -3539,7 +3539,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 28.03,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220629000000[-7:MST]*31.03*501**Deposit Transfer From Share 0000",
@@ -3550,7 +3550,7 @@ const elevations_22_21 = [
     "Amount_Credit": 31.03,
     "Balance": 31.03,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220629000000[-7:MST]*-4.50*42**Withdrawal",
@@ -3561,7 +3561,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 0,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220629000000[-7:MST]*-68.00*15**Withdrawal COMCAST 8497606",
@@ -3572,7 +3572,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 4.5,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220629000000[-7:MST]*-3.00*21**Transfer fee*1",
@@ -3583,7 +3583,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 72.5,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220629000000[-7:MST]*71.00*501**Deposit Transfer From Share 0000",
@@ -3594,7 +3594,7 @@ const elevations_22_21 = [
     "Amount_Credit": 71,
     "Balance": 75.5,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220629000000[-7:MST]*-12.00*42**Withdrawal",
@@ -3605,7 +3605,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 4.5,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220629000000[-7:MST]*-3.00*21**Transfer fee*2",
@@ -3616,7 +3616,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 16.5,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220629000000[-7:MST]*19.50*501**Deposit Transfer From Share 0000",
@@ -3627,7 +3627,7 @@ const elevations_22_21 = [
     "Amount_Credit": 19.5,
     "Balance": 19.5,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220628000000[-7:MST]*-6.91*42**Withdrawal",
@@ -3638,7 +3638,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 0,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220628000000[-7:MST]*-4.50*42**Withdrawal",
@@ -3649,7 +3649,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 6.91,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220628000000[-7:MST]*-12.00*42**Withdrawal",
@@ -3660,7 +3660,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 11.41,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220628000000[-7:MST]*-179.00*42**Withdrawal",
@@ -3671,7 +3671,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 23.41,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220627000000[-7:MST]*-81.72*13**Withdrawal #217822616361",
@@ -3682,7 +3682,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 202.41,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220627000000[-7:MST]*-3.00*21**Transfer fee",
@@ -3693,7 +3693,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 284.13,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220627000000[-7:MST]*96.72*501**Deposit Transfer From Share 0000",
@@ -3704,7 +3704,7 @@ const elevations_22_21 = [
     "Amount_Credit": 96.72,
     "Balance": 287.13,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220627000000[-7:MST]*-62.43*13**Withdrawal #000000008274",
@@ -3715,7 +3715,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 190.41,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220627000000[-7:MST]*-3.00*21**Transfer fee*1",
@@ -3726,7 +3726,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 252.84,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220627000000[-7:MST]*65.43*501**Deposit Transfer From Share 0000",
@@ -3737,7 +3737,7 @@ const elevations_22_21 = [
     "Amount_Credit": 65.43,
     "Balance": 255.84,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220627000000[-7:MST]*-43.01*13**Withdrawal #000022440829",
@@ -3748,7 +3748,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 190.41,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220627000000[-7:MST]*-3.00*21**Transfer fee*2",
@@ -3759,7 +3759,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 233.42,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220627000000[-7:MST]*46.01*501**Deposit Transfer From Share 0000",
@@ -3770,7 +3770,7 @@ const elevations_22_21 = [
     "Amount_Credit": 46.01,
     "Balance": 236.42,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220627000000[-7:MST]*-42.49*42**Withdrawal",
@@ -3781,7 +3781,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 190.41,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220627000000[-7:MST]*-3.00*21**Transfer fee*3",
@@ -3792,7 +3792,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 232.9,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220627000000[-7:MST]*174.97*501**Deposit Transfer From Share 0000",
@@ -3803,7 +3803,7 @@ const elevations_22_21 = [
     "Amount_Credit": 174.97,
     "Balance": 235.9,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220627000000[-7:MST]*-15.90*15**Withdrawal VENMO",
@@ -3814,7 +3814,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 60.93,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220627000000[-7:MST]*-3.00*15**Withdrawal VENMO",
@@ -3825,7 +3825,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 76.83,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220626000000[-7:MST]*-1.08*13**Withdrawal #000000553399",
@@ -3836,7 +3836,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 79.83,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220626000000[-7:MST]*-102.21*42**Withdrawal",
@@ -3847,7 +3847,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 80.91,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220625000000[-7:MST]*-318.25*42**Withdrawal",
@@ -3858,7 +3858,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 183.12,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220625000000[-7:MST]*-15.01*42**Withdrawal",
@@ -3869,7 +3869,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 501.37,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220624000000[-7:MST]*-1.50*21**ATM Fee",
@@ -3880,7 +3880,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 516.38,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220624000000[-7:MST]*-43.50*11**Withdrawal at ATM #000000001013",
@@ -3891,7 +3891,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 517.88,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220624000000[-7:MST]*-21.99*13**Withdrawal #000000503359",
@@ -3902,7 +3902,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 561.38,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220623000000[-7:MST]*-355.95*42**Withdrawal",
@@ -3913,7 +3913,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 583.37,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220622000000[-7:MST]*-1.00*21**Debit Card Fee",
@@ -3924,7 +3924,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 939.32,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220622000000[-7:MST]*-125.19*42**Withdrawal",
@@ -3935,7 +3935,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 940.32,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220622000000[-7:MST]*-68.00*15**Withdrawal PAYPAL",
@@ -3946,7 +3946,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1065.51,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220622000000[-7:MST]*-10.74*15**Withdrawal PAYPAL",
@@ -3957,7 +3957,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1133.51,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220621000000[-7:MST]*1000.00*512**Deposit Home Banking Transfer",
@@ -3968,7 +3968,7 @@ const elevations_22_21 = [
     "Amount_Credit": 1000,
     "Balance": 1144.25,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220621000000[-7:MST]*-1.50*21**ATM Fee",
@@ -3979,7 +3979,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 144.25,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220621000000[-7:MST]*-121.10*11**Withdrawal at ATM #217200003933",
@@ -3990,7 +3990,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 145.75,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220621000000[-7:MST]*-110.97*42**Withdrawal",
@@ -4001,7 +4001,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 266.85,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220618000000[-7:MST]*-30.29*14**Withdrawal Bill Payment",
@@ -4012,7 +4012,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 377.82,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220616000000[-7:MST]*-667.76*15**Withdrawal CAPITAL ONE",
@@ -4023,7 +4023,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 408.11,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220616000000[-7:MST]*-36.03*15**Withdrawal PAYPAL",
@@ -4034,7 +4034,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1075.87,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220615000000[-7:MST]*-4000.00*12**Withdrawal Home Banking",
@@ -4045,7 +4045,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1111.9,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220615000000[-7:MST]*3380.61*515**Deposit LIVE NATION WORL",
@@ -4056,7 +4056,7 @@ const elevations_22_21 = [
     "Amount_Credit": 3380.61,
     "Balance": 5111.9,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220615000000[-7:MST]*-0.99*42**Withdrawal",
@@ -4067,7 +4067,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1731.29,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220614000000[-7:MST]*-876.04*42**Withdrawal",
@@ -4078,7 +4078,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1732.28,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220614000000[-7:MST]*-35.48*13**Withdrawal #216500636277",
@@ -4089,7 +4089,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2608.32,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220614000000[-7:MST]*-200.00*42**Withdrawal",
@@ -4100,7 +4100,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2643.8,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220613000000[-7:MST]*-10.74*42**Withdrawal",
@@ -4111,7 +4111,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2843.8,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220613000000[-7:MST]*-200.00*42**Withdrawal",
@@ -4122,7 +4122,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2854.54,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220613000000[-7:MST]*-21.50*13**Withdrawal #216400816318",
@@ -4133,7 +4133,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 3054.54,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220613000000[-7:MST]*1000.00*512**Deposit Home Banking Transfer",
@@ -4144,7 +4144,7 @@ const elevations_22_21 = [
     "Amount_Credit": 1000,
     "Balance": 3076.04,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220613000000[-7:MST]*1000.00*512**Deposit Home Banking Transfer*1",
@@ -4155,7 +4155,7 @@ const elevations_22_21 = [
     "Amount_Credit": 1000,
     "Balance": 2076.04,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220613000000[-7:MST]*-55.00*15**Withdrawal VENMO",
@@ -4166,7 +4166,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1076.04,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220613000000[-7:MST]*-3.00*21**Transfer fee",
@@ -4177,7 +4177,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1131.04,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220613000000[-7:MST]*58.00*501**Deposit Transfer From Share 0000",
@@ -4188,7 +4188,7 @@ const elevations_22_21 = [
     "Amount_Credit": 58,
     "Balance": 1134.04,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220613000000[-7:MST]*-37.00*15**Withdrawal PAYPAL",
@@ -4199,7 +4199,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1076.04,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220613000000[-7:MST]*-3.00*21**Transfer fee*1",
@@ -4210,7 +4210,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1113.04,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220613000000[-7:MST]*40.00*501**Deposit Transfer From Share 0000",
@@ -4221,7 +4221,7 @@ const elevations_22_21 = [
     "Amount_Credit": 40,
     "Balance": 1116.04,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220613000000[-7:MST]*-25.00*15**Withdrawal CAPITAL ONE",
@@ -4232,7 +4232,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1076.04,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220613000000[-7:MST]*-3.00*21**Transfer fee*2",
@@ -4243,7 +4243,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1101.04,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220613000000[-7:MST]*28.00*501**Deposit Transfer From Share 0000",
@@ -4254,7 +4254,7 @@ const elevations_22_21 = [
     "Amount_Credit": 28,
     "Balance": 1104.04,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220613000000[-7:MST]*-5.00*15**Withdrawal VENMO",
@@ -4265,7 +4265,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1076.04,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220613000000[-7:MST]*-3.00*21**Transfer fee*3",
@@ -4276,7 +4276,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1081.04,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220613000000[-7:MST]*961.57*501**Deposit Transfer From Share 0000",
@@ -4287,7 +4287,7 @@ const elevations_22_21 = [
     "Amount_Credit": 961.57,
     "Balance": 1084.04,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220612000000[-7:MST]*-70.10*42**Withdrawal",
@@ -4298,7 +4298,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 122.47,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220609000000[-7:MST]*-25.28*42**Withdrawal",
@@ -4309,7 +4309,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 192.57,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220609000000[-7:MST]*-4.50*42**Withdrawal",
@@ -4320,7 +4320,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 217.85,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220609000000[-7:MST]*-6.33*42**Withdrawal",
@@ -4331,7 +4331,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 222.35,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220609000000[-7:MST]*-62.30*42**Withdrawal",
@@ -4342,7 +4342,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 228.68,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220608000000[-7:MST]*-42.76*13**Withdrawal #215900187868",
@@ -4353,7 +4353,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 290.98,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220608000000[-7:MST]*-4.50*42**Withdrawal",
@@ -4364,7 +4364,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 333.74,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220608000000[-7:MST]*-25.33*42**Withdrawal",
@@ -4375,7 +4375,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 338.24,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220608000000[-7:MST]*-7.51*13**Withdrawal #319115",
@@ -4386,7 +4386,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 363.57,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220608000000[-7:MST]*-31.79*42**Withdrawal",
@@ -4397,7 +4397,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 371.08,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220607000000[-7:MST]*-12.50*11**Withdrawal at ATM #215815088987",
@@ -4408,7 +4408,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 402.87,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220607000000[-7:MST]*-4.50*42**Withdrawal",
@@ -4419,7 +4419,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 415.37,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220606000000[-7:MST]*-4.50*42**Withdrawal",
@@ -4430,7 +4430,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 419.87,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220606000000[-7:MST]*-675.00*15**Withdrawal VENMO",
@@ -4441,7 +4441,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 424.37,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220606000000[-7:MST]*-125.00*15**Withdrawal VENMO",
@@ -4452,7 +4452,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1099.37,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220606000000[-7:MST]*-58.00*15**Withdrawal COMCAST",
@@ -4463,7 +4463,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1224.37,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220606000000[-7:MST]*-43.43*15**Withdrawal FORTCOLUTILITIES",
@@ -4474,7 +4474,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1282.37,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220606000000[-7:MST]*-36.00*15**Withdrawal PAYPAL",
@@ -4485,7 +4485,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1325.8,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220605000000[-7:MST]*-21.99*42**Withdrawal",
@@ -4496,7 +4496,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1361.8,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220605000000[-7:MST]*-50.00*42**Withdrawal",
@@ -4507,7 +4507,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1383.79,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220605000000[-7:MST]*-10.49*42**Withdrawal",
@@ -4518,7 +4518,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1433.79,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220605000000[-7:MST]*-4.50*42**Withdrawal",
@@ -4529,7 +4529,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1444.28,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220605000000[-7:MST]*-48.37*42**Withdrawal",
@@ -4540,7 +4540,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1448.78,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220604000000[-7:MST]*-30.79*13**Withdrawal #215518032128",
@@ -4551,7 +4551,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1497.15,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220604000000[-7:MST]*-10.29*42**Withdrawal",
@@ -4562,7 +4562,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1527.94,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220604000000[-7:MST]*-16.67*13**Withdrawal #215514730407",
@@ -4573,7 +4573,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1538.23,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220604000000[-7:MST]*-68.50*11**Withdrawal at ATM #215500000682",
@@ -4584,7 +4584,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1554.9,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220604000000[-7:MST]*-64.47*13**Withdrawal #215400020825",
@@ -4595,7 +4595,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1623.4,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220603000000[-7:MST]*-0.21*42**Withdrawal",
@@ -4606,7 +4606,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1687.87,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220603000000[-7:MST]*-12.00*42**Withdrawal",
@@ -4617,7 +4617,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1688.08,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220603000000[-7:MST]*-9.88*42**Withdrawal",
@@ -4628,7 +4628,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1700.08,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220603000000[-7:MST]*-53.90*42**Withdrawal",
@@ -4639,7 +4639,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1709.96,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220603000000[-7:MST]*-11.99*15**Withdrawal PAYPAL",
@@ -4650,7 +4650,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1763.86,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220603000000[-7:MST]*-20.76*42**Withdrawal",
@@ -4661,7 +4661,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1775.85,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220603000000[-7:MST]*-23.13*42**Withdrawal",
@@ -4672,7 +4672,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1796.61,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220602000000[-7:MST]*-15.56*42**Withdrawal",
@@ -4683,7 +4683,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1819.74,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220602000000[-7:MST]*-4.50*42**Withdrawal",
@@ -4694,7 +4694,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1835.3,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220602000000[-7:MST]*-32.03*15**Withdrawal PAYPAL",
@@ -4705,7 +4705,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1839.8,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220602000000[-7:MST]*-56.98*42**Withdrawal",
@@ -4716,7 +4716,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1871.83,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220601000000[-7:MST]*-45.34*42**Withdrawal",
@@ -4727,7 +4727,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1928.81,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220601000000[-7:MST]*-6.66*42**Withdrawal",
@@ -4738,7 +4738,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1974.15,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220601000000[-7:MST]*-16.11*42**Withdrawal",
@@ -4749,7 +4749,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1980.81,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220601000000[-7:MST]*-4.50*42**Withdrawal",
@@ -4760,7 +4760,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1996.92,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220531000000[-7:MST]*-2.97*42**Withdrawal",
@@ -4771,7 +4771,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2001.42,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220531000000[-7:MST]*-2836.00*12**Withdrawal Home Banking",
@@ -4782,7 +4782,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2004.39,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220531000000[-7:MST]*-45.00*15**Withdrawal PAYPAL",
@@ -4793,7 +4793,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 4840.39,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220531000000[-7:MST]*-4.50*42**Withdrawal",
@@ -4804,7 +4804,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 4885.39,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220531000000[-7:MST]*3991.72*515**Deposit LIVE NATION WORL",
@@ -4815,7 +4815,7 @@ const elevations_22_21 = [
     "Amount_Credit": 3991.72,
     "Balance": 4889.89,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220531000000[-7:MST]*340.00*515**Deposit VENMO",
@@ -4826,7 +4826,7 @@ const elevations_22_21 = [
     "Amount_Credit": 340,
     "Balance": 898.17,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220530000000[-7:MST]*-69.89*13**Withdrawal #215015769316",
@@ -4837,7 +4837,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 558.17,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220530000000[-7:MST]*-10.72*42**Withdrawal",
@@ -4848,7 +4848,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 628.06,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220530000000[-7:MST]*-30.00*42**Withdrawal",
@@ -4859,7 +4859,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 638.78,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220530000000[-7:MST]*-42.36*42**Withdrawal",
@@ -4870,7 +4870,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 668.78,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220530000000[-7:MST]*-15.57*42**Withdrawal",
@@ -4881,7 +4881,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 711.14,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220529000000[-7:MST]*-8.59*42**Withdrawal",
@@ -4892,7 +4892,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 726.71,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220529000000[-7:MST]*-1.34*13**Withdrawal #214915727623",
@@ -4903,7 +4903,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 735.3,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220529000000[-7:MST]*-16.08*42**Withdrawal",
@@ -4914,7 +4914,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 736.64,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220529000000[-7:MST]*-25.00*42**Withdrawal",
@@ -4925,7 +4925,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 752.72,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220528000000[-7:MST]*-11.18*42**Withdrawal",
@@ -4936,7 +4936,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 777.72,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220528000000[-7:MST]*-48.92*13**Withdrawal #119511",
@@ -4947,7 +4947,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 788.9,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220528000000[-7:MST]*-3.50*42**Withdrawal",
@@ -4958,7 +4958,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 837.82,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220528000000[-7:MST]*-61.75*42**Withdrawal",
@@ -4969,7 +4969,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 841.32,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220528000000[-7:MST]*-5.03*42**Withdrawal",
@@ -4980,7 +4980,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 903.07,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220528000000[-7:MST]*-179.00*42**Withdrawal",
@@ -4991,7 +4991,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 908.1,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220528000000[-7:MST]*-1.43*13**Withdrawal #214722883413",
@@ -5002,7 +5002,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1087.1,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220527000000[-7:MST]*-30.00*13**Withdrawal #00001556",
@@ -5013,7 +5013,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1088.53,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220527000000[-7:MST]*-127.86*13**Withdrawal #122113",
@@ -5024,7 +5024,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1118.53,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220527000000[-7:MST]*1000.00*512**Deposit Home Banking Transfer",
@@ -5035,7 +5035,7 @@ const elevations_22_21 = [
     "Amount_Credit": 1000,
     "Balance": 1246.39,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220527000000[-7:MST]*-3.11*42**Withdrawal",
@@ -5046,7 +5046,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 246.39,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220527000000[-7:MST]*-3.50*42**Withdrawal",
@@ -5057,7 +5057,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 249.5,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220527000000[-7:MST]*-4.50*42**Withdrawal",
@@ -5068,7 +5068,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 253,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220526000000[-7:MST]*-4.50*42**Withdrawal",
@@ -5079,7 +5079,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 257.5,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220526000000[-7:MST]*-70.00*15**Withdrawal VENMO",
@@ -5090,7 +5090,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 262,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220526000000[-7:MST]*-32.03*15**Withdrawal PAYPAL",
@@ -5101,7 +5101,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 332,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220526000000[-7:MST]*-125.00*42**Withdrawal",
@@ -5112,7 +5112,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 364.03,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220525000000[-7:MST]*-48.50*11**Withdrawal at ATM #214500000604",
@@ -5123,7 +5123,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 489.03,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220525000000[-7:MST]*-4.50*42**Withdrawal",
@@ -5134,7 +5134,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 537.53,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220525000000[-7:MST]*-52.49*14**Withdrawal Bill Payment",
@@ -5145,7 +5145,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 542.03,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220525000000[-7:MST]*-1000.00*42**Withdrawal",
@@ -5156,7 +5156,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 594.52,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220524000000[-7:MST]*-44.08*13**Withdrawal #214421238777",
@@ -5167,7 +5167,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1594.52,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220524000000[-7:MST]*-150.52*13**Withdrawal #010270",
@@ -5178,7 +5178,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1638.6,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220524000000[-7:MST]*-12.90*42**Withdrawal",
@@ -5189,7 +5189,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1789.12,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220524000000[-7:MST]*-4.50*42**Withdrawal",
@@ -5200,7 +5200,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1802.02,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220524000000[-7:MST]*-18.25*13**Withdrawal #214300000003",
@@ -5211,7 +5211,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1806.52,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220523000000[-7:MST]*-4.50*42**Withdrawal",
@@ -5222,7 +5222,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1824.77,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220523000000[-7:MST]*-62.00*15**Withdrawal VENMO",
@@ -5233,7 +5233,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1829.27,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220523000000[-7:MST]*-37.00*15**Withdrawal PAYPAL",
@@ -5244,7 +5244,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1891.27,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220523000000[-7:MST]*-20.00*15**Withdrawal VENMO",
@@ -5255,7 +5255,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1928.27,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220523000000[-7:MST]*-10.74*15**Withdrawal PAYPAL",
@@ -5266,7 +5266,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1948.27,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220523000000[-7:MST]*-8.82*15**Withdrawal VENMO",
@@ -5277,7 +5277,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1959.01,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220523000000[-7:MST]*-5.00*15**Withdrawal VENMO",
@@ -5288,7 +5288,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1967.83,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220522000000[-7:MST]*-4.92*42**Withdrawal",
@@ -5299,7 +5299,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1972.83,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220522000000[-7:MST]*-4.50*42**Withdrawal",
@@ -5310,7 +5310,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1977.75,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220522000000[-7:MST]*-607.92*42**Withdrawal",
@@ -5321,7 +5321,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1982.25,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220521000000[-7:MST]*-7.51*13**Withdrawal #421398",
@@ -5332,7 +5332,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2590.17,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220521000000[-7:MST]*-151.69*42**Withdrawal",
@@ -5343,7 +5343,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2597.68,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220521000000[-7:MST]*-100.00*42**Withdrawal",
@@ -5354,7 +5354,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2749.37,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220520000000[-7:MST]*-33.54*42**Withdrawal",
@@ -5365,7 +5365,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2849.37,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220520000000[-7:MST]*-7.98*42**Withdrawal",
@@ -5376,7 +5376,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2882.91,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220520000000[-7:MST]*-17.00*42**Withdrawal",
@@ -5387,7 +5387,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2890.89,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220520000000[-7:MST]*-60.46*42**Withdrawal",
@@ -5398,7 +5398,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2907.89,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220520000000[-7:MST]*-27.43*15**Withdrawal CAPITAL ONE",
@@ -5409,7 +5409,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2968.35,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220520000000[-7:MST]*-30.10*42**Withdrawal",
@@ -5420,7 +5420,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2995.78,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220519000000[-7:MST]*-35.28*42**Withdrawal",
@@ -5431,7 +5431,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 3025.88,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220519000000[-7:MST]*-4.50*42**Withdrawal",
@@ -5442,7 +5442,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 3061.16,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220518000000[-7:MST]*-42.44*42**Withdrawal",
@@ -5453,7 +5453,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 3065.66,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220518000000[-7:MST]*-4.50*42**Withdrawal",
@@ -5464,7 +5464,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 3108.1,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220518000000[-7:MST]*-24.00*42**Withdrawal",
@@ -5475,7 +5475,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 3112.6,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220518000000[-7:MST]*-30.29*14**Withdrawal Bill Payment",
@@ -5486,7 +5486,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 3136.6,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220517000000[-7:MST]*-4.50*42**Withdrawal",
@@ -5497,7 +5497,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 3166.89,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220517000000[-7:MST]*-35.00*42**Withdrawal",
@@ -5508,7 +5508,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 3171.39,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220517000000[-7:MST]*-11.12*42**Withdrawal",
@@ -5519,7 +5519,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 3206.39,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220517000000[-7:MST]*-15.00*15**Withdrawal VENMO",
@@ -5530,7 +5530,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 3217.51,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220517000000[-7:MST]*-7.54*13**Withdrawal #149525",
@@ -5541,7 +5541,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 3232.51,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220517000000[-7:MST]*-50.68*13**Withdrawal #119907",
@@ -5552,7 +5552,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 3240.05,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220517000000[-7:MST]*-37.53*42**Withdrawal",
@@ -5563,7 +5563,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 3290.73,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220516000000[-7:MST]*-10.95*42**Withdrawal",
@@ -5574,7 +5574,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 3328.26,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220516000000[-7:MST]*-958.53*15**Withdrawal CAPITAL ONE",
@@ -5585,7 +5585,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 3339.21,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220516000000[-7:MST]*-37.00*15**Withdrawal PAYPAL",
@@ -5596,7 +5596,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 4297.74,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220515000000[-7:MST]*-15.90*42**Withdrawal",
@@ -5607,7 +5607,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 4334.74,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220515000000[-7:MST]*-28.94*13**Withdrawal #213517575145",
@@ -5618,7 +5618,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 4350.64,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220515000000[-7:MST]*-102.17*14**Withdrawal Bill Payment",
@@ -5629,7 +5629,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 4379.58,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220515000000[-7:MST]*-6.91*42**Withdrawal",
@@ -5640,7 +5640,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 4481.75,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220515000000[-7:MST]*-1000.00*42**Withdrawal",
@@ -5651,7 +5651,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 4488.66,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220515000000[-7:MST]*-130.87*42**Withdrawal",
@@ -5662,7 +5662,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 5488.66,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220515000000[-7:MST]*-48.37*42**Withdrawal",
@@ -5673,7 +5673,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 5619.53,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220514000000[-7:MST]*-0.99*14**Withdrawal Bill Payment",
@@ -5684,7 +5684,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 5667.9,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220514000000[-7:MST]*-4.50*42**Withdrawal",
@@ -5695,7 +5695,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 5668.89,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220513000000[-7:MST]*-10.71*13**Withdrawal #505591",
@@ -5706,7 +5706,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 5673.39,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220513000000[-7:MST]*-16.08*14**Withdrawal Bill Payment",
@@ -5717,7 +5717,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 5684.1,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220513000000[-7:MST]*-33.10*42**Withdrawal",
@@ -5728,7 +5728,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 5700.18,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220513000000[-7:MST]*-58.42*14**Withdrawal Bill Payment",
@@ -5739,7 +5739,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 5733.28,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220513000000[-7:MST]*-20.00*42**Withdrawal",
@@ -5750,7 +5750,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 5791.7,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220513000000[-7:MST]*-24.00*42**Withdrawal",
@@ -5761,7 +5761,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 5811.7,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220513000000[-7:MST]*3982.67*515**Deposit LIVE NATION WORL",
@@ -5772,7 +5772,7 @@ const elevations_22_21 = [
     "Amount_Credit": 3982.67,
     "Balance": 5835.7,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220512000000[-7:MST]*-25.00*15**Withdrawal CAPITAL ONE",
@@ -5783,7 +5783,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1853.03,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220511000000[-7:MST]*-27.94*14**Withdrawal Bill Payment",
@@ -5794,7 +5794,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1878.03,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220509000000[-7:MST]*-110.00*15**Withdrawal VENMO",
@@ -5805,7 +5805,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1905.97,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220509000000[-7:MST]*-80.00*15**Withdrawal VENMO",
@@ -5816,7 +5816,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2015.97,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220507000000[-7:MST]*-37.38*42**Withdrawal",
@@ -5827,7 +5827,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2095.97,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220506000000[-7:MST]*-100.00*42**Withdrawal",
@@ -5838,7 +5838,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2133.35,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220506000000[-7:MST]*1983.43*515**Deposit BWK VIVED",
@@ -5849,7 +5849,7 @@ const elevations_22_21 = [
     "Amount_Credit": 1983.43,
     "Balance": 2233.35,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220505000000[-7:MST]*-15.00*15**Withdrawal VENMO",
@@ -5860,7 +5860,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 249.92,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220504000000[-7:MST]*-930.84*15**Withdrawal CAPITAL ONE",
@@ -5871,7 +5871,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 264.92,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220504000000[-7:MST]*-119.68*15**Withdrawal XCEL ENERGY-PSCO",
@@ -5882,7 +5882,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1195.76,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220504000000[-7:MST]*-45.00*15**Withdrawal VENMO",
@@ -5893,7 +5893,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1315.44,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220504000000[-7:MST]*-2235.29*42**Withdrawal",
@@ -5904,7 +5904,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1360.44,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220504000000[-7:MST]*-35.71*42**Withdrawal",
@@ -5915,7 +5915,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 3595.73,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220503000000[-7:MST]*950.00*512**Deposit Home Banking Transfer",
@@ -5926,7 +5926,7 @@ const elevations_22_21 = [
     "Amount_Credit": 950,
     "Balance": 3631.44,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220503000000[-7:MST]*2300.00*512**Deposit Home Banking Transfer",
@@ -5937,7 +5937,7 @@ const elevations_22_21 = [
     "Amount_Credit": 2300,
     "Balance": 2681.44,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220503000000[-7:MST]*-0.21*42**Withdrawal",
@@ -5948,7 +5948,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 381.44,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220503000000[-7:MST]*-35.00*15**Withdrawal VENMO",
@@ -5959,7 +5959,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 381.65,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220503000000[-7:MST]*-11.99*15**Withdrawal PAYPAL",
@@ -5970,7 +5970,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 416.65,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220502000000[-7:MST]*-15.56*42**Withdrawal",
@@ -5981,7 +5981,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 428.64,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220502000000[-7:MST]*-675.00*15**Withdrawal VENMO",
@@ -5992,7 +5992,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 444.2,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220502000000[-7:MST]*-125.00*15**Withdrawal VENMO",
@@ -6003,7 +6003,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1119.2,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220502000000[-7:MST]*-58.00*15**Withdrawal COMCAST",
@@ -6014,7 +6014,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1244.2,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220430000000[-7:MST]*1000.00*512**Deposit Home Banking Transfer",
@@ -6025,7 +6025,7 @@ const elevations_22_21 = [
     "Amount_Credit": 1000,
     "Balance": 1302.2,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220430000000[-7:MST]*-20.42*14**Withdrawal Bill Payment",
@@ -6036,7 +6036,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 302.2,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220429000000[-7:MST]*-16.08*42**Withdrawal",
@@ -6047,7 +6047,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 322.62,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220429000000[-7:MST]*-100.00*42**Withdrawal",
@@ -6058,7 +6058,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 338.7,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220428000000[-7:MST]*-123.21*14**Withdrawal Bill Payment",
@@ -6069,7 +6069,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 438.7,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220428000000[-7:MST]*-179.00*42**Withdrawal",
@@ -6080,7 +6080,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 561.91,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220428000000[-7:MST]*-11.25*42**Withdrawal",
@@ -6091,7 +6091,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 740.91,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220427000000[-7:MST]*-814.45*15**Withdrawal CAPITAL ONE",
@@ -6102,7 +6102,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 752.16,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220427000000[-7:MST]*-250.00*15**Withdrawal VENMO",
@@ -6113,7 +6113,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1566.61,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220425000000[-7:MST]*-4.00*15**Withdrawal VENMO",
@@ -6124,7 +6124,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1816.61,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220423000000[-7:MST]*-26.57*14**Withdrawal Bill Payment",
@@ -6135,7 +6135,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1820.61,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220422000000[-7:MST]*-9.67*42**Withdrawal",
@@ -6146,7 +6146,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1847.18,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220422000000[-7:MST]*-100.00*42**Withdrawal",
@@ -6157,7 +6157,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1856.85,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220422000000[-7:MST]*-10.74*15**Withdrawal PAYPAL",
@@ -6168,7 +6168,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1956.85,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220422000000[-7:MST]*1845.43*515**Deposit BWK VIVED",
@@ -6179,7 +6179,7 @@ const elevations_22_21 = [
     "Amount_Credit": 1845.43,
     "Balance": 1967.59,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220422000000[-7:MST]*-67.69*14**Withdrawal Bill Payment",
@@ -6190,7 +6190,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 122.16,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220422000000[-7:MST]*-59.10*14**Withdrawal Bill Payment",
@@ -6201,7 +6201,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 189.85,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220421000000[-7:MST]*-26.12*14**Withdrawal Bill Payment",
@@ -6212,7 +6212,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 248.95,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220421000000[-7:MST]*67.69*513**Withdrawal Adjustment",
@@ -6223,7 +6223,7 @@ const elevations_22_21 = [
     "Amount_Credit": 67.69,
     "Balance": 275.07,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220421000000[-7:MST]*-67.69*14**Withdrawal Bill Payment",
@@ -6234,7 +6234,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 207.38,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220421000000[-7:MST]*67.69*513**Withdrawal Adjustment*1",
@@ -6245,7 +6245,7 @@ const elevations_22_21 = [
     "Amount_Credit": 67.69,
     "Balance": 275.07,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220421000000[-7:MST]*-67.69*14**Withdrawal Bill Payment*1",
@@ -6256,7 +6256,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 207.38,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220421000000[-7:MST]*-50.00*15**Withdrawal VENMO",
@@ -6267,7 +6267,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 275.07,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220419000000[-7:MST]*-76.32*14**Withdrawal Bill Payment",
@@ -6278,7 +6278,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 325.07,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220418000000[-7:MST]*-30.29*14**Withdrawal Bill Payment",
@@ -6289,7 +6289,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 401.39,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220417000000[-7:MST]*-4.79*42**Withdrawal",
@@ -6300,7 +6300,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 431.68,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220415000000[-7:MST]*-16.75*42**Withdrawal",
@@ -6311,7 +6311,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 436.47,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220415000000[-7:MST]*-100.00*42**Withdrawal",
@@ -6322,7 +6322,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 453.22,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220415000000[-7:MST]*-0.99*42**Withdrawal",
@@ -6333,7 +6333,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 553.22,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220414000000[-7:MST]*-77.18*13**Withdrawal #210420426898",
@@ -6344,7 +6344,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 554.21,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220414000000[-7:MST]*-10.00*15**Withdrawal VENMO",
@@ -6355,7 +6355,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 631.39,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220412000000[-7:MST]*-25.00*15**Withdrawal CAPITAL ONE",
@@ -6366,7 +6366,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 641.39,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220412000000[-7:MST]*-4.00*15**Withdrawal VENMO",
@@ -6377,7 +6377,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 666.39,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220411000000[-7:MST]*-962.99*15**Withdrawal CAPITAL ONE",
@@ -6388,7 +6388,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 670.39,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220411000000[-7:MST]*-245.00*15**Withdrawal VENMO",
@@ -6399,7 +6399,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1633.38,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220411000000[-7:MST]*-205.00*15**Withdrawal VENMO",
@@ -6410,7 +6410,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1878.38,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220411000000[-7:MST]*-104.99*15**Withdrawal JOSEPH DELA MASA",
@@ -6421,7 +6421,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2083.38,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220411000000[-7:MST]*245.00*515**Deposit VENMO",
@@ -6432,7 +6432,7 @@ const elevations_22_21 = [
     "Amount_Credit": 245,
     "Balance": 2188.37,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220410000000[-7:MST]*-8.00*42**Withdrawal",
@@ -6443,7 +6443,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1943.37,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220409000000[-7:MST]*-49.26*42**Withdrawal",
@@ -6454,7 +6454,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1951.37,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220408000000[-7:MST]*-2550.00*12**Withdrawal Home Banking",
@@ -6465,7 +6465,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2000.63,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220408000000[-7:MST]*1275.00*512**Deposit Home Banking Transfer",
@@ -6476,7 +6476,7 @@ const elevations_22_21 = [
     "Amount_Credit": 1275,
     "Balance": 4550.63,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220408000000[-7:MST]*-100.00*42**Withdrawal",
@@ -6487,7 +6487,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 3275.63,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220408000000[-7:MST]*1845.43*515**Deposit BWK VIVED",
@@ -6498,7 +6498,7 @@ const elevations_22_21 = [
     "Amount_Credit": 1845.43,
     "Balance": 3375.63,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220407000000[-7:MST]*-22.50*14**Withdrawal Bill Payment",
@@ -6509,7 +6509,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1530.2,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220407000000[-7:MST]*-8.59*42**Withdrawal",
@@ -6520,7 +6520,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1552.7,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220406000000[-7:MST]*-16.12*14**Withdrawal Bill Payment",
@@ -6531,7 +6531,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1561.29,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220406000000[-7:MST]*-18.77*13**Withdrawal #230814",
@@ -6542,7 +6542,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1577.41,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220404000000[-7:MST]*-11.99*15**Withdrawal PAYPAL",
@@ -6553,7 +6553,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1596.18,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220403000000[-7:MST]*-0.19*42**Withdrawal",
@@ -6564,7 +6564,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1608.17,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220403000000[-7:MST]*-390.04*42**Withdrawal",
@@ -6575,7 +6575,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1608.36,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220402000000[-7:MST]*-15.56*42**Withdrawal",
@@ -6586,7 +6586,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1998.4,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220402000000[-7:MST]*-8.59*42**Withdrawal",
@@ -6597,7 +6597,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2013.96,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220401000000[-7:MST]*-100.00*42**Withdrawal",
@@ -6608,7 +6608,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2022.55,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220401000000[-7:MST]*-22.00*15**Withdrawal VENMO",
@@ -6619,7 +6619,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2122.55,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220330000000[-7:MST]*-37.39*14**Withdrawal Bill Payment",
@@ -6630,7 +6630,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2144.55,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220330000000[-7:MST]*-75.27*14**Withdrawal Bill Payment",
@@ -6641,7 +6641,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2181.94,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220330000000[-7:MST]*1831.00*515**Deposit REPUBLIC TRS",
@@ -6652,7 +6652,7 @@ const elevations_22_21 = [
     "Amount_Credit": 1831,
     "Balance": 2257.21,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220329000000[-7:MST]*-16.08*42**Withdrawal",
@@ -6663,7 +6663,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 426.21,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220328000000[-7:MST]*-169.00*42**Withdrawal",
@@ -6674,7 +6674,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 442.29,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220328000000[-7:MST]*-675.00*15**Withdrawal VENMO",
@@ -6685,7 +6685,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 611.29,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220328000000[-7:MST]*-480.54*15**Withdrawal CAPITAL ONE",
@@ -6696,7 +6696,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1286.29,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220328000000[-7:MST]*-125.00*15**Withdrawal VENMO",
@@ -6707,7 +6707,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1766.83,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220328000000[-7:MST]*-116.34*15**Withdrawal FORTCOLUTILITIES",
@@ -6718,7 +6718,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1891.83,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220328000000[-7:MST]*-74.68*15**Withdrawal XCEL ENERGY-PSCO",
@@ -6729,7 +6729,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2008.17,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220328000000[-7:MST]*-68.00*15**Withdrawal COMCAST",
@@ -6740,7 +6740,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2082.85,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220328000000[-7:MST]*-26.00*15**Withdrawal PAYPAL",
@@ -6751,7 +6751,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2150.85,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220326000000[-7:MST]*-6.98*42**Withdrawal",
@@ -6762,7 +6762,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2176.85,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220326000000[-7:MST]*-25.59*14**Withdrawal Bill Payment",
@@ -6773,7 +6773,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2183.83,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220325000000[-7:MST]*-100.00*42**Withdrawal",
@@ -6784,7 +6784,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2209.42,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220325000000[-7:MST]*1845.43*515**Deposit BWK VIVED",
@@ -6795,7 +6795,7 @@ const elevations_22_21 = [
     "Amount_Credit": 1845.43,
     "Balance": 2309.42,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220324000000[-7:MST]*-31.00*15**Withdrawal PAYPAL",
@@ -6806,7 +6806,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 463.99,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220323000000[-7:MST]*339.05*515**Deposit REPUBLIC TRS",
@@ -6817,7 +6817,7 @@ const elevations_22_21 = [
     "Amount_Credit": 339.05,
     "Balance": 494.99,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220322000000[-7:MST]*-10.74*15**Withdrawal PAYPAL",
@@ -6828,7 +6828,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 155.94,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220321000000[-7:MST]*-25.16*14**Withdrawal Bill Payment",
@@ -6839,7 +6839,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 166.68,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220318000000[-7:MST]*-150.00*42**Withdrawal",
@@ -6850,7 +6850,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 191.84,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220318000000[-7:MST]*-100.00*42**Withdrawal",
@@ -6861,7 +6861,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 341.84,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220318000000[-7:MST]*-14.90*42**Withdrawal",
@@ -6872,7 +6872,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 441.84,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220318000000[-7:MST]*-6.38*42**Withdrawal",
@@ -6883,7 +6883,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 456.74,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220318000000[-7:MST]*-30.29*14**Withdrawal Bill Payment",
@@ -6894,7 +6894,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 463.12,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220317000000[-7:MST]*-31.03*15**Withdrawal PAYPAL",
@@ -6905,7 +6905,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 493.41,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220315000000[-7:MST]*-10.48*42**Withdrawal",
@@ -6916,7 +6916,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 524.44,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220315000000[-7:MST]*-0.99*42**Withdrawal",
@@ -6927,7 +6927,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 534.92,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220314000000[-7:MST]*-673.60*15**Withdrawal CAPITAL ONE",
@@ -6938,7 +6938,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 535.91,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220314000000[-7:MST]*-25.00*15**Withdrawal CAPITAL ONE",
@@ -6949,7 +6949,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1209.51,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220312000000[-7:MST]*-236.54*13**Withdrawal #000875",
@@ -6960,7 +6960,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1234.51,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220312000000[-7:MST]*-202.50*11**Withdrawal at ATM #207117100199",
@@ -6971,7 +6971,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1471.05,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220311000000[-7:MST]*-780.00*12**Withdrawal Home Banking",
@@ -6982,7 +6982,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1673.55,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220311000000[-7:MST]*-80.00*42**Withdrawal",
@@ -6993,7 +6993,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2453.55,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220311000000[-7:MST]*1845.43*515**Deposit BWK VIVED",
@@ -7004,7 +7004,7 @@ const elevations_22_21 = [
     "Amount_Credit": 1845.43,
     "Balance": 2533.55,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220311000000[-7:MST]*-80.80*42**Withdrawal",
@@ -7015,7 +7015,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 688.12,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220310000000[-7:MST]*-58.00*15**Withdrawal COMCAST",
@@ -7026,7 +7026,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 768.92,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220310000000[-7:MST]*-44.00*15**Withdrawal PAYPAL",
@@ -7037,7 +7037,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 826.92,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220310000000[-7:MST]*-25.00*14**Withdrawal Bill Payment",
@@ -7048,7 +7048,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 870.92,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220309000000[-7:MST]*-61.14*15**Withdrawal FORTCOLUTILITIES",
@@ -7059,7 +7059,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 895.92,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220309000000[-7:MST]*457.06*515**Deposit VENMO",
@@ -7070,7 +7070,7 @@ const elevations_22_21 = [
     "Amount_Credit": 457.06,
     "Balance": 957.06,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220308000000[-7:MST]*500.00*512**Deposit Home Banking Transfer",
@@ -7081,7 +7081,7 @@ const elevations_22_21 = [
     "Amount_Credit": 500,
     "Balance": 500,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220304000000[-7:MST]*-7.71*42**Withdrawal",
@@ -7092,7 +7092,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 0,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220304000000[-7:MST]*-41.00*15**Withdrawal PAYPAL",
@@ -7103,7 +7103,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 7.71,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220304000000[-7:MST]*-3.00*21**Transfer fee",
@@ -7114,7 +7114,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 48.71,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220304000000[-7:MST]*51.71*501**Deposit Transfer From Share 0000",
@@ -7125,7 +7125,7 @@ const elevations_22_21 = [
     "Amount_Credit": 51.71,
     "Balance": 51.71,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220303000000[-7:MST]*-0.21*42**Withdrawal",
@@ -7136,7 +7136,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 0,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220303000000[-7:MST]*-4.50*42**Withdrawal",
@@ -7147,7 +7147,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 0.21,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220303000000[-7:MST]*-4.50*42**Withdrawal*1",
@@ -7158,7 +7158,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 4.71,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220303000000[-7:MST]*-28.03*15**Withdrawal PAYPAL",
@@ -7169,7 +7169,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 9.21,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220303000000[-7:MST]*-3.00*21**Transfer fee",
@@ -7180,7 +7180,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 37.24,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220303000000[-7:MST]*31.03*501**Deposit Transfer From Share 0000",
@@ -7191,7 +7191,7 @@ const elevations_22_21 = [
     "Amount_Credit": 31.03,
     "Balance": 40.24,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220303000000[-7:MST]*-11.99*15**Withdrawal PAYPAL",
@@ -7202,7 +7202,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 9.21,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220303000000[-7:MST]*-3.00*21**Transfer fee*1",
@@ -7213,7 +7213,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 21.2,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220303000000[-7:MST]*14.99*501**Deposit Transfer From Share 0000",
@@ -7224,7 +7224,7 @@ const elevations_22_21 = [
     "Amount_Credit": 14.99,
     "Balance": 24.2,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220303000000[-7:MST]*-14.20*42**Withdrawal",
@@ -7235,7 +7235,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 9.21,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220303000000[-7:MST]*-3.00*21**Transfer fee*2",
@@ -7246,7 +7246,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 23.41,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220303000000[-7:MST]*5.58*501**Deposit Transfer From Share 0000",
@@ -7257,7 +7257,7 @@ const elevations_22_21 = [
     "Amount_Credit": 5.58,
     "Balance": 26.41,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220303000000[-7:MST]*-6.53*42**Withdrawal",
@@ -7268,7 +7268,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 20.83,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220303000000[-7:MST]*-3.00*21**Transfer fee*3",
@@ -7279,7 +7279,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 27.36,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220303000000[-7:MST]*14.83*501**Deposit Transfer From Share 0000",
@@ -7290,7 +7290,7 @@ const elevations_22_21 = [
     "Amount_Credit": 14.83,
     "Balance": 30.36,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220302000000[-7:MST]*-15.56*42**Withdrawal",
@@ -7301,7 +7301,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 15.53,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220302000000[-7:MST]*-3.00*21**Transfer fee",
@@ -7312,7 +7312,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 31.09,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220302000000[-7:MST]*23.06*501**Deposit Transfer From Share 0000",
@@ -7323,7 +7323,7 @@ const elevations_22_21 = [
     "Amount_Credit": 23.06,
     "Balance": 34.09,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220302000000[-7:MST]*-4.29*13**Withdrawal #206113606163",
@@ -7334,7 +7334,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 11.03,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220302000000[-7:MST]*-3.00*21**Transfer fee*1",
@@ -7345,7 +7345,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 15.32,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220302000000[-7:MST]*11.79*501**Deposit Transfer From Share 0000",
@@ -7356,7 +7356,7 @@ const elevations_22_21 = [
     "Amount_Credit": 11.79,
     "Balance": 18.32,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220302000000[-7:MST]*-30.00*42**Withdrawal",
@@ -7367,7 +7367,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 6.53,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220302000000[-7:MST]*-675.00*15**Withdrawal VENMO",
@@ -7378,7 +7378,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 36.53,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220302000000[-7:MST]*-3.00*21**Transfer fee*2",
@@ -7389,7 +7389,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 711.53,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220302000000[-7:MST]*678.00*501**Deposit Transfer From Share 0000",
@@ -7400,7 +7400,7 @@ const elevations_22_21 = [
     "Amount_Credit": 678,
     "Balance": 714.53,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220302000000[-7:MST]*-29.03*15**Withdrawal PAYPAL",
@@ -7411,7 +7411,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 36.53,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220302000000[-7:MST]*-3.00*21**Transfer fee*3",
@@ -7422,7 +7422,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 65.56,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220302000000[-7:MST]*32.03*501**Deposit Transfer From Share 0000",
@@ -7433,7 +7433,7 @@ const elevations_22_21 = [
     "Amount_Credit": 32.03,
     "Balance": 68.56,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220302000000[-7:MST]*-4.50*42**Withdrawal",
@@ -7444,7 +7444,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 36.53,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220302000000[-7:MST]*-28.72*42**Withdrawal",
@@ -7455,7 +7455,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 41.03,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220302000000[-7:MST]*-3.00*21**Transfer fee*4",
@@ -7466,7 +7466,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 69.75,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220302000000[-7:MST]*8.00*501**Deposit Transfer From Share 0000",
@@ -7477,7 +7477,7 @@ const elevations_22_21 = [
     "Amount_Credit": 8,
     "Balance": 72.75,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220302000000[-7:MST]*-32.00*42**Withdrawal",
@@ -7488,7 +7488,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 64.75,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220302000000[-7:MST]*-3.00*21**Transfer fee*5",
@@ -7499,7 +7499,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 96.75,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220302000000[-7:MST]*8.00*501**Deposit Transfer From Share 0000*1",
@@ -7510,7 +7510,7 @@ const elevations_22_21 = [
     "Amount_Credit": 8,
     "Balance": 99.75,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220302000000[-7:MST]*-30.00*42**Withdrawal*1",
@@ -7521,7 +7521,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 91.75,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220302000000[-7:MST]*-3.00*21**Transfer fee*6",
@@ -7532,7 +7532,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 121.75,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220302000000[-7:MST]*124.75*501**Deposit Transfer From Share 0000",
@@ -7543,7 +7543,7 @@ const elevations_22_21 = [
     "Amount_Credit": 124.75,
     "Balance": 124.75,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220228000000[-7:MST]*-16.08*42**Withdrawal",
@@ -7554,7 +7554,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 0,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220228000000[-7:MST]*-169.00*42**Withdrawal",
@@ -7565,7 +7565,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 16.08,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220228000000[-7:MST]*-3.00*21**Transfer fee",
@@ -7576,7 +7576,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 185.08,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220228000000[-7:MST]*17.05*501**Deposit Transfer From Share 0000",
@@ -7587,7 +7587,7 @@ const elevations_22_21 = [
     "Amount_Credit": 17.05,
     "Balance": 188.08,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220228000000[-7:MST]*-968.26*15**Withdrawal CAPITAL ONE",
@@ -7598,7 +7598,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 171.03,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220228000000[-7:MST]*-125.00*15**Withdrawal VENMO",
@@ -7609,7 +7609,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1139.29,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220227000000[-7:MST]*-60.00*42**Withdrawal",
@@ -7620,7 +7620,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1264.29,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220227000000[-7:MST]*-1.50*21**ATM Fee",
@@ -7631,7 +7631,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1324.29,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220227000000[-7:MST]*-53.50*11**Withdrawal at ATM #205800002300",
@@ -7642,7 +7642,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1325.79,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220227000000[-7:MST]*-9.07*42**Withdrawal",
@@ -7653,7 +7653,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1379.29,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220227000000[-7:MST]*-37.42*42**Withdrawal",
@@ -7664,7 +7664,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1388.36,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220227000000[-7:MST]*-6.33*42**Withdrawal",
@@ -7675,7 +7675,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1425.78,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220227000000[-7:MST]*-140.00*42**Withdrawal",
@@ -7686,7 +7686,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1432.11,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220226000000[-7:MST]*-1000.00*12**Withdrawal Home Banking",
@@ -7697,7 +7697,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1572.11,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220226000000[-7:MST]*-26.87*42**Withdrawal",
@@ -7708,7 +7708,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2572.11,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220226000000[-7:MST]*-5.25*13**Withdrawal #000440",
@@ -7719,7 +7719,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2598.98,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220225000000[-7:MST]*-59.60*42**Withdrawal",
@@ -7730,7 +7730,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2604.23,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220225000000[-7:MST]*-12.50*11**Withdrawal at ATM #205620181777",
@@ -7741,7 +7741,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2663.83,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220225000000[-7:MST]*1845.43*515**Deposit BWK VIVED",
@@ -7752,7 +7752,7 @@ const elevations_22_21 = [
     "Amount_Credit": 1845.43,
     "Balance": 2676.33,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220225000000[-7:MST]*-47.60*42**Withdrawal",
@@ -7763,7 +7763,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 830.9,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220222000000[-7:MST]*-10.74*15**Withdrawal PAYPAL",
@@ -7774,7 +7774,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 878.5,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220221000000[-7:MST]*-83.50*11**Withdrawal at ATM #205200007783",
@@ -7785,7 +7785,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 889.24,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220218000000[-7:MST]*-30.29*14**Withdrawal Bill Payment",
@@ -7796,7 +7796,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 972.74,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220216000000[-7:MST]*-12.30*42**Withdrawal",
@@ -7807,7 +7807,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1003.03,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220215000000[-7:MST]*-0.05*21**Debit Card Fee",
@@ -7818,7 +7818,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1015.33,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220215000000[-7:MST]*-6.48*42**Withdrawal",
@@ -7829,7 +7829,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1015.38,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220215000000[-7:MST]*-0.02*21**Debit Card Fee",
@@ -7840,7 +7840,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1021.86,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220215000000[-7:MST]*-2.07*42**Withdrawal",
@@ -7851,7 +7851,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1021.88,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220215000000[-7:MST]*-90.25*13**Withdrawal #204674360501",
@@ -7862,7 +7862,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1023.95,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220215000000[-7:MST]*-0.99*42**Withdrawal",
@@ -7873,7 +7873,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1114.2,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220214000000[-7:MST]*-747.80*15**Withdrawal CAPITAL ONE",
@@ -7884,7 +7884,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1115.19,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220214000000[-7:MST]*-25.00*15**Withdrawal CAPITAL ONE",
@@ -7895,7 +7895,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1862.99,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220214000000[-7:MST]*-11.81*15**Withdrawal VENMO",
@@ -7906,7 +7906,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1887.99,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220214000000[-7:MST]*-10.92*15**Withdrawal VENMO",
@@ -7917,7 +7917,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1899.8,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220214000000[-7:MST]*-3.00*15**Withdrawal VENMO",
@@ -7928,7 +7928,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1910.72,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220211000000[-7:MST]*-39.30*14**Withdrawal Bill Payment",
@@ -7939,7 +7939,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1913.72,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220211000000[-7:MST]*-22.97*42**Withdrawal",
@@ -7950,7 +7950,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1953.02,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220211000000[-7:MST]*1845.43*515**Deposit BWK VIVED",
@@ -7961,7 +7961,7 @@ const elevations_22_21 = [
     "Amount_Credit": 1845.43,
     "Balance": 1975.99,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220209000000[-7:MST]*-100.00*15**Withdrawal Public.com (TAPX",
@@ -7972,7 +7972,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 130.56,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220207000000[-7:MST]*-125.00*15**Withdrawal VENMO",
@@ -7983,7 +7983,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 230.56,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220204000000[-7:MST]*-27.00*15**Withdrawal PAYPAL",
@@ -7994,7 +7994,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 355.56,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220203000000[-7:MST]*-0.21*42**Withdrawal",
@@ -8005,7 +8005,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 382.56,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220203000000[-7:MST]*-98.08*15**Withdrawal PAYPAL",
@@ -8016,7 +8016,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 382.77,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220203000000[-7:MST]*-11.99*15**Withdrawal PAYPAL",
@@ -8027,7 +8027,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 480.85,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220202000000[-7:MST]*-15.56*42**Withdrawal",
@@ -8038,7 +8038,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 492.84,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220201000000[-7:MST]*-7.52*42**Withdrawal",
@@ -8049,7 +8049,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 508.4,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220131000000[-7:MST]*-675.00*15**Withdrawal VENMO",
@@ -8060,7 +8060,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 515.92,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220131000000[-7:MST]*-261.04*15**Withdrawal CAPITAL ONE",
@@ -8071,7 +8071,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1190.92,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220131000000[-7:MST]*-82.05*15**Withdrawal XCEL ENERGY-PSCO",
@@ -8082,7 +8082,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1451.96,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220131000000[-7:MST]*-68.00*15**Withdrawal COMCAST",
@@ -8093,7 +8093,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1534.01,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220131000000[-7:MST]*-45.76*15**Withdrawal FORTCOLUTILITIES",
@@ -8104,7 +8104,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1602.01,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220131000000[-7:MST]*-40.00*15**Withdrawal VENMO",
@@ -8115,7 +8115,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1647.77,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220130000000[-7:MST]*-6.33*42**Withdrawal",
@@ -8126,7 +8126,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1687.77,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220130000000[-7:MST]*37.59*513**Withdrawal Adjustment",
@@ -8137,7 +8137,7 @@ const elevations_22_21 = [
     "Amount_Credit": 37.59,
     "Balance": 1694.1,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220130000000[-7:MST]*-0.84*21**Debit Card Fee",
@@ -8148,7 +8148,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1656.51,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220130000000[-7:MST]*-105.00*42**Withdrawal",
@@ -8159,7 +8159,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1657.35,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220129000000[-7:MST]*-11.28*42**Withdrawal",
@@ -8170,7 +8170,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1762.35,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220129000000[-7:MST]*-16.08*42**Withdrawal",
@@ -8181,7 +8181,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1773.63,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220129000000[-7:MST]*-37.59*14**Withdrawal Bill Payment",
@@ -8192,7 +8192,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1789.71,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220129000000[-7:MST]*-4.13*42**Withdrawal",
@@ -8203,7 +8203,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1827.3,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220128000000[-7:MST]*-1.50*21**ATM Fee",
@@ -8214,7 +8214,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1831.43,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220128000000[-7:MST]*-12.50*11**Withdrawal at ATM #202819185658",
@@ -8225,7 +8225,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1832.93,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220128000000[-7:MST]*1845.43*515**Deposit BWK VIVED",
@@ -8236,7 +8236,7 @@ const elevations_22_21 = [
     "Amount_Credit": 1845.43,
     "Balance": 1845.43,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220128000000[-7:MST]*-169.00*42**Withdrawal",
@@ -8247,7 +8247,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 0,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220128000000[-7:MST]*-3.00*21**Transfer fee",
@@ -8258,7 +8258,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 169,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220128000000[-7:MST]*172.00*501**Deposit Transfer From Share 0000",
@@ -8269,7 +8269,7 @@ const elevations_22_21 = [
     "Amount_Credit": 172,
     "Balance": 172,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220126000000[-7:MST]*-88.36*42**Withdrawal",
@@ -8280,7 +8280,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 0,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220126000000[-7:MST]*-3.00*21**Transfer fee",
@@ -8291,7 +8291,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 88.36,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220126000000[-7:MST]*91.36*501**Deposit Transfer From Share 0000",
@@ -8302,7 +8302,7 @@ const elevations_22_21 = [
     "Amount_Credit": 91.36,
     "Balance": 91.36,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220125000000[-7:MST]*-43.79*42**Withdrawal",
@@ -8313,7 +8313,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 0,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220125000000[-7:MST]*-14.61*42**Withdrawal",
@@ -8324,7 +8324,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 43.79,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220125000000[-7:MST]*-983.94*15**Withdrawal CAPITAL ONE",
@@ -8335,7 +8335,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 58.4,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220125000000[-7:MST]*-3.00*21**Transfer fee",
@@ -8346,7 +8346,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1042.34,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220125000000[-7:MST]*98.76*501**Deposit Transfer From Share 0000",
@@ -8357,7 +8357,7 @@ const elevations_22_21 = [
     "Amount_Credit": 98.76,
     "Balance": 1045.34,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220124000000[-7:MST]*-9.67*13**Withdrawal #202414011811",
@@ -8368,7 +8368,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 946.58,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220124000000[-7:MST]*-26.88*14**Withdrawal Bill Payment",
@@ -8379,7 +8379,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 956.25,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220124000000[-7:MST]*-19.21*42**Withdrawal",
@@ -8390,7 +8390,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 983.13,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220124000000[-7:MST]*-57.00*15**Withdrawal PAYPAL",
@@ -8401,7 +8401,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1002.34,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220124000000[-7:MST]*-40.00*15**Withdrawal PAYPAL",
@@ -8412,7 +8412,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1059.34,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220124000000[-7:MST]*-30.00*15**Withdrawal VENMO",
@@ -8423,7 +8423,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1099.34,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220124000000[-7:MST]*-10.74*15**Withdrawal PAYPAL",
@@ -8434,7 +8434,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1129.34,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220124000000[-7:MST]*-27.15*13**Withdrawal #202404047237",
@@ -8445,7 +8445,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1140.08,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220123000000[-7:MST]*300.00*512**Deposit Home Banking Transfer",
@@ -8456,7 +8456,7 @@ const elevations_22_21 = [
     "Amount_Credit": 300,
     "Balance": 1167.23,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220123000000[-7:MST]*-16.23*42**Withdrawal",
@@ -8467,7 +8467,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 867.23,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220122000000[-7:MST]*-54.06*13**Withdrawal #202220150969",
@@ -8478,7 +8478,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 883.46,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220122000000[-7:MST]*-47.94*42**Withdrawal",
@@ -8489,7 +8489,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 937.52,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220120000000[-7:MST]*-13.97*14**Withdrawal Bill Payment",
@@ -8500,7 +8500,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 985.46,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220120000000[-7:MST]*-8.07*42**Withdrawal",
@@ -8511,7 +8511,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 999.43,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220120000000[-7:MST]*-82.28*42**Withdrawal",
@@ -8522,7 +8522,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1007.5,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220119000000[-7:MST]*-749.00*12**Withdrawal Home Banking",
@@ -8533,7 +8533,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1089.78,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220118000000[-7:MST]*-30.29*14**Withdrawal Bill Payment",
@@ -8544,7 +8544,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1838.78,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220115000000[-7:MST]*-0.99*42**Withdrawal",
@@ -8555,7 +8555,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1869.07,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220114000000[-7:MST]*-150.00*15**Withdrawal VENMO",
@@ -8566,7 +8566,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1870.06,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220114000000[-7:MST]*-50.00*15**Withdrawal VENMO",
@@ -8577,7 +8577,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2020.06,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220114000000[-7:MST]*1845.43*515**Deposit BWK VIVED",
@@ -8588,7 +8588,7 @@ const elevations_22_21 = [
     "Amount_Credit": 1845.43,
     "Balance": 2070.06,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220113000000[-7:MST]*-12.90*14**Withdrawal Bill Payment",
@@ -8599,7 +8599,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 224.63,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220113000000[-7:MST]*-26.62*14**Withdrawal Bill Payment",
@@ -8610,7 +8610,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 237.53,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220113000000[-7:MST]*12.90*513**Withdrawal Adjustment",
@@ -8621,7 +8621,7 @@ const elevations_22_21 = [
     "Amount_Credit": 12.9,
     "Balance": 264.15,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220112000000[-7:MST]*40.00*501**Draft",
@@ -8632,7 +8632,7 @@ const elevations_22_21 = [
     "Amount_Credit": 40,
     "Balance": 251.25,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220112000000[-7:MST]*-25.00*15**Withdrawal CAPITAL ONE",
@@ -8643,7 +8643,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 211.25,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220112000000[-7:MST]*-12.90*14**Withdrawal Bill Payment",
@@ -8654,7 +8654,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 236.25,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220111000000[-7:MST]*-25.00*15**Withdrawal VENMO",
@@ -8665,7 +8665,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 249.15,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220111000000[-7:MST]*-6.63*42**Withdrawal",
@@ -8676,7 +8676,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 274.15,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220110000000[-7:MST]*-9.91*42**Withdrawal",
@@ -8687,7 +8687,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 280.78,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220110000000[-7:MST]*-746.77*15**Withdrawal CAPITAL ONE",
@@ -8698,7 +8698,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 290.69,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220110000000[-7:MST]*-72.40*15**Withdrawal PAYPAL",
@@ -8709,7 +8709,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1037.46,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220110000000[-7:MST]*-9.28*15**Withdrawal VENMO",
@@ -8720,7 +8720,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1109.86,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220110000000[-7:MST]*-9.28*15**Withdrawal VENMO*1",
@@ -8731,7 +8731,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1119.14,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220109000000[-7:MST]*-13.69*13**Withdrawal #479219",
@@ -8742,7 +8742,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1128.42,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220109000000[-7:MST]*-8.79*13**Withdrawal #983652",
@@ -8753,7 +8753,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1142.11,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220109000000[-7:MST]*-15.57*42**Withdrawal",
@@ -8764,7 +8764,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1150.9,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220109000000[-7:MST]*-8.80*13**Withdrawal #578920",
@@ -8775,7 +8775,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1166.47,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220109000000[-7:MST]*-9.59*42**Withdrawal",
@@ -8786,7 +8786,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1175.27,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220109000000[-7:MST]*-7.47*13**Withdrawal #959279",
@@ -8797,7 +8797,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1184.86,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220109000000[-7:MST]*-12.21*42**Withdrawal",
@@ -8808,7 +8808,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1192.33,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220108000000[-7:MST]*-2.00*13**Withdrawal #200815193283",
@@ -8819,7 +8819,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1204.54,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220108000000[-7:MST]*-26.88*14**Withdrawal Bill Payment",
@@ -8830,7 +8830,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1206.54,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220108000000[-7:MST]*-12.84*42**Withdrawal",
@@ -8841,7 +8841,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1233.42,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220108000000[-7:MST]*-14.28*42**Withdrawal",
@@ -8852,7 +8852,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1246.26,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220108000000[-7:MST]*-12.84*42**Withdrawal*1",
@@ -8863,7 +8863,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1260.54,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220108000000[-7:MST]*-4.79*42**Withdrawal",
@@ -8874,7 +8874,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1273.38,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220108000000[-7:MST]*-12.84*42**Withdrawal*2",
@@ -8885,7 +8885,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1278.17,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220108000000[-7:MST]*-4.28*42**Withdrawal",
@@ -8896,7 +8896,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1291.01,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220108000000[-7:MST]*-4.79*42**Withdrawal*1",
@@ -8907,7 +8907,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1295.29,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220107000000[-7:MST]*-10.00*15**Withdrawal VENMO",
@@ -8918,7 +8918,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1300.08,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220107000000[-7:MST]*-3.00*15**Withdrawal VENMO",
@@ -8929,7 +8929,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1310.08,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220106000000[-7:MST]*-109.99*11**Withdrawal at ATM #200500520847",
@@ -8940,7 +8940,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1313.08,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220105000000[-7:MST]*703.00*515**Deposit VENMO",
@@ -8951,7 +8951,7 @@ const elevations_22_21 = [
     "Amount_Credit": 703,
     "Balance": 1423.07,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220104000000[-7:MST]*-613.58*15**Withdrawal CAPITAL ONE",
@@ -8962,7 +8962,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 720.07,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220104000000[-7:MST]*-347.00*15**Withdrawal VENMO",
@@ -8973,7 +8973,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1333.65,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220104000000[-7:MST]*-63.52*15**Withdrawal XCEL ENERGY-PSCO",
@@ -8984,7 +8984,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1680.65,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220104000000[-7:MST]*-55.00*15**Withdrawal COMCAST",
@@ -8995,7 +8995,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1744.17,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220104000000[-7:MST]*-41.91*15**Withdrawal FORTCOLUTILITIES",
@@ -9006,7 +9006,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1799.17,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220103000000[-7:MST]*-184.51*13**Withdrawal #200320297325",
@@ -9017,7 +9017,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1841.08,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220103000000[-7:MST]*1000.00*512**Deposit Home Banking Transfer",
@@ -9028,7 +9028,7 @@ const elevations_22_21 = [
     "Amount_Credit": 1000,
     "Balance": 2025.59,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220103000000[-7:MST]*-5600.00*12**Withdrawal Home Banking",
@@ -9039,7 +9039,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1025.59,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220103000000[-7:MST]*-12.50*11**Withdrawal at ATM #200318122571",
@@ -9050,7 +9050,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 6625.59,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220103000000[-7:MST]*-0.21*42**Withdrawal",
@@ -9061,7 +9061,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 6638.09,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220103000000[-7:MST]*-675.00*15**Withdrawal VENMO",
@@ -9072,7 +9072,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 6638.3,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220103000000[-7:MST]*-11.99*15**Withdrawal PAYPAL",
@@ -9083,7 +9083,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 7313.3,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220103000000[-7:MST]*-11.53*15**Withdrawal VENMO",
@@ -9094,7 +9094,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 7325.29,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220103000000[-7:MST]*-5.00*15**Withdrawal VENMO",
@@ -9105,7 +9105,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 7336.82,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220103000000[-7:MST]*-3.00*15**Withdrawal VENMO",
@@ -9116,7 +9116,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 7341.82,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220102000000[-7:MST]*-15.56*42**Withdrawal",
@@ -9127,7 +9127,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 7344.82,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20220102000000[-7:MST]*-12.90*14**Withdrawal Bill Payment",
@@ -9138,7 +9138,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 7360.38,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211231000000[-7:MST]*-47.00*15**Withdrawal PAYPAL",
@@ -9149,7 +9149,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 7373.28,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211231000000[-7:MST]*5771.87*515**Deposit BWK VIVED",
@@ -9160,7 +9160,7 @@ const elevations_22_21 = [
     "Amount_Credit": 5771.87,
     "Balance": 7420.28,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211231000000[-7:MST]*1603.40*515**Deposit BWK VIVED",
@@ -9171,7 +9171,7 @@ const elevations_22_21 = [
     "Amount_Credit": 1603.4,
     "Balance": 1648.41,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211228000000[-7:MST]*-169.00*42**Withdrawal",
@@ -9182,7 +9182,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 45.01,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211226000000[-7:MST]*-9.43*42**Withdrawal",
@@ -9193,7 +9193,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 214.01,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211226000000[-7:MST]*-127.00*42**Withdrawal",
@@ -9204,7 +9204,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 223.44,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211226000000[-7:MST]*-1.03*42**Withdrawal",
@@ -9215,7 +9215,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 350.44,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211224000000[-7:MST]*-35.00*15**Withdrawal PAYPAL",
@@ -9226,7 +9226,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 351.47,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211222000000[-7:MST]*-10.74*15**Withdrawal PAYPAL",
@@ -9237,7 +9237,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 386.47,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211222000000[-7:MST]*-7.51*42**Withdrawal",
@@ -9248,7 +9248,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 397.21,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211220000000[-7:MST]*-1.50*21**ATM Fee",
@@ -9259,7 +9259,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 404.72,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211220000000[-7:MST]*-12.50*11**Withdrawal at ATM #135420141109",
@@ -9270,7 +9270,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 406.22,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211220000000[-7:MST]*-32.34*14**Withdrawal Bill Payment",
@@ -9281,7 +9281,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 418.72,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211220000000[-7:MST]*-872.95*15**Withdrawal CAPITAL ONE",
@@ -9292,7 +9292,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 451.06,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211220000000[-7:MST]*-35.00*15**Withdrawal PAYPAL",
@@ -9303,7 +9303,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1324.01,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211220000000[-7:MST]*-19.90*15**Withdrawal VENMO",
@@ -9314,7 +9314,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1359.01,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211219000000[-7:MST]*-127.00*42**Withdrawal",
@@ -9325,7 +9325,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1378.91,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211218000000[-7:MST]*-1.50*21**ATM Fee",
@@ -9336,7 +9336,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1505.91,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211218000000[-7:MST]*-83.50*11**Withdrawal at ATM #135200000008",
@@ -9347,7 +9347,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1507.41,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211218000000[-7:MST]*-30.29*14**Withdrawal Bill Payment",
@@ -9358,7 +9358,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1590.91,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211217000000[-7:MST]*1603.40*515**Deposit BWK VIVED",
@@ -9369,7 +9369,7 @@ const elevations_22_21 = [
     "Amount_Credit": 1603.4,
     "Balance": 1621.2,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211215000000[-7:MST]*-0.99*42**Withdrawal",
@@ -9380,7 +9380,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 17.8,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211214000000[-7:MST]*-44.24*42**Withdrawal",
@@ -9391,7 +9391,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 18.79,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211213000000[-7:MST]*-25.00*15**Withdrawal CAPITAL ONE",
@@ -9402,7 +9402,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 63.03,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211212000000[-7:MST]*-127.00*42**Withdrawal",
@@ -9413,7 +9413,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 88.03,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211211000000[-7:MST]*-48.50*11**Withdrawal at ATM #134500009353",
@@ -9424,7 +9424,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 215.03,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211211000000[-7:MST]*-12.50*11**Withdrawal at ATM #134517145600",
@@ -9435,7 +9435,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 263.53,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211207000000[-7:MST]*-532.60*15**Withdrawal CAPITAL ONE",
@@ -9446,7 +9446,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 276.03,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211206000000[-7:MST]*-1000.00*12**Withdrawal Home Banking",
@@ -9457,7 +9457,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 808.63,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211203000000[-7:MST]*-0.21*42**Withdrawal",
@@ -9468,7 +9468,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1808.63,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211203000000[-7:MST]*-11.99*15**Withdrawal PAYPAL",
@@ -9479,7 +9479,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1808.84,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211203000000[-7:MST]*1603.40*515**Deposit BWK VIVED",
@@ -9490,7 +9490,7 @@ const elevations_22_21 = [
     "Amount_Credit": 1603.4,
     "Balance": 1820.83,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211202000000[-7:MST]*-15.56*42**Withdrawal",
@@ -9501,7 +9501,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 217.43,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211201000000[-7:MST]*-55.00*15**Withdrawal COMCAST",
@@ -9512,7 +9512,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 232.99,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211130000000[-7:MST]*200.00*512**Deposit Home Banking Transfer",
@@ -9523,7 +9523,7 @@ const elevations_22_21 = [
     "Amount_Credit": 200,
     "Balance": 287.99,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211130000000[-7:MST]*-675.00*15**Withdrawal VENMO",
@@ -9534,7 +9534,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 87.99,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211130000000[-7:MST]*-125.00*15**Withdrawal VENMO",
@@ -9545,7 +9545,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 762.99,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211130000000[-7:MST]*-49.35*15**Withdrawal FORTCOLUTILITIES",
@@ -9556,7 +9556,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 887.99,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211130000000[-7:MST]*-38.69*15**Withdrawal XCEL ENERGY-PSCO",
@@ -9567,7 +9567,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 937.34,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211129000000[-7:MST]*-1.50*21**ATM Fee",
@@ -9578,7 +9578,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 976.03,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211129000000[-7:MST]*-12.50*11**Withdrawal at ATM #133322011746",
@@ -9589,7 +9589,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 977.53,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211128000000[-7:MST]*-127.00*42**Withdrawal",
@@ -9600,7 +9600,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 990.03,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211128000000[-7:MST]*-169.00*42**Withdrawal",
@@ -9611,7 +9611,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1117.03,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211127000000[-7:MST]*-1.50*21**ATM Fee",
@@ -9622,7 +9622,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1286.03,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211127000000[-7:MST]*-48.50*11**Withdrawal at ATM #133100002611",
@@ -9633,7 +9633,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1287.53,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211126000000[-7:MST]*40.00*515**Deposit VENMO",
@@ -9644,7 +9644,7 @@ const elevations_22_21 = [
     "Amount_Credit": 40,
     "Balance": 1336.03,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211123000000[-7:MST]*1000.00*512**Deposit Home Banking Transfer",
@@ -9655,7 +9655,7 @@ const elevations_22_21 = [
     "Amount_Credit": 1000,
     "Balance": 1296.03,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211123000000[-7:MST]*-86.00*15**Withdrawal PAYPAL",
@@ -9666,7 +9666,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 296.03,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211122000000[-7:MST]*-915.85*15**Withdrawal CAPITAL ONE",
@@ -9677,7 +9677,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 382.03,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211122000000[-7:MST]*-10.74*15**Withdrawal PAYPAL",
@@ -9688,7 +9688,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1297.88,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211121000000[-7:MST]*-1.50*21**ATM Fee",
@@ -9699,7 +9699,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1308.62,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211121000000[-7:MST]*-48.50*11**Withdrawal at ATM #132500000132",
@@ -9710,7 +9710,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1310.12,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211121000000[-7:MST]*-127.00*42**Withdrawal",
@@ -9721,7 +9721,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1358.62,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211121000000[-7:MST]*-6.33*42**Withdrawal",
@@ -9732,7 +9732,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1485.62,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211121000000[-7:MST]*-10.68*42**Withdrawal",
@@ -9743,7 +9743,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1491.95,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211120000000[-7:MST]*-15.45*42**Withdrawal",
@@ -9754,7 +9754,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1502.63,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211120000000[-7:MST]*-11.00*42**Withdrawal",
@@ -9765,7 +9765,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1518.08,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211120000000[-7:MST]*-48.00*14**Withdrawal Bill Payment",
@@ -9776,7 +9776,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1529.08,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211119000000[-7:MST]*-1.50*21**ATM Fee",
@@ -9787,7 +9787,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1577.08,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211119000000[-7:MST]*-12.50*11**Withdrawal at ATM #132323046044",
@@ -9798,7 +9798,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1578.58,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211119000000[-7:MST]*-9.32*15**Withdrawal VENMO",
@@ -9809,7 +9809,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1591.08,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211119000000[-7:MST]*-3.00*15**Withdrawal VENMO",
@@ -9820,7 +9820,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1600.4,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211119000000[-7:MST]*1603.40*515**Deposit BWK VIVED",
@@ -9831,7 +9831,7 @@ const elevations_22_21 = [
     "Amount_Credit": 1603.4,
     "Balance": 1603.4,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211118000000[-7:MST]*-30.29*14**Withdrawal Bill Payment",
@@ -9842,7 +9842,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 0,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211118000000[-7:MST]*-3.00*21**Transfer fee",
@@ -9853,7 +9853,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 30.29,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211118000000[-7:MST]*33.29*501**Deposit Transfer From Share 0000",
@@ -9864,7 +9864,7 @@ const elevations_22_21 = [
     "Amount_Credit": 33.29,
     "Balance": 33.29,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211114000000[-7:MST]*-0.99*42**Withdrawal",
@@ -9875,7 +9875,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 0,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211114000000[-7:MST]*-127.00*42**Withdrawal",
@@ -9886,7 +9886,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 0.99,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211114000000[-7:MST]*-3.00*21**Transfer fee",
@@ -9897,7 +9897,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 127.99,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211114000000[-7:MST]*4.50*501**Deposit Transfer From Share 0000",
@@ -9908,7 +9908,7 @@ const elevations_22_21 = [
     "Amount_Credit": 4.5,
     "Balance": 130.99,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211114000000[-7:MST]*-1.50*21**ATM Fee",
@@ -9919,7 +9919,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 126.49,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211114000000[-7:MST]*-48.50*11**Withdrawal at ATM #131800002321",
@@ -9930,7 +9930,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 127.99,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211114000000[-7:MST]*-3.00*21**Transfer fee*1",
@@ -9941,7 +9941,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 176.49,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211114000000[-7:MST]*120.15*501**Deposit Transfer From Share 0000",
@@ -9952,7 +9952,7 @@ const elevations_22_21 = [
     "Amount_Credit": 120.15,
     "Balance": 179.49,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211112000000[-7:MST]*-25.00*15**Withdrawal CAPITAL ONE",
@@ -9963,7 +9963,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 59.34,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211110000000[-7:MST]*-1.50*21**ATM Fee",
@@ -9974,7 +9974,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 84.34,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211110000000[-7:MST]*-12.50*11**Withdrawal at ATM #131421164528",
@@ -9985,7 +9985,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 85.84,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211109000000[-7:MST]*-9.80*15**Withdrawal VENMO",
@@ -9996,7 +9996,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 98.34,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211108000000[-7:MST]*-18.28*14**Withdrawal Bill Payment",
@@ -10007,7 +10007,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 108.14,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211108000000[-7:MST]*-467.53*15**Withdrawal CAPITAL ONE",
@@ -10018,7 +10018,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 126.42,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211108000000[-7:MST]*-22.00*15**Withdrawal PAYPAL",
@@ -10029,7 +10029,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 593.95,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211108000000[-7:MST]*335.89*515**Deposit VENMO",
@@ -10040,7 +10040,7 @@ const elevations_22_21 = [
     "Amount_Credit": 335.89,
     "Balance": 615.95,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211107000000[-7:MST]*-127.00*42**Withdrawal",
@@ -10051,7 +10051,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 280.06,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211106000000[-7:MST]*-25.81*14**Withdrawal Bill Payment",
@@ -10062,7 +10062,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 407.06,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211106000000[-7:MST]*-38.71*13**Withdrawal #131047040815",
@@ -10073,7 +10073,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 432.87,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211106000000[-7:MST]*-6.96*13**Withdrawal #131015800017",
@@ -10084,7 +10084,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 471.58,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211106000000[-7:MST]*-4.23*42**Withdrawal",
@@ -10095,7 +10095,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 478.54,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211106000000[-7:MST]*-0.99*14**Withdrawal Bill Payment",
@@ -10106,7 +10106,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 482.77,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211106000000[-7:MST]*-21.46*14**Withdrawal Bill Payment",
@@ -10117,7 +10117,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 483.76,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211106000000[-7:MST]*-1240.63*12**Withdrawal Home Banking",
@@ -10128,7 +10128,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 505.22,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211105000000[-7:MST]*1603.40*515**Deposit BWK VIVED",
@@ -10139,7 +10139,7 @@ const elevations_22_21 = [
     "Amount_Credit": 1603.4,
     "Balance": 1745.85,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211103000000[-7:MST]*-5.43*42**Withdrawal",
@@ -10150,7 +10150,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 142.45,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211103000000[-7:MST]*-0.21*42**Withdrawal",
@@ -10161,7 +10161,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 147.88,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211103000000[-7:MST]*-11.99*15**Withdrawal PAYPAL",
@@ -10172,7 +10172,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 148.09,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211103000000[-7:MST]*-4.23*42**Withdrawal",
@@ -10183,7 +10183,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 160.08,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211102000000[-7:MST]*-5.19*42**Withdrawal",
@@ -10194,7 +10194,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 164.31,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211102000000[-7:MST]*-10.37*42**Withdrawal",
@@ -10205,7 +10205,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 169.5,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211102000000[-7:MST]*-48.50*11**Withdrawal at ATM #130600008991",
@@ -10216,7 +10216,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 179.87,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211101000000[-7:MST]*-12.50*11**Withdrawal at ATM #130517049600",
@@ -10227,7 +10227,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 228.37,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211101000000[-7:MST]*-160.00*15**Withdrawal VENMO",
@@ -10238,7 +10238,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 240.87,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211029000000[-7:MST]*-83.80*15**Withdrawal FORTCOLUTILITIES",
@@ -10249,7 +10249,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 400.87,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211029000000[-7:MST]*-55.00*15**Withdrawal COMCAST",
@@ -10260,7 +10260,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 484.67,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211029000000[-7:MST]*-21.86*15**Withdrawal XCEL ENERGY-PSCO",
@@ -10271,7 +10271,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 539.67,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211028000000[-7:MST]*-13.75*13**Withdrawal #503590",
@@ -10282,7 +10282,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 561.53,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211028000000[-7:MST]*-169.00*42**Withdrawal",
@@ -10293,7 +10293,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 575.28,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211028000000[-7:MST]*-675.00*15**Withdrawal VENMO",
@@ -10304,7 +10304,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 744.28,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211027000000[-7:MST]*1000.00*512**Deposit Home Banking Transfer",
@@ -10315,7 +10315,7 @@ const elevations_22_21 = [
     "Amount_Credit": 1000,
     "Balance": 1419.28,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211027000000[-7:MST]*-5.03*42**Withdrawal",
@@ -10326,7 +10326,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 419.28,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211027000000[-7:MST]*-3.23*42**Withdrawal",
@@ -10337,7 +10337,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 424.31,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211026000000[-7:MST]*-10.21*13**Withdrawal #129918226675",
@@ -10348,7 +10348,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 427.54,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211026000000[-7:MST]*-10.30*42**Withdrawal",
@@ -10359,7 +10359,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 437.75,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211026000000[-7:MST]*-5.84*42**Withdrawal",
@@ -10370,7 +10370,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 448.05,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211026000000[-7:MST]*-4.23*42**Withdrawal",
@@ -10381,7 +10381,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 453.89,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211026000000[-7:MST]*-19.34*42**Withdrawal",
@@ -10392,7 +10392,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 458.12,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211025000000[-7:MST]*-10.37*42**Withdrawal",
@@ -10403,7 +10403,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 477.46,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211025000000[-7:MST]*-4.63*42**Withdrawal",
@@ -10414,7 +10414,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 487.83,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211025000000[-7:MST]*-5.84*42**Withdrawal",
@@ -10425,7 +10425,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 492.46,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211025000000[-7:MST]*-9.66*42**Withdrawal",
@@ -10436,7 +10436,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 498.3,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211025000000[-7:MST]*-4.29*42**Withdrawal",
@@ -10447,7 +10447,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 507.96,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211025000000[-7:MST]*-1003.66*15**Withdrawal CAPITAL ONE",
@@ -10458,7 +10458,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 512.25,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211025000000[-7:MST]*-10.79*15**Withdrawal PAYPAL",
@@ -10469,7 +10469,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1515.91,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211024000000[-7:MST]*-17.47*13**Withdrawal #501884",
@@ -10480,7 +10480,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1526.7,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211024000000[-7:MST]*-127.00*42**Withdrawal",
@@ -10491,7 +10491,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1544.17,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211024000000[-7:MST]*-4.23*42**Withdrawal",
@@ -10502,7 +10502,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1671.17,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211023000000[-7:MST]*-5.36*13**Withdrawal #504690",
@@ -10513,7 +10513,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1675.4,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211023000000[-7:MST]*-1.50*21**ATM Fee",
@@ -10524,7 +10524,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1680.76,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211023000000[-7:MST]*-12.50*11**Withdrawal at ATM #129618130071",
@@ -10535,7 +10535,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1682.26,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211023000000[-7:MST]*-4.23*42**Withdrawal",
@@ -10546,7 +10546,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1694.76,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211023000000[-7:MST]*-12.62*13**Withdrawal #129523040589",
@@ -10557,7 +10557,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1698.99,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211022000000[-7:MST]*-6.30*42**Withdrawal",
@@ -10568,7 +10568,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1711.61,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211022000000[-7:MST]*-12.76*13**Withdrawal #129517794787",
@@ -10579,7 +10579,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1717.91,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211022000000[-7:MST]*-41.14*13**Withdrawal #129567115401",
@@ -10590,7 +10590,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1730.67,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211022000000[-7:MST]*-15.45*42**Withdrawal",
@@ -10601,7 +10601,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1771.81,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211022000000[-7:MST]*-10.30*42**Withdrawal",
@@ -10612,7 +10612,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1787.26,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211022000000[-7:MST]*-10.74*15**Withdrawal PAYPAL",
@@ -10623,7 +10623,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1797.56,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211022000000[-7:MST]*1603.40*515**Deposit BWK VIVED",
@@ -10634,7 +10634,7 @@ const elevations_22_21 = [
     "Amount_Credit": 1603.4,
     "Balance": 1808.3,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211022000000[-7:MST]*-3.90*42**Withdrawal",
@@ -10645,7 +10645,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 204.9,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211021000000[-7:MST]*-10.74*42**Withdrawal",
@@ -10656,7 +10656,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 208.8,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211020000000[-7:MST]*-9.19*13**Withdrawal #129320862894",
@@ -10667,7 +10667,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 219.54,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211020000000[-7:MST]*-1.50*21**ATM Fee",
@@ -10678,7 +10678,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 228.73,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211020000000[-7:MST]*-83.50*11**Withdrawal at ATM #129323663525",
@@ -10689,7 +10689,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 230.23,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211020000000[-7:MST]*-40.09*13**Withdrawal #129314552976",
@@ -10700,7 +10700,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 313.73,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211017000000[-7:MST]*-127.00*42**Withdrawal",
@@ -10711,7 +10711,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 353.82,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211015000000[-7:MST]*-26.01*14**Withdrawal Bill Payment",
@@ -10722,7 +10722,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 480.82,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211015000000[-7:MST]*-1.50*21**ATM Fee",
@@ -10733,7 +10733,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 506.83,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211015000000[-7:MST]*-12.50*11**Withdrawal at ATM #128814011982",
@@ -10744,7 +10744,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 508.33,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211014000000[-7:MST]*-0.99*42**Withdrawal",
@@ -10755,7 +10755,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 520.83,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211012000000[-7:MST]*-2000.00*15**Withdrawal VENMO",
@@ -10766,7 +10766,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 521.82,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211012000000[-7:MST]*-25.00*15**Withdrawal CAPITAL ONE",
@@ -10777,7 +10777,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2521.82,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211012000000[-7:MST]*-18.00*15**Withdrawal PAYPAL",
@@ -10788,7 +10788,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2546.82,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211011000000[-7:MST]*-8.00*42**Withdrawal",
@@ -10799,7 +10799,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2564.82,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211011000000[-7:MST]*2000.00*512**Deposit Home Banking Transfer",
@@ -10810,7 +10810,7 @@ const elevations_22_21 = [
     "Amount_Credit": 2000,
     "Balance": 2572.82,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211011000000[-7:MST]*-800.00*12**Withdrawal Home Banking",
@@ -10821,7 +10821,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 572.82,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211010000000[-7:MST]*-16.08*42**Withdrawal",
@@ -10832,7 +10832,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1372.82,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211010000000[-7:MST]*-1.50*21**ATM Fee",
@@ -10843,7 +10843,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1388.9,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211010000000[-7:MST]*-73.50*11**Withdrawal at ATM #128300001406",
@@ -10854,7 +10854,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1390.4,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211010000000[-7:MST]*-127.00*42**Withdrawal",
@@ -10865,7 +10865,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1463.9,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211008000000[-7:MST]*-12.50*11**Withdrawal at ATM #128122038163",
@@ -10876,7 +10876,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1590.9,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211008000000[-7:MST]*1603.40*515**Deposit BWK VIVED",
@@ -10887,7 +10887,7 @@ const elevations_22_21 = [
     "Amount_Credit": 1603.4,
     "Balance": 1603.4,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211007000000[-7:MST]*-204.09*13**Withdrawal #128018029755",
@@ -10898,7 +10898,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 0,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211007000000[-7:MST]*-3.00*21**Transfer fee",
@@ -10909,7 +10909,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 204.09,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211007000000[-7:MST]*11.60*501**Deposit Transfer From Share 0000",
@@ -10920,7 +10920,7 @@ const elevations_22_21 = [
     "Amount_Credit": 11.6,
     "Balance": 207.09,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211007000000[-7:MST]*-62.28*14**Withdrawal Bill Payment",
@@ -10931,7 +10931,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 195.49,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211007000000[-7:MST]*-18.00*15**Withdrawal PAYPAL",
@@ -10942,7 +10942,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 257.77,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211006000000[-7:MST]*-0.21*42**Withdrawal",
@@ -10953,7 +10953,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 275.77,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211005000000[-7:MST]*-20.00*15**Withdrawal PAYPAL",
@@ -10964,7 +10964,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 275.98,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211004000000[-7:MST]*-24.41*14**Withdrawal Bill Payment",
@@ -10975,7 +10975,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 295.98,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211004000000[-7:MST]*-127.00*42**Withdrawal",
@@ -10986,7 +10986,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 320.39,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211004000000[-7:MST]*-11.99*15**Withdrawal PAYPAL",
@@ -10997,7 +10997,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 447.39,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211001000000[-7:MST]*-73.50*11**Withdrawal at ATM #127400008793",
@@ -11008,7 +11008,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 459.38,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20211001000000[-7:MST]*-10.35*14**Withdrawal Bill Payment",
@@ -11019,7 +11019,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 532.88,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20210930000000[-7:MST]*-12.25*42**Withdrawal",
@@ -11030,7 +11030,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 543.23,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20210929000000[-7:MST]*-813.38*15**Withdrawal CAPITAL ONE",
@@ -11041,7 +11041,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 555.48,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20210929000000[-7:MST]*-675.00*15**Withdrawal VENMO",
@@ -11052,7 +11052,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1368.86,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20210929000000[-7:MST]*-138.90*15**Withdrawal FORTCOLUTILITIES",
@@ -11063,7 +11063,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2043.86,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20210929000000[-7:MST]*-19.99*15**Withdrawal XCEL ENERGY-PSCO",
@@ -11074,7 +11074,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2182.76,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20210928000000[-7:MST]*-169.00*42**Withdrawal",
@@ -11085,7 +11085,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2202.75,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20210928000000[-7:MST]*-32.00*15**Withdrawal PAYPAL",
@@ -11096,7 +11096,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2371.75,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20210927000000[-7:MST]*-49.46*14**Withdrawal Bill Payment",
@@ -11107,7 +11107,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2403.75,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20210927000000[-7:MST]*-1.50*21**ATM Fee",
@@ -11118,7 +11118,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2453.21,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20210927000000[-7:MST]*-12.50*11**Withdrawal at ATM #127014136948",
@@ -11129,7 +11129,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2454.71,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20210927000000[-7:MST]*-10.79*15**Withdrawal PAYPAL",
@@ -11140,7 +11140,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2467.21,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20210926000000[-7:MST]*-127.00*42**Withdrawal",
@@ -11151,7 +11151,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2478,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20210925000000[-7:MST]*-34.63*42**Withdrawal",
@@ -11162,7 +11162,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2605,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20210924000000[-7:MST]*1603.40*515**Deposit BWK VIVED",
@@ -11173,7 +11173,7 @@ const elevations_22_21 = [
     "Amount_Credit": 1603.4,
     "Balance": 2639.63,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20210923000000[-7:MST]*-73.50*11**Withdrawal at ATM #126600004374",
@@ -11184,7 +11184,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1036.23,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20210923000000[-7:MST]*-25.80*14**Withdrawal Bill Payment",
@@ -11195,7 +11195,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1109.73,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20210922000000[-7:MST]*-25.87*14**Withdrawal Bill Payment",
@@ -11206,7 +11206,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1135.53,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20210922000000[-7:MST]*-3000.00*15**Withdrawal VENMO",
@@ -11217,7 +11217,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1161.4,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20210922000000[-7:MST]*-18.00*15**Withdrawal PAYPAL",
@@ -11228,7 +11228,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 4161.4,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20210922000000[-7:MST]*-10.74*15**Withdrawal PAYPAL",
@@ -11239,7 +11239,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 4179.4,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20210921000000[-7:MST]*-73.00*15**Withdrawal PAYPAL",
@@ -11250,7 +11250,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 4190.14,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20210920000000[-7:MST]*-31.00*15**Withdrawal PAYPAL",
@@ -11261,7 +11261,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 4263.14,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20210919000000[-7:MST]*-127.00*42**Withdrawal",
@@ -11272,7 +11272,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 4294.14,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20210916000000[-7:MST]*-55.90*14**Withdrawal Bill Payment",
@@ -11283,7 +11283,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 4421.14,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20210916000000[-7:MST]*25.80*513**Withdrawal Adjustment",
@@ -11294,7 +11294,7 @@ const elevations_22_21 = [
     "Amount_Credit": 25.8,
     "Balance": 4477.04,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20210916000000[-7:MST]*-25.80*14**Withdrawal Bill Payment",
@@ -11305,7 +11305,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 4451.24,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20210916000000[-7:MST]*-29.00*15**Withdrawal PAYPAL",
@@ -11316,7 +11316,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 4477.04,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20210915000000[-7:MST]*-6.12*42**Withdrawal",
@@ -11327,7 +11327,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 4506.04,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20210915000000[-7:MST]*-25.80*14**Withdrawal Bill Payment",
@@ -11338,7 +11338,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 4512.16,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20210914000000[-7:MST]*-0.99*14**Withdrawal Bill Payment",
@@ -11349,7 +11349,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 4537.96,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20210914000000[-7:MST]*-922.07*15**Withdrawal CAPITAL ONE",
@@ -11360,7 +11360,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 4538.95,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20210914000000[-7:MST]*-22.21*42**Withdrawal",
@@ -11371,7 +11371,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 5461.02,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20210913000000[-7:MST]*-12.48*13**Withdrawal #448559",
@@ -11382,7 +11382,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 5483.23,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20210913000000[-7:MST]*-12.50*11**Withdrawal at ATM #125619019165",
@@ -11393,7 +11393,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 5495.71,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20210913000000[-7:MST]*3000.00*512**Deposit Home Banking Transfer",
@@ -11404,7 +11404,7 @@ const elevations_22_21 = [
     "Amount_Credit": 3000,
     "Balance": 5508.21,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20210912000000[-7:MST]*-10.74*42**Withdrawal",
@@ -11415,7 +11415,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2508.21,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20210912000000[-7:MST]*-20.00*42**Withdrawal",
@@ -11426,7 +11426,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2518.95,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20210911000000[-7:MST]*-10.74*42**Withdrawal",
@@ -11437,7 +11437,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2538.95,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20210910000000[-7:MST]*-16.08*42**Withdrawal",
@@ -11448,7 +11448,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2549.69,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20210910000000[-7:MST]*-37.63*14**Withdrawal Bill Payment",
@@ -11459,7 +11459,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 2565.77,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20210910000000[-7:MST]*1603.40*515**Deposit BWK VIVED",
@@ -11470,7 +11470,7 @@ const elevations_22_21 = [
     "Amount_Credit": 1603.4,
     "Balance": 2603.4,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20210908000000[-7:MST]*-3000.00*15**Withdrawal VENMO",
@@ -11481,7 +11481,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1000,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20210907000000[-7:MST]*4000.00*512**Deposit Home Banking Transfer",
@@ -11492,7 +11492,7 @@ const elevations_22_21 = [
     "Amount_Credit": 4000,
     "Balance": 4000,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20210907000000[-7:MST]*-120.00*15**Withdrawal COMCAST",
@@ -11503,7 +11503,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 0,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20210907000000[-7:MST]*-3.00*21**Transfer fee",
@@ -11514,7 +11514,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 120,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20210907000000[-7:MST]*123.00*501**Deposit Transfer From Share 0000",
@@ -11525,7 +11525,7 @@ const elevations_22_21 = [
     "Amount_Credit": 123,
     "Balance": 123,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20210907000000[-7:MST]*-31.00*15**Withdrawal PAYPAL",
@@ -11536,7 +11536,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 0,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20210907000000[-7:MST]*-3.00*21**Transfer fee*1",
@@ -11547,7 +11547,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 31,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20210907000000[-7:MST]*34.00*501**Deposit Transfer From Share 0000",
@@ -11558,7 +11558,7 @@ const elevations_22_21 = [
     "Amount_Credit": 34,
     "Balance": 34,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20210907000000[-7:MST]*-30.00*15**Withdrawal VENMO",
@@ -11569,7 +11569,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 0,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20210907000000[-7:MST]*-3.00*21**Transfer fee*2",
@@ -11580,7 +11580,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 30,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20210907000000[-7:MST]*4.19*501**Deposit Transfer From Share 0000",
@@ -11591,7 +11591,7 @@ const elevations_22_21 = [
     "Amount_Credit": 4.19,
     "Balance": 33,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20210906000000[-7:MST]*-10.35*14**Withdrawal Bill Payment",
@@ -11602,7 +11602,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 28.81,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20210905000000[-7:MST]*-110.90*42**Withdrawal",
@@ -11613,7 +11613,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 39.16,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20210903000000[-7:MST]*-675.00*15**Withdrawal VENMO",
@@ -11624,7 +11624,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 150.06,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20210903000000[-7:MST]*-200.00*15**Withdrawal VENMO",
@@ -11635,7 +11635,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 825.06,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20210903000000[-7:MST]*-113.29*15**Withdrawal FORTCOLUTILITIES",
@@ -11646,7 +11646,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1025.06,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20210903000000[-7:MST]*-17.61*15**Withdrawal XCEL ENERGY-PSCO",
@@ -11657,7 +11657,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1138.35,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20210903000000[-7:MST]*-11.99*15**Withdrawal PAYPAL",
@@ -11668,7 +11668,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1155.96,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20210902000000[-7:MST]*-0.21*42**Withdrawal",
@@ -11679,7 +11679,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1167.95,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20210901000000[-7:MST]*-53.93*13**Withdrawal #124414007378",
@@ -11690,7 +11690,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1168.16,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   },
   {
     "Transaction_Number": "20210901000000[-7:MST]*-21.00*15**Withdrawal PAYPAL",
@@ -11701,7 +11701,7 @@ const elevations_22_21 = [
     "Amount_Credit": "",
     "Balance": 1222.09,
     "Check_Number": "",
-    "Fees": ""
+    "source": "elevations"
   }
 ]
 

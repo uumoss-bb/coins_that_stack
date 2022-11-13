@@ -15,14 +15,21 @@ const normalizeCapitalOneData = ({ Description, Transaction_Date, Debit }) => ([
   Transaction_Date
 ])
 
-const Transactions = ({props: { elevations, capitalOne }}) => {
+const normalizeBySource = {
+  elevations: normalizeElevationsData,
+  capitalOne: normalizeCapitalOneData
+}
+
+const Transactions = ({ transactions }) => {
   return (
     <Table
       columns={['Source', 'title', 'transaction', 'date']}
-      data={[
-        ...elevations.map(trans => normalizeElevationsData(trans)),
-        ...capitalOne.map(trans => normalizeCapitalOneData(trans))
-      ]}
+      data={transactions.map(trans => {
+        if(trans.source) {
+          return normalizeBySource[trans.source](trans)
+        }
+        return []
+      })}
     />
   )
 }

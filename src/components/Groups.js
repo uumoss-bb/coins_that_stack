@@ -4,11 +4,10 @@ import Storage from '../workers/Storage'
 import { Input } from "baseui/input";
 import { Button } from "baseui/button";
 import { StatelessAccordion, Panel } from "baseui/accordion";
-import setGroupsFromStorage from '../workers/setGroupsFromStorage';
 import Transactions from './/Transactions';
+import setGroupsFromStorage from '../workers/setGroupsFromStorage';
 
 const SaveGroup = ({ groups, setGroups }) => ({ name, keywords = [] }) => {
-  console.log(keywords)
   const newGroup = {
     name,
     keywords
@@ -56,15 +55,14 @@ const CreateGroup = ({ saveGroup }) => {
   );
 }
 
-const RemoveGroup = ({ setGroups }) => ({ name }) => {
+const RemoveGroup = ({ groups, setGroups }) => ({ name }) => {
 
   Storage.delete({ key: name })
-
+  
   setGroups(setGroupsFromStorage())
 }
 
-const DeleteGroup = ({ removeGroup }) => {
-  const [ deleteName, setDeleteName ] = React.useState("");
+const DeleteGroupBtn = ({props: { name, removeGroup }}) => {
 
   const style = {
     'display': 'flex',
@@ -73,31 +71,22 @@ const DeleteGroup = ({ removeGroup }) => {
   }
 
   return (
-    <Panel Key={'deleteGroup'} title='Delete a Group'>
-      <Input
-        value={deleteName}
-        onChange={e => setDeleteName(e.target.value)}
-        placeholder="Name of group to delete"
-        clearOnEscape
-      />
-      <Button 
-        overrides={{
-          BaseButton: {
-            style
-          }
-        }} 
-        onClick={() => {
-          removeGroup({ name: deleteName })
-          setDeleteName('')
-        }}
-      >
-        delete
-      </Button>
-    </Panel>
+    <Button 
+      overrides={{
+        BaseButton: {
+          style
+        }
+      }} 
+      onClick={() => {
+        removeGroup({ name })
+      }}
+    >
+      delete
+    </Button>
   );
 }
 
-const SetKeyword = ({ saveGroup, name, keywords }) => {
+const SetKeyword = ({props: { saveGroup, name, keywords }}) => {
   const [ newKeywords, setKeywords ] = React.useState(keywords);
 
   const style = {}
@@ -131,11 +120,12 @@ const SetKeyword = ({ saveGroup, name, keywords }) => {
   );
 }
 
-const Group = ({ name, keywords, index, saveGroup }) => {
-  const _keywords = keywords.join(', ')
+const Group = ({ name, keywords, index, saveGroup, removeGroup }) => {
+  const _keywords = keywords?.join(', ')
   return (
-    <Panel key={index + name} title={`${name} ( keywords: ${_keywords} )`}>
-      {SetKeyword({ saveGroup, name, keywords: _keywords })}
+    <Panel key={index + name} title={`${name} ( keywords: ${_keywords ? _keywords : 'none'} )`}>
+      <DeleteGroupBtn props={{ name, removeGroup }}/>
+      <SetKeyword props={{ saveGroup, name, keywords: _keywords }}/>
       {/* { transactions.map(trans => {
         return (<Transactions props={{...trans}}/>)
       })} */}
@@ -146,7 +136,7 @@ const Group = ({ name, keywords, index, saveGroup }) => {
 const Groups = ({props: {groups, setGroups}}) => {
   const groupsArr = Object.values(groups)
   const saveGroup = SaveGroup({ groups, setGroups })
-  const removeGroup = RemoveGroup({ setGroups })
+  const removeGroup = RemoveGroup({ groups, setGroups })
 
   const [expanded, setExpanded] = React.useState([]);
 
@@ -156,8 +146,7 @@ const Groups = ({props: {groups, setGroups}}) => {
       onChange={({ expanded }) => setExpanded(expanded)}
     >
       {CreateGroup({ saveGroup })}
-      {DeleteGroup({ removeGroup })}
-      {groupsArr.map((group, index) => Group({...group, index, saveGroup }) )}
+      {groupsArr.map((group, index) => Group({...group, index, saveGroup, removeGroup }) )}
     </StatelessAccordion>
   );
 }
