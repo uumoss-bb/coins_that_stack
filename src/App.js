@@ -7,16 +7,18 @@ import {
   capitalOne,
   elevations
 } from './transactions'
-import filterTransactionByKeywords from './workers/filterTransactionsByKeywords';
+import setUpGroupsAndTransactions from './workers/setUpGroupsAndTransactions';
+import DateInput from './components/DateInput';
 
 function App() {
   const [ groups, setGroups ] = React.useState(setGroupsFromStorage());
+  const [date, setDate] = React.useState([new Date()]);
   const allTransactions = [ ...elevations, ...capitalOne ]
+  const { groupsWithTransactions, freeTransactions } = setUpGroupsAndTransactions({ transactions: allTransactions, groups, date })
 
-  const { groupsWithTransactions, freeTransactions } = filterTransactionByKeywords({ transactions: allTransactions, groups })
-  console.log(groupsWithTransactions)
   return (
     <div className="App">
+      <DateInput props={{ date, setDate }}/>
       <div className='groups'>
         <Groups props={{ groups: groupsWithTransactions, setGroups }}/>
       </div>

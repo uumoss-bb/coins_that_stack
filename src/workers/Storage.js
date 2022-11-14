@@ -1,7 +1,5 @@
 const Storage = {
-  post({key, value}) {
-    localStorage.setItem(key, JSON.stringify(value))
-  },
+  post: ({key, value}) => localStorage.setItem(key, JSON.stringify(value)),
 
   getAll() {
     const storageKeys = Object.keys(localStorage)
@@ -15,10 +13,7 @@ const Storage = {
     return items
   },
 
-  delete({key}) {
-    localStorage.removeItem(key)
-    console.log("successfully deleted", key)
-  }
+  delete: ({key}) => localStorage.removeItem(key)
 }
 
 export default Storage
