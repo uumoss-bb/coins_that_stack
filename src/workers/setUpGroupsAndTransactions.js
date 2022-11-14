@@ -4,12 +4,46 @@ const dateToMiliSeconds = ({date}) => new Date(date).getTime()
 
 const dateToDateString= ({date}) => new Date(date).toDateString()
 
-const filter = ({ transactions, keywords, date }) => {
-  const groupTransactions = []
-  const freeTransactions = []
+const attachTransactionsToGroups = ({ transaction, groups }) => {
+  let belongsToGroup = false
+  const groupsWithTransactions = groups
 
-  for (let index = 0; index < transactions.length; index++) {
-    const transaction = transactions[index]
+  Object.values(groups).forEach(group => {
+    const doesTransactionMatch = group.keywords.filter(keyword => transaction.title.includes(keyword)).length
+    if(doesTransactionMatch) {
+      belongsToGroup = true
+
+      group.transactions = [
+        ...group.transactions,
+        transaction
+      ]
+      
+      group.coinsSpent += (transaction.transaction * -1)
+
+      groupsWithTransactions[group.name] = group
+    }
+
+  })
+
+  return { groupsWithTransactions, belongsToGroup }
+}
+
+const setGroupsToDefault = ({ groups }) => {
+
+  Object.values(groups).forEach(group => {
+    group.transactions = []
+    group.coinsSpent = 0
+
+    groups[group.name] = group
+  })
+
+  return groups
+}
+
+const setUpGroupsAndTransactions = ({ transactions, groups, date }) => {
+  const defaultResult = { groupsWithTransactions: setGroupsToDefault({ groups }), freeTransactions: [] }
+
+  return transactions.reduce((res, transaction) => {
     const normalizedTransaction = normalizeTransactionsBySource({ transaction })
     const filterDate = dateToMiliSeconds({ date })
     const transDate = dateToMiliSeconds({ date: normalizedTransaction.date })
@@ -17,47 +51,22 @@ const filter = ({ transactions, keywords, date }) => {
     const nowDateString = dateToDateString({ date: Date.now() })
 
     if( nowDateString === filterDateString || transDate >= filterDate ) {
-      const doesTransactionMatch = keywords.filter(keyword => normalizedTransaction.title.includes(keyword)).length
-      if(doesTransactionMatch) {
-        groupTransactions.push(normalizedTransaction)
-      } else {
-        freeTransactions.push(normalizedTransaction)
+      
+      const { groupsWithTransactions, belongsToGroup } = attachTransactionsToGroups({ transaction, groups })
+      return {
+        groupsWithTransactions,
+        freeTransactions: [
+          ...res.freeTransactions,
+          !belongsToGroup && normalizedTransaction
+        ]
       }
     }
-  }
 
-  return { groupTransactions, freeTransactions }
-}
-
-const collectDataFromTransactions = ({ groupTransactions }) => {
-  let coinsSpent = 0
-
-  groupTransactions.forEach(trans => {
-    coinsSpent += (trans.transaction * -1)
-  })
-
-  return {
-    coinsSpent: coinsSpent.toFixed(0)
-  }
-}
-
-const setUpGroupsAndTransactions = ({ transactions, groups, date }) => {
-  return Object.values(groups).reduce((res, { name, keywords }) => {
-    const { groupTransactions, freeTransactions } = filter({ transactions: res.freeTransactions, keywords, date })
-    const { coinsSpent } = collectDataFromTransactions({ groupTransactions })
     return {
-      groupsWithTransactions: {
-        ...res.groupsWithTransactions,
-        [name]: {
-          name,
-          keywords,
-          transactions: groupTransactions,
-          coinsSpent
-        },
-      },
-      freeTransactions
+      groupsWithTransactions: res.groupsWithTransactions,
+      freeTransactions: res.freeTransactions
     }
-  },{ freeTransactions: transactions })
+  }, defaultResult)
 }
 
 export default setUpGroupsAndTransactions
