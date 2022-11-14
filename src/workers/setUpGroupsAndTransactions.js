@@ -18,7 +18,9 @@ const attachTransactionsToGroups = ({ transaction, groups }) => {
         transaction
       ]
       
-      group.coinsSpent += (transaction.transaction * -1)
+      group.coinsSpent += Number(transaction.transaction * -1)
+      console.log(group.coinsSpent)
+      // group.coinsSpent = group.coinsSpent.toFixed(1)
 
       groupsWithTransactions[group.name] = group
     }
@@ -52,7 +54,7 @@ const setUpGroupsAndTransactions = ({ transactions, groups, date }) => {
 
     if( nowDateString === filterDateString || transDate >= filterDate ) {
       
-      const { groupsWithTransactions, belongsToGroup } = attachTransactionsToGroups({ transaction, groups })
+      const { groupsWithTransactions, belongsToGroup } = attachTransactionsToGroups({ transaction: normalizedTransaction, groups })
       return {
         groupsWithTransactions,
         freeTransactions: [

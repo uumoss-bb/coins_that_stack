@@ -122,7 +122,7 @@ const SetKeyword = ({props: { saveGroup, name, keywords }}) => {
 
 const Group = ({ group: { name, keywords, transactions, coinsSpent }, index, saveGroup, removeGroup }) => {
   const _keywords = keywords?.join(', ')
-  const title = `${name} total: $${coinsSpent} ( keywords: ${_keywords ? _keywords : 'none'} )`
+  const title = `${name} - total: $${coinsSpent.toFixed(0)} ( keywords: ${_keywords ? _keywords : 'none'} )`
   return (
     <Panel key={index + name} title={title}>
       <DeleteGroupBtn props={{ name, removeGroup }}/>
