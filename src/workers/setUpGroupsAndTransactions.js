@@ -11,13 +11,11 @@ const filter = ({ transactions, keywords, date }) => {
   for (let index = 0; index < transactions.length; index++) {
     const transaction = transactions[index]
     const normalizedTransaction = normalizeTransactionsBySource({ transaction })
-    console.log(date)
     const filterDate = dateToMiliSeconds({ date })
     const transDate = dateToMiliSeconds({ date: normalizedTransaction.date })
     const filterDateString = dateToDateString({ date })
     const nowDateString = dateToDateString({ date: Date.now() })
 
-    console.log(filterDate, transDate, filterDateString, nowDateString)
     if( nowDateString === filterDateString || transDate >= filterDate ) {
       const doesTransactionMatch = keywords.filter(keyword => normalizedTransaction.title.includes(keyword)).length
       if(doesTransactionMatch) {

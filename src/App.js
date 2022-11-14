@@ -9,6 +9,8 @@ import {
 } from './transactions'
 import setUpGroupsAndTransactions from './workers/setUpGroupsAndTransactions';
 import DateInput from './components/DateInput';
+import {Heading, HeadingLevel} from 'baseui/heading';
+
 
 function App() {
   const [ groups, setGroups ] = React.useState(setGroupsFromStorage());
@@ -20,10 +22,16 @@ function App() {
     <div className="App">
       <DateInput props={{ date, setDate }}/>
       <div className='groups'>
+        <HeadingLevel>
+          <Heading styleLevel={5}>Groups</Heading>
+        </HeadingLevel>
         <Groups props={{ groups: groupsWithTransactions, setGroups }}/>
       </div>
 
       <div className='transactions'>
+        <HeadingLevel>
+          <Heading styleLevel={5}>Total: {freeTransactions.length}</Heading>
+        </HeadingLevel>
         <Transactions transactions={freeTransactions}/>
       </div>
     </div>

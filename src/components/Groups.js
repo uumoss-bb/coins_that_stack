@@ -105,12 +105,12 @@ const SetKeyword = ({props: { saveGroup, name, keywords }}) => {
                 style
               }
             }} 
-            onClick={() => {
+            onClick={() => 
               saveGroup({ 
                 name, 
-                keywords: newKeywords.split(', ')
+                keywords: newKeywords ? newKeywords.split(', ') : []
               })
-            }}
+            }
           >
           set
           </Button>

@@ -9,7 +9,7 @@
   display: inline-block;
   height: 100vh;
   overflow: scroll;
-  border: solid blue 1px;
+  border: solid black 1px;
 }
 
 .transactions {
@@ -18,5 +18,5 @@
   display: inline-block;
   height: 100vh;
   overflow: scroll;
-  border: solid green 1px;
+  border: solid black 1px;
 }
