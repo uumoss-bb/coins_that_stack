@@ -4,7 +4,7 @@ import Storage from '../workers/Storage'
 import { Input } from "baseui/input";
 import { Button } from "baseui/button";
 import { StatelessAccordion, Panel } from "baseui/accordion";
-import Transactions from './/Transactions';
+import Transactions from './Transactions';
 import setGroupsFromStorage from '../workers/setGroupsFromStorage';
 
 const SaveGroup = ({ groups, setGroups }) => ({ name, keywords = [] }) => {
@@ -120,15 +120,14 @@ const SetKeyword = ({props: { saveGroup, name, keywords }}) => {
   );
 }
 
-const Group = ({ name, keywords, index, saveGroup, removeGroup }) => {
+const Group = ({ group: { name, keywords, transactions, coinsSpent }, index, saveGroup, removeGroup }) => {
   const _keywords = keywords?.join(', ')
+  const title = `${name} total: $${coinsSpent} ( keywords: ${_keywords ? _keywords : 'none'} )`
   return (
-    <Panel key={index + name} title={`${name} ( keywords: ${_keywords ? _keywords : 'none'} )`}>
+    <Panel key={index + name} title={title}>
       <DeleteGroupBtn props={{ name, removeGroup }}/>
       <SetKeyword props={{ saveGroup, name, keywords: _keywords }}/>
-      {/* { transactions.map(trans => {
-        return (<Transactions props={{...trans}}/>)
-      })} */}
+      <Transactions transactions={ transactions }/>
     </Panel>
   )
 }
@@ -146,7 +145,7 @@ const Groups = ({props: {groups, setGroups}}) => {
       onChange={({ expanded }) => setExpanded(expanded)}
     >
       {CreateGroup({ saveGroup })}
-      {groupsArr.map((group, index) => Group({...group, index, saveGroup, removeGroup }) )}
+      {groupsArr.map((group, index) => Group({ group, index, saveGroup, removeGroup }) )}
     </StatelessAccordion>
   );
 }

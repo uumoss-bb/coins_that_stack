@@ -7,21 +7,22 @@ import {
   capitalOne,
   elevations
 } from './transactions'
+import filterTransactionByKeywords from './workers/filterTransactionsByKeywords';
 
 function App() {
   const [ groups, setGroups ] = React.useState(setGroupsFromStorage());
+  const allTransactions = [ ...elevations, ...capitalOne ]
 
+  const { groupsWithTransactions, freeTransactions } = filterTransactionByKeywords({ transactions: allTransactions, groups })
+  console.log(groupsWithTransactions)
   return (
     <div className="App">
       <div className='groups'>
-        <Groups props={{ groups, setGroups }}/>
+        <Groups props={{ groups: groupsWithTransactions, setGroups }}/>
       </div>
 
       <div className='transactions'>
-        <Transactions transactions={[
-          ...elevations,
-          ...capitalOne
-        ]}/>
+        <Transactions transactions={freeTransactions}/>
       </div>
     </div>
   );
