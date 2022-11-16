@@ -1,16 +1,5 @@
 const elevations_22_21 = [
   {
-    "Transaction_Number": "20221101000000[-7:MST]*-75.00*15**Withdrawal VENMO",
-    "Date": "11/01/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -75,
-    "Amount_Credit": "",
-    "Balance": 4806.87,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
     "Transaction_Number": "20221101000000[-7:MST]*-9.50*42**Withdrawal",
     "Date": "11/01/2022",
     "Description": "Withdrawal",
@@ -73,28 +62,6 @@ const elevations_22_21 = [
     "Amount_Debit": -562,
     "Amount_Credit": "",
     "Balance": 2966.65,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
-    "Transaction_Number": "20221031000000[-7:MST]*-38.25*15**Withdrawal VENMO",
-    "Date": "10/31/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -38.25,
-    "Amount_Credit": "",
-    "Balance": 3528.65,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
-    "Transaction_Number": "20221031000000[-7:MST]*-18.48*15**Withdrawal VENMO",
-    "Date": "10/31/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -18.48,
-    "Amount_Credit": "",
-    "Balance": 3566.9,
     "Check_Number": "",
     "source": "elevations"
   },
@@ -572,17 +539,6 @@ const elevations_22_21 = [
     "source": "elevations"
   },
   {
-    "Transaction_Number": "20221019000000[-7:MST]*88.00*515**Deposit VENMO",
-    "Date": "10/19/2022",
-    "Description": "Deposit VENMO",
-    "Memo": "TYPE: CASHOUT ID: 5264681992 CO: VENMO",
-    "Amount_Debit": "",
-    "Amount_Credit": 88,
-    "Balance": 1150.24,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
     "Transaction_Number": "20221019000000[-7:MST]*-61.38*42**Withdrawal",
     "Date": "10/19/2022",
     "Description": "Withdrawal",
@@ -979,17 +935,6 @@ const elevations_22_21 = [
     "source": "elevations"
   },
   {
-    "Transaction_Number": "20221003000000[-7:MST]*-35.00*15**Withdrawal VENMO",
-    "Date": "10/03/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -35,
-    "Amount_Credit": "",
-    "Balance": 4081.63,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
     "Transaction_Number": "20221003000000[-7:MST]*-14.47*15**Withdrawal XCEL ENERGY-PSCO",
     "Date": "10/03/2022",
     "Description": "Withdrawal XCEL ENERGY-PSCO",
@@ -1008,17 +953,6 @@ const elevations_22_21 = [
     "Amount_Debit": -11.99,
     "Amount_Credit": "",
     "Balance": 4131.1,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
-    "Transaction_Number": "20221003000000[-7:MST]*-10.00*15**Withdrawal VENMO",
-    "Date": "10/03/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -10,
-    "Amount_Credit": "",
-    "Balance": 4143.09,
     "Check_Number": "",
     "source": "elevations"
   },
@@ -1228,28 +1162,6 @@ const elevations_22_21 = [
     "Amount_Debit": -179,
     "Amount_Credit": "",
     "Balance": 1249.84,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
-    "Transaction_Number": "20220927000000[-7:MST]*-63.13*15**Withdrawal VENMO",
-    "Date": "09/27/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -63.13,
-    "Amount_Credit": "",
-    "Balance": 1428.84,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
-    "Transaction_Number": "20220926000000[-7:MST]*-325.00*15**Withdrawal VENMO",
-    "Date": "09/26/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -325,
-    "Amount_Credit": "",
-    "Balance": 1491.97,
     "Check_Number": "",
     "source": "elevations"
   },
@@ -1694,28 +1606,6 @@ const elevations_22_21 = [
     "source": "elevations"
   },
   {
-    "Transaction_Number": "20220902000000[-7:MST]*-30.00*15**Withdrawal VENMO",
-    "Date": "09/02/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -30,
-    "Amount_Credit": "",
-    "Balance": 628.76,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
-    "Transaction_Number": "20220902000000[-7:MST]*236.00*515**Deposit VENMO",
-    "Date": "09/02/2022",
-    "Description": "Deposit VENMO",
-    "Memo": "TYPE: CASHOUT ID: 5264681992 CO: VENMO",
-    "Amount_Debit": "",
-    "Amount_Credit": 236,
-    "Balance": 658.76,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
     "Transaction_Number": "20220902000000[-7:MST]*-53.93*42**Withdrawal",
     "Date": "09/02/2022",
     "Description": "Withdrawal",
@@ -1760,17 +1650,6 @@ const elevations_22_21 = [
     "source": "elevations"
   },
   {
-    "Transaction_Number": "20220901000000[-7:MST]*-125.00*15**Withdrawal VENMO",
-    "Date": "09/01/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -125,
-    "Amount_Credit": "",
-    "Balance": 1888.23,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
     "Transaction_Number": "20220901000000[-7:MST]*-30.70*15**Withdrawal XCEL ENERGY-PSCO",
     "Date": "09/01/2022",
     "Description": "Withdrawal XCEL ENERGY-PSCO",
@@ -1789,17 +1668,6 @@ const elevations_22_21 = [
     "Amount_Debit": -1657.8,
     "Amount_Credit": "",
     "Balance": 2043.93,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
-    "Transaction_Number": "20220831000000[-7:MST]*-650.00*15**Withdrawal VENMO",
-    "Date": "08/31/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -650,
-    "Amount_Credit": "",
-    "Balance": 3701.73,
     "Check_Number": "",
     "source": "elevations"
   },
@@ -1899,28 +1767,6 @@ const elevations_22_21 = [
     "Amount_Debit": -47,
     "Amount_Credit": "",
     "Balance": 1342.85,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
-    "Transaction_Number": "20220818000000[-7:MST]*500.00*515**Deposit VENMO",
-    "Date": "08/18/2022",
-    "Description": "Deposit VENMO",
-    "Memo": "TYPE: CASHOUT ID: 5264681992 CO: VENMO",
-    "Amount_Debit": "",
-    "Amount_Credit": 500,
-    "Balance": 1389.85,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
-    "Transaction_Number": "20220817000000[-7:MST]*-50.00*15**Withdrawal VENMO",
-    "Date": "08/17/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -50,
-    "Amount_Credit": "",
-    "Balance": 889.85,
     "Check_Number": "",
     "source": "elevations"
   },
@@ -2031,28 +1877,6 @@ const elevations_22_21 = [
     "Amount_Debit": -33.18,
     "Amount_Credit": "",
     "Balance": 4027.06,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
-    "Transaction_Number": "20220815000000[-7:MST]*-14.91*15**Withdrawal VENMO",
-    "Date": "08/15/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -14.91,
-    "Amount_Credit": "",
-    "Balance": 4060.24,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
-    "Transaction_Number": "20220815000000[-7:MST]*-5.00*15**Withdrawal VENMO",
-    "Date": "08/15/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -5,
-    "Amount_Credit": "",
-    "Balance": 4075.15,
     "Check_Number": "",
     "source": "elevations"
   },
@@ -2519,28 +2343,6 @@ const elevations_22_21 = [
     "source": "elevations"
   },
   {
-    "Transaction_Number": "20220808000000[-7:MST]*-316.00*15**Withdrawal VENMO",
-    "Date": "08/08/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -316,
-    "Amount_Credit": "",
-    "Balance": 2948.95,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
-    "Transaction_Number": "20220808000000[-7:MST]*671.00*515**Deposit VENMO",
-    "Date": "08/08/2022",
-    "Description": "Deposit VENMO",
-    "Memo": "TYPE: CASHOUT ID: 5264681992 CO: VENMO",
-    "Amount_Debit": "",
-    "Amount_Credit": 671,
-    "Balance": 3264.95,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
     "Transaction_Number": "20220808000000[-7:MST]*42.23*513**Withdrawal Adjustment",
     "Date": "08/08/2022",
     "Description": "Withdrawal Adjustment",
@@ -2651,17 +2453,6 @@ const elevations_22_21 = [
     "source": "elevations"
   },
   {
-    "Transaction_Number": "20220805000000[-7:MST]*-22.00*15**Withdrawal VENMO",
-    "Date": "08/05/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -22,
-    "Amount_Credit": "",
-    "Balance": 2792.98,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
     "Transaction_Number": "20220803000000[-7:MST]*-0.71*42**Withdrawal",
     "Date": "08/03/2022",
     "Description": "Withdrawal",
@@ -2724,28 +2515,6 @@ const elevations_22_21 = [
     "Amount_Debit": -1021.82,
     "Amount_Credit": "",
     "Balance": 2883.8,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
-    "Transaction_Number": "20220801000000[-7:MST]*-675.00*15**Withdrawal VENMO",
-    "Date": "08/01/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -675,
-    "Amount_Credit": "",
-    "Balance": 3905.62,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
-    "Transaction_Number": "20220801000000[-7:MST]*-125.00*15**Withdrawal VENMO",
-    "Date": "08/01/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -125,
-    "Amount_Credit": "",
-    "Balance": 4580.62,
     "Check_Number": "",
     "source": "elevations"
   },
@@ -2944,28 +2713,6 @@ const elevations_22_21 = [
     "Amount_Debit": -30.6,
     "Amount_Credit": "",
     "Balance": 2082.85,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
-    "Transaction_Number": "20220725000000[-7:MST]*-100.00*15**Withdrawal VENMO",
-    "Date": "07/25/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -100,
-    "Amount_Credit": "",
-    "Balance": 2113.45,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
-    "Transaction_Number": "20220725000000[-7:MST]*-20.00*15**Withdrawal VENMO",
-    "Date": "07/25/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -20,
-    "Amount_Credit": "",
-    "Balance": 2213.45,
     "Check_Number": "",
     "source": "elevations"
   },
@@ -3285,17 +3032,6 @@ const elevations_22_21 = [
     "Amount_Debit": -201.1,
     "Amount_Credit": "",
     "Balance": 1248.24,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
-    "Transaction_Number": "20220706000000[-7:MST]*-675.00*15**Withdrawal VENMO",
-    "Date": "07/06/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -675,
-    "Amount_Credit": "",
-    "Balance": 1449.34,
     "Check_Number": "",
     "source": "elevations"
   },
@@ -3806,28 +3542,6 @@ const elevations_22_21 = [
     "source": "elevations"
   },
   {
-    "Transaction_Number": "20220627000000[-7:MST]*-15.90*15**Withdrawal VENMO",
-    "Date": "06/27/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -15.9,
-    "Amount_Credit": "",
-    "Balance": 60.93,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
-    "Transaction_Number": "20220627000000[-7:MST]*-3.00*15**Withdrawal VENMO",
-    "Date": "06/27/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -3,
-    "Amount_Credit": "",
-    "Balance": 76.83,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
     "Transaction_Number": "20220626000000[-7:MST]*-1.08*13**Withdrawal #000000553399",
     "Date": "06/26/2022",
     "Description": "Withdrawal #000000553399",
@@ -4158,17 +3872,6 @@ const elevations_22_21 = [
     "source": "elevations"
   },
   {
-    "Transaction_Number": "20220613000000[-7:MST]*-55.00*15**Withdrawal VENMO",
-    "Date": "06/13/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -55,
-    "Amount_Credit": "",
-    "Balance": 1076.04,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
     "Transaction_Number": "20220613000000[-7:MST]*-3.00*21**Transfer fee",
     "Date": "06/13/2022",
     "Description": "Transfer fee",
@@ -4253,17 +3956,6 @@ const elevations_22_21 = [
     "Amount_Debit": "",
     "Amount_Credit": 28,
     "Balance": 1104.04,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
-    "Transaction_Number": "20220613000000[-7:MST]*-5.00*15**Withdrawal VENMO",
-    "Date": "06/13/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -5,
-    "Amount_Credit": "",
-    "Balance": 1076.04,
     "Check_Number": "",
     "source": "elevations"
   },
@@ -4429,28 +4121,6 @@ const elevations_22_21 = [
     "Amount_Debit": -4.5,
     "Amount_Credit": "",
     "Balance": 419.87,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
-    "Transaction_Number": "20220606000000[-7:MST]*-675.00*15**Withdrawal VENMO",
-    "Date": "06/06/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -675,
-    "Amount_Credit": "",
-    "Balance": 424.37,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
-    "Transaction_Number": "20220606000000[-7:MST]*-125.00*15**Withdrawal VENMO",
-    "Date": "06/06/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -125,
-    "Amount_Credit": "",
-    "Balance": 1099.37,
     "Check_Number": "",
     "source": "elevations"
   },
@@ -4818,17 +4488,6 @@ const elevations_22_21 = [
     "source": "elevations"
   },
   {
-    "Transaction_Number": "20220531000000[-7:MST]*340.00*515**Deposit VENMO",
-    "Date": "05/31/2022",
-    "Description": "Deposit VENMO",
-    "Memo": "TYPE: CASHOUT ID: 5264681992 CO: VENMO",
-    "Amount_Debit": "",
-    "Amount_Credit": 340,
-    "Balance": 898.17,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
     "Transaction_Number": "20220530000000[-7:MST]*-69.89*13**Withdrawal #215015769316",
     "Date": "05/30/2022",
     "Description": "Withdrawal #215015769316",
@@ -5082,17 +4741,6 @@ const elevations_22_21 = [
     "source": "elevations"
   },
   {
-    "Transaction_Number": "20220526000000[-7:MST]*-70.00*15**Withdrawal VENMO",
-    "Date": "05/26/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -70,
-    "Amount_Credit": "",
-    "Balance": 262,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
     "Transaction_Number": "20220526000000[-7:MST]*-32.03*15**Withdrawal PAYPAL",
     "Date": "05/26/2022",
     "Description": "Withdrawal PAYPAL",
@@ -5225,17 +4873,6 @@ const elevations_22_21 = [
     "source": "elevations"
   },
   {
-    "Transaction_Number": "20220523000000[-7:MST]*-62.00*15**Withdrawal VENMO",
-    "Date": "05/23/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -62,
-    "Amount_Credit": "",
-    "Balance": 1829.27,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
     "Transaction_Number": "20220523000000[-7:MST]*-37.00*15**Withdrawal PAYPAL",
     "Date": "05/23/2022",
     "Description": "Withdrawal PAYPAL",
@@ -5247,17 +4884,6 @@ const elevations_22_21 = [
     "source": "elevations"
   },
   {
-    "Transaction_Number": "20220523000000[-7:MST]*-20.00*15**Withdrawal VENMO",
-    "Date": "05/23/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -20,
-    "Amount_Credit": "",
-    "Balance": 1928.27,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
     "Transaction_Number": "20220523000000[-7:MST]*-10.74*15**Withdrawal PAYPAL",
     "Date": "05/23/2022",
     "Description": "Withdrawal PAYPAL",
@@ -5265,28 +4891,6 @@ const elevations_22_21 = [
     "Amount_Debit": -10.74,
     "Amount_Credit": "",
     "Balance": 1948.27,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
-    "Transaction_Number": "20220523000000[-7:MST]*-8.82*15**Withdrawal VENMO",
-    "Date": "05/23/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -8.82,
-    "Amount_Credit": "",
-    "Balance": 1959.01,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
-    "Transaction_Number": "20220523000000[-7:MST]*-5.00*15**Withdrawal VENMO",
-    "Date": "05/23/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -5,
-    "Amount_Credit": "",
-    "Balance": 1967.83,
     "Check_Number": "",
     "source": "elevations"
   },
@@ -5518,17 +5122,6 @@ const elevations_22_21 = [
     "Amount_Debit": -11.12,
     "Amount_Credit": "",
     "Balance": 3206.39,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
-    "Transaction_Number": "20220517000000[-7:MST]*-15.00*15**Withdrawal VENMO",
-    "Date": "05/17/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -15,
-    "Amount_Credit": "",
-    "Balance": 3217.51,
     "Check_Number": "",
     "source": "elevations"
   },
@@ -5797,28 +5390,6 @@ const elevations_22_21 = [
     "source": "elevations"
   },
   {
-    "Transaction_Number": "20220509000000[-7:MST]*-110.00*15**Withdrawal VENMO",
-    "Date": "05/09/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -110,
-    "Amount_Credit": "",
-    "Balance": 1905.97,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
-    "Transaction_Number": "20220509000000[-7:MST]*-80.00*15**Withdrawal VENMO",
-    "Date": "05/09/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -80,
-    "Amount_Credit": "",
-    "Balance": 2015.97,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
     "Transaction_Number": "20220507000000[-7:MST]*-37.38*42**Withdrawal",
     "Date": "05/07/2022",
     "Description": "Withdrawal",
@@ -5852,17 +5423,6 @@ const elevations_22_21 = [
     "source": "elevations"
   },
   {
-    "Transaction_Number": "20220505000000[-7:MST]*-15.00*15**Withdrawal VENMO",
-    "Date": "05/05/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -15,
-    "Amount_Credit": "",
-    "Balance": 249.92,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
     "Transaction_Number": "20220504000000[-7:MST]*-930.84*15**Withdrawal CAPITAL ONE",
     "Date": "05/04/2022",
     "Description": "Withdrawal CAPITAL ONE",
@@ -5881,17 +5441,6 @@ const elevations_22_21 = [
     "Amount_Debit": -119.68,
     "Amount_Credit": "",
     "Balance": 1195.76,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
-    "Transaction_Number": "20220504000000[-7:MST]*-45.00*15**Withdrawal VENMO",
-    "Date": "05/04/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -45,
-    "Amount_Credit": "",
-    "Balance": 1315.44,
     "Check_Number": "",
     "source": "elevations"
   },
@@ -5951,17 +5500,6 @@ const elevations_22_21 = [
     "source": "elevations"
   },
   {
-    "Transaction_Number": "20220503000000[-7:MST]*-35.00*15**Withdrawal VENMO",
-    "Date": "05/03/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -35,
-    "Amount_Credit": "",
-    "Balance": 381.65,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
     "Transaction_Number": "20220503000000[-7:MST]*-11.99*15**Withdrawal PAYPAL",
     "Date": "05/03/2022",
     "Description": "Withdrawal PAYPAL",
@@ -5980,28 +5518,6 @@ const elevations_22_21 = [
     "Amount_Debit": -15.56,
     "Amount_Credit": "",
     "Balance": 428.64,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
-    "Transaction_Number": "20220502000000[-7:MST]*-675.00*15**Withdrawal VENMO",
-    "Date": "05/02/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -675,
-    "Amount_Credit": "",
-    "Balance": 444.2,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
-    "Transaction_Number": "20220502000000[-7:MST]*-125.00*15**Withdrawal VENMO",
-    "Date": "05/02/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -125,
-    "Amount_Credit": "",
-    "Balance": 1119.2,
     "Check_Number": "",
     "source": "elevations"
   },
@@ -6101,28 +5617,6 @@ const elevations_22_21 = [
     "Amount_Debit": -814.45,
     "Amount_Credit": "",
     "Balance": 752.16,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
-    "Transaction_Number": "20220427000000[-7:MST]*-250.00*15**Withdrawal VENMO",
-    "Date": "04/27/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -250,
-    "Amount_Credit": "",
-    "Balance": 1566.61,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
-    "Transaction_Number": "20220425000000[-7:MST]*-4.00*15**Withdrawal VENMO",
-    "Date": "04/25/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -4,
-    "Amount_Credit": "",
-    "Balance": 1816.61,
     "Check_Number": "",
     "source": "elevations"
   },
@@ -6259,17 +5753,6 @@ const elevations_22_21 = [
     "source": "elevations"
   },
   {
-    "Transaction_Number": "20220421000000[-7:MST]*-50.00*15**Withdrawal VENMO",
-    "Date": "04/21/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -50,
-    "Amount_Credit": "",
-    "Balance": 275.07,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
     "Transaction_Number": "20220419000000[-7:MST]*-76.32*14**Withdrawal Bill Payment",
     "Date": "04/19/2022",
     "Description": "Withdrawal Bill Payment",
@@ -6347,17 +5830,6 @@ const elevations_22_21 = [
     "source": "elevations"
   },
   {
-    "Transaction_Number": "20220414000000[-7:MST]*-10.00*15**Withdrawal VENMO",
-    "Date": "04/14/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -10,
-    "Amount_Credit": "",
-    "Balance": 631.39,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
     "Transaction_Number": "20220412000000[-7:MST]*-25.00*15**Withdrawal CAPITAL ONE",
     "Date": "04/12/2022",
     "Description": "Withdrawal CAPITAL ONE",
@@ -6365,17 +5837,6 @@ const elevations_22_21 = [
     "Amount_Debit": -25,
     "Amount_Credit": "",
     "Balance": 641.39,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
-    "Transaction_Number": "20220412000000[-7:MST]*-4.00*15**Withdrawal VENMO",
-    "Date": "04/12/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -4,
-    "Amount_Credit": "",
-    "Balance": 666.39,
     "Check_Number": "",
     "source": "elevations"
   },
@@ -6391,28 +5852,6 @@ const elevations_22_21 = [
     "source": "elevations"
   },
   {
-    "Transaction_Number": "20220411000000[-7:MST]*-245.00*15**Withdrawal VENMO",
-    "Date": "04/11/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -245,
-    "Amount_Credit": "",
-    "Balance": 1633.38,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
-    "Transaction_Number": "20220411000000[-7:MST]*-205.00*15**Withdrawal VENMO",
-    "Date": "04/11/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -205,
-    "Amount_Credit": "",
-    "Balance": 1878.38,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
     "Transaction_Number": "20220411000000[-7:MST]*-104.99*15**Withdrawal JOSEPH DELA MASA",
     "Date": "04/11/2022",
     "Description": "Withdrawal JOSEPH DELA MASA",
@@ -6420,17 +5859,6 @@ const elevations_22_21 = [
     "Amount_Debit": -104.99,
     "Amount_Credit": "",
     "Balance": 2083.38,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
-    "Transaction_Number": "20220411000000[-7:MST]*245.00*515**Deposit VENMO",
-    "Date": "04/11/2022",
-    "Description": "Deposit VENMO",
-    "Memo": "TYPE: CASHOUT ID: 5264681992 CO: VENMO",
-    "Amount_Debit": "",
-    "Amount_Credit": 245,
-    "Balance": 2188.37,
     "Check_Number": "",
     "source": "elevations"
   },
@@ -6611,17 +6039,6 @@ const elevations_22_21 = [
     "source": "elevations"
   },
   {
-    "Transaction_Number": "20220401000000[-7:MST]*-22.00*15**Withdrawal VENMO",
-    "Date": "04/01/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -22,
-    "Amount_Credit": "",
-    "Balance": 2122.55,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
     "Transaction_Number": "20220330000000[-7:MST]*-37.39*14**Withdrawal Bill Payment",
     "Date": "03/30/2022",
     "Description": "Withdrawal Bill Payment",
@@ -6677,17 +6094,6 @@ const elevations_22_21 = [
     "source": "elevations"
   },
   {
-    "Transaction_Number": "20220328000000[-7:MST]*-675.00*15**Withdrawal VENMO",
-    "Date": "03/28/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -675,
-    "Amount_Credit": "",
-    "Balance": 611.29,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
     "Transaction_Number": "20220328000000[-7:MST]*-480.54*15**Withdrawal CAPITAL ONE",
     "Date": "03/28/2022",
     "Description": "Withdrawal CAPITAL ONE",
@@ -6695,17 +6101,6 @@ const elevations_22_21 = [
     "Amount_Debit": -480.54,
     "Amount_Credit": "",
     "Balance": 1286.29,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
-    "Transaction_Number": "20220328000000[-7:MST]*-125.00*15**Withdrawal VENMO",
-    "Date": "03/28/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -125,
-    "Amount_Credit": "",
-    "Balance": 1766.83,
     "Check_Number": "",
     "source": "elevations"
   },
@@ -7062,17 +6457,6 @@ const elevations_22_21 = [
     "source": "elevations"
   },
   {
-    "Transaction_Number": "20220309000000[-7:MST]*457.06*515**Deposit VENMO",
-    "Date": "03/09/2022",
-    "Description": "Deposit VENMO",
-    "Memo": "TYPE: CASHOUT ID: 5264681992 CO: VENMO",
-    "Amount_Debit": "",
-    "Amount_Credit": 457.06,
-    "Balance": 957.06,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
     "Transaction_Number": "20220308000000[-7:MST]*500.00*512**Deposit Home Banking Transfer",
     "Date": "03/08/2022",
     "Description": "Deposit Home Banking Transfer",
@@ -7370,17 +6754,6 @@ const elevations_22_21 = [
     "source": "elevations"
   },
   {
-    "Transaction_Number": "20220302000000[-7:MST]*-675.00*15**Withdrawal VENMO",
-    "Date": "03/02/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -675,
-    "Amount_Credit": "",
-    "Balance": 36.53,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
     "Transaction_Number": "20220302000000[-7:MST]*-3.00*21**Transfer fee*2",
     "Date": "03/02/2022",
     "Description": "Transfer fee",
@@ -7597,17 +6970,6 @@ const elevations_22_21 = [
     "Amount_Debit": -968.26,
     "Amount_Credit": "",
     "Balance": 171.03,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
-    "Transaction_Number": "20220228000000[-7:MST]*-125.00*15**Withdrawal VENMO",
-    "Date": "02/28/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -125,
-    "Amount_Credit": "",
-    "Balance": 1139.29,
     "Check_Number": "",
     "source": "elevations"
   },
@@ -7898,39 +7260,6 @@ const elevations_22_21 = [
     "source": "elevations"
   },
   {
-    "Transaction_Number": "20220214000000[-7:MST]*-11.81*15**Withdrawal VENMO",
-    "Date": "02/14/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -11.81,
-    "Amount_Credit": "",
-    "Balance": 1887.99,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
-    "Transaction_Number": "20220214000000[-7:MST]*-10.92*15**Withdrawal VENMO",
-    "Date": "02/14/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -10.92,
-    "Amount_Credit": "",
-    "Balance": 1899.8,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
-    "Transaction_Number": "20220214000000[-7:MST]*-3.00*15**Withdrawal VENMO",
-    "Date": "02/14/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -3,
-    "Amount_Credit": "",
-    "Balance": 1910.72,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
     "Transaction_Number": "20220211000000[-7:MST]*-39.30*14**Withdrawal Bill Payment",
     "Date": "02/11/2022",
     "Description": "Withdrawal Bill Payment",
@@ -7971,17 +7300,6 @@ const elevations_22_21 = [
     "Amount_Debit": -100,
     "Amount_Credit": "",
     "Balance": 130.56,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
-    "Transaction_Number": "20220207000000[-7:MST]*-125.00*15**Withdrawal VENMO",
-    "Date": "02/07/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -125,
-    "Amount_Credit": "",
-    "Balance": 230.56,
     "Check_Number": "",
     "source": "elevations"
   },
@@ -8052,17 +7370,6 @@ const elevations_22_21 = [
     "source": "elevations"
   },
   {
-    "Transaction_Number": "20220131000000[-7:MST]*-675.00*15**Withdrawal VENMO",
-    "Date": "01/31/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -675,
-    "Amount_Credit": "",
-    "Balance": 515.92,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
     "Transaction_Number": "20220131000000[-7:MST]*-261.04*15**Withdrawal CAPITAL ONE",
     "Date": "01/31/2022",
     "Description": "Withdrawal CAPITAL ONE",
@@ -8103,17 +7410,6 @@ const elevations_22_21 = [
     "Amount_Debit": -45.76,
     "Amount_Credit": "",
     "Balance": 1602.01,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
-    "Transaction_Number": "20220131000000[-7:MST]*-40.00*15**Withdrawal VENMO",
-    "Date": "01/31/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -40,
-    "Amount_Credit": "",
-    "Balance": 1647.77,
     "Check_Number": "",
     "source": "elevations"
   },
@@ -8415,17 +7711,6 @@ const elevations_22_21 = [
     "source": "elevations"
   },
   {
-    "Transaction_Number": "20220124000000[-7:MST]*-30.00*15**Withdrawal VENMO",
-    "Date": "01/24/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -30,
-    "Amount_Credit": "",
-    "Balance": 1099.34,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
     "Transaction_Number": "20220124000000[-7:MST]*-10.74*15**Withdrawal PAYPAL",
     "Date": "01/24/2022",
     "Description": "Withdrawal PAYPAL",
@@ -8558,28 +7843,6 @@ const elevations_22_21 = [
     "source": "elevations"
   },
   {
-    "Transaction_Number": "20220114000000[-7:MST]*-150.00*15**Withdrawal VENMO",
-    "Date": "01/14/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -150,
-    "Amount_Credit": "",
-    "Balance": 1870.06,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
-    "Transaction_Number": "20220114000000[-7:MST]*-50.00*15**Withdrawal VENMO",
-    "Date": "01/14/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -50,
-    "Amount_Credit": "",
-    "Balance": 2020.06,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
     "Transaction_Number": "20220114000000[-7:MST]*1845.43*515**Deposit BWK VIVED",
     "Date": "01/14/2022",
     "Description": "Deposit BWK VIVED",
@@ -8657,17 +7920,6 @@ const elevations_22_21 = [
     "source": "elevations"
   },
   {
-    "Transaction_Number": "20220111000000[-7:MST]*-25.00*15**Withdrawal VENMO",
-    "Date": "01/11/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -25,
-    "Amount_Credit": "",
-    "Balance": 249.15,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
     "Transaction_Number": "20220111000000[-7:MST]*-6.63*42**Withdrawal",
     "Date": "01/11/2022",
     "Description": "Withdrawal",
@@ -8708,28 +7960,6 @@ const elevations_22_21 = [
     "Amount_Debit": -72.4,
     "Amount_Credit": "",
     "Balance": 1037.46,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
-    "Transaction_Number": "20220110000000[-7:MST]*-9.28*15**Withdrawal VENMO",
-    "Date": "01/10/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -9.28,
-    "Amount_Credit": "",
-    "Balance": 1109.86,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
-    "Transaction_Number": "20220110000000[-7:MST]*-9.28*15**Withdrawal VENMO*1",
-    "Date": "01/10/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -9.28,
-    "Amount_Credit": "",
-    "Balance": 1119.14,
     "Check_Number": "",
     "source": "elevations"
   },
@@ -8910,28 +8140,6 @@ const elevations_22_21 = [
     "source": "elevations"
   },
   {
-    "Transaction_Number": "20220107000000[-7:MST]*-10.00*15**Withdrawal VENMO",
-    "Date": "01/07/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -10,
-    "Amount_Credit": "",
-    "Balance": 1300.08,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
-    "Transaction_Number": "20220107000000[-7:MST]*-3.00*15**Withdrawal VENMO",
-    "Date": "01/07/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -3,
-    "Amount_Credit": "",
-    "Balance": 1310.08,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
     "Transaction_Number": "20220106000000[-7:MST]*-109.99*11**Withdrawal at ATM #200500520847",
     "Date": "01/06/2022",
     "Description": "Withdrawal at ATM #200500520847",
@@ -8943,17 +8151,6 @@ const elevations_22_21 = [
     "source": "elevations"
   },
   {
-    "Transaction_Number": "20220105000000[-7:MST]*703.00*515**Deposit VENMO",
-    "Date": "01/05/2022",
-    "Description": "Deposit VENMO",
-    "Memo": "TYPE: CASHOUT ID: 5264681992 CO: VENMO",
-    "Amount_Debit": "",
-    "Amount_Credit": 703,
-    "Balance": 1423.07,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
     "Transaction_Number": "20220104000000[-7:MST]*-613.58*15**Withdrawal CAPITAL ONE",
     "Date": "01/04/2022",
     "Description": "Withdrawal CAPITAL ONE",
@@ -8961,17 +8158,6 @@ const elevations_22_21 = [
     "Amount_Debit": -613.58,
     "Amount_Credit": "",
     "Balance": 720.07,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
-    "Transaction_Number": "20220104000000[-7:MST]*-347.00*15**Withdrawal VENMO",
-    "Date": "01/04/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -347,
-    "Amount_Credit": "",
-    "Balance": 1333.65,
     "Check_Number": "",
     "source": "elevations"
   },
@@ -9064,17 +8250,6 @@ const elevations_22_21 = [
     "source": "elevations"
   },
   {
-    "Transaction_Number": "20220103000000[-7:MST]*-675.00*15**Withdrawal VENMO",
-    "Date": "01/03/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -675,
-    "Amount_Credit": "",
-    "Balance": 6638.3,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
     "Transaction_Number": "20220103000000[-7:MST]*-11.99*15**Withdrawal PAYPAL",
     "Date": "01/03/2022",
     "Description": "Withdrawal PAYPAL",
@@ -9082,39 +8257,6 @@ const elevations_22_21 = [
     "Amount_Debit": -11.99,
     "Amount_Credit": "",
     "Balance": 7313.3,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
-    "Transaction_Number": "20220103000000[-7:MST]*-11.53*15**Withdrawal VENMO",
-    "Date": "01/03/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -11.53,
-    "Amount_Credit": "",
-    "Balance": 7325.29,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
-    "Transaction_Number": "20220103000000[-7:MST]*-5.00*15**Withdrawal VENMO",
-    "Date": "01/03/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -5,
-    "Amount_Credit": "",
-    "Balance": 7336.82,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
-    "Transaction_Number": "20220103000000[-7:MST]*-3.00*15**Withdrawal VENMO",
-    "Date": "01/03/2022",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -3,
-    "Amount_Credit": "",
-    "Balance": 7341.82,
     "Check_Number": "",
     "source": "elevations"
   },
@@ -9302,17 +8444,6 @@ const elevations_22_21 = [
     "Amount_Debit": -35,
     "Amount_Credit": "",
     "Balance": 1324.01,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
-    "Transaction_Number": "20211220000000[-7:MST]*-19.90*15**Withdrawal VENMO",
-    "Date": "12/20/2021",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO NAME: BRODIE BALSER",
-    "Amount_Debit": -19.9,
-    "Amount_Credit": "",
-    "Balance": 1359.01,
     "Check_Number": "",
     "source": "elevations"
   },
@@ -9526,28 +8657,6 @@ const elevations_22_21 = [
     "source": "elevations"
   },
   {
-    "Transaction_Number": "20211130000000[-7:MST]*-675.00*15**Withdrawal VENMO",
-    "Date": "11/30/2021",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO",
-    "Amount_Debit": -675,
-    "Amount_Credit": "",
-    "Balance": 87.99,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
-    "Transaction_Number": "20211130000000[-7:MST]*-125.00*15**Withdrawal VENMO",
-    "Date": "11/30/2021",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO",
-    "Amount_Debit": -125,
-    "Amount_Credit": "",
-    "Balance": 762.99,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
     "Transaction_Number": "20211130000000[-7:MST]*-49.35*15**Withdrawal FORTCOLUTILITIES",
     "Date": "11/30/2021",
     "Description": "Withdrawal FORTCOLUTILITIES",
@@ -9632,17 +8741,6 @@ const elevations_22_21 = [
     "Amount_Debit": -48.5,
     "Amount_Credit": "",
     "Balance": 1287.53,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
-    "Transaction_Number": "20211126000000[-7:MST]*40.00*515**Deposit VENMO",
-    "Date": "11/26/2021",
-    "Description": "Deposit VENMO",
-    "Memo": "TYPE: CASHOUT ID: 5264681992 CO: VENMO",
-    "Amount_Debit": "",
-    "Amount_Credit": 40,
-    "Balance": 1336.03,
     "Check_Number": "",
     "source": "elevations"
   },
@@ -9797,28 +8895,6 @@ const elevations_22_21 = [
     "Amount_Debit": -12.5,
     "Amount_Credit": "",
     "Balance": 1578.58,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
-    "Transaction_Number": "20211119000000[-7:MST]*-9.32*15**Withdrawal VENMO",
-    "Date": "11/19/2021",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO",
-    "Amount_Debit": -9.32,
-    "Amount_Credit": "",
-    "Balance": 1591.08,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
-    "Transaction_Number": "20211119000000[-7:MST]*-3.00*15**Withdrawal VENMO",
-    "Date": "11/19/2021",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO",
-    "Amount_Debit": -3,
-    "Amount_Credit": "",
-    "Balance": 1600.4,
     "Check_Number": "",
     "source": "elevations"
   },
@@ -9988,17 +9064,6 @@ const elevations_22_21 = [
     "source": "elevations"
   },
   {
-    "Transaction_Number": "20211109000000[-7:MST]*-9.80*15**Withdrawal VENMO",
-    "Date": "11/09/2021",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO",
-    "Amount_Debit": -9.8,
-    "Amount_Credit": "",
-    "Balance": 98.34,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
     "Transaction_Number": "20211108000000[-7:MST]*-18.28*14**Withdrawal Bill Payment",
     "Date": "11/08/2021",
     "Description": "Withdrawal Bill Payment",
@@ -10028,17 +9093,6 @@ const elevations_22_21 = [
     "Amount_Debit": -22,
     "Amount_Credit": "",
     "Balance": 593.95,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
-    "Transaction_Number": "20211108000000[-7:MST]*335.89*515**Deposit VENMO",
-    "Date": "11/08/2021",
-    "Description": "Deposit VENMO",
-    "Memo": "TYPE: CASHOUT ID: 5264681992 CO: VENMO",
-    "Amount_Debit": "",
-    "Amount_Credit": 335.89,
-    "Balance": 615.95,
     "Check_Number": "",
     "source": "elevations"
   },
@@ -10230,17 +9284,6 @@ const elevations_22_21 = [
     "source": "elevations"
   },
   {
-    "Transaction_Number": "20211101000000[-7:MST]*-160.00*15**Withdrawal VENMO",
-    "Date": "11/01/2021",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO",
-    "Amount_Debit": -160,
-    "Amount_Credit": "",
-    "Balance": 240.87,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
     "Transaction_Number": "20211029000000[-7:MST]*-83.80*15**Withdrawal FORTCOLUTILITIES",
     "Date": "10/29/2021",
     "Description": "Withdrawal FORTCOLUTILITIES",
@@ -10292,17 +9335,6 @@ const elevations_22_21 = [
     "Amount_Debit": -169,
     "Amount_Credit": "",
     "Balance": 575.28,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
-    "Transaction_Number": "20211028000000[-7:MST]*-675.00*15**Withdrawal VENMO",
-    "Date": "10/28/2021",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO",
-    "Amount_Debit": -675,
-    "Amount_Credit": "",
-    "Balance": 744.28,
     "Check_Number": "",
     "source": "elevations"
   },
@@ -10758,17 +9790,6 @@ const elevations_22_21 = [
     "source": "elevations"
   },
   {
-    "Transaction_Number": "20211012000000[-7:MST]*-2000.00*15**Withdrawal VENMO",
-    "Date": "10/12/2021",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO",
-    "Amount_Debit": -2000,
-    "Amount_Credit": "",
-    "Balance": 521.82,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
     "Transaction_Number": "20211012000000[-7:MST]*-25.00*15**Withdrawal CAPITAL ONE",
     "Date": "10/12/2021",
     "Description": "Withdrawal CAPITAL ONE",
@@ -11044,17 +10065,6 @@ const elevations_22_21 = [
     "source": "elevations"
   },
   {
-    "Transaction_Number": "20210929000000[-7:MST]*-675.00*15**Withdrawal VENMO",
-    "Date": "09/29/2021",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO",
-    "Amount_Debit": -675,
-    "Amount_Credit": "",
-    "Balance": 1368.86,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
     "Transaction_Number": "20210929000000[-7:MST]*-138.90*15**Withdrawal FORTCOLUTILITIES",
     "Date": "09/29/2021",
     "Description": "Withdrawal FORTCOLUTILITIES",
@@ -11205,17 +10215,6 @@ const elevations_22_21 = [
     "Amount_Debit": -25.87,
     "Amount_Credit": "",
     "Balance": 1135.53,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
-    "Transaction_Number": "20210922000000[-7:MST]*-3000.00*15**Withdrawal VENMO",
-    "Date": "09/22/2021",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO",
-    "Amount_Debit": -3000,
-    "Amount_Credit": "",
-    "Balance": 1161.4,
     "Check_Number": "",
     "source": "elevations"
   },
@@ -11473,17 +10472,6 @@ const elevations_22_21 = [
     "source": "elevations"
   },
   {
-    "Transaction_Number": "20210908000000[-7:MST]*-3000.00*15**Withdrawal VENMO",
-    "Date": "09/08/2021",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO",
-    "Amount_Debit": -3000,
-    "Amount_Credit": "",
-    "Balance": 1000,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
     "Transaction_Number": "20210907000000[-7:MST]*4000.00*512**Deposit Home Banking Transfer",
     "Date": "09/07/2021",
     "Description": "Deposit Home Banking Transfer",
@@ -11561,17 +10549,6 @@ const elevations_22_21 = [
     "source": "elevations"
   },
   {
-    "Transaction_Number": "20210907000000[-7:MST]*-30.00*15**Withdrawal VENMO",
-    "Date": "09/07/2021",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO",
-    "Amount_Debit": -30,
-    "Amount_Credit": "",
-    "Balance": 0,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
     "Transaction_Number": "20210907000000[-7:MST]*-3.00*21**Transfer fee*2",
     "Date": "09/07/2021",
     "Description": "Transfer fee",
@@ -11612,28 +10589,6 @@ const elevations_22_21 = [
     "Amount_Debit": -110.9,
     "Amount_Credit": "",
     "Balance": 39.16,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
-    "Transaction_Number": "20210903000000[-7:MST]*-675.00*15**Withdrawal VENMO",
-    "Date": "09/03/2021",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO",
-    "Amount_Debit": -675,
-    "Amount_Credit": "",
-    "Balance": 150.06,
-    "Check_Number": "",
-    "source": "elevations"
-  },
-  {
-    "Transaction_Number": "20210903000000[-7:MST]*-200.00*15**Withdrawal VENMO",
-    "Date": "09/03/2021",
-    "Description": "Withdrawal VENMO",
-    "Memo": "TYPE: PAYMENT ID: 3264681992 CO: VENMO",
-    "Amount_Debit": -200,
-    "Amount_Credit": "",
-    "Balance": 825.06,
     "Check_Number": "",
     "source": "elevations"
   },
