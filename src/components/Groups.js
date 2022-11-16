@@ -4,10 +4,8 @@ import { Input } from "baseui/input";
 import { Button } from "baseui/button";
 import { StatelessAccordion, Panel } from "baseui/accordion";
 import Transactions from './Transactions';
-import setUpGroupsAndTransactions from '../workers/setUpGroupsAndTransactions';
 
-
-const SaveGroup = ({ groups, setGroups }) => ({ name, keywords = [] }) => {
+const SaveGroup = ({ setNewState }) => ({ name, keywords = [] }) => {
   const newGroup = {
     name,
     keywords
@@ -15,10 +13,7 @@ const SaveGroup = ({ groups, setGroups }) => ({ name, keywords = [] }) => {
 
   Storage.post({key: name, value: newGroup})
 
-  setGroups({
-    ...groups,
-    [name]: newGroup
-  })
+  setNewState()
 }
 
 const CreateGroup = ({ saveGroup }) => {
@@ -55,11 +50,11 @@ const CreateGroup = ({ saveGroup }) => {
   );
 }
 
-const RemoveGroup = ({ groups, setGroups }) => ({ name }) => {
+const RemoveGroup = ({ setNewState }) => ({ name }) => {
 
   Storage.delete({ key: name })
   
-  setGroups(setUpGroupsAndTransactions())
+  setNewState()
 }
 
 const DeleteGroupBtn = ({props: { name, removeGroup }}) => {
@@ -121,6 +116,7 @@ const SetKeyword = ({props: { saveGroup, name, keywords }}) => {
 }
 
 const Group = ({ group: { name, keywords, transactions, coinsSpent }, index, saveGroup, removeGroup }) => {
+  console.log({ name, keywords, transactions, coinsSpent })
   const _keywords = keywords?.join(', ')
   const title = `${name} - total: $${coinsSpent.toFixed(0)}`
   return (
@@ -132,10 +128,10 @@ const Group = ({ group: { name, keywords, transactions, coinsSpent }, index, sav
   )
 }
 
-const Groups = ({props: {groups, setGroups}}) => {
+const Groups = ({props: {groups, setNewState }}) => {
   const groupsArr = Object.values(groups)
-  const saveGroup = SaveGroup({ groups, setGroups })
-  const removeGroup = RemoveGroup({ groups, setGroups })
+  const saveGroup = SaveGroup({ setNewState })
+  const removeGroup = RemoveGroup({ setNewState })
 
   const [expanded, setExpanded] = React.useState([]);
 

@@ -48,11 +48,11 @@ const attachTransactionsToGroups = ({ transaction, groups }) => {
 
 const allTransactions = [ ...elevations, ...capitalOne ]
 
-const setUpGroupsAndTransactions = ({ date }) => {
-
+const setUpGroupsAndTransactions = ({ date = [new Date()] }) => {
   const defaultResult = { normalizedGroups: getGroupsFromStorage(), freeTransactions: [] }
+  console.log(defaultResult)
+
   return allTransactions.reduce((res, transaction) => {
-    console.log(res)
     transaction = normalizeTransactionsBySource({ transaction })
     const filterDate = dateToMiliSeconds({ date })
     const transDate = dateToMiliSeconds({ date: transaction.date })
