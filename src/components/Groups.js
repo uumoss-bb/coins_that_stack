@@ -4,6 +4,7 @@ import { Input } from "baseui/input";
 import { Button } from "baseui/button";
 import { StatelessAccordion, Panel } from "baseui/accordion";
 import Transactions from './Transactions';
+import { Heading, HeadingLevel } from 'baseui/heading';
 
 const SaveGroup = ({ setNewState }) => ({ name, keywords = [] }) => {
   const newGroup = {
@@ -132,16 +133,22 @@ const Groups = ({props: {groups, setNewState }}) => {
   const saveGroup = SaveGroup({ setNewState })
   const removeGroup = RemoveGroup({ setNewState })
 
-  const [expanded, setExpanded] = React.useState([]);
+  const coinsSpentInAll = Object.values(groups).reduce((res, { coinsSpent }) => res += coinsSpent, 0)
 
+  const [expanded, setExpanded] = React.useState([]);
   return (
-    <StatelessAccordion
-      expanded={expanded}
-      onChange={({ expanded }) => setExpanded(expanded)}
-    >
-      {CreateGroup({ saveGroup })}
-      {groupsArr.map((group, index) => Group({ group, index, saveGroup, removeGroup }) )}
-    </StatelessAccordion>
+    <>
+      <HeadingLevel>
+        <Heading styleLevel={6}>{`All Coin Spent: ${coinsSpentInAll.toFixed(0)}`}</Heading>
+      </HeadingLevel>
+      <StatelessAccordion
+        expanded={expanded}
+        onChange={({ expanded }) => setExpanded(expanded)}
+      >
+        {CreateGroup({ saveGroup })}
+        {groupsArr.map((group, index) => Group({ group, index, saveGroup, removeGroup }) )}
+      </StatelessAccordion>
+    </>
   );
 }
 
