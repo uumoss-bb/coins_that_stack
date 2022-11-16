@@ -50,7 +50,6 @@ const allTransactions = [ ...elevations, ...capitalOne ]
 
 const setUpGroupsAndTransactions = ({ date = [new Date()] }) => {
   const defaultResult = { normalizedGroups: getGroupsFromStorage(), freeTransactions: [] }
-  console.log(defaultResult)
 
   return allTransactions.reduce((res, transaction) => {
     transaction = normalizeTransactionsBySource({ transaction })

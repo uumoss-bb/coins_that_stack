@@ -32,21 +32,22 @@ const SearchTransactions = ({props: { transactions, setTransactions }}) => {
   );
 }
 
-const SetNewState = ({ setGroups, setTransactions, setUpGroupsAndTransactions }) => ({ date }) => {
-  const { normalizedGroups, freeTransactions } = setUpGroupsAndTransactions({ date })
+const SetNewState = ({ setGroups, setTransactions, setUpGroupsAndTransactions, date }) => (dateFromInput) => {
+  const { normalizedGroups, freeTransactions } = setUpGroupsAndTransactions({ date: dateFromInput ? dateFromInput: date })
   setGroups(normalizedGroups)
   setTransactions(freeTransactions)
 }
 
 function App() {
+  const [date, setDate] = React.useState([new Date()]);
   const { normalizedGroups, freeTransactions } = setUpGroupsAndTransactions({})
   const [ groups, setGroups ] = React.useState(normalizedGroups);
   const [ transactions, setTransactions ] = React.useState(freeTransactions);
-  const setNewState = SetNewState({ setGroups, setTransactions, setUpGroupsAndTransactions })
+  const setNewState = SetNewState({ setGroups, setTransactions, setUpGroupsAndTransactions, date })
   
   return (
     <div className="App">
-      <DateInput props={{ setNewState }}/>
+      <DateInput props={{ setNewState, date, setDate }}/>
       <div className='groups'>
         <HeadingLevel>
           <Heading styleLevel={5}>Groups</Heading>

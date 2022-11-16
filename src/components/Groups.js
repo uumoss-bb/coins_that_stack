@@ -116,7 +116,6 @@ const SetKeyword = ({props: { saveGroup, name, keywords }}) => {
 }
 
 const Group = ({ group: { name, keywords, transactions, coinsSpent }, index, saveGroup, removeGroup }) => {
-  console.log({ name, keywords, transactions, coinsSpent })
   const _keywords = keywords?.join(', ')
   const title = `${name} - total: $${coinsSpent.toFixed(0)}`
   return (
