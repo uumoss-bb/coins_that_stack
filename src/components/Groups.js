@@ -1,11 +1,11 @@
 import * as React from 'react';
-import * as R from 'ramda'
 import Storage from '../workers/Storage'
 import { Input } from "baseui/input";
 import { Button } from "baseui/button";
 import { StatelessAccordion, Panel } from "baseui/accordion";
 import Transactions from './Transactions';
-import setGroupsFromStorage from '../workers/setGroupsFromStorage';
+import setUpGroupsAndTransactions from '../workers/setUpGroupsAndTransactions';
+
 
 const SaveGroup = ({ groups, setGroups }) => ({ name, keywords = [] }) => {
   const newGroup = {
@@ -59,7 +59,7 @@ const RemoveGroup = ({ groups, setGroups }) => ({ name }) => {
 
   Storage.delete({ key: name })
   
-  setGroups(setGroupsFromStorage())
+  setGroups(setUpGroupsAndTransactions())
 }
 
 const DeleteGroupBtn = ({props: { name, removeGroup }}) => {
@@ -122,7 +122,7 @@ const SetKeyword = ({props: { saveGroup, name, keywords }}) => {
 
 const Group = ({ group: { name, keywords, transactions, coinsSpent }, index, saveGroup, removeGroup }) => {
   const _keywords = keywords?.join(', ')
-  const title = `${name} - total: $${coinsSpent.toFixed(0)} ( keywords: ${_keywords ? _keywords : 'none'} )`
+  const title = `${name} - total: $${coinsSpent.toFixed(0)}`
   return (
     <Panel key={index + name} title={title}>
       <DeleteGroupBtn props={{ name, removeGroup }}/>

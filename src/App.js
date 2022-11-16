@@ -1,22 +1,42 @@
 import * as React from 'react';
 import './App.css';
 import Groups from './components/Groups';
-import setGroupsFromStorage from './workers/setGroupsFromStorage';
 import Transactions from './components/Transactions'
-import {
-  capitalOne,
-  elevations
-} from './transactions'
 import setUpGroupsAndTransactions from './workers/setUpGroupsAndTransactions';
 import DateInput from './components/DateInput';
-import {Heading, HeadingLevel} from 'baseui/heading';
+import { Heading, HeadingLevel } from 'baseui/heading';
+import { Input } from "baseui/input";
+import { Button } from "baseui/button";
+import normalizeText from './workers/normalizeText';
 
+const FilterBySearchWord = ({ transactions }) => ({ searchWord }) => transactions.filter(transaction => normalizeText(transaction.title).includes(normalizeText(searchWord)))
+
+const SearchTransactions = ({props: { transactions, setTransactions }}) => {
+  const [ searchWord, setWord ] = React.useState('');
+  const filterBySearchWord = FilterBySearchWord({ transactions })
+
+  return (
+    <>
+      <Input
+        value={searchWord}
+        onChange={e => setWord(e.target.value)}
+        placeholder="Search"
+        clearOnEscape
+        endEnhancer={() => (
+          <Button onClick={() => setTransactions(filterBySearchWord({ searchWord }))} >
+          search
+          </Button>
+        )}
+      />
+    </>
+  );
+}
 
 function App() {
-  const [ groups, setGroups ] = React.useState(setGroupsFromStorage());
   const [date, setDate] = React.useState([new Date()]);
-  const allTransactions = [ ...elevations, ...capitalOne ]
-  const { groupsWithTransactions, freeTransactions } = setUpGroupsAndTransactions({ transactions: allTransactions, groups, date })
+  const { normalizedGroups, freeTransactions } = setUpGroupsAndTransactions({ date })
+  const [ groups, setGroups ] = React.useState(normalizedGroups);
+  const [ transactions, setTransactions ] = React.useState(freeTransactions);
 
   return (
     <div className="App">
@@ -25,14 +45,12 @@ function App() {
         <HeadingLevel>
           <Heading styleLevel={5}>Groups</Heading>
         </HeadingLevel>
-        <Groups props={{ groups: groupsWithTransactions, setGroups }}/>
+        <Groups props={{ groups, setGroups }}/>
       </div>
 
       <div className='transactions'>
-        <HeadingLevel>
-          <Heading styleLevel={5}>Total: {freeTransactions.length}</Heading>
-        </HeadingLevel>
-        <Transactions transactions={freeTransactions}/>
+        <SearchTransactions props={{ transactions: freeTransactions, setTransactions }}/>
+        <Transactions transactions={transactions}/>
       </div>
     </div>
   );
