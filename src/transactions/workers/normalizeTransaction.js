@@ -21,10 +21,18 @@ const normalizeVenmo = ({ Datetime, Note, To, ...others }) => ({
   date: Datetime
 })
 
+const normalizePayPal = ({ Date, Gross, Name }) => ({
+  source: 'paypal',
+  title: Name,
+  transaction: Gross,
+  date: Date
+})
+
 const sourceFunctions = {
   elevations: normalizeElevationsData,
   capitalOne: normalizeCapitalOneData,
-  venmo: normalizeVenmo
+  venmo: normalizeVenmo,
+  paypal: normalizePayPal
 }
 
 const getTransaction = (file) => {
