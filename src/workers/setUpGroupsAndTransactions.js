@@ -1,5 +1,4 @@
 import normalizeText from "./normalizeText";
-import normalizeTransactionsBySource from "./normalizeTransactionsBySource";
 import {
   capitalOne,
   elevations
@@ -52,7 +51,6 @@ const setUpGroupsAndTransactions = ({ date = [new Date()] }) => {
   const defaultResult = { normalizedGroups: getGroupsFromStorage(), freeTransactions: [] }
 
   return allTransactions.reduce((res, transaction) => {
-    transaction = normalizeTransactionsBySource({ transaction })
     const filterDate = dateToMiliSeconds({ date })
     const transDate = dateToMiliSeconds({ date: transaction.date })
     const filterDateString = dateToDateString({ date })

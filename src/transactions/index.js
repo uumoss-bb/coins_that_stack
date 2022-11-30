@@ -1,18 +1,11 @@
-import cap_2021 from './cap_2021.js'
-import cap_2022 from './cap_2022.js'
-import elev_22_21 from './elev_22_21.js'
-
-const capitalOne = [
-  ...cap_2021,
-  ...cap_2022
-]
-
-const elevations = [
-  ...elev_22_21
-]
-
+import elevations from "./normalizedTransactions/elevations_normalized"
+import capitalone from "./normalizedTransactions/capitalone_normalized"
+import venmo from "./normalizedTransactions/venmo_normalized"
+import paypal from "./normalizedTransactions/paypal_normalized"
 
 export {
-  capitalOne,
-  elevations
+  capitalone,
+  elevations,
+  venmo,
+  paypal
 }

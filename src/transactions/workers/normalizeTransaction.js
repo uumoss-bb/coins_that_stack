@@ -21,16 +21,16 @@ const normalizeVenmo = ({ Datetime, Note, To, ...others }) => ({
   date: Datetime
 })
 
-const normalizePayPal = ({ Date, Gross, Name }) => ({
+const normalizePayPal = ({ Date, Gross, Name, Type }) => ({
   source: 'paypal',
-  title: Name,
+  title: Name ? Name : Type,
   transaction: Gross,
   date: Date
 })
 
 const sourceFunctions = {
   elevations: normalizeElevationsData,
-  capitalOne: normalizeCapitalOneData,
+  capitalone: normalizeCapitalOneData,
   venmo: normalizeVenmo,
   paypal: normalizePayPal
 }
@@ -67,24 +67,25 @@ async function normalize({source, path}) {
     const transaction = transactions[index];
     const normalizedTransaction = sourceFunctions[source](transaction)
     newTransactions.push(normalizedTransaction)
-    console.log(normalizedTransaction)
   }
 
-  await writeJSON(`${source}_normalized.json`, newTransactions)
+  await writeJSON(`../normalizedTransactions/${source}_normalized.json`, JSON.stringify(newTransactions, null, 2))
 }
 
 (async ()=>{
   const files = [
-    {'elevations': '../orig_elev_22_21.json'},
-    {'capitalone': '../orig_cap_21_22.json'},
-    {'venmo': '../orig_venmo_2022.json'}
+    ['elevations', '../orig_elev_22_21.json'],
+    ['capitalone', '../orig_cap_21_22.json'],
+    ['venmo', '../orig_venmo_2022.json'],
+    ['paypal', '../orig_paypal_21_22.json']
   ]
 
   for (let index = 0; index < files.length; index++) {
     const file = files[index];
-    await normalize({
-      source: Object.keys(file),
-      path: Object.values(file)
+    console.log(file)
+    normalize({
+      source: file[0],
+      path: file[1]
     });
   }
 })(); 
