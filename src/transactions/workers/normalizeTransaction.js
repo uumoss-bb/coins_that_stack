@@ -1,32 +1,53 @@
 const fs = require('fs')
 
-const normalizeElevationsData = ({ Memo, Date, Amount_Debit }) => ({
-  source: 'elevations',
-  title: Memo,
-  transaction: Amount_Debit,
-  date: Date
-})
+const normalizeElevationsData = ({ Memo, Date, Amount_Debit, Amount_Credit }) => {
+  if(Memo) {
+    return {
+      source: 'elevations',
+      title: Memo,
+      transaction: Amount_Debit ? Amount_Debit * -1 : Amount_Credit,
+      date: Date,
+      type: Amount_Debit ? 'OUT' : 'IN'
+    }
+  }
+}
 
-const normalizeCapitalOneData = ({ Description, Transaction_Date, Debit }) => ({
+const normalizeCapitalOneData = ({ Description, Transaction_Date, Debit, Credit }) => ({
   source: 'capitalOne',
   title: Description,
-  transaction: Debit,
-  date: Transaction_Date
+  transaction: Debit ? Debit : Credit,
+  date: Transaction_Date,
+  type: Debit ? 'OUT' : 'IN'
 })
 
-const normalizeVenmo = ({ Datetime, Note, To, ...others }) => ({
+const normalizeVenmoAmount = (amount) =>  {
+  amount = Number(amount.replace('$', ''))
+  if(amount < 0) {
+    return amount * -1
+  }
+
+  return amount
+}
+
+const normalizeVenmo = ({ Datetime, Note, To, Type, ...others }) => ({
   source: 'venmo',
-  title: `${To}: ${Note}`,
-  transaction: others['Amount (total)'],
-  date: Datetime
+  title: To ? `${To}: ${Note}` : 'Sent To Bank',
+  transaction: normalizeVenmoAmount(others['Amount (total)']),
+  date: Datetime,
+  type: ['Payment', 'Merchant Transaction'].includes(Type) ? 'OUT' : 'IN'
 })
 
-const normalizePayPal = ({ Date, Gross, Name, Type }) => ({
-  source: 'paypal',
-  title: Name ? Name : Type,
-  transaction: Gross,
-  date: Date
-})
+const normalizePayPal = ({ Date, Gross, Name, Type }) => {
+  if(Type.includes('Payment')){
+    return {
+      source: 'paypal',
+      title: Name,
+      transaction: Gross * -1,
+      date: Date,
+      type: 'OUT'
+    }
+  }
+}
 
 const sourceFunctions = {
   elevations: normalizeElevationsData,
@@ -66,7 +87,9 @@ async function normalize({source, path}) {
   for (let index = 0; index < transactions.length; index++) {
     const transaction = transactions[index];
     const normalizedTransaction = sourceFunctions[source](transaction)
-    newTransactions.push(normalizedTransaction)
+    if(normalizedTransaction) {
+      newTransactions.push(normalizedTransaction)
+    }
   }
 
   await writeJSON(`../normalizedTransactions/${source}_normalized.json`, JSON.stringify(newTransactions, null, 2))
@@ -74,10 +97,10 @@ async function normalize({source, path}) {
 
 (async ()=>{
   const files = [
-    ['elevations', '../orig_elev_22_21.json'],
-    ['capitalone', '../orig_cap_21_22.json'],
-    ['venmo', '../orig_venmo_2022.json'],
-    ['paypal', '../orig_paypal_21_22.json']
+    ['elevations', '../originalTransactions/orig_elev_22_21.json'],
+    ['capitalone', '../originalTransactions/orig_cap_21_22.json'],
+    ['venmo', '../originalTransactions/orig_venmo_2022.json'],
+    ['paypal', '../originalTransactions/orig_paypal_21_22.json']
   ]
 
   for (let index = 0; index < files.length; index++) {

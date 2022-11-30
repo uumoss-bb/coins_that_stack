@@ -1,7 +1,9 @@
 import normalizeText from "./normalizeText";
 import {
-  capitalOne,
-  elevations
+  capitalone,
+  elevations,
+  venmo,
+  paypal
 } from '../transactions'
 import Storage from "./Storage";
 
@@ -35,7 +37,7 @@ const attachTransactionsToGroups = ({ transaction, groups }) => {
         transaction
       ]
       
-      group.coinsSpent += Number(transaction.transaction * -1)
+      group.coinsSpent += Number(transaction.transaction)
 
       groupsWithTransactions[group.name] = group
     }
@@ -45,7 +47,7 @@ const attachTransactionsToGroups = ({ transaction, groups }) => {
   return { groupsWithTransactions, belongsToGroup }
 }
 
-const allTransactions = [ ...elevations, ...capitalOne ]
+const allTransactions = [ ...elevations, ...capitalone, ...venmo, ...paypal ]
 
 const setUpGroupsAndTransactions = ({ date = [new Date()] }) => {
   const defaultResult = { normalizedGroups: getGroupsFromStorage(), freeTransactions: [] }
