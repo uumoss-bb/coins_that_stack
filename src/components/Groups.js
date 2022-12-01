@@ -6,13 +6,21 @@ import { StatelessAccordion, Panel } from "baseui/accordion";
 import Transactions from './Transactions';
 import { Heading, HeadingLevel } from 'baseui/heading';
 
-const SaveGroup = ({ setNewState }) => ({ name, keywords = [] }) => {
+const defaultGroup = {
+  name: 'group',
+  keywords: [],
+  color: '#FFFFFF'
+}
+
+const SaveGroup = ({ setNewState }) => ({ group = {}, ...newData }) => {
   const newGroup = {
-    name,
-    keywords
+    ...group,
+    ...newData
   }
 
-  Storage.post({key: name, value: newGroup})
+  console.log(newGroup)
+
+  Storage.post({key: group.name, value: newGroup})
 
   setNewState()
 }
@@ -41,7 +49,10 @@ const CreateGroup = ({ saveGroup }) => {
           }
         }} 
         onClick={() => {
-          saveGroup({ name: newName })
+          saveGroup({ group: {
+            ...defaultGroup,
+            name: newName
+          }})
           setNewName('')
         }}
       >
@@ -82,10 +93,13 @@ const DeleteGroupBtn = ({props: { name, removeGroup }}) => {
   );
 }
 
-const SetKeyword = ({props: { saveGroup, name, keywords }}) => {
+const SetKeyword = ({props: { saveGroup, group, keywords }}) => {
   const [ newKeywords, setKeywords ] = React.useState(keywords);
-
-  const style = {}
+  
+  const style = {
+    'display': 'flex',
+    margin: '.5% 0 .5% 0'
+  }
 
   return (
     <>
@@ -94,16 +108,16 @@ const SetKeyword = ({props: { saveGroup, name, keywords }}) => {
         onChange={e => setKeywords(e.target.value)}
         placeholder="Set a key word"
         clearOnEscape
+        overrides={{
+          BaseButton: {
+            style
+          }
+        }} 
         endEnhancer={() => (
-          <Button 
-            overrides={{
-              BaseButton: {
-                style
-              }
-            }} 
+          <Button
             onClick={() => 
               saveGroup({ 
-                name, 
+                group,
                 keywords: newKeywords ? newKeywords.split(', ') : []
               })
             }
@@ -116,13 +130,18 @@ const SetKeyword = ({props: { saveGroup, name, keywords }}) => {
   );
 }
 
-const Group = ({ group: { name, keywords, transactions, coinsSpent }, index, saveGroup, removeGroup }) => {
+const Group = ({ group, index, saveGroup, removeGroup }) => {
+  const { name, keywords, transactions, coinsSpent } = group
   const _keywords = keywords?.join(', ')
   const title = `${name} - total: $${coinsSpent.toFixed(0)}`
+
   return (
-    <Panel key={index + name} title={title}>
+    <Panel 
+      key={index + name} 
+      title={title}
+    >
       <DeleteGroupBtn props={{ name, removeGroup }}/>
-      <SetKeyword props={{ saveGroup, name, keywords: _keywords }}/>
+      <SetKeyword props={{ saveGroup, group, keywords: _keywords }}/>
       <Transactions transactions={ transactions }/>
     </Panel>
   )
@@ -136,6 +155,7 @@ const Groups = ({props: {groups, setNewState }}) => {
   const coinsSpentInAll = Object.values(groups).reduce((res, { coinsSpent }) => res += coinsSpent, 0)
 
   const [expanded, setExpanded] = React.useState([]);
+  
   return (
     <>
       <HeadingLevel>

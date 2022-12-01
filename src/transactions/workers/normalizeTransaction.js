@@ -1,7 +1,7 @@
 const fs = require('fs')
 
 const normalizeElevationsData = ({ Memo, Date, Amount_Debit, Amount_Credit }) => {
-  if(Memo) {
+  if(Memo && !Memo.includes('PAYPAL')) {
     return {
       source: 'elevations',
       title: Memo,
@@ -12,13 +12,17 @@ const normalizeElevationsData = ({ Memo, Date, Amount_Debit, Amount_Credit }) =>
   }
 }
 
-const normalizeCapitalOneData = ({ Description, Transaction_Date, Debit, Credit }) => ({
-  source: 'capitalOne',
-  title: Description,
-  transaction: Debit ? Debit : Credit,
-  date: Transaction_Date,
-  type: Debit ? 'OUT' : 'IN'
-})
+const normalizeCapitalOneData = ({ Description, Transaction_Date, Debit, Credit }) => {
+  if(!Description.includes('PYMT')) {
+    return {
+      source: 'capitalOne',
+      title: Description,
+      transaction: Debit ? Debit : Credit,
+      date: Transaction_Date,
+      type: Debit ? 'OUT' : 'IN'
+    }
+  }
+}
 
 const normalizeVenmoAmount = (amount) =>  {
   amount = Number(amount.replace('$', ''))
@@ -92,7 +96,7 @@ async function normalize({source, path}) {
     }
   }
 
-  await writeJSON(`../normalizedTransactions/${source}_normalized.json`, JSON.stringify(newTransactions, null, 2))
+  await writeJSON(`../normalizedTransactions/${source}_normalized.js`, `export const ${source} = ` + JSON.stringify(newTransactions, null, 2))
 }
 
 (async ()=>{
