@@ -7,7 +7,8 @@ const normalizeElevationsData = ({ Memo, Date, Amount_Debit, Amount_Credit }) =>
       title: Memo,
       transaction: Amount_Debit ? Amount_Debit * -1 : Amount_Credit,
       date: Date,
-      type: Amount_Debit ? 'OUT' : 'IN'
+      type: Amount_Debit ? 'OUT' : 'IN',
+      category: 'None'
     }
   }
 }
@@ -39,7 +40,8 @@ const normalizeVenmo = ({ Datetime, Note, To, Type, ...others }) => ({
   title: To ? `${To}: ${Note}` : 'Sent To Bank',
   transaction: normalizeVenmoAmount(others['Amount (total)']),
   date: Datetime,
-  type: ['Payment', 'Merchant Transaction'].includes(Type) ? 'OUT' : 'IN'
+  type: ['Payment', 'Merchant Transaction'].includes(Type) ? 'OUT' : 'IN',
+  category: 'None'
 })
 
 const normalizePayPal = ({ Date, Gross, Name, Type }) => {
@@ -49,7 +51,8 @@ const normalizePayPal = ({ Date, Gross, Name, Type }) => {
       title: Name,
       transaction: Gross * -1,
       date: Date,
-      type: 'OUT'
+      type: 'OUT',
+      category: 'None'
     }
   }
 }
