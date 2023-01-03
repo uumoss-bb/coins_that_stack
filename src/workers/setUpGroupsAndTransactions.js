@@ -20,7 +20,6 @@ const getGroupsFromStorage = () => {
 
 const dateToMiliSeconds = ({date}) => new Date(date).getTime()
 
-const dateToDateString= ({date}) => new Date(date).toDateString()
 
 const attachTransactionsToGroups = ({ transaction, groups }) => {
   let belongsToGroup = false
@@ -66,20 +65,19 @@ const setUpGroupsAndTransactions = ({ date = [new Date()] }) => {
   const defaultResult = { normalizedGroups: getGroupsFromStorage(), freeTransactions: [] }
 
   const money = calculateMoney(allTransactions)
-  console.log(money)
+  // console.log(money)
 
   return allTransactions.reduce((res, transaction) => {
-    const filterDate = dateToMiliSeconds({ date })
     const transDate = dateToMiliSeconds({ date: transaction.date })
-    const filterDateString = dateToDateString({ date })
-    const nowDateString = dateToDateString({ date: Date.now() })
+    const filterStartDate = dateToMiliSeconds({ date: date[0] })
+    const filterEndDate = dateToMiliSeconds({ date: date[1] })
 
     const newRes = {
       normalizedGroups: res.normalizedGroups,
       freeTransactions: res.freeTransactions
     }
 
-    if( nowDateString === filterDateString || transDate >= filterDate ) {
+    if( (date.length === 1) || (transDate >= filterStartDate && transDate <= filterEndDate) ) {
       
       const { groupsWithTransactions, belongsToGroup } = attachTransactionsToGroups({ transaction, groups: res.normalizedGroups })
       

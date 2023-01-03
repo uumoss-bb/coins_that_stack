@@ -33,7 +33,7 @@ const SearchTransactions = ({props: { transactions, setTransactions }}) => {
 }
 
 const SetNewState = ({ setGroups, setTransactions, setUpGroupsAndTransactions, date }) => (dateFromInput) => {
-  const { normalizedGroups, freeTransactions } = setUpGroupsAndTransactions({ date: dateFromInput ? dateFromInput: date })
+  const { normalizedGroups, freeTransactions } = setUpGroupsAndTransactions({ date: dateFromInput ? dateFromInput : date })
   setGroups(normalizedGroups)
   setTransactions(freeTransactions)
 }

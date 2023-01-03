@@ -96,15 +96,15 @@ async function normalize({source, path}) {
     }
   }
 
-  await writeJSON(`../normalizedTransactions/${source}_normalized.js`, `export const ${source} = ` + JSON.stringify(newTransactions, null, 2))
+  await writeJSON(`./src/transactions/normalizedTransactions/${source}_normalized.js`, `export const ${source} = ` + JSON.stringify(newTransactions, null, 2))
 }
 
 (async ()=>{
   const files = [
-    ['elevations', '../originalTransactions/orig_elev_22_21.json'],
-    ['capitalone', '../originalTransactions/orig_cap_21_22.json'],
-    ['venmo', '../originalTransactions/orig_venmo_2022.json'],
-    ['paypal', '../originalTransactions/orig_paypal_21_22.json']
+    // ['elevations', './src/transactions/originalTransactions/orig_elev_22_21.json'],
+    ['capitalone', './src/transactions/originalTransactions/capOne.json'],
+    // ['venmo', './src/transactions/originalTransactions/orig_venmo_2022.json'],
+    // ['paypal', './src/transactions/originalTransactions/orig_paypal_21_22.json']
   ]
 
   for (let index = 0; index < files.length; index++) {
