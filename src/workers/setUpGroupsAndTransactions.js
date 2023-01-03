@@ -27,7 +27,10 @@ const attachTransactionsToGroups = ({ transaction, groups }) => {
 
   Object.values(groups).forEach(group => {
     const normalizedTitle = normalizeText(transaction.title)
-    const doesTransactionMatch = group.keywords.filter(keyword => normalizedTitle.includes(normalizeText(keyword))).length
+    const normalizedCategory = transaction.category ? normalizeText(transaction.category) : 'no category'
+    const filterCondition = keyword => normalizedTitle.includes(normalizeText(keyword)) || normalizedCategory.includes(normalizeText(keyword))
+    
+    const doesTransactionMatch = group.keywords.filter(keyword => filterCondition(keyword)).length
     if(doesTransactionMatch) {
       belongsToGroup = true
 

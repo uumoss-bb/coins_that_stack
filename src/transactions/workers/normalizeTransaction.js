@@ -12,14 +12,15 @@ const normalizeElevationsData = ({ Memo, Date, Amount_Debit, Amount_Credit }) =>
   }
 }
 
-const normalizeCapitalOneData = ({ Description, Transaction_Date, Debit, Credit }) => {
+const normalizeCapitalOneData = ({ Description, Posted_Date, Debit, Credit, Category }) => {
   if(!Description.includes('PYMT')) {
     return {
       source: 'capitalOne',
       title: Description,
       transaction: Debit ? Debit : Credit,
-      date: Transaction_Date,
-      type: Debit ? 'OUT' : 'IN'
+      date: Posted_Date,
+      type: Debit ? 'OUT' : 'IN',
+      category: Category
     }
   }
 }
@@ -86,25 +87,27 @@ const writeJSON = (filename, data) => {
 
 async function normalize({source, path}) {
   const transactions = await getTransaction(path)
-  const newTransactions = []
+  const newTransactions = {}
 
   for (let index = 0; index < transactions.length; index++) {
     const transaction = transactions[index];
     const normalizedTransaction = sourceFunctions[source](transaction)
     if(normalizedTransaction) {
-      newTransactions.push(normalizedTransaction)
+      const jsonId = JSON.stringify(normalizedTransaction)
+      newTransactions[jsonId] = normalizedTransaction
     }
   }
-
-  await writeJSON(`./src/transactions/normalizedTransactions/${source}_normalized.js`, `export const ${source} = ` + JSON.stringify(newTransactions, null, 2))
+  
+  const listOfTransactions = Object.values(newTransactions)
+  await writeJSON(`./src/transactions/normalizedTransactions/${source}_normalized.js`, `export const ${source} = ` + JSON.stringify(listOfTransactions, null, 2))
 }
 
 (async ()=>{
   const files = [
-    // ['elevations', './src/transactions/originalTransactions/orig_elev_22_21.json'],
-    ['capitalone', './src/transactions/originalTransactions/capOne.json'],
-    // ['venmo', './src/transactions/originalTransactions/orig_venmo_2022.json'],
-    // ['paypal', './src/transactions/originalTransactions/orig_paypal_21_22.json']
+    ['elevations', './src/transactions/originalTransactions/originalElevations.json'],
+    ['capitalone', './src/transactions/originalTransactions/originalCapOne.json'],
+    ['venmo', './src/transactions/originalTransactions/originalVenmo.json'],
+    ['paypal', './src/transactions/originalTransactions/originalPayPal.json']
   ]
 
   for (let index = 0; index < files.length; index++) {
