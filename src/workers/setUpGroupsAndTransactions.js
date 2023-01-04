@@ -20,31 +20,49 @@ const getGroupsFromStorage = () => {
 
 const dateToMiliSeconds = ({date}) => new Date(date).getTime()
 
+const doesTransactionMatch = ({ transaction, group }) => {
+  const normalizedTitle = normalizeText(transaction.title)
+  const normalizedCategory = transaction.category ? normalizeText(transaction.category) : 'no category'
+  
+  const titleMatch = group.keywords.filter(keyword => normalizedTitle.includes(normalizeText(keyword))).length
+  const categoryMatch = group.keywords.filter(keyword => normalizedCategory.includes(normalizeText(keyword))).length
+
+  return { titleMatch, categoryMatch }
+}
+
+const attach = ({group, transaction, groupsWithTransactions}) => {
+  group.transactions = [
+    ...group.transactions,
+    transaction
+  ]
+  
+  group.coinsSpent += Number(transaction.transaction)
+
+  groupsWithTransactions[group.name] = group
+}
 
 const attachTransactionsToGroups = ({ transaction, groups }) => {
   let belongsToGroup = false
   const groupsWithTransactions = groups
+  const listOfGroups = Object.values(groups)
 
-  Object.values(groups).forEach(group => {
-    const normalizedTitle = normalizeText(transaction.title)
-    const normalizedCategory = transaction.category ? normalizeText(transaction.category) : 'no category'
-    const filterCondition = keyword => normalizedTitle.includes(normalizeText(keyword)) || normalizedCategory.includes(normalizeText(keyword))
-    
-    const doesTransactionMatch = group.keywords.filter(keyword => filterCondition(keyword)).length
-    if(doesTransactionMatch) {
+  listOfGroups.forEach(group => {
+    const { titleMatch } = doesTransactionMatch({ transaction, group })
+    if(titleMatch) {
       belongsToGroup = true
-
-      group.transactions = [
-        ...group.transactions,
-        transaction
-      ]
-      
-      group.coinsSpent += Number(transaction.transaction)
-
-      groupsWithTransactions[group.name] = group
+      attach({group, transaction, groupsWithTransactions})
     }
-
   })
+
+  if(!belongsToGroup) {
+    listOfGroups.forEach(group => {
+      const { categoryMatch } = doesTransactionMatch({ transaction, group })
+      if(categoryMatch) {
+        belongsToGroup = true
+        attach({group, transaction, groupsWithTransactions})
+      }
+    })
+  }
 
   return { groupsWithTransactions, belongsToGroup }
 }
