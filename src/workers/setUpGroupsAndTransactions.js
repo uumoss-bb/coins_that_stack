@@ -2,8 +2,8 @@ import normalizeText from "./normalizeText";
 import {
   capitalone,
   elevations,
-  venmo,
-  paypal
+  // venmo,
+  // paypal
 } from '../transactions'
 import Storage from "./Storage";
 
@@ -67,7 +67,7 @@ const attachTransactionsToGroups = ({ transaction, groups }) => {
   return { groupsWithTransactions, belongsToGroup }
 }
 
-const allTransactions = [ ...elevations, ...capitalone, ...venmo, ...paypal ]
+const allTransactions = [ ...capitalone, ...elevations ]
 
 const calculateMoney = (transactions) => 
   transactions.reduce((res, transaction) => {
@@ -82,7 +82,7 @@ const calculateMoney = (transactions) =>
     return res
   }, {IN: {transactions: [], total: 0}, OUT: {transactions: [], total: 0}})
 
-const setUpGroupsAndTransactions = ({ date = [new Date()] }) => {
+const setUpGroupsAndTransactions = ({ date = [] }) => {
   const defaultResult = { normalizedGroups: getGroupsFromStorage(), freeTransactions: [] }
 
   const money = calculateMoney(allTransactions)
@@ -97,8 +97,8 @@ const setUpGroupsAndTransactions = ({ date = [new Date()] }) => {
       normalizedGroups: res.normalizedGroups,
       freeTransactions: res.freeTransactions
     }
-
-    if( (date.length === 1) || (transDate >= filterStartDate && transDate <= filterEndDate) ) {
+    console.log(date)
+    if(!date.length || (transDate >= filterStartDate && transDate <= filterEndDate)) {
       
       const { groupsWithTransactions, belongsToGroup } = attachTransactionsToGroups({ transaction, groups: res.normalizedGroups })
       

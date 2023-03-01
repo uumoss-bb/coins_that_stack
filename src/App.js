@@ -39,7 +39,7 @@ const SetNewState = ({ setGroups, setTransactions, setUpGroupsAndTransactions, d
 }
 
 function App() {
-  const [date, setDate] = React.useState([new Date()]);
+  const [date, setDate] = React.useState([]);
   const { normalizedGroups, freeTransactions } = setUpGroupsAndTransactions({})
   const [ groups, setGroups ] = React.useState(normalizedGroups);
   const [ transactions, setTransactions ] = React.useState(freeTransactions);

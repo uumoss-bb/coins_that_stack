@@ -1,7 +1,7 @@
 const fs = require('fs')
 
 const normalizeElevationsData = ({ Memo, Date, Amount_Debit, Amount_Credit }) => {
-  if(Memo && !Memo.includes('PAYPAL')) {
+  if(Memo && !Memo.includes('PAYPAL') && !Memo.includes('CAPITAL ONE') && !Memo.includes('Transfer') && !Amount_Credit) {
     return {
       source: 'elevations',
       title: Memo,
@@ -108,9 +108,9 @@ async function normalize({source, path}) {
 (async ()=>{
   const files = [
     ['elevations', './src/transactions/originalTransactions/originalElevations.json'],
-    ['capitalone', './src/transactions/originalTransactions/originalCapOne.json'],
-    ['venmo', './src/transactions/originalTransactions/originalVenmo.json'],
-    ['paypal', './src/transactions/originalTransactions/originalPayPal.json']
+    // ['capitalone', './src/transactions/originalTransactions/originalCapOne.json'],
+    // ['venmo', './src/transactions/originalTransactions/originalVenmo.json'],
+    // ['paypal', './src/transactions/originalTransactions/originalPayPal.json']
   ]
 
   for (let index = 0; index < files.length; index++) {

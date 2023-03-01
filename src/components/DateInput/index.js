@@ -11,17 +11,13 @@ const DateInput = ({props: { setNewState, date, setDate }}) => (
     <DatePicker
       value={date}
       onChange={({ date }) => {
-          if(date.length === 1) {
-            setDate([ new Date() ])
-            setNewState([ new Date() ])
-            return 
-          }
           setDate(date)
           setNewState(date)
         }
       }
       range
       positive
+      clearable
     />
   </div>
 )
