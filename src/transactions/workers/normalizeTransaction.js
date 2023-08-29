@@ -1,25 +1,25 @@
 const fs = require('fs')
 
-const normalizeElevationsData = ({ Memo, Date, Amount_Debit, Amount_Credit }) => {
-  if(Memo && !Memo.includes('PAYPAL') && !Memo.includes('CAPITAL ONE') && !Memo.includes('Transfer') && !Amount_Credit) {
+const normalizeElevationsData = ({ Extended_Description: Desc, Posting_Date, Amount, Transaction_Type }) => {
+  if(Desc && !Desc.includes('PAYPAL') && !Desc.includes('CAPITAL ONE') && !Desc.includes('Transfer') && Transaction_Type !== 'Credit') {
     return {
       source: 'elevations',
-      title: Memo,
-      transaction: Amount_Debit ? Amount_Debit * -1 : Amount_Credit,
-      date: Date,
-      type: Amount_Debit ? 'OUT' : 'IN',
+      title: Desc,
+      transaction: Amount * -1,
+      date: Posting_Date,
+      type: 'OUT',
       category: 'None'
     }
   }
 }
 
-const normalizeCapitalOneData = ({ Description, Posted_Date, Debit, Credit, Category }) => {
+const normalizeCapitalOneData = ({ Description, Transaction_Date, Debit, Credit, Category }) => {
   if(!Description.includes('PYMT')) {
     return {
       source: 'capitalOne',
       title: Description,
       transaction: Debit ? Debit : Credit,
-      date: Posted_Date,
+      date: Transaction_Date,
       type: Debit ? 'OUT' : 'IN',
       category: Category
     }
@@ -108,7 +108,7 @@ async function normalize({source, path}) {
 (async ()=>{
   const files = [
     ['elevations', './src/transactions/originalTransactions/originalElevations.json'],
-    // ['capitalone', './src/transactions/originalTransactions/originalCapOne.json'],
+    ['capitalone', './src/transactions/originalTransactions/originalCapOne.json'],
     // ['venmo', './src/transactions/originalTransactions/originalVenmo.json'],
     // ['paypal', './src/transactions/originalTransactions/originalPayPal.json']
   ]

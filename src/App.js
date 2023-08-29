@@ -47,7 +47,9 @@ function App() {
   
   return (
     <div className="App">
+      
       <DateInput props={{ setNewState, date, setDate }}/>
+
       <div className='groups'>
         <HeadingLevel>
           <Heading styleLevel={5}>Groups</Heading>
