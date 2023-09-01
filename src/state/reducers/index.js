@@ -1,8 +1,12 @@
-import * as T from './types'
+import * as T from '../actions/types'
 
 const noop = () => { };
 
-const initialState = {}
+const initialState = {
+  groups: [],
+  transactions: [],
+  files: []
+}
 
 const reducer = (state, { type, payload, error }) => ({  //eslint-disable-line
   [T.INIT_APP_SUCCESS]: () => {console.log("APP Init")}

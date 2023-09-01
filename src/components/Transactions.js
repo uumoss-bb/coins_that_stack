@@ -11,7 +11,7 @@ const Transactions = ({ transactions }) => {
     
     const _transactions = transactions.sort((a, b) => new Date(b.date) - new Date(a.date));
     const totalMoney = calculateMoney(_transactions)
-    console.log(transactions)
+    
     return (
       <>
         <HeadingLevel>

@@ -85,7 +85,7 @@ const setUpGroupsAndTransactions = ({ date = [] }) => {
       normalizedGroups: res.normalizedGroups,
       freeTransactions: res.freeTransactions
     }
-    console.log(date)
+
     if(!date.length || (transDate >= filterStartDate && transDate <= filterEndDate)) {
       
       const { groupsWithTransactions, belongsToGroup } = attachTransactionsToGroups({ transaction, groups: res.normalizedGroups })

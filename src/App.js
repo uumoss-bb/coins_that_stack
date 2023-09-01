@@ -1,9 +1,12 @@
 import * as React from 'react';
+import { connect } from 'react-redux';
 import './App.css';
 import MoneyManager from './pages/MoneyManager'
+import { initApp } from './state/actions';
 
-function App() {
-  
+function App({initApp}) {
+  initApp()
+
   return (
     <div className="App">
       <MoneyManager/>
@@ -11,4 +14,8 @@ function App() {
   );
 }
 
-export default App;
+const mapDispatchToProps = {
+  initApp
+};
+
+export default connect(null, mapDispatchToProps)(App);

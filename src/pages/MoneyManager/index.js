@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { connect } from 'react-redux';
 import './index.css';
 import Groups from '../../components/Groups';
 import Transactions from '../../components/Transactions'
@@ -65,4 +66,11 @@ function MoneyManager() {
   );
 }
 
-export default MoneyManager;
+const mapStateToProps = (state) => ({
+  groups: state.groups,
+  transactions: state.transactions
+});
+
+const mapDispatchToProps = {};
+
+export default connect(mapStateToProps, mapDispatchToProps)(MoneyManager);

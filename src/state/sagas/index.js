@@ -1,5 +1,5 @@
 import { fork, all } from 'redux-saga/effects';
-import initApp from './workers/initApp';
+import initApp from './initApp';
 
 const sagas = [
   initApp
