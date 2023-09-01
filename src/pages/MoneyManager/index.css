@@ -1,0 +1,17 @@
+.groups {
+  width: 30%;
+  margin-left: 1%;
+  display: inline-block;
+  height: 100vh;
+  overflow: scroll;
+  border: solid black 1px;
+}
+
+.transactions {
+  width: 60%;
+  margin-left: 5%;
+  display: inline-block;
+  height: 100vh;
+  overflow: scroll;
+  border: solid black 1px;
+}
