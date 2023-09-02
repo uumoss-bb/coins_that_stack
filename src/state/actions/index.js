@@ -8,8 +8,8 @@ const createAction = type => Object.assign(
   }
 );
 
-console.log(createAction(T.INIT_APP)())
-
 export const initApp = createAction(T.INIT_APP);
-export const setSortDate = createAction(T.SET_SORT_DATE);
 
+export const setSortDate = createAction(T.SET_SORT_DATE);
+export const setGroups = createAction(T.SET_GROUPS);
+export const setTransactions = createAction(T.SET_TRANSACTIONS);

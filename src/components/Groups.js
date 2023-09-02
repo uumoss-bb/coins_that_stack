@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Storage from '../workers/Storage'
+import Storage from '../storage/LocalStorage/LocalStorage'
 import { Input } from "baseui/input";
 import { Button } from "baseui/button";
 import { StatelessAccordion, Panel } from "baseui/accordion";

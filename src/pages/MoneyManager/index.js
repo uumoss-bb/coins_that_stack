@@ -3,12 +3,13 @@ import { connect } from 'react-redux';
 import './index.css';
 import Groups from '../../components/Groups';
 import Transactions from '../../components/Transactions'
-import setUpGroupsAndTransactions from '../../workers/setUpGroupsAndTransactions';
+import setUpGroupsAndTransactions from '../../shared/assignGroupsToTrans';
 import DateInput from '../../components/DateInput';
-import normalizeText from '../../workers/normalizeText';
+import normalizeText from '../../shared/normalizeText';
 import { Heading, HeadingLevel } from 'baseui/heading';
 import { Input } from "baseui/input";
 import { Button } from "baseui/button";
+import { setSortDate, setGroups } from '../../state/actions';
 
 const FilterBySearchWord = ({ transactions }) => ({ searchWord }) => transactions.filter(transaction => normalizeText(transaction.title).includes(normalizeText(searchWord)))
 
@@ -39,38 +40,44 @@ const SetNewState = ({ setGroups, setTransactions, setUpGroupsAndTransactions, d
   setTransactions(freeTransactions)
 }
 
-function MoneyManager() {
-  const [date, setDate] = React.useState([]);
-  const { normalizedGroups, freeTransactions } = setUpGroupsAndTransactions({})
-  const [ groups, setGroups ] = React.useState(normalizedGroups);
-  const [ transactions, setTransactions ] = React.useState(freeTransactions);
-  const setNewState = SetNewState({ setGroups, setTransactions, setUpGroupsAndTransactions, date })
+function MoneyManager({
+  date, setDate,
+  groups, setGroups,
+  transactions
+}) {
+  console.log({groups, transactions})
+
+  const setNewState = SetNewState({ setGroups, setUpGroupsAndTransactions, date })
   
   return (
     <div className="MoneyManager">
       
       <DateInput props={{ setNewState, date, setDate }}/>
 
-      <div className='groups'>
+      {/* <div className='groups'>
         <HeadingLevel>
           <Heading styleLevel={5}>Groups</Heading>
         </HeadingLevel>
         <Groups props={{ groups, setNewState }}/>
-      </div>
+      </div> */}
 
-      <div className='transactions'>
+      {/* <div className='transactions'>
         <SearchTransactions props={{ transactions: freeTransactions, setTransactions }}/>
         <Transactions transactions={transactions}/>
-      </div>
+      </div> */}
     </div>
   );
 }
 
 const mapStateToProps = (state) => ({
+  date: state.sortDate,
   groups: state.groups,
   transactions: state.transactions
 });
 
-const mapDispatchToProps = {};
+const mapDispatchToProps = {
+  setDate: setSortDate,
+  setGroups
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(MoneyManager);

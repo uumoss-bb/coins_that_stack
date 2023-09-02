@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Table } from "baseui/table-semantic";
 import { Heading, HeadingLevel } from 'baseui/heading';
-import calculateMoney from '../workers/calculateMoney';
+import calculateMoney from '../shared/calculateMoney';
 
 const normalizeData = ({ source, type, title, transaction, date, category }) => ([ source, type, title, transaction, date, category ])
 

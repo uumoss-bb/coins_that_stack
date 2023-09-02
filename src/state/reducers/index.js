@@ -3,13 +3,16 @@ import * as T from '../actions/types'
 const noop = () => { };
 
 const initialState = {
+  sortDate: [],
   groups: [],
   transactions: [],
   files: []
 }
 
 const reducer = (state, { type, payload, error }) => ({  //eslint-disable-line
-  [T.INIT_APP_SUCCESS]: () => {console.log("APP Init")}
+  [T.SET_GROUPS]: () => ({...state, ...payload}),
+  [T.SET_TRANSACTIONS]: () => ({...state, ...payload}),
+  [T.SET_SORT_DATE]: () => ({...state, ...payload})
 }[type] || noop)() || state;
 
 export default (state = initialState, action) => reducer(state, action)
