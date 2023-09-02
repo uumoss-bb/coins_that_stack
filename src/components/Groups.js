@@ -12,17 +12,23 @@ const defaultGroup = {
   color: '#FFFFFF'
 }
 
-const SaveGroup = ({ setNewState }) => ({ group = {}, ...newData }) => {
+const SaveGroup = ({ setGroups, groups }) => ({ group = {}, ...newData }) => {
   const newGroup = {
     ...group,
     ...newData
   }
 
-  console.log(newGroup)
+  setGroups({
+    groups: {
+      ...groups,
+      [newGroup.name]: newGroup
+    }
+  })
+}
 
-  Storage.post({key: group.name, value: newGroup})
-
-  setNewState()
+const RemoveGroup = ({ setGroups, groups }) => ({ name }) => {
+  const newGroups = groups.filter(group => group.name !== name)
+  setGroups({ groups: newGroups })
 }
 
 const CreateGroup = ({ saveGroup }) => {
@@ -60,13 +66,6 @@ const CreateGroup = ({ saveGroup }) => {
       </Button>
     </Panel>
   );
-}
-
-const RemoveGroup = ({ setNewState }) => ({ name }) => {
-
-  Storage.delete({ key: name })
-  
-  setNewState()
 }
 
 const DeleteGroupBtn = ({props: { name, removeGroup }}) => {
@@ -147,11 +146,11 @@ const Group = ({ group, index, saveGroup, removeGroup }) => {
   )
 }
 
-const Groups = ({props: {groups, setNewState }}) => {
-  const groupsArr = Object.values(groups)
-  const saveGroup = SaveGroup({ setNewState })
-  const removeGroup = RemoveGroup({ setNewState })
-
+const Groups = ({props: { groups: _groups, setGroups }}) => {
+  const groups = Object.values(_groups)
+  const saveGroup = SaveGroup({ setGroups, groups })
+  const removeGroup = RemoveGroup({ setGroups, groups })
+  //WIP: I need to find out how to combinded groups and transactions together
   const coinsSpentInAll = Object.values(groups).reduce((res, { coinsSpent }) => res += coinsSpent, 0)
 
   const [expanded, setExpanded] = React.useState([]);
@@ -166,7 +165,7 @@ const Groups = ({props: {groups, setNewState }}) => {
         onChange={({ expanded }) => setExpanded(expanded)}
       >
         {CreateGroup({ saveGroup })}
-        {groupsArr.map((group, index) => Group({ group, index, saveGroup, removeGroup }) )}
+        {groups.map((group, index) => Group({ group, index, saveGroup, removeGroup }) )}
       </StatelessAccordion>
     </>
   );

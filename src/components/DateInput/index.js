@@ -3,18 +3,14 @@ import './style.css'
 import { DatePicker } from "baseui/datepicker";
 import {Heading, HeadingLevel} from 'baseui/heading';
 
-const DateInput = ({props: { setNewState, date, setDate }}) => (
+const DateInput = ({props: { date, setDate }}) => (
   <div className='dateInput'>
     <HeadingLevel>
       <Heading styleLevel={5}>Pick Date to Filer By </Heading>
     </HeadingLevel>
     <DatePicker
       value={date}
-      onChange={({ date }) => {
-          setDate(date)
-          setNewState(date)
-        }
-      }
+      onChange={({ date }) => setDate(date)}
       range
       positive
       clearable

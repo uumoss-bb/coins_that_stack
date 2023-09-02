@@ -45,21 +45,19 @@ function MoneyManager({
   groups, setGroups,
   transactions
 }) {
-  console.log({groups, transactions})
-
-  const setNewState = SetNewState({ setGroups, setUpGroupsAndTransactions, date })
+  console.log({date, groups, transactions})
   
   return (
     <div className="MoneyManager">
       
-      <DateInput props={{ setNewState, date, setDate }}/>
+      <DateInput props={{ date, setDate }}/>
 
-      {/* <div className='groups'>
+      <div className='groups'>
         <HeadingLevel>
           <Heading styleLevel={5}>Groups</Heading>
         </HeadingLevel>
-        <Groups props={{ groups, setNewState }}/>
-      </div> */}
+        <Groups props={{ groups, transactions, setGroups }}/>
+      </div>
 
       {/* <div className='transactions'>
         <SearchTransactions props={{ transactions: freeTransactions, setTransactions }}/>
