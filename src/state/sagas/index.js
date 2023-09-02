@@ -1,8 +1,11 @@
 import { fork, all } from 'redux-saga/effects';
 import initApp from './initApp';
+import insert from './insertData';
+
 
 const sagas = [
-  initApp
+  initApp,
+  insert
 ]
 
 export default function* root() {

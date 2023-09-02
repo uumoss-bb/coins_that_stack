@@ -7,15 +7,20 @@ import LocalStore from '../../storage/LocalStorage/LocalStorage';
 import assignGroupsToTrans from '../../shared/assignGroupsToTrans';
 
 export function* InitApp({ payload }) {
-  LocalStore.setDefault()
-  const { groups, transactions } = LocalStore.getAll()
+  try {
+    LocalStore.setDefault()
+    const { groups, transactions } = LocalStore.getAll()
 
-  yield put(setGroups({ groups }))
-  
-  const normalizedTrans = assignGroupsToTrans({ groups, transactions })
-  yield put(setTransactions({ transactions: normalizedTrans }))
+    yield put(setGroups({ groups, save: false }))
+    
+    const normalizedTrans = assignGroupsToTrans({ groups, transactions })
+    yield put(setTransactions({ transactions: normalizedTrans, save: false }))
 
-  yield put(initApp.success())
+    yield put(initApp.success())
+  } catch(error) {
+    console.error(error)
+    yield put(initApp.error({error}))
+  }
 }
 
 export default function* () {
