@@ -15,7 +15,7 @@ const FilterBySearchWord = transactions => R.ifElse(
 
 const SearchTrans = ({props: { transactions, setSearchResults }}) => {
   const [ searchWord, setWord ] = React.useState('');
-  const filterBySearchWord = FilterBySearchWord({ transactions })
+  const filterBySearchWord = FilterBySearchWord(transactions)
 
   return (
     <>

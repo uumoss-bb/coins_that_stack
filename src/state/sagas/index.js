@@ -1,11 +1,12 @@
 import { fork, all } from 'redux-saga/effects';
 import initApp from './initApp';
 import insert from './insertData';
-
+import normalizeGroupsAndTrans from './normalizeGroupsAndTrans';
 
 const sagas = [
   initApp,
-  insert
+  insert,
+  normalizeGroupsAndTrans
 ]
 
 export default function* root() {

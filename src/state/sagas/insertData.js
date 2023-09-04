@@ -1,20 +1,19 @@
 import { takeLatest, put } from 'redux-saga/effects';
-import { setGroups, setTransactions } from '../actions';
+import { setGroups, setTransactions, normalizeGroupsAndTrans } from '../actions';
 import {
   SET_GROUPS,
   SET_TRANSACTIONS
 } from '../actions/types';
 import LocalStore from '../../storage/LocalStorage/LocalStorage';
 
-const saveData = ({save = true, key, data}) => {
-  if(save) {
-    LocalStore.post(key, data)
-  }
-}
+const saveData = ({key, data}) => LocalStore.post(key, data)
 
 export function* InsertGroups({ payload: { groups, save } }) {
   try {
-    saveData({save, key: 'groups', data: groups})
+    if(save) {
+      saveData({key: 'groups', data: groups})
+      yield put(normalizeGroupsAndTrans())
+    }
     yield put(setGroups.success())
   } catch(error) {
     console.error(error)
@@ -24,7 +23,10 @@ export function* InsertGroups({ payload: { groups, save } }) {
 
 export function* InsertTransations({ payload: { transactions, save } }) {
   try {
-    saveData({save, key: 'groups', data: transactions})
+    if(save) {
+      saveData({key: 'groups', data: transactions})
+      yield put(normalizeGroupsAndTrans())
+    }
     yield put(setTransactions.success())
   } catch(error) {
     console.error(error)

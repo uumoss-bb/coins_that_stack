@@ -18,6 +18,7 @@ const SaveGroup = ({ setGroups, groups }) => ({ group = {}, ...newData }) => {
   }
 
   setGroups({
+    save: true,
     groups: {
       ...groups,
       [newGroup.name]: newGroup
@@ -27,7 +28,7 @@ const SaveGroup = ({ setGroups, groups }) => ({ group = {}, ...newData }) => {
 
 const RemoveGroup = ({ setGroups, groups }) => ({ name }) => {
   const newGroups = groups.filter(group => group.name !== name)
-  setGroups({ groups: newGroups })
+  setGroups({ save: true, groups: newGroups })
 }
 
 const CreateGroup = ({ saveGroup }) => {
