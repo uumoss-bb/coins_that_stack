@@ -6,6 +6,7 @@ const initialState = {
   sortDate: [],
   groups: [],
   transactions: [],
+  transWithNoGroups: [],
   files: []
 }
 

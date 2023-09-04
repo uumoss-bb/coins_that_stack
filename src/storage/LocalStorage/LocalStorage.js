@@ -8,42 +8,50 @@ import {
 const currentDefault = {
   "Dog Food": {
     "name": "Dog Food",
-    "keywords": ["POUDRE PET"]
+    "keywords": ["POUDRE PET"],
+    transactions: [], coinsSpent: 0
   },
   "Amazon": {
     "name": "Amazon",
-    "keywords": ["AMZN"]
+    "keywords": ["AMZN"],
+    transactions: [], coinsSpent: 0
   },
   "Gas": {
     "name": "Gas",
-    "keywords": ["Gas/Automotive"]
+    "keywords": ["Gas/Automotive"],
+    transactions: [], coinsSpent: 0
   },
   "Rent": {
     "name": "Rent",
-    "keywords": ["HelixProperty"]
+    "keywords": ["HelixProperty"],
+    transactions: [], coinsSpent: 0
   },
   "Food": {
     "name": "Food",
-    "keywords": ["safeway", "kroger", "king soopers", "WAL-MART"]
+    "keywords": ["safeway", "kroger", "king soopers", "WAL-MART"],
+    transactions: [], coinsSpent: 0
   },
   "Utilities": {
     "name": "Utilities",
-    "keywords": ["CONNEXION", "FORTCOLUTILITIES", "XCEL"]
+    "keywords": ["CONNEXION", "FORTCOLUTILITIES", "XCEL"],
+    transactions: [], coinsSpent: 0
   },
   "GrubHub ": {
     "name": "GrubHub ",
-    "keywords": ["GRUBHUB"]
+    "keywords": ["GRUBHUB"],
+    transactions: [], coinsSpent: 0
   },
   "Cigars": {
     "name": "Cigars",
-    "keywords": ["Cigar Shop", "Edwards Pipe & Cigar S", "SMOLDER LOUNGE"]
+    "keywords": ["Cigar Shop", "Edwards Pipe & Cigar S", "SMOLDER LOUNGE"],
+    transactions: [], coinsSpent: 0
   },
   "Subscriptions": {
     "name": "Subscriptions",
-    "keywords": ["audible", "MCMAHON", "LEMONADE", "SPOTIFY", "USCCA", "Dropbox", "CHATGPT", "LEGALSHIELD", "Prime Video"]
+    "keywords": ["audible", "MCMAHON", "LEMONADE", "SPOTIFY", "USCCA", "Dropbox", "CHATGPT", "LEGALSHIELD", "Prime Video"],
+    transactions: [], coinsSpent: 0
   }
 }
-
 
 const post = (key, value) => localStorage.setItem(key, JSON.stringify(value))
 const remove = (key) => localStorage.removeItem(key)

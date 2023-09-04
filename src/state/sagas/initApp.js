@@ -1,20 +1,26 @@
 import { takeLatest, put } from 'redux-saga/effects';
-import { initApp, setGroups, setTransactions } from '../actions';
+import { initApp, setGroups, setTransWithNoGroups, setTransactions } from '../actions';
 import {
   INIT_APP
 } from '../actions/types';
 import LocalStore from '../../storage/LocalStorage/LocalStorage';
 import assignGroupsToTrans from '../../shared/assignGroupsToTrans';
+import { selectTransWithNoGroups } from '../../shared/selectors'
+import assignTransToGroups from '../../shared/assignTransToGroups';
 
 export function* InitApp({ payload }) {
   try {
     LocalStore.setDefault()
     const { groups, transactions } = LocalStore.getAll()
 
-    yield put(setGroups({ groups, save: false }))
-    
     const normalizedTrans = assignGroupsToTrans({ groups, transactions })
     yield put(setTransactions({ transactions: normalizedTrans, save: false }))
+
+    const transWithNoGroups = selectTransWithNoGroups(normalizedTrans)
+    yield put(setTransWithNoGroups({ transWithNoGroups }))
+
+    const groupsWithTrans = assignTransToGroups({ groups, transactions: normalizedTrans })
+    yield put(setGroups({ groups: groupsWithTrans, save: false }))
 
     yield put(initApp.success())
   } catch(error) {

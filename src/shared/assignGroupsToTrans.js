@@ -1,11 +1,5 @@
 import * as R from 'ramda'
-import normalizeText from "./normalizeText";
-import {
-  capitalone,
-  elevations,
-  // venmo,
-  // paypal
-} from '../transactions'
+import { normalizeText } from "./normalizers";
 
 const doesTransactionMatch = ({ transaction, group }) => {
   const normalizedTitle = normalizeText(transaction.title)
