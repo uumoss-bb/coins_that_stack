@@ -1,17 +1,16 @@
 import * as React from 'react';
 import { Table } from "baseui/table-semantic";
 import { Heading, HeadingLevel } from 'baseui/heading';
-import calculateMoney from '../shared/calculateMoney';
+import calculateMoney from '../../shared/calculateMoney';
 
 const normalizeData = ({ source, type, title, transaction, date, category }) => ([ source, type, title, transaction, date, category ])
 
-const Transactions = ({ transactions }) => {
+const TransList = ({ transactions: _transactions }) => {
+  if(_transactions?.length) {
+    
+    const transactions = _transactions.sort((a, b) => new Date(b.date) - new Date(a.date));
+    const totalMoney = calculateMoney(transactions)
 
-  if(transactions?.length) {
-    
-    const _transactions = transactions.sort((a, b) => new Date(b.date) - new Date(a.date));
-    const totalMoney = calculateMoney(_transactions)
-    
     return (
       <>
         <HeadingLevel>
@@ -19,7 +18,7 @@ const Transactions = ({ transactions }) => {
           </HeadingLevel>
         <Table
           columns={['source', 'type', 'title', 'transaction', 'date', 'category']}
-          data={_transactions.map(trans => normalizeData(trans))}
+          data={transactions.map(trans => normalizeData(trans))}
         />
       </>
     )
@@ -28,4 +27,4 @@ const Transactions = ({ transactions }) => {
   return null
 }
 
-export default Transactions
+export default TransList

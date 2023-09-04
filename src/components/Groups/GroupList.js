@@ -1,9 +1,8 @@
 import * as React from 'react';
-import Storage from '../storage/LocalStorage/LocalStorage'
 import { Input } from "baseui/input";
 import { Button } from "baseui/button";
 import { StatelessAccordion, Panel } from "baseui/accordion";
-import Transactions from './Transactions';
+import TransList from '../Transactions/TransList';
 import { Heading, HeadingLevel } from 'baseui/heading';
 
 const defaultGroup = {
@@ -132,7 +131,7 @@ const SetKeyword = ({props: { saveGroup, group, keywords }}) => {
 const Group = ({ group, index, saveGroup, removeGroup }) => {
   const { name, keywords, transactions, coinsSpent } = group
   const _keywords = keywords?.join(', ')
-  const title = `${name} - total: $${coinsSpent.toFixed(0)}`
+  const title = `${name} - total: $${coinsSpent}`
 
   return (
     <Panel 
@@ -141,24 +140,22 @@ const Group = ({ group, index, saveGroup, removeGroup }) => {
     >
       <DeleteGroupBtn props={{ name, removeGroup }}/>
       <SetKeyword props={{ saveGroup, group, keywords: _keywords }}/>
-      <Transactions transactions={ transactions }/>
+      <TransList transactions={ transactions }/>
     </Panel>
   )
 }
 
-const Groups = ({props: { groups: _groups, setGroups }}) => {
-  const groups = Object.values(_groups)
+const GroupList = ({props: { groups, setGroups }}) => {
+
   const saveGroup = SaveGroup({ setGroups, groups })
   const removeGroup = RemoveGroup({ setGroups, groups })
-  //WIP: I need to find out how to combinded groups and transactions together
   const coinsSpentInAll = Object.values(groups).reduce((res, { coinsSpent }) => res += coinsSpent, 0)
-
   const [expanded, setExpanded] = React.useState([]);
   
   return (
     <>
       <HeadingLevel>
-        <Heading styleLevel={6}>{`All Coin Spent: ${coinsSpentInAll.toFixed(0)}`}</Heading>
+        <Heading styleLevel={6}>{`All Coin Spent: ${coinsSpentInAll}`}</Heading>
       </HeadingLevel>
       <StatelessAccordion
         expanded={expanded}
@@ -171,4 +168,4 @@ const Groups = ({props: { groups: _groups, setGroups }}) => {
   );
 }
 
-export default Groups
+export default GroupList

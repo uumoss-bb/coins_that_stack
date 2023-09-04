@@ -2,14 +2,14 @@ import * as R from 'ramda'
 
 const attach = ({group, trans}) => {
   const { transactions, coinsSpent } = group
-
+  const newSpentCoins = Number(coinsSpent) + Number(trans.transaction)
   return {
     ...group,
     transactions: [
       ...transactions,
       trans
     ],
-    coinsSpent: coinsSpent + Number(trans.transaction)
+    coinsSpent: newSpentCoins.toFixed(0)
   }
 }
 

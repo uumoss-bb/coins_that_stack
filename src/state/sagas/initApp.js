@@ -8,7 +8,7 @@ import assignGroupsToTrans from '../../shared/assignGroupsToTrans';
 import { selectTransWithNoGroups } from '../../shared/selectors'
 import assignTransToGroups from '../../shared/assignTransToGroups';
 
-export function* InitApp({ payload }) {
+export function* InitApp() {
   try {
     LocalStore.setDefault()
     const { groups, transactions } = LocalStore.getAll()

@@ -80,7 +80,7 @@ const writeJSON = (filename, data) => {
   return new Promise( () =>
     fs.writeFile(filename, data, (err) => {
       if (err)
-        console.log(err);
+        console.error(err);
       else {
         console.log("File written successfully");
       }
