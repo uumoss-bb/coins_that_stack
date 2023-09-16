@@ -1,0 +1,31 @@
+.Home {
+  width: 100%;
+  display: inline-block;
+  height: 50vh;
+  background-image: url('./StackedCoins.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #40371E;
+}
+
+/* Color Theme Swatches in Hex */
+.gold-metal-texture-1-hex { color: #A6882E; }
+.gold-metal-texture-2-hex { color: #D9B855; }
+.gold-metal-texture-3-hex { color: #40371E; }
+.gold-metal-texture-4-hex { color: #F2E1AC; }
+.gold-metal-texture-5-hex { color: #D9AE5F; }
+
+
+.Logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-image: url('./StackedTitleLight.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
