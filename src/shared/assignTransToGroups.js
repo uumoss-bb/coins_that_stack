@@ -13,8 +13,14 @@ const attach = ({group, trans}) => {
   }
 }
 
-const AttachTrans = ({ transactions, date }) => (res, group) => {
-  //WIP: handle date change
+const setDefault = (group) => ({
+  ...group,
+  transactions: [],
+  coinsSpent: 0
+})
+
+const AttachTrans = (transactions) => (res, _group) => {
+  let group = setDefault(_group)
   transactions.forEach(trans => {
     const doesTransMatch = trans.groups.includes(group.name)
     if(doesTransMatch) {
@@ -28,9 +34,9 @@ const AttachTrans = ({ transactions, date }) => (res, group) => {
   }
 }
 
-const assignTransToGroups = ({ date = [], groups, transactions }) => R.pipe(
+const assignTransToGroups = ({ groups, transactions }) => R.pipe(
   Object.values,
-  R.reduce( AttachTrans({ transactions, date }), {} )
+  R.reduce( AttachTrans(transactions), {} )
 )(groups)
 
 export default assignTransToGroups

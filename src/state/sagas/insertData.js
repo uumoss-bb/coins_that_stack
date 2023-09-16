@@ -1,3 +1,4 @@
+import * as R from 'ramda'
 import { takeLatest, put } from 'redux-saga/effects';
 import { setGroups, setTransactions, normalizeGroupsAndTrans } from '../actions';
 import {
@@ -8,10 +9,16 @@ import LocalStore from '../../storage/LocalStorage/LocalStorage';
 
 const saveData = ({key, data}) => LocalStore.post(key, data)
 
+const convertGroupsToObjt = R.reduce((res, group) => ({
+  ...res,
+  [group.name]: group
+}), {})
+
 export function* InsertGroups({ payload: { groups, save } }) {
+  console.log({ groups, save })
   try {
     if(save) {
-      saveData({key: 'groups', data: groups})
+      saveData({key: 'groups', data: convertGroupsToObjt(groups)})
       yield put(normalizeGroupsAndTrans())
     }
     yield put(setGroups.success())

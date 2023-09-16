@@ -19,10 +19,10 @@ const SaveGroup = ({ setGroups, groups }) => ({ group = {}, ...newData }) => {
 
   setGroups({
     save: true,
-    groups: {
+    groups: [
       ...groups,
-      [newGroup.name]: newGroup
-    }
+      newGroup
+    ]
   })
 }
 
@@ -94,7 +94,7 @@ const DeleteGroupBtn = ({props: { name, removeGroup }}) => {
 
 const SetKeyword = ({props: { saveGroup, group, keywords }}) => {
   const [ newKeywords, setKeywords ] = React.useState(keywords);
-  
+
   const style = {
     'display': 'flex',
     margin: '.5% 0 .5% 0'
@@ -150,7 +150,7 @@ const GroupList = ({props: { groups, setGroups }}) => {
 
   const saveGroup = SaveGroup({ setGroups, groups })
   const removeGroup = RemoveGroup({ setGroups, groups })
-  const coinsSpentInAll = Object.values(groups).reduce((res, { coinsSpent }) => res += coinsSpent, 0)
+  const coinsSpentInAll = Object.values(groups).reduce((res, { coinsSpent }) => res += Number(coinsSpent), 0)
   const [expanded, setExpanded] = React.useState([]);
   
   return (

@@ -73,7 +73,7 @@ const setDefault = function() {
 
   if(!groups){
     console.log('DEFAULT GROUPS')
-    this.post('groups', currentDefault)
+    this.post('groups', [])
   }
   if(!transactions){
     console.log('DEFAULT TRANSACTIONS')
