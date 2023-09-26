@@ -1,67 +1,34 @@
 const fs = require('fs')
 
-const normalizeElevationsData = ({ Extended_Description: Desc, Posting_Date, Amount, Transaction_Type }) => {
-  if(Desc && !Desc.includes('PAYPAL') && !Desc.includes('CAPITAL ONE') && !Desc.includes('Transfer') && Transaction_Type !== 'Credit') {
-    return {
-      source: 'elevations',
-      title: Desc,
-      transaction: Amount * -1,
-      date: Posting_Date,
-      type: 'OUT',
-      category: 'None'
-    }
+const getTransactionType = (amount) => amount > 0 ? 'IN' : 'OUT'
+
+const normalizeElevations = ({ Description, Posting_Date, Amount, Transaction_Category, Type }) => {
+  return {
+    source: 'elevations',
+    title: Description,
+    transaction: Amount * -1,
+    date: Posting_Date,
+    type: Type === "Transfer" ? "Transfer" : getTransactionType(Amount),
+    category: Transaction_Category
   }
 }
 
-const normalizeCapitalOneData = ({ Description, Transaction_Date, Debit, Credit, Category }) => {
+const normalizeCapitalOne = ({ Description, Transaction_Date, Debit, Credit, Category }) => {
   if(!Description.includes('PYMT')) {
     return {
       source: 'capitalOne',
       title: Description,
       transaction: Debit ? Debit : Credit,
       date: Transaction_Date,
-      type: Debit ? 'OUT' : 'IN',
+      type: getTransactionType(Debit | Credit),
       category: Category
     }
   }
 }
 
-const normalizeVenmoAmount = (amount) =>  {
-  amount = Number(amount.replace('$', ''))
-  if(amount < 0) {
-    return amount * -1
-  }
-
-  return amount
-}
-
-const normalizeVenmo = ({ Datetime, Note, To, Type, ...others }) => ({
-  source: 'venmo',
-  title: To ? `${To}: ${Note}` : 'Sent To Bank',
-  transaction: normalizeVenmoAmount(others['Amount (total)']),
-  date: Datetime,
-  type: ['Payment', 'Merchant Transaction'].includes(Type) ? 'OUT' : 'IN',
-  category: 'None'
-})
-
-const normalizePayPal = ({ Date, Gross, Name, Type }) => {
-  if(Type.includes('Payment')){
-    return {
-      source: 'paypal',
-      title: Name,
-      transaction: Gross * -1,
-      date: Date,
-      type: 'OUT',
-      category: 'None'
-    }
-  }
-}
-
-const sourceFunctions = {
-  elevations: normalizeElevationsData,
-  capitalone: normalizeCapitalOneData,
-  venmo: normalizeVenmo,
-  paypal: normalizePayPal
+const normalizerFunctions = {
+  elevations: normalizeElevations,
+  capitalone: normalizeCapitalOne,
 }
 
 const getTransaction = (file) => {
@@ -90,25 +57,21 @@ const writeJSON = (filename, data) => {
 
 async function normalize({source, path}) {
   const transactions = await getTransaction(path)
-  const newTransactions = {}
+  let newTransactions = []
 
   for (let index = 0; index < transactions.length; index++) {
     const transaction = transactions[index];
-    const normalizedTransaction = sourceFunctions[source](transaction)
-    if(normalizedTransaction) {
-      const jsonId = JSON.stringify(normalizedTransaction)
-      newTransactions[jsonId] = normalizedTransaction
-    }
+    const normalizedTransaction = normalizerFunctions[source](transaction)
+    newTransactions.push(normalizedTransaction)
   }
   
-  const listOfTransactions = Object.values(newTransactions)
-  await writeJSON(`./src/transactions/normalizedTransactions/${source}_normalized.js`, `export const ${source} = ` + JSON.stringify(listOfTransactions, null, 2))
+  await writeJSON(`./src/transactions/normalizedTransactions/${source}_normalized.js`, `export const ${source} = ` + JSON.stringify(newTransactions, null, 2))
 }
 
 (async ()=>{
   const files = [
     ['elevations', './src/transactions/originalTransactions/originalElevations.json'],
-    ['capitalone', './src/transactions/originalTransactions/originalCapOne.json'],
+    // ['capitalone', './src/transactions/originalTransactions/originalCapOne.json'],
     // ['venmo', './src/transactions/originalTransactions/originalVenmo.json'],
     // ['paypal', './src/transactions/originalTransactions/originalPayPal.json']
   ]

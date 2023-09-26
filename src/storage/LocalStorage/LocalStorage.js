@@ -84,10 +84,18 @@ const setDefault = function() {
   }
 }
 
+const get = (key) => {
+  const data = localStorage.get(key)
+  if(data) {
+    return JSON.parse(data)
+  }
+}
+
 const LocalStore = {
   setDefault,
   post,
   getAll,
+  get,
   remove
 }
 
