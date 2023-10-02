@@ -2,7 +2,11 @@ import * as React from "react";
 import { FileUploader } from "baseui/file-uploader";
 import { Select } from "baseui/select";
 
-const TransInput = ({ setCsv, source, setSource }) => {
+const TransInput = ({ parseCsv }) => {
+  const [source, setSource] = React.useState([
+    { label: "Elevations", id: "#F0F8FF" }
+  ]);
+  
   return (
     <>
       <Select
@@ -15,8 +19,8 @@ const TransInput = ({ setCsv, source, setSource }) => {
         onChange={params => setSource(params.value)}
       />
       <FileUploader
-        accept="csv"
-        onDropAccepted={setCsv}
+        accept={['.csv']}
+        onDrop={(data) => {parseCsv(data)}}
         // errorMessage={'Failed To Upload Csv'}
       />
     </>

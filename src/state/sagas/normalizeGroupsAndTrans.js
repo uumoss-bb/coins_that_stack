@@ -1,6 +1,5 @@
 import { takeLatest, put } from 'redux-saga/effects';
 import { 
-  normalizeGroupsAndTrans,
   setGroups,
   setTransWithNoGroups,
   setTransactions

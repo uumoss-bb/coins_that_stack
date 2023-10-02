@@ -15,7 +15,7 @@ const convertGroupsToObjt = R.reduce((res, group) => ({
 }), {})
 
 export function* InsertGroups({ payload: { groups, save } }) {
-  console.log({ groups, save })
+
   try {
     if(save) {
       saveData({key: 'groups', data: convertGroupsToObjt(groups)})
