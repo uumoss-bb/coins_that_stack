@@ -1,11 +1,12 @@
 import * as React from 'react';
 import './index.css';
-import { Heading, HeadingLevel } from 'baseui/heading';
+import TransInput from '../../components/TransInput';
 
 function Home() {
   return (
     <div className="Home">
       <div className='Logo'></div>
+      <TransInput/>
     </div>
   );
 }
