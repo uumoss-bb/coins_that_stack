@@ -6,7 +6,6 @@ import {
 import {
   PARSE_TRANSACTIONS
 } from '../actions/types';
-import { parse } from 'csv-parse';
 
 export function* ParseTransactions({ payload: { file, source } }) {
   console.log({file, source})
@@ -14,8 +13,7 @@ export function* ParseTransactions({ payload: { file, source } }) {
 
   reader.onload = (event) => {
     const csvText = event.target.result;
-    const parseCsv = parse({columns: true}).on('error', (err) => {console.error(err)});
-    parseCsv(csvText);
+    console.log(csvText)
   };
 
   yield reader.readAsText(file);
