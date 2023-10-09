@@ -4,9 +4,10 @@ import { Select } from "baseui/select";
 import Papa from 'papaparse'
 import { replaceSpacesWithUnderscores } from '../../shared/normalizers'
 import normalizeTransactions from "./normalizeTransactions";
+import LocalStore from "../../storage/LocalStorage/LocalStorage";
 
 const TransInput = ({ setTransactions, normalizeGroupsAndTrans }) => {
-  const [source, setSource] = React.useState({ label: "Elevations", val: "elevations" });
+  const [source, setSource] = React.useState({ label: "Elevations", id: "elevations" });
   const [errorMessage, setErrorMessage] = React.useState(null);
 
   const handleNewTrans = async (acceptedFiles, rejectedFiles) => {
@@ -21,8 +22,9 @@ const TransInput = ({ setTransactions, normalizeGroupsAndTrans }) => {
           dynamicTyping: true,
           transformHeader: replaceSpacesWithUnderscores,
           complete: function ({ data: transactions }) {
-            const normalTrans = normalizeTransactions({ source: source.val, transactions })
-            setTransactions({ transactions: normalTrans, save: true })
+            const normalTrans = normalizeTransactions({ source: source.id, transactions })
+            const currentTrans = LocalStore.get('transactions')
+            setTransactions({ transactions: [...normalTrans, ...currentTrans], save: true })
             normalizeGroupsAndTrans()
           },
           error: function (error) {
@@ -41,12 +43,12 @@ const TransInput = ({ setTransactions, normalizeGroupsAndTrans }) => {
     <>
       <Select
         options={[
-          { label: "Elevations", val: "elevations" },
-          { label: "CapitalOne", val: "capitalone" }
+          { label: "Elevations", id: "elevations" },
+          { label: "CapitalOne", id: "capitalone" }
         ]}
-        value={source}
+        value={[source]}
         placeholder="Select Source"
-        onChange={params => setSource(params.value[0])}
+        onChange={({value}) => setSource(value[0])}
       />
       <FileUploader
         errorMessage={errorMessage}

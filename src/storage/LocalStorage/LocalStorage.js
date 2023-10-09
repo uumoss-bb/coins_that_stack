@@ -76,7 +76,7 @@ const setDefault = function() {
 }
 
 const get = (key) => {
-  const data = localStorage.get(key)
+  const data = localStorage.getItem(key)
   if(data) {
     return JSON.parse(data)
   }
