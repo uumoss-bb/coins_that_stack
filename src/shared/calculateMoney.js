@@ -1,10 +1,10 @@
 const calculateMoney = (transactions) => 
   transactions.reduce((res, transaction) => {
-    if(transaction.type === "IN") {
+    if(transaction.type === "IN" && transaction.transaction) {
       res.IN.total += transaction.transaction
       res.IN.transactions.push(transaction)
-    } else {
-      res.OUT.total += transaction.transaction
+    } else if(transaction.type === "OUT" && transaction.transaction) {
+      res.OUT.total += (transaction.transaction * -1)
       res.OUT.transactions.push(transaction)
     }
 

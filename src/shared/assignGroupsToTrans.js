@@ -2,7 +2,6 @@ import * as R from 'ramda'
 import { normalizeText } from "./normalizers";
 
 const doesTransactionMatch = ({ transaction, group }) => {
-  console.log(transaction)
   const normalizedTitle = normalizeText(transaction.title)
   const normalizedCategory = transaction.category ? normalizeText(transaction.category) : 'no category'
   
