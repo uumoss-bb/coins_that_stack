@@ -1,9 +1,3 @@
-import {
-  capitalone,
-  elevations,
-  // venmo,
-  // paypal
-} from '../../transactions'
 
 const currentDefault = {
   "Dog Food": {
@@ -73,14 +67,11 @@ const setDefault = function() {
 
   if(!groups){
     console.log('DEFAULT GROUPS')
-    this.post('groups', [])
+    this.post('groups', currentDefault)
   }
   if(!transactions){
     console.log('DEFAULT TRANSACTIONS')
-    this.post('transactions', [
-      ...capitalone,
-      ...elevations
-    ])
+    this.post('transactions', [])
   }
 }
 

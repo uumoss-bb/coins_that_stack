@@ -31,7 +31,7 @@ export function* InsertGroups({ payload: { groups, save } }) {
 export function* InsertTransations({ payload: { transactions, save } }) {
   try {
     if(save) {
-      saveData({key: 'groups', data: transactions})
+      saveData({key: 'transactions', data: transactions})
       yield put(normalizeGroupsAndTrans())
     }
     yield put(setTransactions.success())

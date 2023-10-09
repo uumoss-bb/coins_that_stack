@@ -1,12 +1,13 @@
 import { connect } from 'react-redux';
 import './index.css'
 import TransInput from './Input';
-import parseTransactions from '../../state/sagas/parseTransactions';
+import { setTransactions, normalizeGroupsAndTrans } from '../../state/actions'
 
 const mapStateToProps = (state) => ({});
 
 const mapDispatchToProps = {
-  parseCsv: parseTransactions
+  setTransactions,
+  normalizeGroupsAndTrans
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(TransInput);
