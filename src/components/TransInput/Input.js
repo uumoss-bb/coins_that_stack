@@ -44,7 +44,8 @@ const TransInput = ({ setTransactions, normalizeGroupsAndTrans }) => {
       <Select
         options={[
           { label: "Elevations", id: "elevations" },
-          { label: "CapitalOne", id: "capitalone" }
+          { label: "Capital One", id: "capitalone" },
+          { label: "Fort Financial", id: "fortFinancial" }
         ]}
         value={[source]}
         placeholder="Select Source"

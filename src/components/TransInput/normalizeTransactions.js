@@ -28,9 +28,25 @@ const normalizeCapitalOne = ({ Description, Transaction_Date, Debit, Credit, Cat
   }
 }
 
+const normalizeFortFinancial = ({ Amount, Description, Date, Category }) => {
+  const amount = Number(Amount.replace('$', ''))
+
+  if(Date && !Description.includes('CAPITAL ONE TYPE: ONLINE PMT')) {
+    return {
+      source: 'fortFinancial',
+      title: Description,
+      transaction: amount,
+      date: Date,
+      type: getTransactionType(amount),
+      category: Category
+    }
+  }
+}
+
 const normalizerFunctions = {
   elevations: normalizeElevations,
   capitalone: normalizeCapitalOne,
+  fortFinancial: normalizeFortFinancial
 }
 
 const normalizeTransactions = ({ source, transactions }) => R.pipe(
