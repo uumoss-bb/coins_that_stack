@@ -1,51 +1,42 @@
 {
   "name": "coins_that_stack",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@reduxjs/toolkit": "^1.9.5",
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "baseui": "^12.2.0",
-    "csvtojson": "^2.0.10",
-    "or": "^0.2.0",
-    "papaparse": "^5.4.1",
-    "ramda": "^0.28.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-redux": "^8.1.2",
-    "react-scripts": "5.0.1",
-    "redux": "^4.2.1",
-    "redux-saga": "^1.2.3",
-    "styletron-engine-atomic": "^1.5.0",
-    "styletron-react": "^6.1.0",
-    "uuid": "^8.3.2",
-    "web-vitals": "^2.1.4"
-  },
+  "version": "2.0.0",
+  "description": "We Like Shiny Coins",
+  "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build"
+    "test": "jest ./businessLogic/tests",
+    "displayTotal": "jest ./cli/displayTotal",
+    "displayGroups": "jest ./cli/displayGroups"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uumoss-bb/coins_that_stack.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "author": "Brodie Balser",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uumoss-bb/coins_that_stack/issues"
+  },
+  "homepage": "https://github.com/uumoss-bb/coins_that_stack#readme",
+  "dependencies": {
+    "@babel/plugin-proposal-do-expressions": "^7.24.7",
+    "@babel/plugin-proposal-object-rest-spread": "^7.20.7",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.5",
+    "next": "^14.2.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "typescript": "^5",
+    "uuid": "^10.0.0"
   },
   "devDependencies": {
-    "react-app-rewired": "^2.2.1"
+    "@babel/core": "^7.25.2",
+    "@babel/plugin-transform-runtime": "^7.24.7",
+    "@babel/preset-env": "^7.25.2",
+    "@babel/preset-react": "^7.24.7",
+    "@babel/runtime": "^7.25.0"
   }
 }
