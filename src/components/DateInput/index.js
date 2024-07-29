@@ -5,7 +5,6 @@ import { DatePicker } from "baseui/datepicker";
 import {Heading, HeadingLevel} from 'baseui/heading';
 import { setSortDate } from '../../state/actions';
 
-
 const DateInput = ({ date, _setSortDate }) => (
   <div className='dateInput'>
     <HeadingLevel>
