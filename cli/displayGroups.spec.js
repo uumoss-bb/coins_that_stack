@@ -10,64 +10,67 @@ function Group(data) {
   this.coins = data.coins;
 }
 
-const organizeTables = (groups, type) => {
-
-  function Transaction(data) {
-    this.title = data.title;
-    this.groups = data.groups;
-    this.date = data.date;
-    this[data.type] = data.transaction;
-  }
-
-  const transactions = []
-
-  return {
-    groups: groups.reduce((prevValue, group) => {
-      transactions.push(group.transactions.map((trans) => new Transaction(trans)))
-        return {
-          ...prevValue,
-          [group.name]: new Group(group)
-        }
-    },{}),
-    transactions: transactions.flat()
-  }
+function TransactionWithGroup(data) {
+  this.title = data.title;
+  this.groups = data.groups;
+  this.date = data.date;
+  this[data.type] = data.transaction;
 }
 
-const transToTable = (trans) => {
-
-  function Transaction(data) {
-    this.date = data.date;
-    this.title = data.title;
-    this[data.type] = data.transaction;
-  }
-
-  return trans.map((tran) => {
-    if(!tran.groups.length) {
-      return new Transaction(tran)
-    }
-    return null
-  }).filter(selectTruthyItems)
-}
-
-const calculateNonGroupedTrans = (trans) => {
-  let totalCoin = 0
-  let transactions = []
-  trans.forEach(tran => {
-    if(!tran.groups.length) {
-      totalCoin += tran.transaction
-      transactions.push(tran)
+const collectNonGroupedTransactionsInGroup = (transactions) => {
+  let coins = 0
+  let nonGroupTransactions = []
+  transactions.forEach(transaction => {
+    if(!transaction.groups.length) {
+      coins += transaction.transaction
+      transactions.push(transaction)
     }
   })
 
-  return { 'Non-Grouped': new Group({ coins: totalCoin, transactions, name: "Non-Grouped", keywords: [ "non" ] })}
+  return { 'Non-Grouped': new Group({ coins, transactions: nonGroupTransactions, name: "Non-Grouped", keywords: [ "non" ] })}
 }
+
+const normalizeGroupsForTable = (linkedData) => {
+  const arrayOfGroups = Object.values(linkedData.groups)
+
+  const actualGroups = arrayOfGroups.reduce((prevValue, group) => {
+    return {
+      ...prevValue,
+      [group.name]: new Group(group)
+    }
+  },{})
+
+  const nonGroupedTransactions = collectNonGroupedTransactionsInGroup(linkedData.transactions)
+
+  return {
+    ...actualGroups,
+    ...nonGroupedTransactions
+  }
+}
+
+const normalizeGroupedTransactionsForTable = (linkedData) => {
+  const arrayOfGroups = Object.values(linkedData.groups)
+  const transactionsForTable = []
+
+  arrayOfGroups.forEach((group) => {
+    transactionsForTable.push(group.transactions.map((transaction) => new TransactionWithGroup(transaction)))
+  })
+
+  return transactionsForTable.flat()
+}
+
+const normalizeNonGroupedTransactions = ({ transactions }) => transactions.map((transaction) => {
+  if(!transaction.groups.length) {
+    return new TransactionWithGroup(transaction)
+  }
+  return null
+}).filter(selectTruthyItems)
 
 
 it("GET GROUPS", () => {
   const transactions = normalizeTransactions({source: "FORT_FINANCIAL", transactions: coin})
-  const result = linkGroupsAndTrans(defaultGroups, transactions)
-  const { groups, transactions: groupTrans } = organizeTables(Object.values(result.groups))
-  console.table({...groups, ...calculateNonGroupedTrans(result.transactions)})
-  console.table(groupTrans)
-  console.table(transToTable(result.transactions))
+  const linkedData = linkGroupsAndTrans(defaultGroups, transactions)
+  console.table(normalizeGroupsForTable(linkedData))
+  console.table(normalizeGroupedTransactionsForTable(linkedData))
+  console.table(normalizeNonGroupedTransactions(linkedData))
 })
