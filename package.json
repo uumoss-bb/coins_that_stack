@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest ./businessLogic/tests",
-    "displayTotal": "jest ./cli/displayTotal",
-    "displayStacks": "jest ./cli/displayStacks"
+    "displayTotal": "jest ./frontend/cli/displayTotal",
+    "displayStacks": "jest ./frontend/cli/displayStacks"
   },
   "repository": {
     "type": "git",

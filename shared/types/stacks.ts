@@ -5,6 +5,12 @@ export interface Stack {
   keywords: string[]
   transactions: Transaction[],
   coins: number
+  deposit: {
+    type: 'percent' | 'exact',
+    amount: number,
+    incidence: 'monthly' | 'bi-weekly' | 'weekly' | 'daily'
+  }
+  group?: string
 }
 
 export type Stacks = {

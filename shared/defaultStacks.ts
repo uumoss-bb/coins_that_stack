@@ -1,53 +1,65 @@
 import { Stacks } from "./types/stacks";
 
 const defaultStacks: Stacks = {
-  "Income": {
-      "name": "Income",
-      "keywords": ["live nation", "check deposit", "cash deposit"],
-      "transactions": [],
-      "coins": 0
-  },
-  "Amazon": {
+  "Family Coin": {
       "name": "Amazon",
       "keywords": ["amazon"],
       "transactions": [],
-      "coins": 0
+      "coins": 0,
+      "deposit": {
+        type: 'percent',
+        incidence: 'bi-weekly',
+        amount: 10
+      },
+      "group": 'Family'
   },
-  "Transfers": {
-      "name": "Transfers",
-      "keywords": ["transfer", "capital one"],
-      "transactions": [],
-      "coins": 0
-  },
-  "House": {
+  "Morgage": {
       "name": "House",
       "keywords": ["cooper"],
       "transactions": [],
-      "coins": 0
+      "coins": 0,
+      "deposit": {
+        type: 'exact',
+        incidence: 'bi-weekly',
+        amount: 2677
+      },
+      "group": 'Family'
   },
   "Food": {
       "name": "Food",
       "keywords": ["safeway", "costco", "kroger", "wall-mart", "meijer"],
       "transactions": [],
-      "coins": 0
+      "coins": 0,
+      "deposit": {
+        type: 'percent',
+        incidence: 'bi-weekly',
+        amount: 10
+      },
+      "group": 'Family'
   },
   "Utilities": {
       "name": "Utilities",
       "keywords": ["frontier", "fort wayne utili", "xcel", "aepindia", "celina", "nipsco"],
       "transactions": [],
-      "coins": 0
-  },
-  "BB OWES": {
-      "name": "BB OWES",
-      "keywords": ["copper", "fedex"],
-      "transactions": [],
-      "coins": 0
+      "coins": 0,
+      "deposit": {
+        type: 'percent',
+        incidence: 'bi-weekly',
+        amount: 10
+      },
+      "group": 'Family'
   },
   "Subscriptions": {
       "name": "Subscriptions",
       "keywords": ["audible", "lee brothers", "spotify", "dropbox", "prime", "ring", "disney plus", "netflix", "lastpass"],
       "transactions": [],
-      "coins": 0
+      "coins": 0,
+      "deposit": {
+        type: 'percent',
+        incidence: 'bi-weekly',
+        amount: 10
+      },
+      "group": 'Family'
   }
 }
 
