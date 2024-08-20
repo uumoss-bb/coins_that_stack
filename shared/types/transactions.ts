@@ -27,7 +27,7 @@ export interface Transaction   {
   transaction: number,
   balance: number,
   source: TransSourceNames,
-  groups: string[]
+  stacks: string[]
 }
 
 export type Transactions = Transaction[]

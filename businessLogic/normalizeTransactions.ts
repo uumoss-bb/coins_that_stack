@@ -36,7 +36,7 @@ const normalizeFortFinancial = (transItem: FortFinTrans): Transaction => {
     transaction,
     balance: normalizeCoin(Balance),
     source: TransSources.FORT_FINANCIAL,
-    groups: []
+    stacks: []
   }
 }
 

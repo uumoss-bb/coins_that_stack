@@ -1,14 +1,14 @@
 import { Transaction } from "./transactions"
 
-export interface Group {
+export interface Stack {
   name: string,
   keywords: string[]
   transactions: Transaction[],
   coins: number
 }
 
-export type Groups = {
-  [key: string]: Group
+export type Stacks = {
+  [key: string]: Stack
 }
 
-export type GroupsArray = Group[]
+export type StacksArray = Stack[]

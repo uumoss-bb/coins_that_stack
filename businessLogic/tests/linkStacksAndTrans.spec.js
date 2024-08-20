@@ -1,6 +1,6 @@
-import linkGroupsAndTrans from "../linkGroupsAndTrans"
+import linkStacksAndTrans from "../linkStacksAndTrans"
 
-describe("Link Groups and Transactions", () => {
+describe("Link Stacks and Transactions", () => {
 
   const amazonWithdraw = {
     title: 'amazon mktpl*rv0sb16k0 amzn.com/bill wa',
@@ -10,7 +10,7 @@ describe("Link Groups and Transactions", () => {
     transaction: -20,
     balance: 800,
     source: 'FORT_FINANCIAL',
-    groups: []
+    stacks: []
   }
 
   const bobsDeposit = {
@@ -21,7 +21,7 @@ describe("Link Groups and Transactions", () => {
     transaction: 4000,
     balance: 5000,
     source: 'FORT_FINANCIAL',
-    groups: []
+    stacks: []
   }
 
   const wallyDeposit = {
@@ -32,7 +32,7 @@ describe("Link Groups and Transactions", () => {
     transaction: 5000,
     balance: 7000,
     source: 'FORT_FINANCIAL',
-    groups: []
+    stacks: []
   }
 
   const cigarAmazonWithdraw = {
@@ -43,7 +43,7 @@ describe("Link Groups and Transactions", () => {
     transaction: -30,
     balance: 800,
     source: 'FORT_FINANCIAL',
-    groups: []
+    stacks: []
   }
 
   const transactions =  [
@@ -53,15 +53,15 @@ describe("Link Groups and Transactions", () => {
     cigarAmazonWithdraw
   ]
 
-  const groups = {
-    "groupA": {
-      name:'groupA',
+  const stacks = {
+    "stackA": {
+      name:'stackA',
       keywords: ['amazon'],
       transactions: [],
       coins: 0
     },
-    "groupB": {
-      name:'groupB',
+    "stackB": {
+      name:'stackB',
       keywords: ['bobs burger', 'cigar'],
       transactions: [],
       coins: 0
@@ -70,35 +70,35 @@ describe("Link Groups and Transactions", () => {
 
   const linkedResult = {
     "transactions": [
-      { ...amazonWithdraw, "groups": [ "groupA" ] },
-      { ...bobsDeposit, "groups": [ "groupB" ] },
-      { ...wallyDeposit, "groups": [] },
-      { ...cigarAmazonWithdraw, "groups": [ "groupA", "groupB" ] }
+      { ...amazonWithdraw, "stacks": [ "stackA" ] },
+      { ...bobsDeposit, "stacks": [ "stackB" ] },
+      { ...wallyDeposit, "stacks": [] },
+      { ...cigarAmazonWithdraw, "stacks": [ "stackA", "stackB" ] }
     ],
-    "groups": {
-      "groupA": {
-        "name": "groupA",
+    "stacks": {
+      "stackA": {
+        "name": "stackA",
         "keywords": [ "amazon" ],
         "transactions": [
-          { ...amazonWithdraw, "groups": [ "groupA" ] },
-          { ...cigarAmazonWithdraw, "groups": [ "groupA", "groupB" ] }
+          { ...amazonWithdraw, "stacks": [ "stackA" ] },
+          { ...cigarAmazonWithdraw, "stacks": [ "stackA", "stackB" ] }
         ],
         "coins": -50
       },
-      "groupB": {
-        "name": "groupB",
+      "stackB": {
+        "name": "stackB",
         "keywords": ['bobs burger', 'cigar'],
         "transactions": [
-          { ...bobsDeposit, "groups": [ "groupB" ] },
-          { ...cigarAmazonWithdraw, "groups": [ "groupA", "groupB" ] }
+          { ...bobsDeposit, "stacks": [ "stackB" ] },
+          { ...cigarAmazonWithdraw, "stacks": [ "stackA", "stackB" ] }
         ],
         "coins": 3970
       }
     }
   }
 
-  it("return transactions with accurate groups and groups with accurate transactions + coins", () => {
-    const result = linkGroupsAndTrans(groups, transactions)
+  it("return transactions with accurate stacks and stacks with accurate transactions + coins", () => {
+    const result = linkStacksAndTrans(stacks, transactions)
     expect(result).toEqual(linkedResult)
   })
 })

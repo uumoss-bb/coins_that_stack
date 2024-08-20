@@ -1,4 +1,4 @@
-import defaultGroups from '../shared/defaultGroups'
+import defaultStacks from '../shared/defaultStacks'
 
 const post = (key, value) => localStorage.setItem(key, JSON.stringify(value))
 const remove = (key) => localStorage.removeItem(key)
@@ -16,11 +16,11 @@ const getAll = function() {
 }
 
 const setDefault = function() {
-  const { groups, transactions } = this.getAll()
+  const { stacks, transactions } = this.getAll()
 
-  if(!groups){
+  if(!stacks){
     console.log('DEFAULT GROUPS')
-    this.post('groups', defaultGroups)
+    this.post('stacks', defaultStacks)
   }
   if(!transactions){
     console.log('DEFAULT TRANSACTIONS')

@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest ./businessLogic/tests",
     "displayTotal": "jest ./cli/displayTotal",
-    "displayGroups": "jest ./cli/displayGroups"
+    "displayStacks": "jest ./cli/displayStacks"
   },
   "repository": {
     "type": "git",

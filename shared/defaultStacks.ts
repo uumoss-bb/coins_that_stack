@@ -1,6 +1,6 @@
-import { Groups } from "./types/groups";
+import { Stacks } from "./types/stacks";
 
-const defaultGroups: Groups = {
+const defaultStacks: Stacks = {
   "Income": {
       "name": "Income",
       "keywords": ["live nation", "check deposit", "cash deposit"],
@@ -51,4 +51,4 @@ const defaultGroups: Groups = {
   }
 }
 
-export default defaultGroups
+export default defaultStacks

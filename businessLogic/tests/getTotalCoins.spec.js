@@ -10,7 +10,7 @@ describe("Get Total Coins", () => {
     transaction: -20,
     balance: 9980,
     source: 'FORT_FINANCIAL',
-    groups: []
+    stacks: []
   }
 
   const cigarAmazonWithdraw = {
@@ -21,7 +21,7 @@ describe("Get Total Coins", () => {
     transaction: -30,
     balance: 9950,
     source: 'FORT_FINANCIAL',
-    groups: []
+    stacks: []
   }
 
   const bobsDeposit = {
@@ -32,7 +32,7 @@ describe("Get Total Coins", () => {
     transaction: 4000,
     balance: 4000,
     source: 'FORT_FINANCIAL',
-    groups: []
+    stacks: []
   }
 
   const wallyDeposit = {
@@ -43,7 +43,7 @@ describe("Get Total Coins", () => {
     transaction: 5000,
     balance: 9000,
     source: 'FORT_FINANCIAL',
-    groups: []
+    stacks: []
   }
 
   const transactions =  [

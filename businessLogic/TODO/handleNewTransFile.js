@@ -18,7 +18,7 @@
 //           const normalTrans = normalizeTransactions({ source: source.id, transactions })
 //           const currentTrans = LocalStore.get('transactions')
 //           setTransactions({ transactions: [...normalTrans, ...currentTrans], save: true })
-//           normalizeGroupsAndTrans()
+//           normalizeStacksAndTrans()
 //         },
 //         error: function (error) {
 //           console.error(error)

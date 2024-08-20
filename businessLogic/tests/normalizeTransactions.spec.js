@@ -37,7 +37,7 @@ describe("Normalize Fort Financial Transactions", () => {
       transaction: -31,
       balance: 801,
       source: 'FORT_FINANCIAL',
-      groups: []
+      stacks: []
     },
     {
       title: 'ach deposit bobs burger worl direct dep asdf2134 vw balserbrodie',
@@ -47,7 +47,7 @@ describe("Normalize Fort Financial Transactions", () => {
       transaction: 3001,
       balance: 4000,
       source: 'FORT_FINANCIAL',
-      groups: []
+      stacks: []
     }
   ]
 

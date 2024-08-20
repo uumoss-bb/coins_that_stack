@@ -8,4 +8,4 @@
 - place json bank data in './transactions'
 - link transactions in cli files
 - npm run displayTotal
-- npm run displayGroups
+- npm run displayStacks
