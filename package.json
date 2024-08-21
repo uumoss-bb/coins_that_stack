@@ -4,7 +4,7 @@
   "description": "We Like Shiny Coins",
   "main": "index.js",
   "scripts": {
-    "test": "jest ./businessLogic/tests",
+    "test": "jest --testPathIgnorePatterns='./frontend/cli'",
     "displayTotal": "jest ./frontend/cli/displayTotal",
     "displayStacks": "jest ./frontend/cli/displayStacks"
   },
