@@ -1,4 +1,4 @@
-import getTotal from '../../middleWare/toFrontEnd/getTotal_cli'
+import getTotal from '../../middleware/toFrontEnd/getTotal_cli'
 
 it("GET TOTAL", () => {
   const { grandTotal, deposits, withdraws } = getTotal()

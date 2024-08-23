@@ -1,4 +1,4 @@
-import getStacks from '../../middleWare/toFrontEnd/getStacks_cli'
+import getStacks from '../../middleware/toFrontEnd/getStacks_cli'
 
 it("GET GROUPS", () => {
   const {
