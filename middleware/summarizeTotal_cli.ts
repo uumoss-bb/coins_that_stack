@@ -1,8 +1,8 @@
-import getTotalCoins, { Total, TotalResult } from "../../businessLogic/getTotalCoins"
-import coin from '../../transactions'
-import normalizeTransactions from "../../businessLogic/normalizeTransactions"
-import { selectTruthyItems } from '../../shared/selectors';
-import { Transaction, Transactions } from "../../shared/types/transactions";
+import getTotalCoins, { Total, TotalResult } from "../businessLogic/getTotalCoins"
+import coin from '../transactions'
+import normalizeTransactions from "../businessLogic/normalizeTransactions"
+import { selectTruthyItems } from '../shared/selectors';
+import { Transaction, Transactions } from "../shared/types/transactions";
 
 const transToTable = (transactions: Transactions) => {
 
@@ -28,7 +28,7 @@ const totalToTable = (data: TotalResult) => {
   }
 }
 
-const getTotal = () => {
+const summarizeTotal = () => {
   const _transactions = normalizeTransactions({source: "FORT_FINANCIAL", transactions: coin})
   const result = getTotalCoins(_transactions)
   console.table(totalToTable(result))
@@ -41,4 +41,4 @@ const getTotal = () => {
   }
 }
 
-export default getTotal
+export default summarizeTotal

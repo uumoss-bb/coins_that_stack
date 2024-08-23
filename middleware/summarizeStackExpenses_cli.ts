@@ -1,12 +1,18 @@
-import linkStacksAndTrans, { ConnectedStacksAndTrans } from '../../businessLogic/linkStacksAndTrans'
-import normalizeTransactions from "../../businessLogic/normalizeTransactions"
-import coin from '../../transactions'
-import defaultStacks from '../../shared/defaultStacks'
-import { selectTruthyItems } from '../../shared/selectors';
-import { Transaction, Transactions } from '../../shared/types/transactions';
-import { Stack } from '../../shared/types/stacks';
+import linkStacksAndTrans, { ConnectedStacksAndTrans } from '../businessLogic/linkStacksAndTrans'
+import normalizeTransactions from "../businessLogic/normalizeTransactions"
+import coin from '../transactions'
+import defaultStacks from '../shared/defaultStacks'
+import { selectTruthyItems } from '../shared/selectors';
+import { Transaction, Transactions } from '../shared/types/transactions';
 
-const StackItem = (stack: Stack) =>  ({
+type StackItem = {
+  coins: number,
+  transactions: Transactions,
+  name: string,
+  keywords: string[]
+}
+
+const StackItem = (stack: StackItem) =>  ({
   keywords: stack.keywords.join('||'),
   count: stack.transactions.length,
   coins: stack.coins
@@ -69,7 +75,7 @@ const normalizeNonStackedTransactionsForTable = ({ transactions }: ConnectedStac
     return null
   }).filter(selectTruthyItems)
 
-const getStacks = () => {
+const summarizeStackExpenses = () => {
   const transactions = normalizeTransactions({source: "FORT_FINANCIAL", transactions: coin})
   const linkedData = linkStacksAndTrans(defaultStacks, transactions)
   return {
@@ -79,4 +85,4 @@ const getStacks = () => {
   }
 }
 
-export default getStacks
+export default summarizeStackExpenses

@@ -1,7 +1,7 @@
-import getTotal from '../../middleware/toFrontEnd/getTotal_cli'
+import summarizeTotal from '../../middleware/toFrontEnd/summarizeTotal_cli'
 
 it("GET TOTAL", () => {
-  const { grandTotal, deposits, withdraws } = getTotal()
+  const { grandTotal, deposits, withdraws } = summarizeTotal()
   console.table(grandTotal)
   console.table(deposits)
   console.table(withdraws)
