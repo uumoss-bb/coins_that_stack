@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest --testPathIgnorePatterns='./frontend/cli'",
     "displayTotal": "jest ./frontend/cli/displayTotal",
-    "displayStacks": "jest ./frontend/cli/displayStacks"
+    "displayStacks": "jest ./frontend/cli/displayStacks",
+    "set": "jest ./frontend/cli/setUpSystem"
   },
   "repository": {
     "type": "git",

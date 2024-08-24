@@ -1,24 +1,35 @@
 import FileSystem from "../database/FileSystem"
+import { INCOME_FILE_NAME } from "../shared/enums/fileNames"
+import Income from "../shared/types/income"
+
+const defaultIncome: Income = {
+  coins: 0
+}
 
 class _Income {
 
-  private coins: number
-  private incomeFileName = 'income'
+  private income: Income
 
-  constructor(coins: number) {
-    this.coins = coins
+  constructor() {
+    const { error, data: incomeFile } = FileSystem.readJsonFile(INCOME_FILE_NAME)
+    if(error) {
+      FileSystem.writeJsonFile(INCOME_FILE_NAME, {})
+      this.income = defaultIncome
+    } else {
+      this.income = incomeFile as Income
+    }
   }
 
   getCoins() {
-    return this.coins
+    return this.income.coins
   }
 
-  setCoins(coins: number) {
-    const { error } = FileSystem.updateJsonFile(this.incomeFileName, { coins })
+  updateIncome(income: Income) {
+    const { error, data: incomeFile } = FileSystem.updateJsonFile(INCOME_FILE_NAME, income)
     if(error) {
       throw new Error("Failed to set new income")
     }
-    this.coins = coins
+    this.income = incomeFile as Income
   }
 
   getStackAllocations() {

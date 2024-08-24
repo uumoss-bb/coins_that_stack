@@ -1,4 +1,4 @@
-import summarizeTotal from '../../middleware/toFrontEnd/summarizeTotal_cli'
+import summarizeTotal from '../../middleware/summarizeTotal_cli'
 
 it("GET TOTAL", () => {
   const { grandTotal, deposits, withdraws } = summarizeTotal()
