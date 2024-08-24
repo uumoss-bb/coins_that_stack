@@ -1,8 +1,8 @@
-import getTotalCoins, { Total, TotalResult } from "../businessLogic/getTotalCoins"
-import coin from '../transactions'
-import normalizeTransactions from "../businessLogic/normalizeTransactions"
-import { selectTruthyItems } from '../shared/selectors';
-import { Transaction, Transactions } from "../shared/types/transactions";
+import getTotalCoins, { Total, TotalResult } from "../../businessLogic/getTotalCoins"
+import coin from '../../transactions'
+import normalizeTransactions from "../../businessLogic/normalizeTransactions"
+import { selectTruthyItems } from '../../shared/selectors';
+import { Transaction, Transactions } from "../../shared/types/transactions";
 
 const transToTable = (transactions: Transactions) => {
 

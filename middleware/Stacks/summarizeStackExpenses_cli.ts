@@ -1,9 +1,9 @@
-import linkStacksAndTrans, { ConnectedStacksAndTrans } from '../businessLogic/linkStacksAndTrans'
-import normalizeTransactions from "../businessLogic/normalizeTransactions"
-import coin from '../transactions'
-import defaultStacks from '../shared/defaultStacks'
-import { selectTruthyItems } from '../shared/selectors';
-import { Transaction, Transactions } from '../shared/types/transactions';
+import linkStacksAndTrans, { ConnectedStacksAndTrans } from '../../businessLogic/linkStacksAndTrans'
+import normalizeTransactions from "../../businessLogic/normalizeTransactions"
+import coin from '../../transactions'
+import defaultStacks from '../../shared/defaultStacks'
+import { selectTruthyItems } from '../../shared/selectors';
+import { Transaction, Transactions } from '../../shared/types/transactions';
 
 type StackItem = {
   coins: number,
@@ -75,7 +75,7 @@ const normalizeNonStackedTransactionsForTable = ({ transactions }: ConnectedStac
     return null
   }).filter(selectTruthyItems)
 
-const summarizeStackExpenses = () => {
+const summarizeStackExpenses = function() {
   const transactions = normalizeTransactions({source: "FORT_FINANCIAL", transactions: coin})
   const linkedData = linkStacksAndTrans(defaultStacks, transactions)
   return {
