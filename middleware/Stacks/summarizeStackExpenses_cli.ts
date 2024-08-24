@@ -4,6 +4,7 @@ import coin from '../../transactions'
 import defaultStacks from '../../shared/defaultStacks'
 import { selectTruthyItems } from '../../shared/selectors';
 import { Transaction, Transactions } from '../../shared/types/transactions';
+import { StackClass } from '.';
 
 type StackItem = {
   coins: number,
@@ -75,9 +76,11 @@ const normalizeNonStackedTransactionsForTable = ({ transactions }: ConnectedStac
     return null
   }).filter(selectTruthyItems)
 
-const summarizeStackExpenses = function() {
-  const transactions = normalizeTransactions({source: "FORT_FINANCIAL", transactions: coin})
-  const linkedData = linkStacksAndTrans(defaultStacks, transactions)
+const summarizeStackExpenses = function(this: StackClass) {
+  const linkedData = {
+    stacks: this.getStacks(),
+    transactions: this.getTransactions()
+  }
   return {
     stacksForTable: normalizeStacksForTable(linkedData),
     stackedTransactionsForTable: normalizeStackedTransactionsForTable(linkedData),

@@ -11,7 +11,7 @@ describe("FileSystem CRUD", () => {
 
   it("write file", () => {
     const result = FileSystem.writeJsonFile(fileName, data)
-    expect(result).toEqual(successFullResult)
+    expect(result).toEqual({ ...successFullResult, data })
   })
 
   it("read file", () => {
@@ -26,6 +26,6 @@ describe("FileSystem CRUD", () => {
 
   it("delete file", () => {
     const result = FileSystem.deleteFile(fileName)
-    expect(result).toEqual(successFullResult)
+    expect(result).toEqual({ ...successFullResult, data: { fileName } })
   })
 })

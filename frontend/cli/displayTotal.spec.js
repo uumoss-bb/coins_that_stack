@@ -1,7 +1,8 @@
-import summarizeTotal from '../../middleware/summarizeTotal_cli'
+import _Stacks from '../../middleware/Stacks'
 
 it("GET TOTAL", () => {
-  const { grandTotal, deposits, withdraws } = summarizeTotal()
+  const Stacks = new _Stacks()
+  const { grandTotal, deposits, withdraws } = Stacks.summarizeTotal()
   console.table(grandTotal)
   console.table(deposits)
   console.table(withdraws)
