@@ -1,27 +1,35 @@
 import _Income from '../../middleware/Income'
 import _Stacks from '../../middleware/Stacks'
 import defaultStacks from '../../shared/defaultStacks'
+import { convertDate } from '../../shared/normalizers'
 
 const defaultIncomeFile = {
   coins: 3750
 }
 
+const newLastUpdated = 'Aug 15, 2024'
+const newLastUpdatedMilliSec = convertDate(newLastUpdated, 'milliseconds')
+
 it("Set Up System", () => {
-  const Income = new _Income()
-  const Stacks = new _Stacks()
+  const { income, coins, updateIncome } = new _Income()
+  const { stacks, lastUpdated, updateLastUpdated, updateStacks } = new _Stacks()
 
-  if(Income.getCoins() === 0) {
-    Income.updateIncome(defaultIncomeFile)
+  if(coins !== defaultIncomeFile.coins) {
+    console.log("UPDATED INCOME")
+    updateIncome(defaultIncomeFile)
   }
 
-  const stacksEmpty = !Object.keys(Stacks.getStacks()).length
+  const stacksEmpty = !Object.keys(stacks).length
   if(stacksEmpty) {
-    Stacks.updateStacks(defaultStacks)
+    console.log("UPDATED STACKS")
+    updateStacks(defaultStacks)
   }
 
-  const income = Income.getCoins()
-  console.log("INCOME", income)
+  if(lastUpdated !== newLastUpdatedMilliSec) {
+    console.log("UPDATED LAST UPDATED")
+    updateLastUpdated(lastUpdated)
+  }
 
-  const stacks = Stacks.getStacks()
-  console.log("STACKS", stacks)
+  console.log("INCOME", income)
+  console.log("STACKS", Object.keys(stacks))
 })

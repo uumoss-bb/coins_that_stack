@@ -13,8 +13,10 @@ export interface Stack {
   group?: string
 }
 
-export type Stacks = {
-  [key: string]: Stack
-}
+export type StacksLastUpdated = { lastUpdated: number }
+
+export type Stacks = { [key: string]: Stack; }
+
+export type StacksFile = Stacks & StacksLastUpdated;
 
 export type StacksArray = Stack[]

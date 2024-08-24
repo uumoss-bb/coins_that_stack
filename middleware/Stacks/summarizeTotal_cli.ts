@@ -28,8 +28,7 @@ const totalToTable = (data: TotalResult) => {
 }
 
 const summarizeTotal = function(this: StackClass) {
-  const _transactions = this.getTransactions()
-  const result = getTotalCoins(_transactions)
+  const result = getTotalCoins(this.transactions)
   return {
     grandTotal: totalToTable(result),
     deposits: transToTable(result.deposit.transactions),

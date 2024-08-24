@@ -77,10 +77,8 @@ const normalizeNonStackedTransactionsForTable = ({ transactions }: ConnectedStac
   }).filter(selectTruthyItems)
 
 const summarizeStackExpenses = function(this: StackClass) {
-  const linkedData = {
-    stacks: this.getStacks(),
-    transactions: this.getTransactions()
-  }
+  const { stacks, transactions } = this
+  const linkedData = { stacks, transactions }
   return {
     stacksForTable: normalizeStacksForTable(linkedData),
     stackedTransactionsForTable: normalizeStackedTransactionsForTable(linkedData),

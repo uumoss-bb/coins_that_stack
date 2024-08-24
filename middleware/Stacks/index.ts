@@ -1,51 +1,52 @@
+import linkStacksAndTrans from "../../businessLogic/linkStacksAndTrans"
 import FileSystem from "../../database/FileSystem"
 import { STACK_FILE_NAME } from "../../shared/enums/fileNames"
-import { Stack, Stacks } from "../../shared/types/stacks"
+import { convertDate } from "../../shared/normalizers"
+import { Stacks, StacksLastUpdated } from "../../shared/types/stacks"
 import { Transactions } from "../../shared/types/transactions"
 import init from "./init"
 import summarizeStackExpenses from "./summarizeStackExpenses_cli"
 import summarizeTotal from "./summarizeTotal_cli"
-
 class _Stacks {
 
-  private stacks: Stacks
-  private transactions: Transactions
+  #lastUpdated: number
+  #stacks: Stacks
+  #transactions: Transactions
+  get transactions() { return this.#transactions }
+  get stacks() { return this.#stacks }
+  get lastUpdated() { return this.#lastUpdated }
+
 
   constructor() {
-    const { stacks, transactions } = init()
-    this.stacks = stacks
-    this.transactions = transactions
+    const { lastUpdated, stacks, transactions } = init()
+    this.#stacks = stacks
+    this.#transactions = transactions
+    this.#lastUpdated = lastUpdated
   }
 
   summarizeExpenses = summarizeStackExpenses
   summarizeTotal = summarizeTotal
 
-  getTransactions() {
-    return this.transactions
-  }
-
-  getStack(stackName: string) {
-    return this.stacks[stackName]
-  }
-
-  updateStack(stack: Stack) {
-    const { error, data: stackFile } = FileSystem.updateJsonFile(STACK_FILE_NAME, { [stack.name]: stack })
+  updateStacks(newStacks: Stacks) {
+    const { error } = FileSystem.updateJsonFile(STACK_FILE_NAME, newStacks)
     if(error) {
-      throw new Error("Failed to set new income")
+      throw new Error("Failed to update stacks")
     }
-    this.stacks = stackFile as Stacks
+
+    const updatedStacks = { ...this.#stacks, ...newStacks }
+    const { stacks, transactions } = linkStacksAndTrans(updatedStacks, this.#transactions)
+    this.#stacks = stacks
+    this.#transactions = transactions
   }
 
-  getStacks() {
-    return this.stacks
-  }
-
-  updateStacks(stacks: Stack) {
-    const { error, data: stackFile } = FileSystem.updateJsonFile(STACK_FILE_NAME, { ...stacks })
+  updateLastUpdated(date: string) {
+    const lastUpdated = convertDate(date, 'milliseconds') as number
+    const { error } = FileSystem.updateJsonFile(STACK_FILE_NAME, { lastUpdated })
     if(error) {
-      throw new Error("Failed to set new income")
+      throw new Error("Failed to update last updated")
     }
-    this.stacks = stackFile as Stacks
+
+    this.#lastUpdated = lastUpdated
   }
 }
 

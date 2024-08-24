@@ -2,16 +2,15 @@ import linkStacksAndTrans from "../../businessLogic/linkStacksAndTrans"
 import normalizeTransactions from "../../businessLogic/normalizeTransactions"
 import FileSystem from "../../database/FileSystem"
 import { STACK_FILE_NAME, TRANSACTIONS_FILE_NAME } from "../../shared/enums/fileNames"
-import { Stacks } from "../../shared/types/stacks"
+import { StacksFile } from "../../shared/types/stacks"
 import { DirtyTransactions } from "../../shared/types/transactions"
 
 function getStackFile() {
   const { error, data: stackFile } = FileSystem.readJsonFile(STACK_FILE_NAME)
   if(error) {
-    FileSystem.writeJsonFile(STACK_FILE_NAME, {})
-    return {}
+    throw new Error("Stacks Init failed to get stacks file")
   } else {
-    return stackFile as Stacks
+    return stackFile as StacksFile
   }
 }
 
@@ -25,10 +24,13 @@ function getTransactionsFile() {
 }
 
 const init = function() {
-  const stackFile = getStackFile()
+  const { lastUpdated, ...stacks } = getStackFile()
   const transactionsFile = getTransactionsFile()
   const normalizedTransactions = normalizeTransactions({ source: "FORT_FINANCIAL", transactions: transactionsFile })
-  return linkStacksAndTrans(stackFile, normalizedTransactions)
+  return {
+    lastUpdated,
+    ...linkStacksAndTrans(stacks, normalizedTransactions)
+  }
 }
 
 export default init
