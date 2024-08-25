@@ -5,6 +5,7 @@ import defaultStacks from '../../shared/defaultStacks'
 import { selectTruthyItems } from '../../shared/selectors';
 import { Transaction, Transactions } from '../../shared/types/transactions';
 import { StackClass } from '.';
+import { convertDate } from '../../shared/normalizers';
 
 type StackItem = {
   coins: number,
@@ -22,7 +23,7 @@ const StackItem = (stack: StackItem) =>  ({
 const TransactionWithStackItem = (transaction: Transaction) => ({
   title: transaction.title,
   stacks: transaction.stacks,
-  date: transaction.date,
+  date: convertDate.full(transaction.date),
   [transaction.type]: transaction.transaction
 })
 

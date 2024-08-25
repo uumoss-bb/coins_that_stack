@@ -21,7 +21,7 @@ export type DirtyTransactions = FortFinTrans[]
 
 export interface Transaction   {
   title: string,
-  date: string,
+  date: number,
   category: string,
   type: TransType
   transaction: number,

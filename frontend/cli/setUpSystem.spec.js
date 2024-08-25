@@ -8,7 +8,7 @@ const defaultIncomeFile = {
 }
 
 const newLastUpdated = 'Aug 15, 2024'
-const newLastUpdatedMilliSec = convertDate(newLastUpdated, 'milliseconds')
+const newLastUpdatedMilliSec = convertDate.milliseconds(newLastUpdated)
 
 it("Set Up System", () => {
   const { income, coins, updateIncome } = new _Income()

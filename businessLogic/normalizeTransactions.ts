@@ -8,7 +8,7 @@ import {
 } from '../shared/types/transactions'
 import { TransSources } from '../shared/enums/transactions'
 import { selectTruthyItems } from '../shared/selectors'
-import { normalizeText } from '../shared/normalizers'
+import { convertDate, normalizeText } from '../shared/normalizers'
 
 const getTransactionType = (transaction: number): TransType => transaction > 0 ? 'deposit' : 'withdraw'
 
@@ -30,7 +30,7 @@ const normalizeFortFinancial = (transItem: FortFinTrans): Transaction => {
   const transaction = normalizeCoin(Amount)
   return {
     title: normalizeFortFinTitle(Description),
-    date: new Date(date).toDateString(),
+    date: convertDate.milliseconds(date),
     category: Category,
     type: getTransactionType(transaction),
     transaction,

@@ -2,11 +2,12 @@ import getTotalCoins, { TotalResult } from "../../businessLogic/getTotalCoins"
 import { selectTruthyItems } from '../../shared/selectors';
 import { Transaction, Transactions } from "../../shared/types/transactions";
 import { StackClass } from ".";
+import { convertDate } from "../../shared/normalizers";
 
 const transToTable = (transactions: Transactions) => {
 
   const TransactionItem = (transaction: Transaction) => ({
-    date: transaction.date,
+    date: convertDate.full(transaction.date),
     title: transaction.title,
     [transaction.type]: transaction.transaction
   })

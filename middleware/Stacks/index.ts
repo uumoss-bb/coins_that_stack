@@ -2,11 +2,12 @@ import linkStacksAndTrans from "../../businessLogic/linkStacksAndTrans"
 import FileSystem from "../../database/FileSystem"
 import { STACK_FILE_NAME } from "../../shared/enums/fileNames"
 import { convertDate } from "../../shared/normalizers"
-import { Stacks, StacksLastUpdated } from "../../shared/types/stacks"
+import { Stacks } from "../../shared/types/stacks"
 import { Transactions } from "../../shared/types/transactions"
 import init from "./init"
 import summarizeStackExpenses from "./summarizeStackExpenses_cli"
 import summarizeTotal from "./summarizeTotal_cli"
+
 class _Stacks {
 
   #lastUpdated: number
@@ -40,7 +41,7 @@ class _Stacks {
   }
 
   updateLastUpdated(date: string) {
-    const lastUpdated = convertDate(date, 'milliseconds') as number
+    const lastUpdated = convertDate.milliseconds(date)
     const { error } = FileSystem.updateJsonFile(STACK_FILE_NAME, { lastUpdated })
     if(error) {
       throw new Error("Failed to update last updated")
