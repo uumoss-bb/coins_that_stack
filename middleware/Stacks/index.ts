@@ -13,20 +13,24 @@ class _Stacks {
   #lastUpdated: number
   #stacks: Stacks
   #transactions: Transactions
+  #freeTransactions: Transactions
+  get freeTransactions() { return this.#freeTransactions }
   get transactions() { return this.#transactions }
   get stacks() { return this.#stacks }
   get lastUpdated() { return this.#lastUpdated }
 
 
   constructor() {
-    const { lastUpdated, stacks, transactions } = init()
+    const { lastUpdated, stacks, transactions, freeTransactions } = init()
+
+    this.#lastUpdated = lastUpdated
     this.#stacks = stacks
     this.#transactions = transactions
-    this.#lastUpdated = lastUpdated
+    this.#freeTransactions= freeTransactions
   }
 
-  summarizeExpenses = summarizeStackExpenses
-  summarizeTotal = summarizeTotal
+  summarizeExpenses = summarizeStackExpenses.bind(this)
+  summarizeTotal = summarizeTotal.bind(this)
 
   updateStacks(newStacks: Stacks) {
     const { error } = FileSystem.updateJsonFile(STACK_FILE_NAME, newStacks)
@@ -48,6 +52,10 @@ class _Stacks {
     }
 
     this.#lastUpdated = lastUpdated
+  }
+
+  audit() {
+
   }
 }
 

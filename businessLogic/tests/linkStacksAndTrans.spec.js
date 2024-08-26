@@ -1,3 +1,4 @@
+import { prettyJSON } from "../../shared/normalizers"
 import linkStacksAndTrans from "../linkStacksAndTrans"
 
 describe("Link Stacks and Transactions", () => {
@@ -75,6 +76,7 @@ describe("Link Stacks and Transactions", () => {
       { ...wallyDeposit, "stacks": [] },
       { ...cigarAmazonWithdraw, "stacks": [ "stackA", "stackB" ] }
     ],
+    "freeTransactions" : [ wallyDeposit ],
     "stacks": {
       "stackA": {
         "name": "stackA",
@@ -93,6 +95,30 @@ describe("Link Stacks and Transactions", () => {
           { ...cigarAmazonWithdraw, "stacks": [ "stackA", "stackB" ] }
         ],
         "coins": 3970
+      },
+      "Non_Stacked": {
+        "coins": 5000,
+        "transactions": [
+          {
+            "title": "ach deposit wally world direct dep asdf2134 vw balserbrodie",
+            "date": "Fri Jun 28 2024",
+            "category": "",
+            "type": "deposit",
+            "transaction": 5000,
+            "balance": 7000,
+            "source": "FORT_FINANCIAL",
+            "stacks": []
+          }
+        ],
+        "name": "Non-Stacked",
+        "keywords": [
+          "non"
+        ],
+        "deposit": {
+          "type": "exact",
+          "incidence": "bi-weekly",
+          "amount": 0
+        }
       }
     }
   }

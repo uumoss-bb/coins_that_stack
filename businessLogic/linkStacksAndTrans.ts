@@ -1,5 +1,5 @@
 import { selectTruthyItems } from "../shared/selectors"
-import { Stacks, StacksArray } from "../shared/types/stacks"
+import { Stack, Stacks, StacksArray } from "../shared/types/stacks"
 import { Transaction, Transactions } from "../shared/types/transactions"
 
 export interface ConnectedStacksAndTrans {
@@ -30,7 +30,36 @@ const updateStacksWithTrans = (transaction: Transaction, _stacks: Stacks, transa
   return stacks
 }
 
-const linkStacksAndTrans = (stacks: Stacks, transactions: Transactions) => {
+const collectTheNonStacked = (linkedData: ConnectedStacksAndTrans) => {
+
+  let coins = 0
+  let freeTransactions: Transactions = []
+  linkedData.transactions.forEach(transaction => {
+    if(!transaction.stacks.length) {
+      coins += transaction.transaction
+      freeTransactions.push(transaction)
+    }
+  })
+
+  const theNonStacked: Stack = {
+    coins,
+    transactions: freeTransactions,
+    name: "Non-Stacked",
+    keywords: [ "non" ] ,
+    deposit: {
+      type: "exact",
+      incidence: 'bi-weekly',
+      amount: 0
+    }
+  }
+
+  return {
+    theNonStacked,
+    freeTransactions
+  }
+}
+
+const linkData = (stacks: Stacks, transactions: Transactions) => {
   const stacksArray: StacksArray = Object.values(stacks)
   const defaultResult: ConnectedStacksAndTrans = { transactions: [], stacks }
 
@@ -46,6 +75,19 @@ const linkStacksAndTrans = (stacks: Stacks, transactions: Transactions) => {
       stacks: updatedStacks
     }
   }, defaultResult)
+}
+
+const linkStacksAndTrans = (stacks: Stacks, transactions: Transactions) => {
+  const linkedData = linkData(stacks, transactions)
+  const { theNonStacked, freeTransactions } = collectTheNonStacked(linkedData)
+  return {
+    ...linkedData,
+    stacks: {
+      ...linkedData.stacks,
+      ['Non_Stacked']: theNonStacked
+    },
+    freeTransactions
+  }
 }
 
 export default linkStacksAndTrans

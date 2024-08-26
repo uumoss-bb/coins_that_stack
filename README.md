@@ -14,7 +14,7 @@
 
 - I need to build an auditing system
   - Refresh your transactions to be up to date (manually)
-  - Filter transactions from the last update
+  - Filter transactions from the last update (done)
   - Update the Stacks with this restricted data
   - Display old and new data, get confirmation
   - Subtract the new data minus the old data
