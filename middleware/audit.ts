@@ -7,10 +7,10 @@ const WEEK_MS =  604800000
 
 function audit(CurrentStacks: StackClass, Income: IncomeClass) {
   const { coins } = Income
-  const { transactions } = CurrentStacks
-  const now = Date.now()
-  const twoWeekInPast = convertDate.full(now - (WEEK_MS * 2))
-  const selectedTransactions = filterTransactionsByDate(transactions, twoWeekInPast)
+  const { transactions, lastUpdated } = CurrentStacks
+  // const now = Date.now()
+  // const twoWeekInPast = convertDate.full(now - (WEEK_MS * 2))
+  const selectedTransactions = filterTransactionsByDate(transactions, convertDate.full(lastUpdated))
   const LatestStacks = new _Stacks(selectedTransactions)
 
   return {

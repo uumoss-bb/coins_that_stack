@@ -25,9 +25,15 @@ const normalizeCoin = (amount: string) => {
   return Number(amount)
 }
 
-const normalizeFortFinancial = (transItem: FortFinTrans): Transaction => {
+const normalizeFortFinancial = (transItem: FortFinTrans): Transaction|null => {
   const { Amount, Description, Date: date, Category, Balance } = transItem
+  const title = normalizeFortFinTitle(Description)
   const transaction = normalizeCoin(Amount)
+
+  if(title.includes('online transfer')) {
+    return null
+  }
+
   return {
     title: normalizeFortFinTitle(Description),
     date: convertDate.milliseconds(date),
@@ -48,7 +54,7 @@ interface TransNormalizerInput { source: TransSourceNames, transactions: DirtyTr
 const normalizeTransactions = ({ source, transactions }: TransNormalizerInput): Transactions => {
   return transactions
     .map(normalizerFunctions[source])
-    .filter(selectTruthyItems)
+    .filter(selectTruthyItems) as Transactions
 }
 
 export default normalizeTransactions

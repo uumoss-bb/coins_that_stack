@@ -18,11 +18,12 @@ class _Stacks {
   get transactions() { return this.#transactions }
   get stacks() { return this.#stacks }
   get lastUpdated() { return this.#lastUpdated }
+  private set lastUpdated(date: number) { this.#lastUpdated = date }
+
 
 
   constructor(_transactions: Transactions | null = null) {
     const { lastUpdated, stacks, transactions, freeTransactions } = init(_transactions)
-
     this.#lastUpdated = lastUpdated
     this.#stacks = stacks
     this.#transactions = transactions
@@ -51,7 +52,7 @@ class _Stacks {
       throw new Error("Failed to update last updated")
     }
 
-    this.#lastUpdated = lastUpdated
+    this.lastUpdated = lastUpdated
   }
 }
 

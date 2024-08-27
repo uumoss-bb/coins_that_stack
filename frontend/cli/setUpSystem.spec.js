@@ -8,29 +8,30 @@ const defaultIncomeFile = {
   incidence: 'bi-weekly'
 }
 
-const newLastUpdated = 'Aug 15, 2024'
+const newLastUpdated = 'Aug 1, 2024'
 const newLastUpdatedMilliSec = convertDate.milliseconds(newLastUpdated)
 
 it("Set Up System", () => {
-  const { income, coins, updateIncome } = new _Income()
-  const { stacks, lastUpdated, updateLastUpdated, updateStacks } = new _Stacks()
+  const Income = new _Income(); const { income, coins } = Income;
+  const Stacks = new _Stacks(); const { stacks, lastUpdated } = Stacks
 
   if(coins !== defaultIncomeFile.coins) {
-    console.log("UPDATED INCOME")
+    console.warn("UPDATED INCOME")
     updateIncome(defaultIncomeFile)
   }
 
   const stacksEmpty = !Object.keys(stacks).length
   if(stacksEmpty) {
-    console.log("UPDATED STACKS")
-    updateStacks(defaultStacks)
+    console.warn("UPDATED STACKS")
+    Stacks.updateStacks(defaultStacks)
   }
 
   if(lastUpdated !== newLastUpdatedMilliSec) {
-    console.log("UPDATED LAST UPDATED")
-    updateLastUpdated(lastUpdated)
+    console.warn("UPDATED LAST UPDATED")
+    Stacks.updateLastUpdated(newLastUpdatedMilliSec)
   }
 
   console.log("INCOME", income)
   console.log("STACKS", Object.keys(stacks))
+
 })
