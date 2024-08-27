@@ -20,8 +20,8 @@ class _Stacks {
   get lastUpdated() { return this.#lastUpdated }
 
 
-  constructor() {
-    const { lastUpdated, stacks, transactions, freeTransactions } = init()
+  constructor(_transactions: Transactions | null = null) {
+    const { lastUpdated, stacks, transactions, freeTransactions } = init(_transactions)
 
     this.#lastUpdated = lastUpdated
     this.#stacks = stacks
@@ -52,10 +52,6 @@ class _Stacks {
     }
 
     this.#lastUpdated = lastUpdated
-  }
-
-  audit() {
-
   }
 }
 

@@ -19,11 +19,9 @@ const setDefault = function() {
   const { stacks, transactions } = this.getAll()
 
   if(!stacks){
-    console.log('DEFAULT GROUPS')
     this.post('stacks', defaultStacks)
   }
   if(!transactions){
-    console.log('DEFAULT TRANSACTIONS')
     this.post('transactions', [])
   }
 }

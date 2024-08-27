@@ -2,10 +2,6 @@ import FileSystem from "../../database/FileSystem"
 import { INCOME_FILE_NAME } from "../../shared/enums/fileNames"
 import Income from "../../shared/types/income"
 
-const defaultIncome: Income = {
-  coins: 0
-}
-
 class _Income {
 
   #income: Income
@@ -35,5 +31,7 @@ class _Income {
     //TODO: I want to know what percentage each stack is pulling from Income
   }
 }
+
+export type IncomeClass = _Income
 
 export default _Income

@@ -3,7 +3,7 @@ import normalizeTransactions from "../../businessLogic/normalizeTransactions"
 import FileSystem from "../../database/FileSystem"
 import { STACK_FILE_NAME, TRANSACTIONS_FILE_NAME } from "../../shared/enums/fileNames"
 import { StacksFile } from "../../shared/types/stacks"
-import { DirtyTransactions } from "../../shared/types/transactions"
+import { DirtyTransactions, Transactions } from "../../shared/types/transactions"
 
 function getStackFile() {
   const { error, data: stackFile } = FileSystem.readJsonFile(STACK_FILE_NAME)
@@ -23,10 +23,13 @@ function getTransactionsFile() {
   }
 }
 
-const init = function() {
+const init = function(transactions: Transactions | null) {
+  let normalizedTransactions = transactions || {} as Transactions
+  if(!transactions) {
+    const transactionsFile = getTransactionsFile()
+    normalizedTransactions = normalizeTransactions({ source: "FORT_FINANCIAL", transactions: transactionsFile })
+  }
   const { lastUpdated, ...stacks } = getStackFile()
-  const transactionsFile = getTransactionsFile()
-  const normalizedTransactions = normalizeTransactions({ source: "FORT_FINANCIAL", transactions: transactionsFile })
   return {
     lastUpdated,
     ...linkStacksAndTrans(stacks, normalizedTransactions)

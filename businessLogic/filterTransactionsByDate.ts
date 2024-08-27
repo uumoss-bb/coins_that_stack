@@ -23,7 +23,7 @@ const BetweenStartAndEnd = (startDate: string,  endDate: string) => (transaction
   }
 }
 
-const filterTransactionsByDate = (transactions: Transactions, startDate: string|null, endDate: string|null) => {
+const filterTransactionsByDate = (transactions: Transactions, startDate: string|null = null, endDate: string|null = null) => {
   if(startDate && endDate) {
     return transactions.filter(BetweenStartAndEnd(startDate, endDate))
   }

@@ -17,7 +17,7 @@ class _FileSystem {
     if (!fs.existsSync(storagePath)) {
         try {
             fs.mkdirSync(storagePath, { recursive: true });
-            console.log(`Folder created at: ${storagePath}`);
+            console.warn(`Folder created at: ${storagePath}`);
         } catch (err) {
             console.error('Error creating folder:', err);
             throw err

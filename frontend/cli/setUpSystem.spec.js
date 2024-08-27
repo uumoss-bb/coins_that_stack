@@ -4,7 +4,8 @@ import defaultStacks from '../../shared/defaultStacks'
 import { convertDate } from '../../shared/normalizers'
 
 const defaultIncomeFile = {
-  coins: 3750
+  coins: 3750,
+  incidence: 'bi-weekly'
 }
 
 const newLastUpdated = 'Aug 15, 2024'

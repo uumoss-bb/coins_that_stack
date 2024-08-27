@@ -7,7 +7,6 @@ const calculateAverages = (stackTransactions: Transaction[]) => {
   }, 0)
 
   const average = totalCoin / stackTransactions.length
-  console.log(average)
   return average
 }
 
