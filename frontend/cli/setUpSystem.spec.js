@@ -2,6 +2,7 @@ import _Income from '../../middleware/Income'
 import _Stacks from '../../middleware/Stacks'
 import defaultStacks from '../../shared/defaultStacks'
 import { convertDate } from '../../shared/normalizers'
+import orderStacksByImportance from '../../businessLogic/orderStacksByImportance'
 
 const defaultIncomeFile = {
   coins: 3750,
@@ -30,6 +31,11 @@ it("Set Up System", () => {
     console.warn("UPDATED LAST UPDATED")
     Stacks.updateLastUpdated(newLastUpdatedMilliSec)
   }
+
+  const orderedStacks = orderStacksByImportance(Object.values(stacks))
+  const orderedStacksObj = {}
+  orderedStacks.forEach(stack => orderedStacksObj[stack.name] = stack)
+  Stacks.updateStacks(orderedStacksObj)
 
   console.log("INCOME", income)
   console.log("STACKS", Object.keys(stacks))

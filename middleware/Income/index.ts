@@ -1,30 +1,49 @@
 import FileSystem from "../../database/FileSystem"
 import { INCOME_FILE_NAME } from "../../shared/enums/fileNames"
+import { selectTruthyItems } from "../../shared/selectors"
 import Income from "../../shared/types/income"
+import { Transactions } from "../../shared/types/transactions"
 
 class _Income {
 
-  #income: Income
+  #keyword: string
   #coins: number
-  get income() { return this.#income }
   get coins() { return this.#coins }
 
   constructor() {
-    const { error, data: incomeFile } = FileSystem.readJsonFile(INCOME_FILE_NAME)
+    const { error, data } = FileSystem.readJsonFile(INCOME_FILE_NAME)
     if(error) {
       throw new Error("Income Init failed to get file")
     } else {
-      this.#income = incomeFile as Income
-      this.#coins = this.#income.coins
+      const income = data as Income
+      this.#keyword = income.keyword
+      this.#coins = income.coins
     }
   }
 
-  updateIncome(income: Income) {
-    const { error, data: incomeFile } = FileSystem.updateJsonFile(INCOME_FILE_NAME, income)
+  findIncome(transaction: Transactions) {
+    let totalBalance = 0
+    const incomes = transaction.map(transaction => {
+      if(transaction.title.includes(this.#keyword)) {
+        totalBalance += transaction.balance
+        return transaction.balance
+      }
+      return null
+    }).filter(selectTruthyItems)
+
+    const averageCoins = totalBalance / incomes.length
+    const latestCoin = incomes.shift()
+    return { averageCoins, latestCoin }
+  }
+
+  updateIncome(newIncome: Income) {
+    const { error, data } = FileSystem.updateJsonFile(INCOME_FILE_NAME, newIncome)
     if(error) {
       throw new Error("Failed to set new income")
     }
-    this.#income = incomeFile as Income
+    const income = data as Income
+    this.#keyword = income.keyword
+    this.#coins = income.coins
   }
 
   getStackAllocations() {

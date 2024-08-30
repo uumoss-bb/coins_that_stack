@@ -117,7 +117,9 @@ describe("Link Stacks and Transactions", () => {
         "deposit": {
           "type": "exact",
           "incidence": "bi-weekly",
-          "amount": 0
+          "amount": 0,
+          "importanceLevel": null,
+          "lastUpdated": 0
         }
       }
     }

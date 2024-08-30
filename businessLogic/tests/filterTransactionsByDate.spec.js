@@ -118,7 +118,7 @@ const startDate = "April 16, 1995"
 const endDate = "April 20, 1995"
 
 describe("Filter Transactions By Date", () => {
-  it("return all transactions inbetween start and end date", () => {
+  it("return all transactions in between start and end date", () => {
     const transactions = filterTransactionsByDate(mockTransactions, startDate, endDate)
     expect(transactions[0].date).toBe(convertDate.milliseconds(startDate))
     expect(transactions[transactions.length - 1].date).toBe(convertDate.milliseconds(endDate))

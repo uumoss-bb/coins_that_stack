@@ -49,7 +49,9 @@ const collectTheNonStacked = (linkedData: ConnectedStacksAndTrans) => {
     deposit: {
       type: "exact",
       incidence: 'bi-weekly',
-      amount: 0
+      amount: 0,
+      importanceLevel: null,
+      lastUpdated: 0
     }
   }
 
@@ -85,7 +87,7 @@ const linkStacksAndTrans = (stacks: Stacks, transactions: Transactions) => {
     stacks: {
       ...linkedData.stacks,
       ['Non_Stacked']: theNonStacked
-    },
+    } as Stacks,
     freeTransactions
   }
 }

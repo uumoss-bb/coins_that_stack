@@ -8,7 +8,9 @@ export interface Stack {
   deposit: {
     type: 'percent' | 'exact',
     amount: number,
-    incidence: 'monthly' | 'bi-weekly' | 'weekly' | 'daily'
+    incidence: 'monthly' | 'bi-weekly' | 'weekly' | 'daily',
+    lastUpdated: number,
+    importanceLevel: number | null
   }
   group?: string
 }

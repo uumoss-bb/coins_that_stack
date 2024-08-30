@@ -52,7 +52,7 @@ describe("Normalize Fort Financial Transactions", () => {
   ]
 
   it("return normale transaction", () => {
-    const result = normalizeTransactions({source: TransSources.FORT_FINANCIAL, transactions: fortFinInput})
+    const result = normalizeTransactions(TransSources.FORT_FINANCIAL, fortFinInput)
     expect(result).toEqual(fortFinResult)
   })
 })

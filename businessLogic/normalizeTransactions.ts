@@ -50,8 +50,7 @@ const normalizerFunctions = {
   [TransSources.FORT_FINANCIAL]: normalizeFortFinancial
 }
 
-interface TransNormalizerInput { source: TransSourceNames, transactions: DirtyTransactions }
-const normalizeTransactions = ({ source, transactions }: TransNormalizerInput): Transactions => {
+const normalizeTransactions = ( source: TransSourceNames, transactions: DirtyTransactions ): Transactions => {
   return transactions
     .map(normalizerFunctions[source])
     .filter(selectTruthyItems) as Transactions

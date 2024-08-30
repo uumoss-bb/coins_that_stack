@@ -50,7 +50,7 @@ class _FileSystem {
 
   updateJsonFile = (fileName: string, newData: object): FileSystemReturn => {
     const { data } = this.readJsonFile(fileName)
-    const freshData = { ...data, ...newData }
+    const freshData = { ...newData, ...data }
     const { error: writeError } = this.writeJsonFile(fileName, freshData)
 
     if(writeError) {
