@@ -2,8 +2,6 @@ import _Stacks, { StackClass } from "../middleware/Stacks";
 import { IncomeClass } from "./Income";
 import { Stacks } from "../shared/types/stacks";
 
-const WEEK_MS =  604800000
-
 const compareStacks = (currentStacks: Stacks, latestStacks: Stacks) => {
  const stackKeys = Object.keys(currentStacks)
  return stackKeys.map(key => {

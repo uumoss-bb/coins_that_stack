@@ -6,14 +6,18 @@ export interface Stack {
   transactions: Transaction[],
   coins: number
   deposit: {
-    type: 'percent' | 'exact',
+    type: DepositTypes,
     amount: number,
-    incidence: 'monthly' | 'bi-weekly' | 'weekly' | 'daily',
+    incidence: StackIncidences,
     lastUpdated: number,
     importanceLevel: number | null
   }
   group?: string
 }
+
+export type DepositTypes = 'percent' | 'exact'
+
+export type StackIncidences = 'bi-weekly' | 'weekly'
 
 export type StacksLastUpdated = { lastUpdated: number }
 

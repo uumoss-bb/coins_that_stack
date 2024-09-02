@@ -1,8 +1,9 @@
-import { Stack, StacksArray } from "../shared/types/stacks";
+import { Stack, Stacks, StacksArray } from "../shared/types/stacks";
 
-const orderStacksByImportance = (stacks: StacksArray) => {
+const orderStacksByImportance = (stacks: Stacks): StacksArray => {
+  const stacksArray: StacksArray = Object.values(stacks)
   const defaultOrderedStacks = {} as { [key: number]: Stack; }
-  const orderedStacks = stacks.reduce((prevValue, stack) => {
+  const orderedStacks = stacksArray.reduce((prevValue, stack) => {
     const importanceLevel = stack.deposit.importanceLevel
     if(importanceLevel) {
       if(!prevValue[importanceLevel]) {
