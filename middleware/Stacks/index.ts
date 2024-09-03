@@ -1,15 +1,15 @@
+import addCoinsToStacks from "../../businessLogic/addCoinsToStacks"
 import filterTransactionsByDate from "../../businessLogic/filterTransactionsByDate"
 import linkStacksAndTrans from "../../businessLogic/linkStacksAndTrans"
+import orderStacksByImportance from "../../businessLogic/orderStacksByImportance"
 import FileSystem from "../../database/FileSystem"
 import { STACK_FILE_NAME } from "../../shared/enums/fileNames"
 import { convertDate } from "../../shared/normalizers"
-import { Stacks, StacksFile } from "../../shared/types/stacks"
+import { Stacks, StacksArray, StacksFile } from "../../shared/types/stacks"
 import { Transactions } from "../../shared/types/transactions"
 import getTransactions from "../getTransactions"
-import { IncomeClass } from "../Income"
 
-type CalculateLatestExpensesResult = { stacks: Stacks, transactions: Transactions, freeTransactions: Transactions, error: string | undefined }
-type CalculatePayDayResult = { stacks: Stacks, error: string | undefined }
+type CalculateLatestExpensesResult = { latestStacks: Stacks, transactions: Transactions, freeTransactions: Transactions, error: string | undefined }
 
 class _Stacks {
 
@@ -28,10 +28,11 @@ class _Stacks {
     }
   }
 
-  constructor(_transactions: Transactions | null = null) {
-    const { lastUpdated, ...stacks } = this.getStackFile()
-    this.#lastUpdated = lastUpdated
-    this.#stacks = stacks
+  constructor(_lasUpdated?: number, _stacks?: Stacks) {
+    const preSetStacks = { lastUpdated: _lasUpdated, ..._stacks }
+    const { lastUpdated, ...stacks } = _lasUpdated && _stacks ? preSetStacks : this.getStackFile()
+    this.#lastUpdated = lastUpdated as number
+    this.#stacks = stacks as Stacks
   }
 
   updateStacks(newStacks: Stacks) {
@@ -57,21 +58,19 @@ class _Stacks {
     const normaleTransactions = getTransactions("FORT_FINANCIAL")
     const latestTransactions = filterTransactionsByDate(normaleTransactions, convertDate.full(this.#lastUpdated))
     if(latestTransactions) {
-      const { stacks, transactions, freeTransactions } = linkStacksAndTrans(this.#stacks, latestTransactions)
-      return { stacks, transactions, freeTransactions, error: undefined}
+      console.log(this.#stacks, latestTransactions)
+      const { stacks: latestStacks, transactions, freeTransactions } = linkStacksAndTrans(this.#stacks, latestTransactions)
+      return { latestStacks, transactions, freeTransactions, error: undefined}
     } else {
-      return { stacks: this.#stacks, transactions: [], freeTransactions: [], error: 'Missing latest transactions' }
+      return { latestStacks: this.#stacks, transactions: [], freeTransactions: [], error: 'Missing latest transactions' }
     }
   }
 
-  // calculatePayDay(income: number): CalculatePayDayResult {
-  //   // if(latestTransactions) {
-  //   //   const { stacks, transactions, freeTransactions } = linkStacksAndTrans(this.#stacks, latestTransactions)
-  //   //   return { stacks, error: undefined }
-  //   // } else {
-  //   //   return { stacks: this.#stacks, error: 'Missing latest transactions' }
-  //   // }
-  // }
+  calculatePayDay(coins: number): StacksArray {
+    const orderedStacks = orderStacksByImportance(this.#stacks)
+    const fatStacks = addCoinsToStacks(coins, orderedStacks)
+    return fatStacks
+  }
 }
 
 export type StackClass = _Stacks

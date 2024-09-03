@@ -7,18 +7,26 @@ const compareStacks = (currentStacks: Stacks, latestStacks: Stacks) => {
  return stackKeys.map(key => {
   const currentStack = currentStacks[key]
   const latestStack = latestStacks[key]
-  const newCoins = currentStack.coins = latestStack.coins
-  return `${currentStack.coins} - ${latestStack.coins} = ${newCoins}`
+  const newCoins = currentStack.coins - latestStack.coins
+  return {
+    name: key,
+    coins: `${currentStack.coins} - ${latestStack.coins} = ${newCoins}`,
+    count: currentStack.transactions.length
+  }
  })
 }
 
 function audit(CurrentStacks: StackClass, Income: IncomeClass) {
   const { coins } = Income
   const { stacks: currentStacks } = CurrentStacks
-  const { stacks: latestStacks } = CurrentStacks.calculateLatestExpenses()
+  const { latestStacks, transactions: latestTransactions, freeTransactions: latestFreeTransactions } = CurrentStacks.calculateLatestExpenses()
+  const fatStacks = CurrentStacks.calculatePayDay(coins)
   return {
     latestStacks,
-    latestStackChanges: compareStacks(currentStacks, latestStacks)
+    latestTransactions,
+    latestFreeTransactions,
+    latestStackChanges: compareStacks(currentStacks, latestStacks),
+    fatStacks
   }
 }
 

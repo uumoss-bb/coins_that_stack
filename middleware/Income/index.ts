@@ -10,15 +10,19 @@ class _Income {
   #coins: number
   get coins() { return this.#coins }
 
-  constructor() {
+  private getIncomeFile() {
     const { error, data } = FileSystem.readJsonFile(INCOME_FILE_NAME)
     if(error) {
       throw new Error("Income Init failed to get file")
     } else {
-      const income = data as Income
-      this.#keyword = income.keyword
-      this.#coins = income.coins
+      return data as Income
     }
+  }
+
+  constructor(coins?: number, keyword?: string) {
+    const income = coins && keyword ? { coins, keyword } : this.getIncomeFile()
+    this.#keyword = income.keyword
+    this.#coins = income.coins
   }
 
   findIncome(transaction: Transactions) {

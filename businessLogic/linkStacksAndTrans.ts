@@ -18,9 +18,9 @@ const findStacksForTrans = (transaction: Transaction, stacks: StacksArray) => {
   return transStacks.filter(selectTruthyItems).flat() as string[]
 }
 
-const updateStacksWithTrans = (transaction: Transaction, _stacks: Stacks, transactionStacks: string[]) => {
+const updateStacksWithTrans = (transaction: Transaction, _stacks: Stacks, stackNames: string[]) => {
   let stacks: Stacks = { ..._stacks }
-  transactionStacks.forEach(stackName => {
+  stackNames.forEach(stackName => {
     const stack = stacks[stackName]
     if(stack) {
       stack.transactions.push(transaction)
@@ -66,9 +66,9 @@ const linkData = (stacks: Stacks, transactions: Transactions) => {
   const defaultResult: ConnectedStacksAndTrans = { transactions: [], stacks }
 
   return transactions.reduce((previousValue, transaction) => {
-    const transactionStacks = findStacksForTrans(transaction, stacksArray)
-    const updatedTransaction = { ...transaction, stacks: transactionStacks }
-    const updatedStacks = updateStacksWithTrans(updatedTransaction, stacks, transactionStacks)
+    const stackNames = findStacksForTrans(transaction, stacksArray)
+    const updatedTransaction = { ...transaction, stacks: stackNames }
+    const updatedStacks = updateStacksWithTrans(updatedTransaction, stacks, stackNames)
     return {
       transactions: [
         ...previousValue.transactions,
@@ -81,7 +81,7 @@ const linkData = (stacks: Stacks, transactions: Transactions) => {
 
 const linkStacksAndTrans = (stacks: Stacks, transactions: Transactions) => {
   const linkedData = linkData(stacks, transactions)
-  const { theNonStacked, freeTransactions } = collectTheNonStacked(linkedData)
+  const { theNonStacked, freeTransactions } = collectTheNonSt2acked(linkedData)
   return {
     ...linkedData,
     stacks: {

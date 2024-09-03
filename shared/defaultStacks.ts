@@ -17,8 +17,8 @@ const defaultStacks: Stacks = {
     },
     "group": "Family"
   },
-  "Morgage": {
-    "name": "Morgage",
+  "Mortgage": {
+    "name": "Mortgage",
     "keywords": [
       "cooper"
     ],
