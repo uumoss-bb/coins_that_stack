@@ -16,11 +16,11 @@ const summarizeStacks = (stacks: Stacks): SummarizedStack[] => {
 }
 
 const summarizeStackExpenses = function(this: StackClass) {
-  const { stacks, transactions, freeTransactions } = this
+  const { stacks, transactions, nonStackedTransactions } = this
   return {
     summarizedStacks: summarizeStacks(stacks),
     stackedTransactions: transactions.filter(transaction => transaction.stacks.length),
-    nonStackedTransactions: freeTransactions
+    nonStackedTransactions: nonStackedTransactions
   }
 }
 

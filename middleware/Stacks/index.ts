@@ -9,7 +9,7 @@ import { Stacks, StacksArray, StacksFile } from "../../shared/types/stacks"
 import { Transactions } from "../../shared/types/transactions"
 import getTransactions from "../getTransactions"
 
-type CalculateLatestExpensesResult = { latestStacks: Stacks, transactions: Transactions, freeTransactions: Transactions, error: string | undefined }
+type CalculateLatestExpensesResult = { latestStacks: Stacks, transactions: Transactions, nonStackedTransactions: Transactions, error: string | undefined }
 
 class _Stacks {
 
@@ -58,11 +58,10 @@ class _Stacks {
     const normaleTransactions = getTransactions("FORT_FINANCIAL")
     const latestTransactions = filterTransactionsByDate(normaleTransactions, convertDate.full(this.#lastUpdated))
     if(latestTransactions) {
-      console.log(this.#stacks, latestTransactions)
-      const { stacks: latestStacks, transactions, freeTransactions } = linkStacksAndTrans(this.#stacks, latestTransactions)
-      return { latestStacks, transactions, freeTransactions, error: undefined}
+      const { stacks: latestStacks, transactions, nonStackedTransactions } = linkStacksAndTrans(this.#stacks, latestTransactions)
+      return { latestStacks, transactions, nonStackedTransactions, error: undefined}
     } else {
-      return { latestStacks: this.#stacks, transactions: [], freeTransactions: [], error: 'Missing latest transactions' }
+      return { latestStacks: this.#stacks, transactions: [], nonStackedTransactions: [], error: 'Missing latest transactions' }
     }
   }
 

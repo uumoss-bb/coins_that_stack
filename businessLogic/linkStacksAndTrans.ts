@@ -1,9 +1,11 @@
+import { deepCopy } from "../shared/object"
 import { selectTruthyItems } from "../shared/selectors"
 import { Stack, Stacks, StacksArray } from "../shared/types/stacks"
 import { Transaction, Transactions } from "../shared/types/transactions"
 
 export interface ConnectedStacksAndTrans {
-  transactions: Transactions,
+  stackedTransactions: Transactions,
+  nonStackedTransactions: Transactions
   stacks: Stacks
 }
 
@@ -18,32 +20,25 @@ const findStacksForTrans = (transaction: Transaction, stacks: StacksArray) => {
   return transStacks.filter(selectTruthyItems).flat() as string[]
 }
 
-const updateStacksWithTrans = (transaction: Transaction, _stacks: Stacks, stackNames: string[]) => {
-  let stacks: Stacks = { ..._stacks }
-  stackNames.forEach(stackName => {
+const updateStacksWithTrans = (transaction: Transaction, _stacks: Stacks, stackNames: string[]) =>
+  stackNames.reduce((stacks, stackName) => {
     const stack = stacks[stackName]
-    if(stack) {
-      stack.transactions.push(transaction)
-      stack.coins += transaction.transaction
+    stack.transactions.push(transaction)
+    stack.coins += transaction.transaction
+    return {
+      [stackName]: stack,
+      ...stacks,
     }
-  })
-  return stacks
-}
+  }, deepCopy(_stacks))
 
-const collectTheNonStacked = (linkedData: ConnectedStacksAndTrans) => {
+const handleTheNonStacked = (linkedData: ConnectedStacksAndTrans, nonStackedTransaction: Transaction) => {
 
-  let coins = 0
-  let freeTransactions: Transactions = []
-  linkedData.transactions.forEach(transaction => {
-    if(!transaction.stacks.length) {
-      coins += transaction.transaction
-      freeTransactions.push(transaction)
-    }
-  })
-
+  const nonStackedName = 'Non_Stacked'
+  const nonStackedCoins = linkedData.stacks[nonStackedName]?.coins || 0
+  const nonStackedTransactions: Transactions = linkedData.stacks[nonStackedName]?.transactions || []
   const theNonStacked: Stack = {
-    coins,
-    transactions: freeTransactions,
+    coins: nonStackedCoins + nonStackedTransaction.transaction,
+    transactions: [ ...nonStackedTransactions, nonStackedTransaction ],
     name: "Non-Stacked",
     keywords: [ "non" ] ,
     deposit: {
@@ -56,40 +51,38 @@ const collectTheNonStacked = (linkedData: ConnectedStacksAndTrans) => {
   }
 
   return {
-    theNonStacked,
-    freeTransactions
+    ...linkedData,
+    stacks: {
+      ...linkedData.stacks,
+      [nonStackedName]: theNonStacked
+    },
+    nonStackedTransactions: [
+      ...linkedData.nonStackedTransactions,
+      nonStackedTransaction
+    ]
   }
 }
 
-const linkData = (stacks: Stacks, transactions: Transactions) => {
+const linkStacksAndTrans = (stacks: Stacks, transactions: Transactions) => {
   const stacksArray: StacksArray = Object.values(stacks)
-  const defaultResult: ConnectedStacksAndTrans = { transactions: [], stacks }
+  const defaultResult: ConnectedStacksAndTrans = { stackedTransactions: [], nonStackedTransactions: [], stacks }
 
   return transactions.reduce((previousValue, transaction) => {
     const stackNames = findStacksForTrans(transaction, stacksArray)
     const updatedTransaction = { ...transaction, stacks: stackNames }
-    const updatedStacks = updateStacksWithTrans(updatedTransaction, stacks, stackNames)
+    if(!stackNames.length) {
+      return handleTheNonStacked(previousValue, updatedTransaction)
+    }
+    const updatedStacks = updateStacksWithTrans(updatedTransaction, previousValue.stacks, stackNames)
     return {
-      transactions: [
-        ...previousValue.transactions,
+      ...previousValue,
+      stackedTransactions: [
+        ...previousValue.stackedTransactions,
         updatedTransaction
       ],
       stacks: updatedStacks
     }
   }, defaultResult)
-}
-
-const linkStacksAndTrans = (stacks: Stacks, transactions: Transactions) => {
-  const linkedData = linkData(stacks, transactions)
-  const { theNonStacked, freeTransactions } = collectTheNonSt2acked(linkedData)
-  return {
-    ...linkedData,
-    stacks: {
-      ...linkedData.stacks,
-      ['Non_Stacked']: theNonStacked
-    } as Stacks,
-    freeTransactions
-  }
 }
 
 export default linkStacksAndTrans

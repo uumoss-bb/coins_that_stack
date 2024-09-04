@@ -9,7 +9,7 @@ const baseStackCoins = 3000
 const lastUpdated = Date.now() - (WEEK_MS * 2)
 
 const stacks: Stacks = {
-  'testA': {
+  'TestA': {
     "name": "TestA",
     "keywords": ['prime'],
     "transactions": [],
@@ -56,6 +56,6 @@ describe('audit', () => {
     const CurrentStacks = new _Stacks(lastUpdated, stacks)
     const Income = new _Income(income, 'payDat')
     const result = audit(CurrentStacks, Income)
-    console.log(result)
+    // console.log(result)
   })
 })

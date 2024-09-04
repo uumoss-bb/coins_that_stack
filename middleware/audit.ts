@@ -19,7 +19,7 @@ const compareStacks = (currentStacks: Stacks, latestStacks: Stacks) => {
 function audit(CurrentStacks: StackClass, Income: IncomeClass) {
   const { coins } = Income
   const { stacks: currentStacks } = CurrentStacks
-  const { latestStacks, transactions: latestTransactions, freeTransactions: latestFreeTransactions } = CurrentStacks.calculateLatestExpenses()
+  const { latestStacks, transactions: latestTransactions, nonStackedTransactions: latestFreeTransactions } = CurrentStacks.calculateLatestExpenses()
   const fatStacks = CurrentStacks.calculatePayDay(coins)
   return {
     latestStacks,
