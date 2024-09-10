@@ -1,8 +1,8 @@
-import { WEEK_MS } from '../../shared/enums/time';
-import { Stacks } from '../../shared/types/stacks';
+import { WEEK_MS } from '../../../shared/enums/time';
+import { Stacks } from '../../../shared/types/stacks';
 import audit from '../audit'
-import _Income from '../Income';
-import _Stacks from '../Stacks';
+import _Income from '../../Income';
+import _Stacks from '..';
 
 const income = 1000
 const baseStackCoins = 3000

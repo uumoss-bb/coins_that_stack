@@ -2,7 +2,7 @@ import { TRANSACTIONS_FILE_NAME } from "../../shared/enums/fileNames"
 import { DirtyTransactions, Transactions } from "../../shared/types/transactions"
 import FileSystem from "../../database/FileSystem"
 
-const updateTransactions = (transactions: Transactions) => {
+const updateTransactionsFile = (transactions: Transactions) => {
   const { error, data: transactionsFile } = FileSystem.writeJsonFile(TRANSACTIONS_FILE_NAME, transactions)
   if(error) {
     throw new Error("Failed to update transactions")
@@ -12,4 +12,4 @@ const updateTransactions = (transactions: Transactions) => {
 }
 
 
-export default updateTransactions
+export default updateTransactionsFile

@@ -1,9 +1,9 @@
 import getRawTransactions from "./getRawTransactions";
 import getTransactions from "./getTransactions";
-import updateTransactions from "./updateTransactions";
+import updateTransactionsFile from "./updateTransactionsFile";
 
 export {
   getRawTransactions,
   getTransactions,
-  updateTransactions
+  updateTransactionsFile
 }
