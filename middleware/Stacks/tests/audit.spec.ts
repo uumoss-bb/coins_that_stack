@@ -1,8 +1,6 @@
 import { WEEK_MS } from '../../../shared/enums/time';
 import { Stacks } from '../../../shared/types/stacks';
 import audit from '../audit'
-import _Income from '../../Income';
-import _Stacks from '..';
 
 const income = 1000
 const baseStackCoins = 3000
@@ -25,7 +23,7 @@ const stacks: Stacks = {
   }
 }
 
-jest.mock('../getTransactions', () => ({
+jest.mock('../Transactions/getTransactions', () => ({
   __esModule: true,
   default: () => ([
     {
@@ -33,7 +31,7 @@ jest.mock('../getTransactions', () => ({
       date: Date.now(),
       category: '',
       type: 'withdraw',
-      transaction: -100,
+      coins: -100,
       balance: 943,
       source: 'FORT_FINANCIAL',
       stacks: []
@@ -43,7 +41,7 @@ jest.mock('../getTransactions', () => ({
       date: Date.now(),
       category: '',
       type: 'deposit',
-      transaction: 1000,
+      coins: 1000,
       balance: 943,
       source: 'FORT_FINANCIAL',
       stacks: []
@@ -53,9 +51,7 @@ jest.mock('../getTransactions', () => ({
 
 describe('audit', () => {
   it('success', () => {
-    const CurrentStacks = new _Stacks(lastUpdated, stacks)
-    const Income = new _Income(income, 'payDat')
-    const result = audit(CurrentStacks, Income)
-    // console.log(result)
+    const result = audit()
+    expect(result).toBe("TODO THIS BITCH")
   })
 })

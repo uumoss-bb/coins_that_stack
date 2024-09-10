@@ -1,5 +1,4 @@
 import * as fs from 'fs';
-import { checkObjectType } from '../../shared/object';
 
 export const STORAGE_PATH = './personalStorage'
 

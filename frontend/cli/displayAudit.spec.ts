@@ -4,7 +4,7 @@ import { convertDate } from '../../shared/normalizers'
 import sortTransactions from '../../businessLogic/sortTransactions'
 
 const normalizeTransactions = (transactions: Transactions) =>
-  transactions.map(({title, date, transaction, stacks}) => ({title, date: convertDate.full(date), transaction, stacks}))
+  transactions.map(({title, date, coins, stacks}) => ({title, date: convertDate.full(date), coins, stacks}))
 
 it("AUDIT", () => {
   const {

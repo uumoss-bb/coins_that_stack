@@ -1,9 +1,10 @@
 import normalizeTransactions from "../normalizeTransactions"
 import { TransSources } from "../../shared/enums/transactions"
+import { DirtyTransactions, Transactions } from "../../shared/types/transactions"
 
 describe("Normalize Fort Financial Transactions", () => {
 
-  const fortFinInput = [
+  const fortFinInput: DirtyTransactions = [
     {
       "Account_ID": "123",
       "Transaction_ID": "B092341|20205435234",
@@ -28,13 +29,13 @@ describe("Normalize Fort Financial Transactions", () => {
     }
   ]
 
-  const fortFinResult =  [
+  const fortFinResult: Transactions =  [
     {
       title: 'amazon mktpl*rv0sb16k0 amzn.com/bill wa',
       date: 1722312000000,
       category: '',
       type: 'withdraw',
-      transaction: -31,
+      coins: -31,
       balance: 801,
       source: 'FORT_FINANCIAL',
       stacks: []
@@ -44,7 +45,7 @@ describe("Normalize Fort Financial Transactions", () => {
       date: 1719547200000,
       category: '',
       type: 'deposit',
-      transaction: 3001,
+      coins: 3001,
       balance: 4000,
       source: 'FORT_FINANCIAL',
       stacks: []

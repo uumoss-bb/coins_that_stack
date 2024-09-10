@@ -26,7 +26,7 @@ const updateStacksWithTrans = (transaction: Transaction, _stacks: Stacks, stackN
   stackNames.reduce((stacks, stackName) => {
     const stack = stacks[stackName]
     stack.transactions.push(transaction)
-    stack.coins += transaction.transaction
+    stack.coins += transaction.coins
     return {
       [stackName]: stack,
       ...stacks,
@@ -45,7 +45,7 @@ const handleTheNonStacked = (linkedData: ConnectedStacksAndTrans, nonStackedTran
   const nonStackedCoins = linkedData.stacks[nonStackedName]?.coins || 0
   const nonStackedTransactions: Transactions = linkedData.stacks[nonStackedName]?.transactions || []
   const theNonStacked: Stack = {
-    coins: nonStackedCoins + nonStackedTransaction.transaction,
+    coins: nonStackedCoins + nonStackedTransaction.coins,
     transactions: [ ...nonStackedTransactions, nonStackedTransaction ],
     name: "Non-Stacked",
     keywords: [ "non" ] ,
