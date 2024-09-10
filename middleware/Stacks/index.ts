@@ -13,17 +13,6 @@ type CalculateLatestExpensesResult = { latestStacks: Stacks, deposits: Transacti
 
 class _Stacks {
 
-  calculateLatestExpenses(): CalculateLatestExpensesResult {
-    const normaleTransactions = getTransactions("FORT_FINANCIAL")
-    const latestTransactions = filterTransactionsByDate(normaleTransactions, convertDate.full(this.#lastUpdated))
-    if(latestTransactions) {
-      const { stacks: latestStacks, stackedTransactions, nonStackedTransactions } = linkStacksAndTrans(this.#stacks, latestTransactions)
-      return { latestStacks, stackedTransactions, nonStackedTransactions, error: undefined}
-    } else {
-      return { latestStacks: this.#stacks, stackedTransactions: [], nonStackedTransactions: [], error: 'Missing latest transactions' }
-    }
-  }
-
   calculatePayDay(coins: number): StacksArray {
     const orderedStacks = orderStacksByImportance(this.#stacks)
     const fatStacks = addCoinsToStacks(coins, orderedStacks)
