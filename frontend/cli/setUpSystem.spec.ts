@@ -4,6 +4,7 @@ import { convertDate } from '../../shared/normalizers'
 import orderStacksByImportance from '../../businessLogic/orderStacksByImportance'
 import { getDirtyTransactions, updateTransactionsFile } from '../../middleware/Transactions'
 import { getStacks, updateStacksFile } from '../../middleware/Stacks'
+import { Stacks } from '../../shared/types/stacks'
 
 const defaultIncomeFile = {
   coins: 3750,
@@ -36,7 +37,9 @@ it("Set Up System", () => {
     updateStacksFile(newLastUpdated)
   }
 
+  const orderedStacks = orderStacksByImportance(stacks).map(({name}) => name)
+
   console.log("INCOME", income)
-  console.log("STACKS", Object.keys(stacks))
+  console.log("STACKS", orderedStacks)
 
 })

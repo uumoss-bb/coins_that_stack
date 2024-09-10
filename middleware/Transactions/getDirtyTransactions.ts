@@ -1,9 +1,10 @@
 
 import FileSystem from "../../database/FileSystem"
+import { DIRTY_TRANSACTIONS_FILE_NAME } from "../../shared/enums/fileNames"
 import { DirtyTransactions } from "../../shared/types/transactions"
 
 const getTransactionsFile = () => {
-  const { error, data: transactionsFile } = FileSystem.readFile('./transactions/index.json')
+  const { error, data: transactionsFile } = FileSystem.readFile(DIRTY_TRANSACTIONS_FILE_NAME)
   if(error) {
     throw new Error("getDirtyTransactions failed to get file")
   } else {
