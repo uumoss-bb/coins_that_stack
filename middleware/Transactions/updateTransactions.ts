@@ -1,0 +1,15 @@
+import { TRANSACTIONS_FILE_NAME } from "../../shared/enums/fileNames"
+import { Transactions } from "../../shared/types/transactions"
+import FileSystem from "../../database/FileSystem"
+
+const updateTransactions = (transactions: Transactions) => {
+  const { error, data: transactionsFile } = FileSystem.writeJsonFile(TRANSACTIONS_FILE_NAME, transactions)
+  if(error) {
+    throw new Error("Failed to update transactions")
+  }
+
+  return transactionsFile
+}
+
+
+export default updateTransactions
