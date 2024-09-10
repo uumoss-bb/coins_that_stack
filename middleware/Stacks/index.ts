@@ -13,28 +13,6 @@ type CalculateLatestExpensesResult = { latestStacks: Stacks, deposits: Transacti
 
 class _Stacks {
 
-  #lastUpdated: number
-  #stacks: Stacks
-  get stacks() { return this.#stacks }
-  get lastUpdated() { return this.#lastUpdated }
-  private set lastUpdated(date: number) { this.#lastUpdated = date }
-
-  private getStackFile() {
-    const { error, data: stackFile } = FileSystem.readJsonFile(STACK_FILE_NAME)
-    if(error) {
-      throw new Error("Stacks Init failed to get stacks file")
-    } else {
-      return stackFile as StacksFile
-    }
-  }
-
-  constructor(_lasUpdated?: number, _stacks?: Stacks) {
-    const preSetStacks = { lastUpdated: _lasUpdated, ..._stacks }
-    const { lastUpdated, ...stacks } = _lasUpdated && _stacks ? preSetStacks : this.getStackFile()
-    this.#lastUpdated = lastUpdated as number
-    this.#stacks = stacks as Stacks
-  }
-
   updateStacks(newStacks: Stacks) {
     const { error } = FileSystem.updateJsonFile(STACK_FILE_NAME, newStacks)
     if(error) {
