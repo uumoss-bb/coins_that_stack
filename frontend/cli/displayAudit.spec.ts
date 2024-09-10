@@ -7,14 +7,12 @@ const normalizeTransactions = (transactions: Transactions) =>
   transactions.map(({title, date, transaction, stacks}) => ({title, date: convertDate.full(date), transaction, stacks}))
 
 it("AUDIT", () => {
-  const Income = new _Income()
-  const CurrentStacks = new _Stacks()
   const {
     latestStacks,
     latestStackChanges,
     latestFreeTransactions,
     latestStackedTransactions
-  } = audit(CurrentStacks, Income)
+  } = audit()
   const transactions = sortTransactions([...latestStackedTransactions, ...latestFreeTransactions], 'stack')
 
   console.log("NEW STACK CHANGES")

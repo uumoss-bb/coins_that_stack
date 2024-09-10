@@ -1,7 +1,9 @@
-import _Stacks, { StackClass } from "../middleware/Stacks";
-import { IncomeClass } from "./Income";
-import { Stacks, StacksArray } from "../shared/types/stacks";
-import orderStacksByImportance from "../businessLogic/orderStacksByImportance";
+import { Stacks, StacksArray } from "../../shared/types/stacks";
+import { getIncome } from "../Income";
+import getStacks from "./getStacks";
+import calculateLatestExpenses from "./calculateExpenses";
+import calculatePayDay from "./calculatePayDay";
+import orderStacksByImportance from "../../businessLogic/orderStacksByImportance";
 
 const compareStacks = (currentStacks: StacksArray, latestStacks: Stacks) => {
  return currentStacks.map(currentStack => {
@@ -18,16 +20,18 @@ const compareStacks = (currentStacks: StacksArray, latestStacks: Stacks) => {
  })
 }
 
-function audit(CurrentStacks: StackClass, Income: IncomeClass) {
-  const { coins } = Income
-  const { stacks: currentStacks } = CurrentStacks
+function audit() {
+  const { coins } = getIncome()
+  const { stacks: currentStacks } = getStacks()
   const {
     latestStacks,
     stackedTransactions: latestStackedTransactions,
     nonStackedTransactions: latestFreeTransactions,
     deposits
-  } = CurrentStacks.calculateLatestExpenses()
-  const fatStacks = CurrentStacks.calculatePayDay(coins)
+  } = calculateLatestExpenses()
+
+  const fatStacks = calculatePayDay(coins)
+
   return {
     latestStacks,
     latestStackedTransactions,
