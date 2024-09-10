@@ -1,17 +1,19 @@
 import _Stacks, { StackClass } from "../middleware/Stacks";
 import { IncomeClass } from "./Income";
-import { Stacks } from "../shared/types/stacks";
+import { Stacks, StacksArray } from "../shared/types/stacks";
+import orderStacksByImportance from "../businessLogic/orderStacksByImportance";
 
-const compareStacks = (currentStacks: Stacks, latestStacks: Stacks) => {
- const stackKeys = Object.keys(currentStacks)
- return stackKeys.map(key => {
-  const currentStack = currentStacks[key]
-  const latestStack = latestStacks[key]
-  const newCoins = currentStack.coins - latestStack.coins
+const compareStacks = (currentStacks: StacksArray, latestStacks: Stacks) => {
+ return currentStacks.map(currentStack => {
+  const latestStack = latestStacks[currentStack.name]
+  const latestCoin = Math.abs(latestStack.coins)
+  const newCoins = currentStack.coins - latestCoin
   return {
-    name: key,
-    coins: `${currentStack.coins} - ${latestStack.coins} = ${newCoins}`,
-    count: currentStack.transactions.length
+    name: currentStack.name,
+    count: latestStack.transactions.length,
+    original_coins: currentStack.coins,
+    expenses: latestStack.coins,
+    new_coins: newCoins
   }
  })
 }
@@ -19,13 +21,19 @@ const compareStacks = (currentStacks: Stacks, latestStacks: Stacks) => {
 function audit(CurrentStacks: StackClass, Income: IncomeClass) {
   const { coins } = Income
   const { stacks: currentStacks } = CurrentStacks
-  const { latestStacks, transactions: latestTransactions, nonStackedTransactions: latestFreeTransactions } = CurrentStacks.calculateLatestExpenses()
+  const {
+    latestStacks,
+    stackedTransactions: latestStackedTransactions,
+    nonStackedTransactions: latestFreeTransactions,
+    deposits
+  } = CurrentStacks.calculateLatestExpenses()
   const fatStacks = CurrentStacks.calculatePayDay(coins)
   return {
     latestStacks,
-    latestTransactions,
+    latestStackedTransactions,
     latestFreeTransactions,
-    latestStackChanges: compareStacks(currentStacks, latestStacks),
+    latestStackChanges: compareStacks(orderStacksByImportance(currentStacks), latestStacks),
+    deposits,
     fatStacks
   }
 }

@@ -52,8 +52,8 @@ const normalizerFunctions = {
 
 const normalizeTransactions = ( source: TransSourceNames, transactions: DirtyTransactions ): Transactions => {
   return transactions
-    .map(normalizerFunctions[source])
-    .filter(selectTruthyItems) as Transactions
+  .map(normalizerFunctions[source])
+  .filter(selectTruthyItems) as Transactions
 }
 
 export default normalizeTransactions

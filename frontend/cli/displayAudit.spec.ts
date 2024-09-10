@@ -1,24 +1,28 @@
 import audit from '../../middleware/audit'
 import _Stacks from '../../middleware/Stacks'
 import _Income from '../../middleware/Income'
-import { Stacks } from '../../shared/types/stacks'
+import { Transactions } from '../../shared/types/transactions'
+import { convertDate } from '../../shared/normalizers'
+import sortTransactions from '../../businessLogic/sortTransactions'
 
-const normalizeStacks = (stacks: Stacks) => {
-  const stackArray = Object.values(stacks)
-  return stackArray.map(stack => ({
-    name: stack.name,
-    coins: stack.coins,
-    count: stack.transactions.length
-  }))
-}
+const normalizeTransactions = (transactions: Transactions) =>
+  transactions.map(({title, date, transaction, stacks}) => ({title, date: convertDate.full(date), transaction, stacks}))
 
 it("AUDIT", () => {
   const Income = new _Income()
   const CurrentStacks = new _Stacks()
-  const { latestStacks, latestStackChanges, latestFreeTransactions, latestTransactions } = audit(CurrentStacks, Income)
+  const {
+    latestStacks,
+    latestStackChanges,
+    latestFreeTransactions,
+    latestStackedTransactions
+  } = audit(CurrentStacks, Income)
+  const transactions = sortTransactions([...latestStackedTransactions, ...latestFreeTransactions], 'stack')
 
-  console.table(normalizeStacks(latestStacks))
+  console.log("NEW STACK CHANGES")
   console.table(latestStackChanges)
-  console.table(latestTransactions)
-  console.table(latestFreeTransactions)
+  console.log("LATEST STACKS")
+  console.table(latestStacks)
+  console.log("TRANSACTIONS")
+  console.table(normalizeTransactions(transactions))
 })

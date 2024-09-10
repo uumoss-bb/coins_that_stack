@@ -7,9 +7,9 @@ import { STACK_FILE_NAME } from "../../shared/enums/fileNames"
 import { convertDate } from "../../shared/normalizers"
 import { Stacks, StacksArray, StacksFile } from "../../shared/types/stacks"
 import { Transactions } from "../../shared/types/transactions"
-import getTransactions from "../getTransactions"
+import getTransactions from "../transactions/getTransactions"
 
-type CalculateLatestExpensesResult = { latestStacks: Stacks, transactions: Transactions, nonStackedTransactions: Transactions, error: string | undefined }
+type CalculateLatestExpensesResult = { latestStacks: Stacks, deposits: Transactions, stackedTransactions: Transactions, nonStackedTransactions: Transactions, error: string | undefined }
 
 class _Stacks {
 
@@ -58,10 +58,10 @@ class _Stacks {
     const normaleTransactions = getTransactions("FORT_FINANCIAL")
     const latestTransactions = filterTransactionsByDate(normaleTransactions, convertDate.full(this.#lastUpdated))
     if(latestTransactions) {
-      const { stacks: latestStacks, transactions, nonStackedTransactions } = linkStacksAndTrans(this.#stacks, latestTransactions)
-      return { latestStacks, transactions, nonStackedTransactions, error: undefined}
+      const { stacks: latestStacks, stackedTransactions, nonStackedTransactions } = linkStacksAndTrans(this.#stacks, latestTransactions)
+      return { latestStacks, stackedTransactions, nonStackedTransactions, error: undefined}
     } else {
-      return { latestStacks: this.#stacks, transactions: [], nonStackedTransactions: [], error: 'Missing latest transactions' }
+      return { latestStacks: this.#stacks, stackedTransactions: [], nonStackedTransactions: [], error: 'Missing latest transactions' }
     }
   }
 

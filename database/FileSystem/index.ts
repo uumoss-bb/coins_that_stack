@@ -1,4 +1,5 @@
 import * as fs from 'fs';
+import { checkObjectType } from '../../shared/object';
 
 export const STORAGE_PATH = './personalStorage'
 
@@ -36,6 +37,17 @@ class _FileSystem {
     }
   }
 
+  readFile = (filePath: string): FileSystemReturn => {
+    try {
+      const data = fs.readFileSync(filePath, 'utf-8');
+      return { error: false, data: JSON.parse(data) }
+    } catch (err) {
+        const errorMsg = 'Failed to READ json file for:' + filePath
+        console.warn(errorMsg, err);
+        return { error: errorMsg, data: { filePath } }
+    }
+  }
+
   writeJsonFile = (fileName: string, data: object): FileSystemReturn => {
     try {
       const json = JSON.stringify(data, null, 2)
@@ -50,7 +62,7 @@ class _FileSystem {
 
   updateJsonFile = (fileName: string, newData: object): FileSystemReturn => {
     const { data } = this.readJsonFile(fileName)
-    const freshData = { ...newData, ...data }
+    const freshData = Array.isArray(newData) && Array.isArray(data) ? [ ...data, ...newData ] : { ...data, ...newData }
     const { error: writeError } = this.writeJsonFile(fileName, freshData)
 
     if(writeError) {
