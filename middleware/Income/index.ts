@@ -6,25 +6,6 @@ import { Transactions } from "../../shared/types/transactions"
 
 class _Income {
 
-  #keyword: string
-  #coins: number
-  get coins() { return this.#coins }
-
-  private getIncomeFile() {
-    const { error, data } = FileSystem.readJsonFile(INCOME_FILE_NAME)
-    if(error) {
-      throw new Error("Income Init failed to get file")
-    } else {
-      return data as Income
-    }
-  }
-
-  constructor(coins?: number, keyword?: string) {
-    const income = coins && keyword ? { coins, keyword } : this.getIncomeFile()
-    this.#keyword = income.keyword
-    this.#coins = income.coins
-  }
-
   findIncome(transaction: Transactions) {
     let totalBalance = 0
     const incomes = transaction.map(transaction => {

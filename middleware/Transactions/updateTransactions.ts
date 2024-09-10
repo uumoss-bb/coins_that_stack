@@ -1,5 +1,5 @@
 import { TRANSACTIONS_FILE_NAME } from "../../shared/enums/fileNames"
-import { Transactions } from "../../shared/types/transactions"
+import { DirtyTransactions, Transactions } from "../../shared/types/transactions"
 import FileSystem from "../../database/FileSystem"
 
 const updateTransactions = (transactions: Transactions) => {
@@ -8,7 +8,7 @@ const updateTransactions = (transactions: Transactions) => {
     throw new Error("Failed to update transactions")
   }
 
-  return transactionsFile
+  return transactionsFile as DirtyTransactions
 }
 
 

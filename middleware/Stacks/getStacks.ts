@@ -1,6 +1,6 @@
 import FileSystem from "../../database/FileSystem"
 import { STACK_FILE_NAME } from "../../shared/enums/fileNames"
-import { StacksFile } from "../../shared/types/stacks"
+import { Stacks, StacksFile } from "../../shared/types/stacks"
 
 const getStackFile = () => {
   const { error, data: stackFile } = FileSystem.readJsonFile(STACK_FILE_NAME)
@@ -10,7 +10,8 @@ const getStackFile = () => {
     return stackFile as StacksFile
   }
 }
-const getStacks = () => {
+
+const getStacks = (): { lastUpdated: number, stacks: Stacks } => {
   const { lastUpdated, ...stacks } = getStackFile()
   return {
     lastUpdated,

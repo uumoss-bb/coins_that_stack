@@ -1,14 +1,14 @@
 import FileSystem from "../../database/FileSystem"
 import { STACK_FILE_NAME } from "../../shared/enums/fileNames"
 import { convertDate } from "../../shared/normalizers"
-import { Stacks } from "../../shared/types/stacks"
+import { Stacks, StacksFile } from "../../shared/types/stacks"
 
 function updateFile(newData: object) {
   const { error, data} = FileSystem.updateJsonFile(STACK_FILE_NAME, newData)
   if(error) {
     throw new Error("Failed to update stacks")
   }
-  return data
+  return data as StacksFile
 }
 
 const updateStacksFile = (data: Stacks|string) => {
