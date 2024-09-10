@@ -6,21 +6,6 @@ import { Transactions } from "../../shared/types/transactions"
 
 class _Income {
 
-  findIncome(transaction: Transactions) {
-    let totalBalance = 0
-    const incomes = transaction.map(transaction => {
-      if(transaction.title.includes(this.#keyword)) {
-        totalBalance += transaction.balance
-        return transaction.balance
-      }
-      return null
-    }).filter(selectTruthyItems)
-
-    const averageCoins = totalBalance / incomes.length
-    const latestCoin = incomes.shift()
-    return { averageCoins, latestCoin }
-  }
-
   updateIncome(newIncome: Income) {
     const { error, data } = FileSystem.updateJsonFile(INCOME_FILE_NAME, newIncome)
     if(error) {
