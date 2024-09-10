@@ -1,0 +1,48 @@
+import _Income from '../../middleware/Income'
+import _Stacks from '../../middleware/Stacks'
+import defaultStacks from '../../shared/defaultStacks'
+import { convertDate } from '../../shared/normalizers'
+import orderStacksByImportance from '../../businessLogic/orderStacksByImportance'
+import getRawTransactions from '../../middleware/getRawTransactions'
+import updateTransactions from '../../middleware/updateTransactions'
+
+const defaultIncomeFile = {
+  coins: 3750,
+  incidence: 'bi-weekly'
+}
+
+const newLastUpdated = 'Aug 15, 2024'
+const newLastUpdatedMilliSec = convertDate.milliseconds(newLastUpdated)
+
+it("Set Up System", () => {
+  const Income = new _Income(); const { income, coins } = Income;
+  const Stacks = new _Stacks(); const { stacks, lastUpdated } = Stacks
+
+  const transactions = getRawTransactions('FORT_FINANCIAL')
+  updateTransactions(transactions)
+
+  if(coins !== defaultIncomeFile.coins) {
+    console.warn("UPDATED INCOME")
+    updateIncome(defaultIncomeFile)
+  }
+
+  const stacksEmpty = !Object.keys(stacks).length
+  if(stacksEmpty) {
+    console.warn("UPDATED STACKS")
+    Stacks.updateStacks(defaultStacks)
+  }
+
+  if(lastUpdated !== newLastUpdatedMilliSec) {
+    console.warn("UPDATED LAST UPDATED")
+    Stacks.updateLastUpdated(newLastUpdatedMilliSec)
+  }
+
+  const orderedStacks = orderStacksByImportance(Object.values(stacks))
+  const orderedStacksObj = {}
+  orderedStacks.forEach(stack => orderedStacksObj[stack.name] = stack)
+  Stacks.updateStacks(orderedStacksObj)
+
+  console.log("INCOME", income)
+  console.log("STACKS", Object.keys(stacks))
+
+})

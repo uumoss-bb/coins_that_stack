@@ -8,7 +8,7 @@ import {
 } from '../shared/types/transactions'
 import { TransSources } from '../shared/enums/transactions'
 import { selectTruthyItems } from '../shared/selectors'
-import { normalizeText } from '../shared/normalizers'
+import { convertDate, normalizeText } from '../shared/normalizers'
 
 const getTransactionType = (transaction: number): TransType => transaction > 0 ? 'deposit' : 'withdraw'
 
@@ -25,12 +25,18 @@ const normalizeCoin = (amount: string) => {
   return Number(amount)
 }
 
-const normalizeFortFinancial = (transItem: FortFinTrans): Transaction => {
+const normalizeFortFinancial = (transItem: FortFinTrans): Transaction|null => {
   const { Amount, Description, Date: date, Category, Balance } = transItem
+  const title = normalizeFortFinTitle(Description)
   const transaction = normalizeCoin(Amount)
+
+  if(title.includes('online transfer')) {
+    return null
+  }
+
   return {
     title: normalizeFortFinTitle(Description),
-    date: new Date(date).toDateString(),
+    date: convertDate.milliseconds(date),
     category: Category,
     type: getTransactionType(transaction),
     transaction,
@@ -44,11 +50,10 @@ const normalizerFunctions = {
   [TransSources.FORT_FINANCIAL]: normalizeFortFinancial
 }
 
-interface TransNormalizerInput { source: TransSourceNames, transactions: DirtyTransactions }
-const normalizeTransactions = ({ source, transactions }: TransNormalizerInput): Transactions => {
+const normalizeTransactions = ( source: TransSourceNames, transactions: DirtyTransactions ): Transactions => {
   return transactions
-    .map(normalizerFunctions[source])
-    .filter(selectTruthyItems)
+  .map(normalizerFunctions[source])
+  .filter(selectTruthyItems) as Transactions
 }
 
 export default normalizeTransactions

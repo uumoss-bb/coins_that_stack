@@ -1,13 +1,13 @@
-import getTotalCoins, { Total, TotalResult } from "../../businessLogic/getTotalCoins"
-import coin from '../../transactions'
-import normalizeTransactions from "../../businessLogic/normalizeTransactions"
+import getTotalCoins, { TotalResult } from "../../businessLogic/getTotalCoins"
 import { selectTruthyItems } from '../../shared/selectors';
 import { Transaction, Transactions } from "../../shared/types/transactions";
+import { StackClass } from ".";
+import { convertDate } from "../../shared/normalizers";
 
 const transToTable = (transactions: Transactions) => {
 
   const TransactionItem = (transaction: Transaction) => ({
-    date: transaction.date,
+    date: convertDate.full(transaction.date),
     title: transaction.title,
     [transaction.type]: transaction.transaction
   })
@@ -28,12 +28,8 @@ const totalToTable = (data: TotalResult) => {
   }
 }
 
-const getTotal = () => {
-  const _transactions = normalizeTransactions({source: "FORT_FINANCIAL", transactions: coin})
-  const result = getTotalCoins(_transactions)
-  console.table(totalToTable(result))
-  console.table(transToTable(result.deposit.transactions))
-  console.table(transToTable(result.withdraw.transactions))
+const summarizeTotal = function(this: StackClass) {
+  const result = getTotalCoins(this.transactions)
   return {
     grandTotal: totalToTable(result),
     deposits: transToTable(result.deposit.transactions),
@@ -41,4 +37,4 @@ const getTotal = () => {
   }
 }
 
-export default getTotal
+export default summarizeTotal

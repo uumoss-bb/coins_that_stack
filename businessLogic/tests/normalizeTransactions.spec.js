@@ -31,7 +31,7 @@ describe("Normalize Fort Financial Transactions", () => {
   const fortFinResult =  [
     {
       title: 'amazon mktpl*rv0sb16k0 amzn.com/bill wa',
-      date: 'Tue Jul 30 2024',
+      date: 1722312000000,
       category: '',
       type: 'withdraw',
       transaction: -31,
@@ -41,7 +41,7 @@ describe("Normalize Fort Financial Transactions", () => {
     },
     {
       title: 'ach deposit bobs burger worl direct dep asdf2134 vw balserbrodie',
-      date: 'Fri Jun 28 2024',
+      date: 1719547200000,
       category: '',
       type: 'deposit',
       transaction: 3001,
@@ -52,7 +52,7 @@ describe("Normalize Fort Financial Transactions", () => {
   ]
 
   it("return normale transaction", () => {
-    const result = normalizeTransactions({source: TransSources.FORT_FINANCIAL, transactions: fortFinInput})
+    const result = normalizeTransactions(TransSources.FORT_FINANCIAL, fortFinInput)
     expect(result).toEqual(fortFinResult)
   })
 })

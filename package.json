@@ -3,10 +3,14 @@
   "version": "2.0.0",
   "description": "We Like Shiny Coins",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "jest ./businessLogic/tests",
-    "displayTotal": "jest ./cli/displayTotal",
-    "displayStacks": "jest ./cli/displayStacks"
+    "test": "jest --testPathIgnorePatterns='./frontend/cli' --testPathIgnorePatterns='./tools'",
+    "displayTotal": "jest ./frontend/cli/displayTotal",
+    "displayStacks": "jest ./frontend/cli/displayStacks",
+    "set": "jest ./frontend/cli/setUpSystem",
+    "audit": "jest ./frontend/cli/displayAudit",
+    "mockTrans": "jest ./tools/createMockTransactions"
   },
   "repository": {
     "type": "git",
@@ -37,6 +41,7 @@
     "@babel/plugin-transform-runtime": "^7.24.7",
     "@babel/preset-env": "^7.25.2",
     "@babel/preset-react": "^7.24.7",
-    "@babel/runtime": "^7.25.0"
+    "@babel/runtime": "^7.25.0",
+    "@types/jest": "^29.5.12"
   }
 }

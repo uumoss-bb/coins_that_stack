@@ -5,7 +5,7 @@ export type TransSourceNames = 'FORT_FINANCIAL'
 
 export type TransSourceObj = { [key: string]: TransSourceNames }
 
-export interface FortFinTrans   {
+export interface FortFinTrans {
   Account_ID: string,
   Transaction_ID: string,
   Date: string,
@@ -19,9 +19,9 @@ export interface FortFinTrans   {
 
 export type DirtyTransactions = FortFinTrans[]
 
-export interface Transaction   {
+export interface Transaction {
   title: string,
-  date: string,
+  date: number,
   category: string,
   type: TransType
   transaction: number,
