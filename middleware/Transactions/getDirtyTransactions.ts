@@ -5,7 +5,7 @@ import { DirtyTransactions } from "../../shared/types/transactions"
 const getTransactionsFile = () => {
   const { error, data: transactionsFile } = FileSystem.readFile('./transactions/index.json')
   if(error) {
-    throw new Error("getRawTransactions failed to get file")
+    throw new Error("getDirtyTransactions failed to get file")
   } else {
     return transactionsFile as DirtyTransactions
   }
@@ -22,10 +22,10 @@ const dedupe = (transactions: DirtyTransactions): DirtyTransactions => {
   return Object.values(transObj)
 }
 
-const getRawTransactions = () => {
+const getDirtyTransactions = () => {
   let dirtyTransactions = getTransactionsFile()
   dirtyTransactions = dedupe(dirtyTransactions)
   return dirtyTransactions
 }
 
-export default getRawTransactions
+export default getDirtyTransactions
