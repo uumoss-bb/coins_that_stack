@@ -1,25 +1,11 @@
-import addCoinsToStacks from "../../businessLogic/addCoinsToStacks"
-import filterTransactionsByDate from "../../businessLogic/filterTransactionsByDate"
-import linkStacksAndTrans from "../../businessLogic/linkStacksAndTrans"
-import orderStacksByImportance from "../../businessLogic/orderStacksByImportance"
-import FileSystem from "../../database/FileSystem"
-import { STACK_FILE_NAME } from "../../shared/enums/fileNames"
-import { convertDate } from "../../shared/normalizers"
-import { Stacks, StacksArray, StacksFile } from "../../shared/types/stacks"
-import { Transactions } from "../../shared/types/transactions"
-import getTransactions from "../transactions/getTransactions"
+import getStacks from "./getStacks";
+import calculateLatestExpenses from "./calculateExpenses";
+import calculatePayDay from "./calculatePayDay";
+import updateStacksFile from "./updateStackFile";
 
-type CalculateLatestExpensesResult = { latestStacks: Stacks, deposits: Transactions, stackedTransactions: Transactions, nonStackedTransactions: Transactions, error: string | undefined }
-
-class _Stacks {
-
-  calculatePayDay(coins: number): StacksArray {
-    const orderedStacks = orderStacksByImportance(this.#stacks)
-    const fatStacks = addCoinsToStacks(coins, orderedStacks)
-    return fatStacks
-  }
+export {
+  getStacks,
+  calculateLatestExpenses,
+  calculatePayDay,
+  updateStacksFile
 }
-
-export type StackClass = _Stacks
-
-export default _Stacks
