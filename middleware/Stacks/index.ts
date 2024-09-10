@@ -13,25 +13,6 @@ type CalculateLatestExpensesResult = { latestStacks: Stacks, deposits: Transacti
 
 class _Stacks {
 
-  updateStacks(newStacks: Stacks) {
-    const { error } = FileSystem.updateJsonFile(STACK_FILE_NAME, newStacks)
-    if(error) {
-      throw new Error("Failed to update stacks")
-    }
-
-    this.#stacks = { ...newStacks, ...this.#stacks }
-  }
-
-  updateLastUpdated(date: string) {
-    const lastUpdated = convertDate.milliseconds(date)
-    const { error } = FileSystem.updateJsonFile(STACK_FILE_NAME, { lastUpdated })
-    if(error) {
-      throw new Error("Failed to update last updated")
-    }
-
-    this.lastUpdated = lastUpdated
-  }
-
   calculateLatestExpenses(): CalculateLatestExpensesResult {
     const normaleTransactions = getTransactions("FORT_FINANCIAL")
     const latestTransactions = filterTransactionsByDate(normaleTransactions, convertDate.full(this.#lastUpdated))
