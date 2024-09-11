@@ -13,6 +13,7 @@ const getPaymentByType:{ [key in DepositTypes]: (amount: number, coins: number)=
 }
 
 const addCoinsToStacks = (income: number, orderedStacks: StacksArray) => {
+  // This needs to be updated to handle when we go over the income amount
   const stackPayments: StackPayments = {}
   const fatStacks = orderedStacks.map(stack => {
     if(stack.depositCadence && stack.depositCadence.importanceLevel) {

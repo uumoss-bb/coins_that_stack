@@ -52,7 +52,7 @@ function audit() {
     latestStackChanges: compareStacks(orderStacksByImportance(currentStacks), latestStacks),
     deposits,
     fatStacks: compareFatStacks(currentStacks, fatStacks, stackPayments),
-
+    stackPayments
   }
 }
 
