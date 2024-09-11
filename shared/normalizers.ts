@@ -17,9 +17,19 @@ const convertDate = {
 
 const prettyJSON = (data: object) => JSON.stringify(data, null, 2)
 
+const formatToCurrency = (amount: number): string => {
+  return amount.toLocaleString('en-US', {
+      style: 'currency',
+      currency: 'USD',
+      minimumFractionDigits: 0,
+      maximumFractionDigits: 0
+  });
+}
+
 export {
   replaceSpacesWithUnderscores,
   normalizeText,
   convertDate,
-  prettyJSON
+  prettyJSON,
+  formatToCurrency
 }

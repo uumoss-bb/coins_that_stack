@@ -4,6 +4,7 @@ import getStacks from "./getStacks";
 import calculateLatestExpenses from "./calculateExpenses";
 import calculatePayDay from "./calculatePayDay";
 import orderStacksByImportance from "../../businessLogic/orderStacksByImportance";
+import { formatToCurrency } from "../../shared/normalizers";
 
 const compareStacks = (currentStacks: StacksArray, latestStacks: Stacks) => {
  return currentStacks.map(currentStack => {
@@ -13,22 +14,22 @@ const compareStacks = (currentStacks: StacksArray, latestStacks: Stacks) => {
   return {
     name: currentStack.name,
     count: latestStack.components.transactions.length,
-    original_coins: currentStack.coins,
-    expenses: latestStack.coins,
-    new_coins: newCoins
+    original_coins: formatToCurrency(currentStack.coins),
+    expenses: formatToCurrency(latestStack.coins),
+    new_coins: formatToCurrency(newCoins)
   }
  })
 }
 
 const compareFatStacks = (currentStacks: Stacks, fatStacks: StacksArray, stackPayments: StackPayments) => {
   return fatStacks.map(fatStack => {
-   const payment = stackPayments[fatStack.name] || null
+   const payment = stackPayments[fatStack.name] ? formatToCurrency(stackPayments[fatStack.name]) : null
    const currentStack = currentStacks[fatStack.name]
    return {
      name: currentStack.name,
-     original_coins: currentStack.coins,
+     original_coins: formatToCurrency(currentStack.coins),
      payment,
-     new_coins: fatStack.coins
+     new_coins: formatToCurrency(fatStack.coins)
    }
   })
  }
