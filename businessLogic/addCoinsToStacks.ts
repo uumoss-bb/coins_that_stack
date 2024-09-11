@@ -22,6 +22,7 @@ const addCoinsToStacks = (income: number, orderedStacks: StacksArray) =>
       const needsUpdated = lastUpdated <= incidenceDate
       if(needsUpdated) {
         const payment = getPaymentByType[type](amount, income)
+        console.log({type, amount, income, payment})
         return {
           ...stack,
           coins: stack.coins + payment,
