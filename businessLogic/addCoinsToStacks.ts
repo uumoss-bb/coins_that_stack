@@ -8,21 +8,20 @@ const getIncidenceDate:{ [key in DepositIncidences]: ()=>number } = {
 }
 
 const getPaymentByType:{ [key in DepositTypes]: (amount: number, coins: number)=>number } = {
-  'percent': (amount, coins) => (amount / 100) * coins,
+  'percent': (amount, percent) => (amount / 100) * percent,
   'exact': (amount) => amount,
 }
 
 // const stacksArray = Object.values(stacks)
 // const orderedStacks = orderStacksByImportance(stacksArray)
-const addCoinsToStacks = (coins: number, orderedStacks: StacksArray) =>
+const addCoinsToStacks = (income: number, orderedStacks: StacksArray) =>
   orderedStacks.map(stack => {
     if(stack.depositCadence) {
       const { type, amount, incidence, lastUpdated } = stack.depositCadence
       const incidenceDate = getIncidenceDate[incidence]()
       const needsUpdated = lastUpdated <= incidenceDate
-      console.log(needsUpdated)
       if(needsUpdated) {
-        const payment = getPaymentByType[type](amount, coins)
+        const payment = getPaymentByType[type](amount, income)
         return {
           ...stack,
           coins: stack.coins + payment,

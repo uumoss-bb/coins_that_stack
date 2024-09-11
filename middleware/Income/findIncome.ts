@@ -1,10 +1,10 @@
 import { selectTruthyItems } from "../../shared/selectors"
 import { Transactions } from "../../shared/types/transactions"
-import getIncome from "./getIncome"
+import getIncomeFile from "./getIncomeFile"
 
 
 function findIncome(transaction: Transactions) {
-  const { keyword } = getIncome()
+  const { keyword } = getIncomeFile()
 
   let totalBalance = 0
   const deposits = transaction.map(transaction => {

@@ -1,7 +1,15 @@
 import { convertDate } from '../../../shared/normalizers';
 import audit from '../audit'
 
-Date.now = () => 788936400000
+Date.now = () => 789541200000
+
+jest.mock('../../Income/getIncomeFile', () => ({
+  __esModule: true,
+  default: () => ({
+    coins: 1000,
+    keywords: ["keyword"]
+  })
+}));
 
 jest.mock('../../Transactions/getTransactions', () => ({
   __esModule: true,

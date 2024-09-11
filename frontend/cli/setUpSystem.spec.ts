@@ -1,4 +1,4 @@
-import { getIncome, updateIncomeFile } from '../../middleware/Income'
+import { getIncomeFile, updateIncomeFile } from '../../middleware/Income'
 import defaultStacks from '../../shared/defaultStacks'
 import { convertDate } from '../../shared/normalizers'
 import orderStacksByImportance from '../../businessLogic/orderStacksByImportance'
@@ -15,7 +15,7 @@ const newLastUpdated = 'Aug 15, 2024'
 const newLastUpdatedMilliSec = convertDate.milliseconds(newLastUpdated)
 
 it("Set Up System", () => {
-  const income = getIncome()
+  const income = getIncomeFile()
   const { stacks, lastUpdated } = getStacks()
 
   const dirtyTransactions = getDirtyTransactions()

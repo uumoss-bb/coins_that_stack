@@ -1,5 +1,5 @@
 import { Stacks, StacksArray } from "../../shared/types/stacks";
-import { getIncome } from "../Income";
+import { getIncomeFile } from "../Income";
 import getStacks from "./getStacks";
 import calculateLatestExpenses from "./calculateExpenses";
 import calculatePayDay from "./calculatePayDay";
@@ -21,7 +21,7 @@ const compareStacks = (currentStacks: StacksArray, latestStacks: Stacks) => {
 }
 
 function audit() {
-  const { coins } = getIncome()
+  const { coins } = getIncomeFile()
   const { stacks: currentStacks } = getStacks()
   const {
     latestStacks,
