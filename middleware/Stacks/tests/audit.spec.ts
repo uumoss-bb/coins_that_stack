@@ -1,34 +1,14 @@
-import { WEEK_MS } from '../../../shared/enums/time';
-import { Stacks } from '../../../shared/types/stacks';
+import { convertDate } from '../../../shared/normalizers';
 import audit from '../audit'
 
-const income = 1000
-const baseStackCoins = 3000
-const lastUpdated = Date.now() - (WEEK_MS * 2)
+Date.now = () => 788936400000
 
-const stacks: Stacks = {
-  'TestA': {
-    "name": "TestA",
-    "keywords": ['prime'],
-    "transactions": [],
-    "coins": baseStackCoins,
-    "deposit": {
-      "type": "percent",
-      "incidence": "weekly",
-      "amount": 10,
-      "importanceLevel": 1,
-      "lastUpdated": Date.now() - (WEEK_MS * 3)
-    },
-    "group": "House"
-  }
-}
-
-jest.mock('../Transactions/getTransactions', () => ({
+jest.mock('../../Transactions/getTransactions', () => ({
   __esModule: true,
   default: () => ([
     {
       title: 'prime video',
-      date: Date.now(),
+      date: new Date("Jan 8, 1995").getTime(),
       category: '',
       type: 'withdraw',
       coins: -100,
@@ -38,7 +18,7 @@ jest.mock('../Transactions/getTransactions', () => ({
     },
     {
       title: 'pay day',
-      date: Date.now(),
+      date: new Date("Jan 8, 1995").getTime(),
       category: '',
       type: 'deposit',
       coins: 1000,
@@ -49,9 +29,120 @@ jest.mock('../Transactions/getTransactions', () => ({
   ])
 }));
 
+jest.mock('../getStacks', () => ({
+  __esModule: true,
+  default: () => ({
+    stacks: {
+      'TestA': {
+        name: 'TestA',
+        components: { keywords: ['prime'], transactions: [] },
+        coins: 3000,
+        depositCadence: {
+          type: 'percent',
+          incidence: 'weekly',
+          amount: 10,
+          importanceLevel: 1,
+          lastUpdated: new Date("Jan 1, 1995").getTime()
+        }
+      }
+    },
+    lastUpdated: new Date("Jan 1, 1995").getTime()
+  })
+}));
+
+const auditResult = {
+  latestStacks: {
+    TestA: {
+      name: 'TestA',
+      components: {
+        keywords: [
+          'prime'
+        ],
+        transactions: [
+          {
+            title: 'prime video',
+            date: 789541200000,
+            category: '',
+            type: 'withdraw',
+            coins: -100,
+            balance: 943,
+            source: 'FORT_FINANCIAL',
+            stacks: [
+              'TestA'
+            ]
+          }
+        ]
+      },
+      coins: 2900,
+      depositCadence: {
+        type: 'percent',
+        incidence: 'weekly',
+        amount: 10,
+        importanceLevel: 1,
+        lastUpdated: 788936400000
+      }
+    }
+  },
+  latestStackedTransactions: [
+    {
+      title: 'prime video',
+      date: 789541200000,
+      category: '',
+      type: 'withdraw',
+      coins: -100,
+      balance: 943,
+      source: 'FORT_FINANCIAL',
+      stacks: [
+        'TestA'
+      ]
+    }
+  ],
+  latestFreeTransactions: [],
+  latestStackChanges: [
+    {
+      name: 'TestA',
+      count: 1,
+      original_coins: 3000,
+      expenses: 2900,
+      new_coins: 100
+    }
+  ],
+  deposits: [
+    {
+      title: 'pay day',
+      date: 789541200000,
+      category: '',
+      type: 'deposit',
+      coins: 1000,
+      balance: 943,
+      source: 'FORT_FINANCIAL',
+      stacks: []
+    }
+  ],
+  fatStacks: [
+    {
+      name: 'TestA',
+      components: {
+        keywords: [
+          'prime'
+        ],
+        transactions: []
+      },
+      coins: 3100,
+      depositCadence: {
+        type: 'percent',
+        incidence: 'weekly',
+        amount: 10,
+        importanceLevel: 1,
+        lastUpdated: Date.now()
+      },
+    }
+  ]
+}
+
 describe('audit', () => {
   it('success', () => {
     const result = audit()
-    expect(result).toBe("TODO THIS BITCH")
+    expect(result).toStrictEqual(auditResult)
   })
 })

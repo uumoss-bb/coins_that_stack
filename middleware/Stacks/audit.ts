@@ -12,7 +12,7 @@ const compareStacks = (currentStacks: StacksArray, latestStacks: Stacks) => {
   const newCoins = currentStack.coins - latestCoin
   return {
     name: currentStack.name,
-    count: latestStack.transactions.length,
+    count: latestStack.components.transactions.length,
     original_coins: currentStack.coins,
     expenses: latestStack.coins,
     new_coins: newCoins

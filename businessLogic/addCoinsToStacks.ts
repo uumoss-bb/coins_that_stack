@@ -25,7 +25,10 @@ const addCoinsToStacks = (coins: number, orderedStacks: StacksArray) =>
         return {
           ...stack,
           coins: stack.coins + payment,
-          lastUpdated: Date.now()
+          depositCadence: {
+            ...stack.depositCadence,
+            lastUpdated: Date.now()
+          }
         }
       }
     }
