@@ -1,23 +1,13 @@
-import { Transaction } from "./transactions"
+import { DepositCadence } from "./income"
+import { Transactions } from "./transactions"
 
 export interface Stack {
-  name: string,
-  keywords: string[]
-  transactions: Transaction[],
+  name: string
   coins: number
-  deposit: {
-    type: DepositTypes,
-    amount: number,
-    incidence: StackIncidences,
-    lastUpdated: number,
-    importanceLevel: number | null
-  }
+  components: StackComponents,
+  depositCadence?: DepositCadence
   group?: string
 }
-
-export type DepositTypes = 'percent' | 'exact'
-
-export type StackIncidences = 'bi-weekly' | 'weekly'
 
 export type StacksLastUpdated = { lastUpdated: number }
 
@@ -26,3 +16,9 @@ export type Stacks = { [key: string]: Stack; }
 export type StacksFile = Stacks & StacksLastUpdated;
 
 export type StacksArray = Stack[]
+
+export type StackComponents = {
+  keywords: string[]
+  transactions: Transactions,
+  coins?: number
+}

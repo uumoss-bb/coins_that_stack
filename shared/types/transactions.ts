@@ -31,9 +31,3 @@ export interface Transaction {
 }
 
 export type Transactions = Transaction[]
-
-// export type CollectedCoins = {
-//   keywords: string[]
-//   transactions: Transaction[],
-//   coins: number
-// }

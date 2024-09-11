@@ -1,64 +1,60 @@
-import { Stack, Stacks, StacksArray } from "../../shared/types/stacks";
-import orderStacksByImportance from "../orderStacksByImportance";
+import { Stack, Stacks, StacksArray } from '../../shared/types/stacks';
+import orderStacksByImportance from '../orderStacksByImportance';
 
 const stack1: Stack = {
-  "name": "Test1",
-  "keywords": [],
-  "transactions": [],
-  "coins": 100,
-  "deposit": {
-    "type": "percent",
-    "incidence": "weekly",
-    "amount": 10,
-    "importanceLevel": 1,
-    "lastUpdated": 0
+  name: 'Test1',
+  components: { keywords: [], transactions: [] },
+  coins: 100,
+  depositCadence: {
+    type: 'percent',
+    incidence: 'weekly',
+    amount: 10,
+    importanceLevel: 1,
+    lastUpdated: 0
   },
-  "group": "House"
+  group: 'House'
 }
 
 const stack2: Stack = {
-  "name": "Test2",
-  "keywords": [],
-  "transactions": [],
-  "coins": 100,
-  "deposit": {
-    "type": "percent",
-    "incidence": "weekly",
-    "amount": 10,
-    "importanceLevel": 2,
-    "lastUpdated": 0
+  name: 'Test2',
+  components: { keywords: [], transactions: [] },
+  coins: 100,
+  depositCadence: {
+    type: 'percent',
+    incidence: 'weekly',
+    amount: 10,
+    importanceLevel: 2,
+    lastUpdated: 0
   },
-  "group": "House"
+  group: 'House'
 }
 
 const stack3: Stack = {
-  "name": "Test3",
-  "keywords": [],
-  "transactions": [],
-  "coins": 100,
-  "deposit": {
-    "type": "percent",
-    "incidence": "weekly",
-    "amount": 10,
-    "importanceLevel": 3,
-    "lastUpdated": 0
+  name: 'Test3',
+  components: { keywords: [], transactions: [] },
+  coins: 100,
+  depositCadence: {
+    type: 'percent',
+    incidence: 'weekly',
+    amount: 10,
+    importanceLevel: 3,
+    lastUpdated: 0
   },
-  "group": "House"
+  group: 'House'
 }
 
 const stack4: Stack = {
-  "name": "Test4",
-  "keywords": [],
-  "transactions": [],
-  "coins": 100,
-  "deposit": {
-    "type": "percent",
-    "incidence": "weekly",
-    "amount": 10,
-    "importanceLevel": 4,
-    "lastUpdated": 0
+  name: 'Test4',
+  components: { keywords: [], transactions: [] },
+  coins: 100,
+  depositCadence: {
+    type: 'percent',
+    incidence: 'weekly',
+    amount: 10,
+    importanceLevel: 4,
+    lastUpdated: 0
   },
-  "group": "House"
+  group: 'House'
 }
 
 const unorderedStacks: Stacks = {

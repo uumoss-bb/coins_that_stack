@@ -45,16 +45,11 @@ describe("Link Stacks and Transactions", () => {
 
   const stackA: Stack = {
     name:'stackA',
-    keywords: ['amazon'],
-    transactions: [],
-    coins: 0,
-    deposit: {
-      type: 'exact',
-      incidence: 'bi-weekly',
-      amount: 0,
-      importanceLevel: null,
-      lastUpdated: 0
-    }
+    components: {
+      keywords: ['amazon'],
+      transactions: []
+    },
+    coins: 0
   }
 
   const stacks: Stacks = {
@@ -71,22 +66,18 @@ describe("Link Stacks and Transactions", () => {
       [stackA.name]: {
         ...stackA,
         coins: -20,
-        transactions: [
-          { ...amazonWithdraw, stacks: [ stackA.name ] }
-        ]
+        components: {
+          transactions: [ { ...amazonWithdraw, stacks: [ stackA.name ] } ],
+          keywords: stackA.components.keywords
+        }
       },
       Non_Stacked: {
         coins: -30,
-        transactions: [ {...cigarAmazonWithdraw, stacks: [] }],
+        components: {
+          transactions: [ {...cigarAmazonWithdraw, stacks: [] } ],
+          keywords: [ 'non' ]
+        },
         name: 'Non-Stacked',
-        keywords: [ 'non' ],
-        deposit: {
-          type: 'exact',
-          incidence: 'bi-weekly',
-          amount: 0,
-          importanceLevel: null,
-          lastUpdated: 0
-        }
       }
     }
   }

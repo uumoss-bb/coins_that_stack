@@ -4,7 +4,7 @@ const orderStacksByImportance = (stacks: Stacks): StacksArray => {
   const stacksArray: StacksArray = Object.values(stacks)
   const defaultOrderedStacks = {} as { [key: number]: Stack; }
   const orderedStacks = stacksArray.reduce((prevValue, stack) => {
-    const importanceLevel = stack.deposit.importanceLevel
+    const importanceLevel = stack.depositCadence?.importanceLevel
     if(importanceLevel) {
       if(!prevValue[importanceLevel]) {
         return {

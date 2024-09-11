@@ -13,7 +13,7 @@ export interface ConnectedStacksAndTrans {
 
 const findStacksForTrans = (transaction: Transaction, stacks: StacksArray) => {
   const transStacks = stacks.map((stack) => {
-    const keywordMatch = stack.keywords.filter((keyword) => transaction.title.includes(keyword))
+    const keywordMatch = stack.components.keywords.filter((keyword) => transaction.title.includes(keyword))
     if(keywordMatch.length) {
       return stack.name
     }
@@ -24,8 +24,8 @@ const findStacksForTrans = (transaction: Transaction, stacks: StacksArray) => {
 
 const updateStacksWithTrans = (transaction: Transaction, _stacks: Stacks, stackNames: string[]) =>
   stackNames.reduce((stacks, stackName) => {
-    const stack = stacks[stackName]
-    stack.transactions.push(transaction)
+    const stack = stacks[stackName] as Stack
+    stack.components.transactions.push(transaction)
     stack.coins += transaction.coins
     return {
       [stackName]: stack,
@@ -43,19 +43,14 @@ const handleTheNonStacked = (linkedData: ConnectedStacksAndTrans, nonStackedTran
 
   const nonStackedName = 'Non_Stacked'
   const nonStackedCoins = linkedData.stacks[nonStackedName]?.coins || 0
-  const nonStackedTransactions: Transactions = linkedData.stacks[nonStackedName]?.transactions || []
+  const nonStackedTransactions: Transactions = linkedData.stacks[nonStackedName]?.components.transactions || []
   const theNonStacked: Stack = {
     coins: nonStackedCoins + nonStackedTransaction.coins,
-    transactions: [ ...nonStackedTransactions, nonStackedTransaction ],
-    name: "Non-Stacked",
-    keywords: [ "non" ] ,
-    deposit: {
-      type: "exact",
-      incidence: 'bi-weekly',
-      amount: 0,
-      importanceLevel: null,
-      lastUpdated: 0
-    }
+    components: {
+      transactions: [ ...nonStackedTransactions, nonStackedTransaction ],
+      keywords: [ "non" ],
+    },
+    name: "Non-Stacked"
   }
 
   return {
