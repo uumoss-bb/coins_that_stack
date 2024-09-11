@@ -1,5 +1,5 @@
 import { WEEK_MS } from "../shared/enums/time";
-import { StacksArray } from "../shared/types/stacks";
+import { StackPayments, StacksArray } from "../shared/types/stacks";
 import { DepositIncidences, DepositTypes } from "../shared/types/income";
 
 const getIncidenceDate:{ [key in DepositIncidences]: ()=>number } = {
@@ -12,17 +12,16 @@ const getPaymentByType:{ [key in DepositTypes]: (amount: number, coins: number)=
   'exact': (amount) => amount,
 }
 
-// const stacksArray = Object.values(stacks)
-// const orderedStacks = orderStacksByImportance(stacksArray)
-const addCoinsToStacks = (income: number, orderedStacks: StacksArray) =>
-  orderedStacks.map(stack => {
-    if(stack.depositCadence) {
+const addCoinsToStacks = (income: number, orderedStacks: StacksArray) => {
+  const stackPayments: StackPayments = {}
+  const fatStacks = orderedStacks.map(stack => {
+    if(stack.depositCadence && stack.depositCadence.importanceLevel) {
       const { type, amount, incidence, lastUpdated } = stack.depositCadence
       const incidenceDate = getIncidenceDate[incidence]()
       const needsUpdated = lastUpdated <= incidenceDate
       if(needsUpdated) {
         const payment = getPaymentByType[type](amount, income)
-        console.log({type, amount, income, payment})
+        stackPayments[stack.name] = payment
         return {
           ...stack,
           coins: stack.coins + payment,
@@ -35,5 +34,8 @@ const addCoinsToStacks = (income: number, orderedStacks: StacksArray) =>
     }
     return stack
   })
+
+  return { fatStacks, stackPayments }
+}
 
 export default addCoinsToStacks

@@ -7,13 +7,6 @@ import { StacksArray } from '../../shared/types/stacks'
 const normalizeTransactions = (transactions: Transactions) =>
   transactions.map(({title, date, coins, stacks}) => ({title, date: convertDate.full(date), coins, stacks}))
 
-const normalizeStacks = (fatStacks: StacksArray) =>
-  fatStacks.map(stack => {
-    return {
-      name: stack.name,
-      coins: stack.coins
-    }
-  })
 
 it("AUDIT", () => {
   const {
@@ -32,5 +25,5 @@ it("AUDIT", () => {
   console.table(normalizeTransactions(transactions))
 
   console.log("FAT STACKS")
-  console.table(normalizeStacks(fatStacks))
+  console.table(fatStacks)
 })

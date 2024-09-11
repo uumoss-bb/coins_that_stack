@@ -22,3 +22,5 @@ export type StackComponents = {
   transactions: Transactions,
   coins?: number
 }
+
+export type StackPayments = { [key in string]: number }

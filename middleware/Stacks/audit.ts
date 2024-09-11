@@ -1,4 +1,4 @@
-import { Stacks, StacksArray } from "../../shared/types/stacks";
+import { StackPayments, Stacks, StacksArray } from "../../shared/types/stacks";
 import { getIncomeFile } from "../Income";
 import getStacks from "./getStacks";
 import calculateLatestExpenses from "./calculateExpenses";
@@ -20,6 +20,19 @@ const compareStacks = (currentStacks: StacksArray, latestStacks: Stacks) => {
  })
 }
 
+const compareFatStacks = (currentStacks: Stacks, fatStacks: StacksArray, stackPayments: StackPayments) => {
+  return fatStacks.map(fatStack => {
+   const payment = stackPayments[fatStack.name] || null
+   const currentStack = currentStacks[fatStack.name]
+   return {
+     name: currentStack.name,
+     original_coins: currentStack.coins,
+     payment,
+     new_coins: fatStack.coins
+   }
+  })
+ }
+
 function audit() {
   const { coins } = getIncomeFile()
   const { stacks: currentStacks } = getStacks()
@@ -30,7 +43,7 @@ function audit() {
     deposits
   } = calculateLatestExpenses()
 
-  const fatStacks = calculatePayDay(coins)
+  const { fatStacks, stackPayments } = calculatePayDay(coins)
 
   return {
     latestStacks,
@@ -38,7 +51,8 @@ function audit() {
     latestFreeTransactions,
     latestStackChanges: compareStacks(orderStacksByImportance(currentStacks), latestStacks),
     deposits,
-    fatStacks
+    fatStacks: compareFatStacks(currentStacks, fatStacks, stackPayments),
+
   }
 }
 

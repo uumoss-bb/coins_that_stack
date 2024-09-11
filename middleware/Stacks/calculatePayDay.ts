@@ -1,13 +1,14 @@
 import addCoinsToStacks from "../../businessLogic/addCoinsToStacks"
 import orderStacksByImportance from "../../businessLogic/orderStacksByImportance"
-import { StacksArray } from "../../shared/types/stacks"
+import { StackPayments, StacksArray } from "../../shared/types/stacks"
 import getStacks from "./getStacks"
 
-function calculatePayDay(income: number): StacksArray {
+type PayDayResult = { fatStacks: StacksArray, stackPayments: StackPayments }
+
+function calculatePayDay(income: number): PayDayResult {
   const { stacks } = getStacks()
   const orderedStacks = orderStacksByImportance(stacks)
-  const fatStacks = addCoinsToStacks(income, orderedStacks)
-  return fatStacks
+  return addCoinsToStacks(income, orderedStacks)
 }
 
 export default calculatePayDay
