@@ -6,6 +6,7 @@ import getStacks from "./getStacks"
 function calculatePayDay(coins: number): StacksArray {
   const { stacks } = getStacks()
   const orderedStacks = orderStacksByImportance(stacks)
+  console.log(orderedStacks)
   const fatStacks = addCoinsToStacks(coins, orderedStacks)
   return fatStacks
 }
