@@ -66,16 +66,22 @@ const handleTheNonStacked = (linkedData: ConnectedStacksAndTrans, nonStackedTran
   }
 }
 
+const updateTransaction = (transaction: Transaction, stacks: Stacks, stackNames: string[]) => {
+  const firstStack = stacks[stackNames[0]]
+  const keyword = firstStack.components.keywords.find((keyword) => transaction.title.includes(keyword))
+  return { ...transaction, keyword, stacks: stackNames }
+ }
+
 const linkStacksAndTrans = (stacks: Stacks, transactions: Transactions) => {
   const stacksArray: StacksArray = Object.values(stacks)
   const defaultResult: ConnectedStacksAndTrans = { stackedTransactions: [], nonStackedTransactions: [], stacks, deposits: [] }
 
   return transactions.reduce((previousValue, transaction) => {
     const stackNames = findStacksForTrans(transaction, stacksArray)
-    const updatedTransaction = { ...transaction, stacks: stackNames }
     if(!stackNames.length) {
-      return handleTheNonStacked(previousValue, updatedTransaction)
+      return handleTheNonStacked(previousValue, transaction)
     }
+    const updatedTransaction = updateTransaction(transaction, stacks, stackNames)
     const updatedStacks = updateStacksWithTrans(updatedTransaction, previousValue.stacks, stackNames)
     return {
       ...previousValue,

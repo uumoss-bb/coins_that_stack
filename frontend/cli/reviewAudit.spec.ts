@@ -6,13 +6,7 @@ import { StackPayments } from '../../shared/types/stacks'
 import { getIncomeFile } from '../../middleware/Income'
 
 const normalizeTransactions = (transactions: Transactions) =>
-  transactions.map(({title, date, coins, stacks, keyword = null}) => ({
-    title,
-    keyword,
-    date: convertDate.full(date),
-    coins: formatToCurrency(coins),
-    stacks
-  }))
+  transactions.map(({title, date, coins, stacks}) => ({title, date: convertDate.full(date), coins: formatToCurrency(coins), stacks}))
 
 const normalizePayDayExpenses = (income: number, stackPayments: StackPayments) => {
   const totalPayments = Object.values(stackPayments).reduce((prevValue, payment) => prevValue + payment, 0)
@@ -36,12 +30,12 @@ it("AUDIT", () => {
   } = audit()
   const transactions = sortTransactions([...latestStackedTransactions, ...latestFreeTransactions], 'stack')
 
-  console.log("EXPENSES")
-  console.table(normalizeTransactions(transactions))
-
-  console.log("STACKS AFTER EXPENSES")
+  console.log("NEW STACK CHANGES")
   console.table(latestStackChanges)
 
-  console.log("STACKS AFTER PAYDAY", normalizePayDayExpenses(coins, stackPayments))
+  console.log("TRANSACTIONS")
+  console.table(normalizeTransactions(transactions))
+
+  console.log("PAYDAY EXPENSES", normalizePayDayExpenses(coins, stackPayments))
   console.table(fatStacks)
 })
