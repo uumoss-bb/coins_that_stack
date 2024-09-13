@@ -1,52 +1,53 @@
+import { Transaction, Transactions } from "../../shared/types/transactions"
 import getTotalCoins from "../getTotalCoins"
 
 describe("Get Total Coins", () => {
 
-  const amazonWithdraw = {
+  const amazonWithdraw: Transaction = {
     title: 'amazon mktpl*rv0sb16k0 amzn.com/bill wa',
-    date: 'Tue Jul 31 2024',
+    date: 0,
     category: '',
     type: 'withdraw',
-    transaction: -20,
+    coins: -20,
     balance: 9980,
     source: 'FORT_FINANCIAL',
     stacks: []
   }
 
-  const cigarAmazonWithdraw = {
+  const cigarAmazonWithdraw: Transaction = {
     title: 'cigar amazon mktpl*rv0sb16k0 amzn.com/bill wa',
-    date: 'Tue Jul 32 2024',
+    date: 0,
     category: '',
     type: 'withdraw',
-    transaction: -30,
+    coins: -30,
     balance: 9950,
     source: 'FORT_FINANCIAL',
     stacks: []
   }
 
-  const bobsDeposit = {
+  const bobsDeposit: Transaction = {
     title: 'ach deposit bobs burger worl direct dep asdf2134 vw balserbrodie',
-    date: 'Fri Jun 28 2024',
+    date: 0,
     category: '',
     type: 'deposit',
-    transaction: 4000,
+    coins: 4000,
     balance: 4000,
     source: 'FORT_FINANCIAL',
     stacks: []
   }
 
-  const wallyDeposit = {
+  const wallyDeposit: Transaction = {
     title: 'ach deposit wally world direct dep asdf2134 vw balserbrodie',
-    date: 'Fri Jun 30 2024',
+    date: 0,
     category: '',
     type: 'deposit',
-    transaction: 5000,
+    coins: 5000,
     balance: 9000,
     source: 'FORT_FINANCIAL',
     stacks: []
   }
 
-  const transactions =  [
+  const transactions: Transactions =  [
     amazonWithdraw,
     bobsDeposit,
     wallyDeposit,

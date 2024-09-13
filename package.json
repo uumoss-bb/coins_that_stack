@@ -6,10 +6,10 @@
   "type": "module",
   "scripts": {
     "test": "jest --testPathIgnorePatterns='./frontend/cli' --testPathIgnorePatterns='./tools'",
-    "displayTotal": "jest ./frontend/cli/displayTotal",
-    "displayStacks": "jest ./frontend/cli/displayStacks",
     "set": "jest ./frontend/cli/setUpSystem",
     "audit": "jest ./frontend/cli/displayAudit",
+    "audit-accept": "AUDIT=accept jest ./frontend/cli/displayAudit",
+    "audit-hard": "HARD_UPDATE=true jest ./frontend/cli/displayAudit",
     "mockTrans": "jest ./tools/createMockTransactions"
   },
   "repository": {

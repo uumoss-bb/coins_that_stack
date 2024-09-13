@@ -10,7 +10,7 @@ const defaultTotal: TotalResult = {
 
 const getTotalCoins = (transactions: Transactions) =>
   transactions.reduce((res, transaction) => {
-    res[transaction.type].total += transaction.transaction
+    res[transaction.type].total += transaction.coins
     res[transaction.type].transactions.push({ ...transaction })
     return res
   }, defaultTotal)

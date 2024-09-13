@@ -28,7 +28,7 @@ const normalizeCoin = (amount: string) => {
 const normalizeFortFinancial = (transItem: FortFinTrans): Transaction|null => {
   const { Amount, Description, Date: date, Category, Balance } = transItem
   const title = normalizeFortFinTitle(Description)
-  const transaction = normalizeCoin(Amount)
+  const coins = normalizeCoin(Amount)
 
   if(title.includes('online transfer')) {
     return null
@@ -38,8 +38,8 @@ const normalizeFortFinancial = (transItem: FortFinTrans): Transaction|null => {
     title: normalizeFortFinTitle(Description),
     date: convertDate.milliseconds(date),
     category: Category,
-    type: getTransactionType(transaction),
-    transaction,
+    type: getTransactionType(coins),
+    coins,
     balance: normalizeCoin(Balance),
     source: TransSources.FORT_FINANCIAL,
     stacks: []

@@ -24,10 +24,11 @@ export interface Transaction {
   date: number,
   category: string,
   type: TransType
-  transaction: number,
+  coins: number,
   balance: number,
   source: TransSourceNames,
-  stacks: string[]
+  stacks: string[],
+  keyword?: string
 }
 
 export type Transactions = Transaction[]

@@ -9,7 +9,7 @@ describe("Link Stacks and Transactions", () => {
     date: 0,
     category: '',
     type: 'withdraw',
-    transaction: -20,
+    coins: -20,
     balance: 800,
     source: 'FORT_FINANCIAL',
     stacks: []
@@ -20,7 +20,18 @@ describe("Link Stacks and Transactions", () => {
     date: 0,
     category: '',
     type: 'withdraw',
-    transaction: -30,
+    coins: -30,
+    balance: 800,
+    source: 'FORT_FINANCIAL',
+    stacks: []
+  }
+
+  const deposit: Transaction = {
+    title: 'cat in the hat',
+    date: 0,
+    category: '',
+    type: 'deposit',
+    coins: 30,
     balance: 800,
     source: 'FORT_FINANCIAL',
     stacks: []
@@ -28,21 +39,17 @@ describe("Link Stacks and Transactions", () => {
 
   const transactions: Transactions =  [
     amazonWithdraw,
-    cigarAmazonWithdraw
+    cigarAmazonWithdraw,
+    deposit
   ]
 
   const stackA: Stack = {
     name:'stackA',
-    keywords: ['amazon'],
-    transactions: [],
-    coins: 0,
-    deposit: {
-      type: 'exact',
-      incidence: 'bi-weekly',
-      amount: 0,
-      importanceLevel: null,
-      lastUpdated: 0
-    }
+    components: {
+      keywords: ['amazon'],
+      transactions: []
+    },
+    coins: 0
   }
 
   const stacks: Stacks = {
@@ -50,6 +57,7 @@ describe("Link Stacks and Transactions", () => {
   }
 
   const linkedResult: ConnectedStacksAndTrans = {
+    deposits: [ deposit ],
     stackedTransactions: [
       { ...amazonWithdraw, stacks: [ stackA.name ] }
     ],
@@ -58,22 +66,18 @@ describe("Link Stacks and Transactions", () => {
       [stackA.name]: {
         ...stackA,
         coins: -20,
-        transactions: [
-          { ...amazonWithdraw, stacks: [ stackA.name ] }
-        ]
+        components: {
+          transactions: [ { ...amazonWithdraw, stacks: [ stackA.name ] } ],
+          keywords: stackA.components.keywords
+        }
       },
       Non_Stacked: {
         coins: -30,
-        transactions: [ {...cigarAmazonWithdraw, stacks: [] }],
+        components: {
+          transactions: [ {...cigarAmazonWithdraw, stacks: [] } ],
+          keywords: [ 'non' ]
+        },
         name: 'Non-Stacked',
-        keywords: [ 'non' ],
-        deposit: {
-          type: 'exact',
-          incidence: 'bi-weekly',
-          amount: 0,
-          importanceLevel: null,
-          lastUpdated: 0
-        }
       }
     }
   }
