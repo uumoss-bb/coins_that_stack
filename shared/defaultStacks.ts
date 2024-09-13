@@ -1,8 +1,8 @@
 import { Stacks } from "./types/stacks";
 
 const defaultStacks: Stacks = {
-  "BB Owns": {
-    "name": "BB Owns",
+  "BB Owes": {
+    "name": "BB Owes",
     "components": {
       "keywords": [
         "canyon"

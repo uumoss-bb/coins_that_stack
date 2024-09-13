@@ -8,6 +8,8 @@
     "test": "jest --testPathIgnorePatterns='./frontend/cli' --testPathIgnorePatterns='./tools'",
     "set": "jest ./frontend/cli/setUpSystem",
     "audit": "jest ./frontend/cli/displayAudit",
+    "audit-accept": "AUDIT=accept jest ./frontend/cli/displayAudit",
+    "audit-hard": "AUDIT=accept jest ./frontend/cli/displayAudit",
     "mockTrans": "jest ./tools/createMockTransactions"
   },
   "repository": {

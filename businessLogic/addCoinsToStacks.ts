@@ -20,7 +20,8 @@ const addCoinsToStacks = (income: number, orderedStacks: StacksArray) => {
       const { type, amount, incidence, lastUpdated } = stack.depositCadence
       const incidenceDate = getIncidenceDate[incidence]()
       const needsUpdated = lastUpdated <= incidenceDate
-      if(needsUpdated) {
+      const hardUpdate = process.env.HARD_UPDATE === 'true'
+      if(needsUpdated || hardUpdate) {
         const payment = getPaymentByType[type](amount, income)
         stackPayments[stack.name] = payment
         return {
