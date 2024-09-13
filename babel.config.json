@@ -1,0 +1,10 @@
+{
+  "plugins": [
+    "@babel/plugin-proposal-object-rest-spread",
+    "@babel/plugin-proposal-do-expressions",
+    "@babel/plugin-transform-runtime"
+  ],
+  "presets": [
+    ["next/babel"]
+  ]
+}
