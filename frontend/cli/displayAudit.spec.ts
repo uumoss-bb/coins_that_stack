@@ -136,9 +136,10 @@ it("AUDIT", () => {
   if(process.env.AUDIT === "accept") {
 
     console.log("AUDIT ACCEPTED")
+    const lastUpdated = convertDate.milliseconds(convertDate.full(Date.now()))
     let stacks: StacksArray|Stacks = prepareForUpdate(fatStacks) as StacksArray
     stacks = transformStacksToObject(stacks) as Stacks
-    updateStacksFile({ ...stacks, lastUpdated: Date.now() })
+    updateStacksFile({ ...stacks, lastUpdated })
   }
 
   if(!transactions.length) {

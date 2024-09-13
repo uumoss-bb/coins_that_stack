@@ -11,7 +11,7 @@ const defaultIncomeFile = {
   keyword: "live nation"
 }
 
-const newLastUpdated = 'Aug 15, 2024'
+const newLastUpdated = 'Sep 13, 2024'
 const newLastUpdatedMilliSec = convertDate.milliseconds(newLastUpdated)
 
 it("Set Up System", () => {
@@ -34,7 +34,7 @@ it("Set Up System", () => {
 
   if(lastUpdated !== newLastUpdatedMilliSec) {
     console.warn("UPDATED LAST UPDATED")
-    updateStacksFile(newLastUpdated)
+    updateStacksFile({ lastUpdated: newLastUpdatedMilliSec })
   }
 
   const orderedStacks = orderStacksByImportance(stacks).map(({name}) => name)
