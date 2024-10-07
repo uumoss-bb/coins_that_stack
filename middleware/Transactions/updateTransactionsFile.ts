@@ -3,7 +3,7 @@ import { DirtyTransactions, Transactions } from "../../shared/types/transactions
 import FileSystem from "../../database/FileSystem"
 
 const updateTransactionsFile = (transactions: DirtyTransactions) => {
-  const { error, data: transactionsFile } = FileSystem.writeJsonFile(TRANSACTIONS_FILE_NAME, transactions)
+  const { error, data: transactionsFile } = FileSystem.writePersonalFile(TRANSACTIONS_FILE_NAME, transactions)
   if(error) {
     throw new Error("Failed to update transactions")
   }

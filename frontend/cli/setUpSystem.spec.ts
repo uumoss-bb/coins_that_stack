@@ -1,41 +1,38 @@
 import { getIncomeFile, updateIncomeFile } from '../../middleware/Income'
-import defaultStacks from '../../shared/defaultStacks'
-import { convertDate } from '../../shared/normalizers'
+import { defaultStacks, defaultIncome } from '../../shared/defaultData'
 import orderStacksByImportance from '../../businessLogic/orderStacksByImportance'
 import { getDirtyTransactions, updateTransactionsFile } from '../../middleware/Transactions'
 import { getStacks, updateStacksFile } from '../../middleware/Stacks'
-import { Stacks } from '../../shared/types/stacks'
 
-const defaultIncomeFile = {
-  coins: 3750,
-  keyword: "live nation"
+const getOrSetIncome = () => {
+  try {
+    return getIncomeFile()
+  } catch (err) {
+    console.log("UPDATED INCOME")
+    updateIncomeFile(defaultIncome)
+    return defaultIncome
+  }
 }
 
-const newLastUpdated = 'Sep 13, 2024'
-const newLastUpdatedMilliSec = convertDate.milliseconds(newLastUpdated)
+const getOrSetStack = () => {
+  try {
+    return getStacks()
+  } catch (err){
+    console.log("UPDATED STACKS")
+    updateStacksFile(defaultStacks)
+    return  {
+      stacks: defaultStacks,
+      lastUpdated: 0
+    }
+  }
+}
 
 it("Set Up System", () => {
-  const income = getIncomeFile()
-  const { stacks, lastUpdated } = getStacks()
+  let income = getOrSetIncome()
+  let { stacks } = getOrSetStack()
 
   const dirtyTransactions = getDirtyTransactions()
   updateTransactionsFile(dirtyTransactions)
-
-  if(income.coins !== defaultIncomeFile.coins) {
-    console.warn("UPDATED INCOME")
-    updateIncomeFile(defaultIncomeFile)
-  }
-
-  const stacksEmpty = !Object.keys(stacks).length
-  if(stacksEmpty) {
-    console.warn("UPDATED STACKS")
-    updateStacksFile(defaultStacks)
-  }
-
-  if(lastUpdated !== newLastUpdatedMilliSec) {
-    console.warn("UPDATED LAST UPDATED")
-    updateStacksFile({ lastUpdated: newLastUpdatedMilliSec })
-  }
 
   const orderedStacks = orderStacksByImportance(stacks).map(({name}) => name)
 
