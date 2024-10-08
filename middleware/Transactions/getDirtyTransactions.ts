@@ -1,12 +1,14 @@
 
 import FileSystem from "../../database/FileSystem"
-import { DIRTY_TRANSACTIONS_FILE_NAME } from "../../shared/enums/fileNames"
+import { DIRTY_TRANSACTIONS } from "../../shared/enums/fileNames"
 import { DirtyTransactions } from "../../shared/types/transactions"
 
 const getTransactionsFile = () => {
-  const { error, data: transactionsFile } = FileSystem.readFile(DIRTY_TRANSACTIONS_FILE_NAME)
+  const { error, data: transactionsFile } = FileSystem.readFile(`${DIRTY_TRANSACTIONS}/index.json`)
   if(error) {
-    throw new Error("getDirtyTransactions failed to get file")
+    FileSystem.checkStorageExists(DIRTY_TRANSACTIONS)
+    FileSystem.writeFile(`${DIRTY_TRANSACTIONS}/index.json`, [])
+    return []
   } else {
     return transactionsFile as DirtyTransactions
   }

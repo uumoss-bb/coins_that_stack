@@ -4,7 +4,7 @@ import DepositCadence from "../../shared/types/income"
 
 
 function updateIncomeFile(newIncome: DepositCadence) {
-  const { error, data } = FileSystem.updateJsonFile(INCOME_FILE_NAME, newIncome)
+  const { error, data } = FileSystem.updatePersonalFile(INCOME_FILE_NAME, newIncome)
   if(error) {
     throw new Error("Failed to set new income")
   }

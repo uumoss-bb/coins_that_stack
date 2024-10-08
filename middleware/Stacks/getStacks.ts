@@ -1,11 +1,11 @@
 import FileSystem from "../../database/FileSystem"
 import { STACK_FILE_NAME } from "../../shared/enums/fileNames"
-import { Stacks, StacksFile } from "../../shared/types/stacks"
+import { Stack, Stacks, StacksFile } from "../../shared/types/stacks"
 
 const getStackFile = () => {
-  const { error, data: stackFile } = FileSystem.readJsonFile(STACK_FILE_NAME)
+  const { error, data: stackFile } = FileSystem.readPersonalFile(STACK_FILE_NAME)
   if(error) {
-    throw new Error("Stacks Init failed to get stacks file")
+    throw new Error('Failed to get stacks file')
   } else {
     return stackFile as StacksFile
   }

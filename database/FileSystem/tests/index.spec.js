@@ -10,17 +10,17 @@ describe("FileSystem CRUD", () => {
   const FileSystem = new _FileSystem(storagePath)
 
   it("write file", () => {
-    const result = FileSystem.writeJsonFile(fileName, data)
+    const result = FileSystem.writePersonalFile(fileName, data)
     expect(result).toEqual({ ...successFullResult, data })
   })
 
   it("read file", () => {
-    const result = FileSystem.readJsonFile(fileName)
+    const result = FileSystem.readPersonalFile(fileName)
     expect(result).toEqual({ ...successFullResult, data })
   })
 
   it("update file", () => {
-    const { data: result } = FileSystem.updateJsonFile(fileName, newData)
+    const { data: result } = FileSystem.updatePersonalFile(fileName, newData)
     expect(result).toEqual({ ...data, ...newData })
   })
 
