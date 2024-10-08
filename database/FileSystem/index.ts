@@ -1,6 +1,5 @@
 import * as fs from 'fs';
-
-export const STORAGE_PATH = './personalStorage'
+import { PERSONAL_STORAGE } from '../../shared/enums/fileNames';
 
 type FileSystemReturn = { error: boolean | string, data: object }
 
@@ -32,7 +31,7 @@ class _FileSystem {
     } catch (err) {
         const errorMsg = 'Failed to READ json file for: ' + filePath
         console.log(errorMsg);
-        return { error: errorMsg, data: { filePath } }
+        return { error: errorMsg, data: {} }
     }
   }
 
@@ -82,4 +81,4 @@ class _FileSystem {
 
 export { _FileSystem }
 
-export default new _FileSystem(STORAGE_PATH)
+export default new _FileSystem(PERSONAL_STORAGE)

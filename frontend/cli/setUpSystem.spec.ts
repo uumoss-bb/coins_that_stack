@@ -8,8 +8,8 @@ const getOrSetIncome = () => {
   try {
     return getIncomeFile()
   } catch (err) {
-    console.log("UPDATED INCOME")
     updateIncomeFile(defaultIncome)
+    console.log("CREATED INCOME FILE")
     return defaultIncome
   }
 }
@@ -18,8 +18,8 @@ const getOrSetStack = () => {
   try {
     return getStacks()
   } catch (err){
-    console.log("UPDATED STACKS")
-    updateStacksFile(defaultStacks)
+    updateStacksFile({ ...defaultStacks, lastUpdated: 0 })
+    console.log("CREATED STACKS FILE")
     return  {
       stacks: defaultStacks,
       lastUpdated: 0
