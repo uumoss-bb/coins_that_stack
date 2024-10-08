@@ -42,5 +42,5 @@ next-env.d.ts
 
 certificates
 
-_dirtyTransactions/
-_personalStorage/
+.dirtyTransactions/
+.personalStorage/
