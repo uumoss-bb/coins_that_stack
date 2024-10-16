@@ -3,6 +3,7 @@ import { defaultStacks, defaultIncome } from '../../shared/defaultData'
 import orderStacksByImportance from '../../businessLogic/orderStacksByImportance'
 import { getDirtyTransactions, updateTransactionsFile } from '../../middleware/Transactions'
 import { getStacks, updateStacksFile } from '../../middleware/Stacks'
+import { convertDate } from '../../shared/normalizers'
 
 const getOrSetIncome = () => {
   try {
@@ -29,7 +30,7 @@ const getOrSetStack = () => {
 
 it("Set Up System", () => {
   let income = getOrSetIncome()
-  let { stacks } = getOrSetStack()
+  let { stacks, lastUpdated } = getOrSetStack()
 
   const dirtyTransactions = getDirtyTransactions()
   updateTransactionsFile(dirtyTransactions)
@@ -37,6 +38,7 @@ it("Set Up System", () => {
   const orderedStacks = orderStacksByImportance(stacks).map(({name}) => name)
 
   console.log("INCOME", income)
+  console.log("LASTUPDATED", convertDate.full(lastUpdated))
   console.log("STACKS", orderedStacks)
 
 })
