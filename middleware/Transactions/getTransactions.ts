@@ -5,7 +5,7 @@ import { TRANSACTIONS_FILE_NAME } from "../../shared/enums/fileNames"
 import { DirtyTransactions, TransSourceNames } from "../../shared/types/transactions"
 
 const getTransactionsFile = () => {
-  const { error, data: transactionsFile } = FileSystem.readJsonFile(TRANSACTIONS_FILE_NAME)
+  const { error, data: transactionsFile } = FileSystem.readPersonalFile(TRANSACTIONS_FILE_NAME)
   if(error) {
     throw new Error("getTransactions failed to get file")
   } else {

@@ -5,7 +5,6 @@ import calculatePayDay from "./calculatePayDay";
 
 function audit() {
   const { coins } = getIncomeFile()
-  const { stacks: currentStacks } = getStacks()
   const {
     latestStacks,
     stackedTransactions: latestStackedTransactions,
