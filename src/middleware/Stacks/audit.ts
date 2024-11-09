@@ -1,18 +1,17 @@
 import { getIncomeFile } from "../Income";
-import getStacks from "./getStacks";
 import calculateLatestExpenses from "./calculateExpenses";
 import calculatePayDay from "./calculatePayDay";
 
 function audit() {
-  const { coins } = getIncomeFile()
+  const { coins } = getIncomeFile()//This process need to get all the deposits
   const {
     latestStacks,
     stackedTransactions: latestStackedTransactions,
     nonStackedTransactions: latestFreeTransactions,
     deposits
-  } = calculateLatestExpenses()// these are just expenses
+  } = calculateLatestExpenses()
 
-  const { fatStacks, stackPayments } = calculatePayDay(coins, latestStacks)// these are the stacks being changed
+  const { fatStacks, stackPayments } = calculatePayDay(coins, latestStacks)
 
   return {
     latestStacks,
