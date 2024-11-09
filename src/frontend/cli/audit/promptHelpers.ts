@@ -18,7 +18,7 @@ const OnDeclineUpdateLastUpdated = (recursiveIndex = 0) => async (confirmed:stri
     echo(yellow('I normalized the date for you: ') + newDateInFull)
     await prompt.confirm(`is this right?`, OnDeclineUpdateLastUpdated(recursiveIndex + 1))
 
-    if(recursiveIndex == 0) {//This is failing
+    if(recursiveIndex == 0) {//TODO: This is failing
       echo(yellow('updating last updated date...'))
       updateStacksFile({ lastUpdated: newDateInMilli })
       echo(yellow('...done'))

@@ -17,10 +17,10 @@ const addCoinsToStacks = (income: number, orderedStacks: StacksArray) => {
   const fatStacks = orderedStacks.map(stack => {
     if(stack.depositCadence && stack.depositCadence.importanceLevel) {
       const { type, amount, incidence, lastUpdated } = stack.depositCadence
-      //add incidence of any time
+      //TODO: add incidence of any time
       const incidenceDate = getIncidenceDate[incidence]()
       const needsUpdated = lastUpdated <= incidenceDate
-      const hardUpdate = process.env.HARD_UPDATE === 'true'// remove this
+      const hardUpdate = process.env.HARD_UPDATE === 'true'//TODO:  remove this
       if(needsUpdated || hardUpdate) {
         const payment = getPaymentByType[type](amount, income)
         stackPayments[stack.name] = payment

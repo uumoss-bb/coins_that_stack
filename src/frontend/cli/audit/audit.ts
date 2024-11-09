@@ -84,12 +84,12 @@ const audit = async () => {
     latestStacks,
     stackedTransactions: latestStackedTransactions,
     nonStackedTransactions: latestFreeTransactions,
-    deposits//You have deposits here
+    deposits//TODO: You have deposits here
   } = calculateLatestExpenses()
   echo(yellow('...done.'))
 
   echo(yellow('calculating deposits...'))
-  const { coins } = getOrSetIncome() //Update this to get all deposits
+  const { coins } = getOrSetIncome() //TODO: Update this to get all deposits
   const { fatStacks, stackPayments } = calculatePayDay(coins, latestStacks)
   echo(yellow('...done.'))
 
@@ -110,14 +110,14 @@ const audit = async () => {
   addSpace()
 
   echo(yellow("CALCULATED DEPOSITS"))
-  console.log(normalizePayDayExpenses(coins, stackPayments))//Do more
+  console.log(normalizePayDayExpenses(coins, stackPayments))//TODO: Do more
   console.table(compareFatStacks(latestStacks, fatStacks, stackPayments))
   await prompt.confirm('does this look right?')
 
   addSpace()
 
   echo(yellow("STACKS: final review"))
-  console.table(collectGroupCoins(fatStacks))//Do more
+  console.table(collectGroupCoins(fatStacks))//TODO: Do more
   await prompt.confirm('does this look right?', onConfirmUpdateStacks)
 
   addSpace()
