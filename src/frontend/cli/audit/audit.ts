@@ -111,7 +111,7 @@ const audit = async () => {
 
   echo(yellow("CALCULATED DEPOSITS"))
   console.log(normalizePayDayExpenses(coins, stackPayments))//TODO: Do more
-  console.table(compareFatStacks(latestStacks, fatStacks, stackPayments))
+  console.table(compareFatStacks(latestStacks, fatStacks, stackPayments))//TODO: ill need indicators of whats passed the incidence check
   await prompt.confirm('does this look right?')
 
   addSpace()
