@@ -8,10 +8,13 @@ import { defaultIncome, defaultStacks } from '../../shared/defaultData'
 import { getIncomeFile, updateIncomeFile } from '../../middleware/Income'
 import orderStacksByImportance from '../../businessLogic/orderStacksByImportance'
 import { StacksArray } from '../../shared/types/stacks'
-import { formatToCurrency } from '../../shared/normalizers'
+import { convertDate, formatToCurrency } from '../../shared/normalizers'
 import { confirm } from '../../shared/cliPrompt'
+import { getDirtyTransactions, updateTransactionsFile } from '../../middleware/Transactions'
 
-const errorMessage = 'you are not a true dragon born.'
+const errorMessage = 'FAILED to Audit'
+
+const addSpace = () => echo('\n')
 
 const getOrSetIncome = () => {
   try {
@@ -44,13 +47,31 @@ const normalizeStacks = (stacks: StacksArray) =>
   }))
 
 const audit = async () => {
-  console.clear()
-  echo(rainbow('Time to Stack Them Coins.'))
   const { stacks, lastUpdated } = getOrSetStack()
   const orderedStacks = orderStacksByImportance(stacks)
 
+  console.clear()
+  addSpace()
+
+  echo('---------- STACK COINS ----------')
+
+  addSpace()
+
+  console.log(yellow('The last time you audited: '), convertDate.full(lastUpdated))
+  await confirm('Does this look right?')
+
+  addSpace()
+
+  echo(yellow('Your Stacks'))
   console.table(normalizeStacks(orderedStacks))
-  await confirm('How do your stacks look?')
+  await confirm('Does this look right?')
+
+  addSpace()
+
+  echo(yellow('processing transactions...'))
+  const dirtyTransactions = getDirtyTransactions()
+  updateTransactionsFile(dirtyTransactions)
+  echo(yellow('...done.'))
 }
 
 (async () => await errorHandlerWrapper(audit, errorMessage))();
