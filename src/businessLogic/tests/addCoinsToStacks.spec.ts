@@ -38,8 +38,8 @@ describe('addCoinsToStacks', () => {
     }
 
     const result = addCoinsToStacks(coins, [stackWithPercentage, stackWithExact])
-    expect(result[0].coins).toBe(2100)
-    expect(result[1].coins).toBe(2200)
+    expect(result.fatStacks[0].coins).toBe(2100)
+    expect(result.fatStacks[1].coins).toBe(2200)
   })
 
   it('add coins to stacks with incidence bi-weekly and are ready to be updated', () => {
@@ -70,7 +70,7 @@ describe('addCoinsToStacks', () => {
     }
 
     const result = addCoinsToStacks(coins, [stackThatsReady, stackThatsNotRead])
-    expect(result[0].coins).toBe(2100)
-    expect(result[1].coins).toBe(2000)
+    expect(result.fatStacks[0].coins).toBe(2100)
+    expect(result.fatStacks[1].coins).toBe(2000)
   })
 })

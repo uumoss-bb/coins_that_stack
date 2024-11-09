@@ -1,6 +1,6 @@
-import FileSystem from "../../database/FileSystem"
+import FileSystem from "../../backend/FileSystem"
 import { STACK_FILE_NAME } from "../../shared/enums/fileNames"
-import { Stack, Stacks, StacksFile } from "../../shared/types/stacks"
+import { Stacks, StacksFile } from "../../shared/types/stacks"
 
 const getStackFile = () => {
   const { error, data: stackFile } = FileSystem.readPersonalFile(STACK_FILE_NAME)

@@ -59,7 +59,7 @@ describe("Link Stacks and Transactions", () => {
   const linkedResult: ConnectedStacksAndTrans = {
     deposits: [ deposit ],
     stackedTransactions: [
-      { ...amazonWithdraw, stacks: [ stackA.name ] }
+      { ...amazonWithdraw, stacks: [ stackA.name ], keyword: stackA.components.keywords[0] }
     ],
     nonStackedTransactions : [ cigarAmazonWithdraw ],
     stacks: {
@@ -67,7 +67,7 @@ describe("Link Stacks and Transactions", () => {
         ...stackA,
         coins: -20,
         components: {
-          transactions: [ { ...amazonWithdraw, stacks: [ stackA.name ] } ],
+          transactions: [ { ...amazonWithdraw, stacks: [ stackA.name ], keyword: stackA.components.keywords[0] } ],
           keywords: stackA.components.keywords
         }
       },

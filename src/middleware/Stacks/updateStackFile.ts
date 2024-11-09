@@ -1,4 +1,4 @@
-import FileSystem from "../../database/FileSystem"
+import FileSystem from "../../backend/FileSystem"
 import { STACK_FILE_NAME } from "../../shared/enums/fileNames"
 import { Stacks, StacksFile, StacksLastUpdated } from "../../shared/types/stacks"
 

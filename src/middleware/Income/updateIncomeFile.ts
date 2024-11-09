@@ -1,6 +1,6 @@
-import FileSystem from "../../database/FileSystem"
+import FileSystem from "../../backend/FileSystem"
 import { INCOME_FILE_NAME } from "../../shared/enums/fileNames"
-import DepositCadence from "../../shared/types/income"
+import { DepositCadence } from "../../shared/types/income"
 
 
 function updateIncomeFile(newIncome: DepositCadence) {
