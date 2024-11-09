@@ -13,7 +13,7 @@
     "type-check": "tsc --noEmit",
     "test": "jest --testPathIgnorePatterns='./frontend/cli' --testPathIgnorePatterns='./tools'",
     "set": "jest ./frontend/cli/setUpSystem",
-    "audit": "node ./dist/frontend/cli/audit",
+    "audit": "node ./dist/frontend/cli/audit/audit",
     "mockTrans": "jest ./tools/createMockTransactions"
   },
   "repository": {

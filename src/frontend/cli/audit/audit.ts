@@ -1,0 +1,136 @@
+#!/usr/bin/env node
+import { green, rainbow, yellow } from '../../../shared/colors'
+import { exec, echo } from 'shelljs'
+import inquirer from 'inquirer'
+import errorHandlerWrapper from '../../../shared/errorHandlerWrapper'
+import { calculateLatestExpenses, calculatePayDay, getStacks, updateStacksFile } from '../../../middleware/Stacks'
+import { defaultIncome, defaultStacks } from '../../../shared/defaultData'
+import { getIncomeFile, updateIncomeFile } from '../../../middleware/Income'
+import orderStacksByImportance from '../../../businessLogic/orderStacksByImportance'
+import { StackPayments, Stacks, StacksArray } from '../../../shared/types/stacks'
+import { convertDate, formatToCurrency } from '../../../shared/normalizers'
+import * as prompt from '../../../shared/cliPrompt'
+import { getDirtyTransactions, updateTransactionsFile } from '../../../middleware/Transactions'
+import { Transactions } from '../../../shared/types/transactions'
+import sortTransactions from '../../../businessLogic/sortTransactions'
+import {
+  onConfirmUpdateStacks,
+  OnDeclineResortTransactions,
+  OnDeclineUpdateLastUpdated
+} from './promptHelpers'
+import {
+  normalizeStacks,
+  normalizeTransactions,
+  normalizePayDayExpenses,
+  compareStacks,
+  compareFatStacks,
+  collectGroupCoins
+} from './normalizers'
+
+const errorMessage = 'FAILED to Audit'
+
+const addSpace = () => echo('\n')
+
+const getOrSetIncome = () => {
+  try {
+    return getIncomeFile()
+  } catch (err) {
+    updateIncomeFile(defaultIncome)
+    echo(yellow("Setup new Income File"))
+    return defaultIncome
+  }
+}
+
+const getOrSetStack = () => {
+  try {
+    return getStacks()
+  } catch (err){
+    updateStacksFile({ ...defaultStacks, lastUpdated: 0 })
+    echo(yellow("Setup new Stacks File"))
+    return  {
+      stacks: defaultStacks,
+      lastUpdated: 0
+    }
+  }
+}
+
+const audit = async () => {
+  const { stacks, lastUpdated } = getOrSetStack()
+  const orderedStacks = orderStacksByImportance(stacks)
+
+  console.clear()
+  addSpace()
+
+  echo('---------- STACK COINS ----------')
+
+  addSpace()
+
+  echo(yellow('currently your stacks look like this.'))
+  console.table(normalizeStacks(orderedStacks))
+  await prompt.confirm('does this look right?')
+
+  addSpace()
+
+  console.log(yellow('the last time you did an audit was: '), convertDate.full(lastUpdated))
+  await prompt.confirm('does this look right?', OnDeclineUpdateLastUpdated())
+
+  addSpace()
+
+  echo(green('---------- lets begin the audit ----------'))
+  echo(yellow('processing transactions...'))
+  const dirtyTransactions = getDirtyTransactions()
+  updateTransactionsFile(dirtyTransactions)
+  echo(yellow('...done.'))
+
+  echo(yellow('calculating expenses...'))
+  const {
+    latestStacks,
+    stackedTransactions: latestStackedTransactions,
+    nonStackedTransactions: latestFreeTransactions,
+    deposits
+  } = calculateLatestExpenses()
+  echo(yellow('...done.'))
+
+  echo(yellow('calculating deposits...'))
+  const { coins } = getOrSetIncome() //Update this to get all deposits
+  const { fatStacks, stackPayments } = calculatePayDay(coins, latestStacks)
+  echo(yellow('...done.'))
+
+  addSpace()
+
+  console.log("EXPENSES (sorted by stack)")
+  const unsortedTransactions = [...latestStackedTransactions, ...latestFreeTransactions]
+  const transactions = sortTransactions(unsortedTransactions, 'stack')
+  console.table(normalizeTransactions(transactions))
+  await prompt.confirm('is this sorted well?', OnDeclineResortTransactions(unsortedTransactions))
+
+  addSpace()
+
+  echo(yellow("CALCULATED EXPENSES"))
+  console.table(compareStacks(stacks, orderStacksByImportance(latestStacks)))
+  await prompt.confirm('does this look right?')
+
+  addSpace()
+
+  echo(yellow("CALCULATED DEPOSITS"))
+  console.log(normalizePayDayExpenses(coins, stackPayments))//Do more
+  console.table(compareFatStacks(latestStacks, fatStacks, stackPayments))
+  await prompt.confirm('does this look right?')
+
+  addSpace()
+
+  echo(yellow("STACKS: final review"))
+  console.table(collectGroupCoins(fatStacks))//Do more
+  await prompt.confirm('does this look right?', onConfirmUpdateStacks)
+
+  addSpace()
+
+  echo(green("---------- audit is finished ----------"))
+  echo(yellow("well done!").dim)
+
+  addSpace()
+
+}
+
+(async () => await errorHandlerWrapper(audit, errorMessage))();
+
