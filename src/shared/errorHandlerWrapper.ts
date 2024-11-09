@@ -7,13 +7,13 @@ const errorHandlerWrapper = async (func: () => void, errorMessage: string) => {
 
   try {
     await func()
-  } catch({ message }: any) {
-    if(message.includes('User force closed the prompt')) {
+  } catch(error: any) {
+    if(error.message.includes('User force closed the prompt')) {
       echo(yellow('canceled'))
       exit(1)
     }
     echo(red(errorMessage))
-    echo(message)
+    console.log(error)
     exit(1)
   }
 }
