@@ -1,4 +1,3 @@
-import { convertDate } from '../../shared/normalizers'
 import filterTransactionsByDate from '../filterTransactionsByDate'
 
 const mockTransactions = [
