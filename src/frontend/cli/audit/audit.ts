@@ -1,18 +1,15 @@
 #!/usr/bin/env node
-import { green, rainbow, yellow } from '../../../shared/colors'
-import { exec, echo } from 'shelljs'
-import inquirer from 'inquirer'
+import { echo } from 'shelljs'
+import { green, yellow } from '../../../shared/colors'
 import errorHandlerWrapper from '../../../shared/errorHandlerWrapper'
-import { calculateLatestExpenses, calculatePayDay, getStacks, updateStacksFile } from '../../../middleware/Stacks'
 import { defaultIncome, defaultStacks } from '../../../shared/defaultData'
-import { getIncomeFile, updateIncomeFile } from '../../../middleware/Income'
-import orderStacksByImportance from '../../../businessLogic/orderStacksByImportance'
-import { StackPayments, Stacks, StacksArray } from '../../../shared/types/stacks'
-import { convertDate, formatToCurrency } from '../../../shared/normalizers'
+import { convertDate } from '../../../shared/normalizers'
 import * as prompt from '../../../shared/cliPrompt'
-import { getDirtyTransactions, updateTransactionsFile } from '../../../middleware/Transactions'
-import { Transactions } from '../../../shared/types/transactions'
+import orderStacksByImportance from '../../../businessLogic/orderStacksByImportance'
 import sortTransactions from '../../../businessLogic/sortTransactions'
+import { calculateLatestExpenses, calculatePayDay, getStacks, updateStacksFile } from '../../../middleware/Stacks'
+import { getIncomeFile, updateIncomeFile } from '../../../middleware/Income'
+import { getDirtyTransactions, updateTransactionsFile } from '../../../middleware/Transactions'
 import {
   onConfirmUpdateStacks,
   OnDeclineResortTransactions,
@@ -87,7 +84,7 @@ const audit = async () => {
     latestStacks,
     stackedTransactions: latestStackedTransactions,
     nonStackedTransactions: latestFreeTransactions,
-    deposits
+    deposits//You have deposits here
   } = calculateLatestExpenses()
   echo(yellow('...done.'))
 
