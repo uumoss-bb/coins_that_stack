@@ -1,14 +1,14 @@
 import { convertDate } from "../shared/normalizers"
 import { Transactions, Transaction } from "../shared/types/transactions"
 
-const LessThanEndDate = (endDate: string) => (transaction: Transaction) => {
+const EarlierThanEndDate = (endDate: string) => (transaction: Transaction) => {
   const milliEndDate = convertDate.milliseconds(endDate)
   if(transaction.date <= milliEndDate) {
     return transaction
   }
 }
 
-const GreaterThanStartDate = (startDate: string) => (transaction: Transaction) => {
+const LaterThanStartDate = (startDate: string) => (transaction: Transaction) => {
   const milliStartDate = convertDate.milliseconds(startDate)
   if(transaction.date >= milliStartDate) {
     return transaction
@@ -29,11 +29,11 @@ const filterTransactionsByDate = (transactions: Transactions, startDate: string|
   }
 
   if(startDate && !endDate) {
-    return transactions.filter(GreaterThanStartDate(startDate))
+    return transactions.filter(LaterThanStartDate(startDate))
   }
 
   if(!startDate && endDate) {
-    return transactions.filter(LessThanEndDate(endDate))
+    return transactions.filter(EarlierThanEndDate(endDate))
   }
 }
 

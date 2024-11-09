@@ -1,11 +1,10 @@
 import { convertDate } from '../../shared/normalizers'
 import filterTransactionsByDate from '../filterTransactionsByDate'
-//TODO: FAILING
 
 const mockTransactions = [
   {
     "title": "burger king #4707 fort wayne in",
-    "date": 798008400000,
+    "date": new Date("April 1, 1995").getTime(),
     "category": "",
     "type": "withdraw",
     "transaction": -100,
@@ -15,7 +14,7 @@ const mockTransactions = [
   },
   {
     "title": "burger king #4707 fort wayne in",
-    "date": 798094800000,
+    "date": new Date("April 16, 1995").getTime(),
     "category": "",
     "type": "withdraw",
     "transaction": -100,
@@ -25,7 +24,7 @@ const mockTransactions = [
   },
   {
     "title": "burger king #4707 fort wayne in",
-    "date": 798181200000,
+    "date": new Date("April 18, 1995").getTime(),
     "category": "",
     "type": "withdraw",
     "transaction": -100,
@@ -35,57 +34,7 @@ const mockTransactions = [
   },
   {
     "title": "burger king #4707 fort wayne in",
-    "date": 798267600000,
-    "category": "",
-    "type": "withdraw",
-    "transaction": -100,
-    "balance": 99700,
-    "source": "FORT_FINANCIAL",
-    "stacks": []
-  },
-  {
-    "title": "burger king #4707 fort wayne in",
-    "date": 798354000000,
-    "category": "",
-    "type": "withdraw",
-    "transaction": -100,
-    "balance": 99600,
-    "source": "FORT_FINANCIAL",
-    "stacks": []
-  },
-  {
-    "title": "burger king #4707 fort wayne in",
-    "date": 798440400000,
-    "category": "",
-    "type": "withdraw",
-    "transaction": -100,
-    "balance": 99500,
-    "source": "FORT_FINANCIAL",
-    "stacks": []
-  },
-  {
-    "title": "burger king #4707 fort wayne in",
-    "date": 798526800000,
-    "category": "",
-    "type": "withdraw",
-    "transaction": -100,
-    "balance": 99400,
-    "source": "FORT_FINANCIAL",
-    "stacks": []
-  },
-  {
-    "title": "burger king #4707 fort wayne in",
-    "date": 798613200000,
-    "category": "",
-    "type": "withdraw",
-    "transaction": -100,
-    "balance": 99300,
-    "source": "FORT_FINANCIAL",
-    "stacks": []
-  },
-  {
-    "title": "burger king #4707 fort wayne in",
-    "date": 798699600000,
+    "date": new Date("April 20, 1995").getTime(),
     "category": "",
     "type": "withdraw",
     "transaction": -100,
@@ -95,21 +44,11 @@ const mockTransactions = [
   },
   {
     "title": "burger king #4707 fort wayne in",
-    "date": 798786000000,
+    "date": new Date("April 22, 1995").getTime(),
     "category": "",
     "type": "withdraw",
     "transaction": -100,
     "balance": 99100,
-    "source": "FORT_FINANCIAL",
-    "stacks": []
-  },
-  {
-    "title": "burger king #4707 fort wayne in",
-    "date": 798872400000,
-    "category": "",
-    "type": "withdraw",
-    "transaction": -100,
-    "balance": 99000,
     "source": "FORT_FINANCIAL",
     "stacks": []
   }
@@ -118,23 +57,32 @@ const mockTransactions = [
 const startDate = "April 16, 1995"
 const endDate = "April 20, 1995"
 
+//NOTE: this function does not sort them.
+
 describe("Filter Transactions By Date", () => {
   it("return all transactions in between start and end date", () => {
     const transactions = filterTransactionsByDate(mockTransactions, startDate, endDate)
-    expect(transactions[0].date).toBe(convertDate.milliseconds(startDate))
-    expect(transactions[transactions.length - 1].date).toBe(convertDate.milliseconds(endDate))
-
+    expect(transactions.length).toBe(3)
+    expect(transactions[0].date).toBe(mockTransactions[1].date)
+    expect(transactions[1].date).toBe(mockTransactions[2].date)
+    expect(transactions[2].date).toBe(mockTransactions[3].date)
   })
 
-  it("return all transactions greater than or equal to start date", () => {
+  it("return all transactions later than or equal to start date", () => {
     const transactions = filterTransactionsByDate(mockTransactions, startDate, null)
-    expect(transactions[0].date).toBe(convertDate.milliseconds(startDate))
-    expect(transactions[transactions.length - 1].date).toBe(mockTransactions[mockTransactions.length - 1].date)
+    expect(transactions.length).toBe(4)
+    expect(transactions[0].date).toBe(mockTransactions[1].date)
+    expect(transactions[1].date).toBe(mockTransactions[2].date)
+    expect(transactions[2].date).toBe(mockTransactions[3].date)
+    expect(transactions[3].date).toBe(mockTransactions[4].date)
   })
 
-  it("return all transactions less than or equal to end date", () => {
+  it("return all transactions Earlier than or equal to end date", () => {
     const transactions = filterTransactionsByDate(mockTransactions, null, endDate)
+    expect(transactions.length).toBe(4)
     expect(transactions[0].date).toBe(mockTransactions[0].date)
-    expect(transactions[transactions.length - 1].date).toBe(convertDate.milliseconds(endDate))
+    expect(transactions[1].date).toBe(mockTransactions[1].date)
+    expect(transactions[2].date).toBe(mockTransactions[2].date)
+    expect(transactions[3].date).toBe(mockTransactions[3].date)
   })
 })
