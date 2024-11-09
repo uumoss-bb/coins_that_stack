@@ -1,6 +1,6 @@
 
 import normalizeTransactions from "../../businessLogic/normalizeTransactions"
-import FileSystem from "../../database/FileSystem"
+import FileSystem from "../../backend/FileSystem"
 import { TRANSACTIONS_FILE_NAME } from "../../shared/enums/fileNames"
 import { DirtyTransactions, TransSourceNames } from "../../shared/types/transactions"
 

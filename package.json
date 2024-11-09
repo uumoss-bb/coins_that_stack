@@ -1,10 +1,19 @@
 {
-  "name": "coins_that_stack",
+  "name": "coin_stacks",
   "version": "2.0.0",
   "description": "We Like Shiny Coins",
   "main": "index.js",
-  "type": "module",
+  "type": "commonjs",
+  "bin": {
+    "spells": "./dist/help/displayCommands.js"
+  },
   "scripts": {
+    "clean": "rm -rf dist",
+    "build": "npm run clean && babel src --out-dir dist --extensions '.ts,.tsx'",
+    "link": "npm link && npm link coin_stacks",
+    "permissions": "chmod +x ./dist/**/*",
+    "local:install": "npm run build && npm run link && npm run permissions",
+    "type-check": "tsc --noEmit",
     "test": "jest --testPathIgnorePatterns='./frontend/cli' --testPathIgnorePatterns='./tools'",
     "set": "jest ./frontend/cli/setUpSystem",
     "audit": "jest ./frontend/cli/displayAudit",
@@ -23,8 +32,7 @@
   },
   "homepage": "https://github.com/uumoss-bb/coins_that_stack#readme",
   "dependencies": {
-    "@babel/plugin-proposal-do-expressions": "^7.24.7",
-    "@babel/plugin-proposal-object-rest-spread": "^7.20.7",
+    "@babel/preset-typescript": "^7.26.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
@@ -38,6 +46,8 @@
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
+    "@babel/plugin-proposal-do-expressions": "^7.24.7",
+    "@babel/plugin-proposal-object-rest-spread": "^7.20.7",
     "@babel/plugin-transform-runtime": "^7.24.7",
     "@babel/preset-env": "^7.25.2",
     "@babel/preset-react": "^7.24.7",

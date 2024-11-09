@@ -1,4 +1,4 @@
-import FileSystem from "../../database/FileSystem"
+import FileSystem from "../../backend/FileSystem"
 import { INCOME_FILE_NAME } from "../../shared/enums/fileNames"
 import { Income } from "../../shared/types/income"
 

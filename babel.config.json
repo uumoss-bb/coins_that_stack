@@ -5,6 +5,7 @@
     "@babel/plugin-transform-runtime"
   ],
   "presets": [
-    ["next/babel"]
+    "@babel/preset-env",
+    "@babel/preset-typescript"
   ]
 }

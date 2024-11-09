@@ -1,6 +1,6 @@
 import { _FileSystem } from '../index'
 
-const storagePath = './database/FileSystem/tests/testStorage'
+const storagePath = './backend/FileSystem/tests/testStorage'
 const fileName = 'testData'
 const data = { data: 'some test data' }
 const newData = { newData: 'some new data' }
