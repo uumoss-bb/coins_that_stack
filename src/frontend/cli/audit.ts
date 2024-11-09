@@ -11,6 +11,8 @@ import { Stacks, StacksArray } from '../../shared/types/stacks'
 import { convertDate, formatToCurrency } from '../../shared/normalizers'
 import * as prompt from '../../shared/cliPrompt'
 import { getDirtyTransactions, updateTransactionsFile } from '../../middleware/Transactions'
+import { Transactions } from '../../shared/types/transactions'
+import sortTransactions from '../../businessLogic/sortTransactions'
 
 const errorMessage = 'FAILED to Audit'
 
@@ -46,6 +48,15 @@ const normalizeStacks = (stacks: StacksArray) =>
     name,
     coins: formatToCurrency(coins),
     group: group || null
+  }))
+
+const normalizeTransactions = (transactions: Transactions) =>
+  transactions.map(({title, date, coins, stacks, keyword = null}) => ({
+    title,
+    keyword,
+    date: convertDate.full(date),
+    coins: formatToCurrency(coins),
+    stacks
   }))
 
 const compareStacks = (currentStacks: Stacks, latestStacks: StacksArray) => {
@@ -91,6 +102,19 @@ const OnDeclineUpdateLastUpdated = (recursiveIndex = 0) => async (confirmed:stri
   }
 }
 
+const OnDeclineResortTransactions = (transactions:Transactions) => async (confirmed:string) => {
+  if(confirmed) {
+    const sortType = await prompt.choose('enter a sorting method:', ['date', 'stack'])
+    const newlySortedTransactions = sortTransactions(transactions, sortType)
+
+    addSpace()
+
+    console.log(`EXPENSES (sorted by ${sortType})`)
+    console.table(normalizeTransactions(newlySortedTransactions))
+    await prompt.confirm('would you like to resort?', OnDeclineResortTransactions(transactions))
+  }
+}
+
 const audit = async () => {
   const { stacks, lastUpdated } = getOrSetStack()
   const orderedStacks = orderStacksByImportance(stacks)
@@ -104,12 +128,12 @@ const audit = async () => {
 
   echo(yellow('currently your stacks look like this.'))
   console.table(normalizeStacks(orderedStacks))
-  await prompt.confirm('Does this look right?')
+  await prompt.confirm('does this look right?')
 
   addSpace()
 
   console.log(yellow('the last time you did an audit was: '), convertDate.full(lastUpdated))
-  await prompt.confirm('Does this look right?', OnDeclineUpdateLastUpdated())
+  await prompt.confirm('does this look right?', OnDeclineUpdateLastUpdated())
 
   addSpace()
 
@@ -129,9 +153,17 @@ const audit = async () => {
 
   addSpace()
 
+  const unsortedTransactions = [...latestStackedTransactions, ...latestFreeTransactions]
+  const transactions = sortTransactions(unsortedTransactions, 'stack')
+  console.log("EXPENSES (sorted by stack)")
+  console.table(normalizeTransactions(transactions))
+  await prompt.confirm('would you like to resort?', OnDeclineResortTransactions(unsortedTransactions))
+
+  addSpace()
+
   echo(yellow("CALCULATED EXPENSES"))
   console.table(compareStacks(stacks, orderStacksByImportance(latestStacks)))
-  await prompt.confirm('Does this look right?')
+  await prompt.confirm('does this look right?')
 }
 
 (async () => await errorHandlerWrapper(audit, errorMessage))();
