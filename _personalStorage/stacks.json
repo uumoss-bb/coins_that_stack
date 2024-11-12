@@ -1,0 +1,144 @@
+{
+  "BB Owes": {
+    "name": "BB Owes",
+    "components": {
+      "keywords": [
+        "canyon"
+      ],
+      "transactions": []
+    },
+    "coins": 0
+  },
+  "Mortgage": {
+    "name": "Mortgage",
+    "components": {
+      "keywords": [
+        "cooper"
+      ],
+      "transactions": []
+    },
+    "coins": 1353,
+    "depositCadence": {
+      "type": "exact",
+      "incidence": "bi-weekly",
+      "amount": 1353,
+      "importanceLevel": 1,
+      "lastUpdated": 1731094491882
+    },
+    "group": "House"
+  },
+  "Utilities": {
+    "name": "Utilities",
+    "components": {
+      "keywords": [
+        "frontier",
+        "fort wayne utili",
+        "xcel",
+        "aepindia",
+        "celina",
+        "nipsco"
+      ],
+      "transactions": []
+    },
+    "coins": 739,
+    "depositCadence": {
+      "type": "exact",
+      "incidence": "bi-weekly",
+      "amount": 419,
+      "importanceLevel": 2,
+      "lastUpdated": 1731094491882
+    },
+    "group": "House"
+  },
+  "Food": {
+    "name": "Food",
+    "components": {
+      "keywords": [
+        "safeway",
+        "costco",
+        "kroger",
+        "wall-mart",
+        "meijer",
+        "aldi"
+      ],
+      "transactions": []
+    },
+    "coins": 750,
+    "depositCadence": {
+      "type": "exact",
+      "incidence": "bi-weekly",
+      "amount": 750,
+      "importanceLevel": 3,
+      "lastUpdated": 1731094491882
+    },
+    "group": "Family"
+  },
+  "Emergency Fund": {
+    "name": "Emergency Fund",
+    "components": {
+      "keywords": [],
+      "transactions": []
+    },
+    "coins": 29000,
+    "depositCadence": {
+      "type": "percent",
+      "incidence": "bi-weekly",
+      "amount": 25.64,
+      "importanceLevel": 4,
+      "lastUpdated": 1731094491882
+    },
+    "group": "Emergency Fund"
+  },
+  "Subscriptions": {
+    "name": "Subscriptions",
+    "components": {
+      "keywords": [
+        "audible",
+        "lee brothers",
+        "spotify",
+        "dropbox",
+        "prime",
+        "ring",
+        "disney plus",
+        "netflix",
+        "lastpass",
+        "chatgpt"
+      ],
+      "transactions": []
+    },
+    "coins": 330,
+    "depositCadence": {
+      "type": "exact",
+      "incidence": "bi-weekly",
+      "amount": 158,
+      "importanceLevel": 5,
+      "lastUpdated": 1731094491882
+    },
+    "group": "House"
+  },
+  "Family Coin": {
+    "name": "Family Coin",
+    "components": {
+      "keywords": [
+        "amazon",
+        "menards",
+        "hicksville sport",
+        "masters heating & cooling",
+        "bargain lane",
+        "chelsea kelly",
+        "pet supplies"
+      ],
+      "transactions": []
+    },
+    "coins": 1669,
+    "depositCadence": {
+      "type": "percent",
+      "incidence": "bi-weekly",
+      "amount": 6.4,
+      "importanceLevel": 6,
+      "lastUpdated": 1731094491882
+    },
+    "group": "Family"
+  },
+  "lastUpdated": 1731042000000
+}

@@ -13,14 +13,14 @@ const getPaymentByType:{ [key in DepositTypes]: (amount: number, coins: number)=
 }
 
 const addCoinsToStacks = (income: number, orderedStacks: StacksArray) => {
-  // This needs to be updated to handle when we go over the income amount
   const stackPayments: StackPayments = {}
   const fatStacks = orderedStacks.map(stack => {
     if(stack.depositCadence && stack.depositCadence.importanceLevel) {
       const { type, amount, incidence, lastUpdated } = stack.depositCadence
+      //TODO: add incidence of any time
       const incidenceDate = getIncidenceDate[incidence]()
       const needsUpdated = lastUpdated <= incidenceDate
-      const hardUpdate = process.env.HARD_UPDATE === 'true'
+      const hardUpdate = process.env.HARD_UPDATE === 'true'//TODO:  remove this
       if(needsUpdated || hardUpdate) {
         const payment = getPaymentByType[type](amount, income)
         stackPayments[stack.name] = payment

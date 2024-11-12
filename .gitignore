@@ -44,3 +44,4 @@ certificates
 
 .dirtyTransactions/
 .personalStorage/
+dist/
