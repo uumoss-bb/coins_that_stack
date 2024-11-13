@@ -1,9 +1,9 @@
 import getIncomeFile from "./getIncomeFile";
-import findIncome from "./findIncome";
+import getRecentDeposits from "./getRecentDeposits";
 import updateIncomeFile from "./updateIncomeFile";
 
 export {
   getIncomeFile,
-  findIncome,
+  getRecentDeposits,
   updateIncomeFile
 }

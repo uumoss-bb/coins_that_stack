@@ -9,7 +9,7 @@ const normalizeStacks = (stacks: StacksArray) =>
     name,
     coins: formatToCurrency(coins),
     group: group || null
-  }))
+}))
 
 const normalizeTransactions = (transactions: Transactions) =>
   transactions.map(({title, date, coins, stacks, keyword = null}) => ({
@@ -18,7 +18,14 @@ const normalizeTransactions = (transactions: Transactions) =>
     date: convertDate.full(date),
     coins: formatToCurrency(coins),
     stacks
-  }))
+}))
+
+const normalizeDeposits = (transactions: Transactions) =>
+  transactions.map(({title, date, coins}) => ({
+    title,
+    date: convertDate.full(date),
+    coins: formatToCurrency(coins)
+}))
 
 const normalizePayDayExpenses = (income: number, stackPayments: StackPayments) => {
   const totalPayments = Object.values(stackPayments).reduce((prevValue, payment) => prevValue + payment, 0)
@@ -95,6 +102,7 @@ const collectGroupCoins = (stacks: StacksArray) => {
 export {
   normalizeStacks,
   normalizeTransactions,
+  normalizeDeposits,
   normalizePayDayExpenses,
   compareStacks,
   compareFatStacks,

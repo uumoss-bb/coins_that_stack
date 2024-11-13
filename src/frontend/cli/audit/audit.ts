@@ -8,7 +8,7 @@ import * as prompt from '../../../shared/cliPrompt'
 import orderStacksByImportance from '../../../businessLogic/orderStacksByImportance'
 import sortTransactions from '../../../businessLogic/sortTransactions'
 import { calculateLatestExpenses, calculatePayDay, getStacks, updateStacksFile } from '../../../middleware/Stacks'
-import { getIncomeFile, updateIncomeFile } from '../../../middleware/Income'
+import { getIncomeFile, getRecentDeposits, updateIncomeFile } from '../../../middleware/Income'
 import { getDirtyTransactions, updateTransactionsFile } from '../../../middleware/Transactions'
 import {
   onConfirmUpdateStacks,
@@ -21,7 +21,8 @@ import {
   normalizePayDayExpenses,
   compareStacks,
   compareFatStacks,
-  collectGroupCoins
+  collectGroupCoins,
+  normalizeDeposits
 } from './normalizers'
 
 const errorMessage = 'FAILED to Audit'
@@ -84,18 +85,17 @@ const audit = async () => {
     latestStacks,
     stackedTransactions: latestStackedTransactions,
     nonStackedTransactions: latestFreeTransactions,
-    deposits//TODO: You have deposits here
   } = calculateLatestExpenses()
   echo(yellow('...done.'))
 
   echo(yellow('calculating deposits...'))
-  const { coins } = getOrSetIncome() //TODO: Update this to get all deposits
+  const { deposits, coins } = getRecentDeposits()
   const { fatStacks, stackPayments } = calculatePayDay(coins, latestStacks)
   echo(yellow('...done.'))
 
   addSpace()
 
-  console.log("EXPENSES (sorted by stack)")
+  echo(yellow("EXPENSES (sorted by stack)"))
   const unsortedTransactions = [...latestStackedTransactions, ...latestFreeTransactions]
   const transactions = sortTransactions(unsortedTransactions, 'stack')
   console.table(normalizeTransactions(transactions))
@@ -109,8 +109,21 @@ const audit = async () => {
 
   addSpace()
 
-  echo(yellow("CALCULATED DEPOSITS"))
-  console.log(normalizePayDayExpenses(coins, stackPayments))//TODO: Do more
+  echo(yellow("DEPOSITS"))
+
+  const sortedDeposits = sortTransactions(deposits, 'date')
+  console.table(normalizeDeposits(sortedDeposits))
+  await prompt.confirm('does this look right?')
+
+  addSpace()
+
+  echo(yellow("STACKING COINS"))
+  const {
+    totalIncome,
+    payDayExpenses,
+    remaining
+  } = normalizePayDayExpenses(coins, stackPayments)
+  echo(`${green('new coins:')} ${totalIncome} | ${green('stacked coins:')} ${payDayExpenses} | ${green('remaining coin:')} ${remaining}`)
   console.table(compareFatStacks(latestStacks, fatStacks, stackPayments))//TODO: ill need indicators of whats passed the incidence check
   await prompt.confirm('does this look right?')
 
