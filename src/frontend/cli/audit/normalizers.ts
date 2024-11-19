@@ -99,6 +99,29 @@ const collectGroupCoins = (stacks: StacksArray) => {
   return groups.map(group => ({...group, coins: formatToCurrency(group.coins)}))
 }
 
+const prepareForUpdate = (stacks: StacksArray) =>
+  stacks.reduce((collection, stack) => {
+    if(stack.name !== "Non-Stacked") {
+      const coins = stack.name === "BB Owes" ? 0 : stack.coins
+      const freshStack = {
+        ...stack,
+        coins,
+        components: {
+          ...stack.components,
+          transactions: [] as Transactions
+        }
+      }
+      return [...collection, freshStack]
+    }
+    return collection
+  }, [] as StacksArray)
+
+const transformStacksToObject = (stacks: StacksArray) =>
+  stacks.reduce((prevValue, stack) => ({
+    ...prevValue,
+    [stack.name]: stack
+  }), {} as Stacks)
+
 export {
   normalizeStacks,
   normalizeTransactions,
@@ -106,5 +129,7 @@ export {
   normalizePayDayExpenses,
   compareStacks,
   compareFatStacks,
-  collectGroupCoins
+  collectGroupCoins,
+  prepareForUpdate,
+  transformStacksToObject
 }

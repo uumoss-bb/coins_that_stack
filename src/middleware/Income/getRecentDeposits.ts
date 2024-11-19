@@ -13,7 +13,7 @@ function getRecentDeposits() {
   const latestTransactions = filterTransactionsByDate(normaleTransactions, convertDate.full(lastUpdated))
   if(latestTransactions) {
     const { deposits } = linkStacksAndTrans(stacks, latestTransactions)
-    return { deposits, coins: depositSum(deposits) }
+    return { deposits, income: depositSum(deposits) }
   } else {
     throw new Error('Missing latest transactions')
   }
