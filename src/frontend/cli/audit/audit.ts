@@ -131,7 +131,8 @@ const reviewAndAcceptAudit = async (fatStacks: StacksArray) => {
   echo(yellow('Date saved as: ') + convertDate.full(newLastUpdated))
   console.table(normalizeStacks(orderedNewStacks))
   console.table(collectGroupCoins(fatStacks))
-  await prompt.confirm('does this look right?')
+  await prompt.confirm('would you like to update your stacks?')
+  await prompt.confirm('are you sure?')
   updateStacksFile({ ...newStacks, lastUpdated: newLastUpdated })
 }
 
