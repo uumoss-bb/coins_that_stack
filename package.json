@@ -14,6 +14,8 @@
     "test": "jest --testPathIgnorePatterns='./frontend/cli' --testPathIgnorePatterns='./tools'",
     "set": "jest ./frontend/cli/setUpSystem",
     "audit": "node ./dist/frontend/cli/audit/audit",
+    "coins": "node ./dist/frontend/cli/coinsAnime",
+    "stack": "npm run coins && npm run audit",
     "mockTrans": "jest ./tools/createMockTransactions"
   },
   "repository": {

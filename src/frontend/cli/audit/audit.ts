@@ -2,16 +2,15 @@
 import { echo } from 'shelljs'
 import { green, yellow } from '../../../shared/colors'
 import errorHandlerWrapper from '../../../shared/errorHandlerWrapper'
-import { defaultIncome, defaultStacks } from '../../../shared/defaultData'
+import { defaultStacks } from '../../../shared/defaultData'
 import { convertDate } from '../../../shared/normalizers'
 import * as prompt from '../../../shared/cliPrompt'
 import orderStacksByImportance from '../../../businessLogic/orderStacksByImportance'
 import sortTransactions from '../../../businessLogic/sortTransactions'
 import { calculateLatestExpenses, calculatePayDay, getStacks, updateStacksFile } from '../../../middleware/Stacks'
-import { getIncomeFile, updateIncomeFile } from '../../../middleware/Income'
+import { getRecentDeposits } from '../../../middleware/Income'
 import { getDirtyTransactions, updateTransactionsFile } from '../../../middleware/Transactions'
 import {
-  onConfirmUpdateStacks,
   OnDeclineResortTransactions,
   OnDeclineUpdateLastUpdated
 } from './promptHelpers'
@@ -21,22 +20,17 @@ import {
   normalizePayDayExpenses,
   compareStacks,
   compareFatStacks,
-  collectGroupCoins
+  collectGroupCoins,
+  normalizeDeposits,
+  prepareForUpdate,
+  transformStacksToObject
 } from './normalizers'
+import { Stack, StackPayments, Stacks, StacksArray } from '../../../shared/types/stacks'
+import { Transactions } from '../../../shared/types/transactions'
 
 const errorMessage = 'FAILED to Audit'
 
 const addSpace = () => echo('\n')
-
-const getOrSetIncome = () => {
-  try {
-    return getIncomeFile()
-  } catch (err) {
-    updateIncomeFile(defaultIncome)
-    echo(yellow("Setup new Income File"))
-    return defaultIncome
-  }
-}
 
 const getOrSetStack = () => {
   try {
@@ -51,28 +45,18 @@ const getOrSetStack = () => {
   }
 }
 
-const audit = async () => {
-  const { stacks, lastUpdated } = getOrSetStack()
-  const orderedStacks = orderStacksByImportance(stacks)
-
-  console.clear()
-  addSpace()
-
-  echo('---------- STACK COINS ----------')
-
-  addSpace()
-
+const displayStacks = async (stacks: StacksArray) => {
   echo(yellow('currently your stacks look like this.'))
-  console.table(normalizeStacks(orderedStacks))
+  console.table(normalizeStacks(stacks))
   await prompt.confirm('does this look right?')
+}
 
-  addSpace()
-
-  console.log(yellow('the last time you did an audit was: '), convertDate.full(lastUpdated))
+const displayLastUpdated = async (lastUpdated: number) => {
+  echo(yellow('the last time you did an audit was: ') + convertDate.full(lastUpdated))
   await prompt.confirm('does this look right?', OnDeclineUpdateLastUpdated())
+}
 
-  addSpace()
-
+const processAllData = async () => {
   echo(green('---------- lets begin the audit ----------'))
   echo(yellow('processing transactions...'))
   const dirtyTransactions = getDirtyTransactions()
@@ -84,47 +68,116 @@ const audit = async () => {
     latestStacks,
     stackedTransactions: latestStackedTransactions,
     nonStackedTransactions: latestFreeTransactions,
-    deposits//TODO: You have deposits here
   } = calculateLatestExpenses()
   echo(yellow('...done.'))
 
   echo(yellow('calculating deposits...'))
-  const { coins } = getOrSetIncome() //TODO: Update this to get all deposits
-  const { fatStacks, stackPayments } = calculatePayDay(coins, latestStacks)
+  const { deposits, income } = getRecentDeposits()
+  const { fatStacks, stackPayments } = calculatePayDay(income, latestStacks)
   echo(yellow('...done.'))
 
-  addSpace()
+  return {
+    latestStacks,
+    latestStackedTransactions,
+    latestFreeTransactions,
+    deposits, income,
+    fatStacks,
+    stackPayments
+  }
+}
 
-  console.log("EXPENSES (sorted by stack)")
+type DisplayStackExpenses = { latestStackedTransactions: Transactions, latestFreeTransactions: Transactions }
+const displayExpenseTransactions = async ({ latestStackedTransactions, latestFreeTransactions }: DisplayStackExpenses) => {
+  echo(yellow("EXPENSES (sorted by stack)"))
   const unsortedTransactions = [...latestStackedTransactions, ...latestFreeTransactions]
   const transactions = sortTransactions(unsortedTransactions, 'stack')
   console.table(normalizeTransactions(transactions))
   await prompt.confirm('is this sorted well?', OnDeclineResortTransactions(unsortedTransactions))
+}
 
-  addSpace()
-
+type DisplayStackMinusExpenses = { stacks: Stacks, latestStacks: Stacks }
+const displayStackMinusExpenses = async ({ stacks, latestStacks }: DisplayStackMinusExpenses) => {
   echo(yellow("CALCULATED EXPENSES"))
   console.table(compareStacks(stacks, orderStacksByImportance(latestStacks)))
   await prompt.confirm('does this look right?')
+}
 
-  addSpace()
-
-  echo(yellow("CALCULATED DEPOSITS"))
-  console.log(normalizePayDayExpenses(coins, stackPayments))//TODO: Do more
-  console.table(compareFatStacks(latestStacks, fatStacks, stackPayments))//TODO: ill need indicators of whats passed the incidence check
+const displayDeposits = async (deposits: Transactions) => {
+  echo(yellow("DEPOSITS"))
+  const sortedDeposits = sortTransactions(deposits, 'date')
+  console.table(normalizeDeposits(sortedDeposits))
   await prompt.confirm('does this look right?')
+}
 
-  addSpace()
+type DisplayStackPlusIncome = { income: number, stackPayments: StackPayments, latestStacks: Stacks, fatStacks: StacksArray }
+const displayStackPlusIncome = async ({ income, stackPayments, latestStacks, fatStacks }: DisplayStackPlusIncome) => {
+  echo(yellow("STACKING COINS"))
+  const {
+    totalIncome,
+    payDayExpenses,
+    remaining
+  } = normalizePayDayExpenses(income, stackPayments)
+  echo(`${green('new coins:')} ${totalIncome} | ${green('stacked coins:')} ${payDayExpenses} | ${green('remaining coin:')} ${remaining}`)
+  console.table(compareFatStacks(latestStacks, fatStacks, stackPayments))
+  await prompt.confirm('does this look right?')
+}
 
+const reviewAndAcceptAudit = async (fatStacks: StacksArray) => {
   echo(yellow("STACKS: final review"))
-  console.table(collectGroupCoins(fatStacks))//TODO: Do more
-  await prompt.confirm('does this look right?', onConfirmUpdateStacks)
+  const newLastUpdated = convertDate.milliseconds(convertDate.full(Date.now()))
+  let newStacks: StacksArray|Stacks = prepareForUpdate(fatStacks) as StacksArray
+  newStacks = transformStacksToObject(newStacks) as Stacks
+  const orderedNewStacks = orderStacksByImportance(newStacks)
+  echo(yellow('Date saved as: ') + convertDate.full(newLastUpdated))
+  console.table(normalizeStacks(orderedNewStacks))
+  console.table(collectGroupCoins(fatStacks))
+  await prompt.confirm('does this look right?')
+  updateStacksFile({ ...newStacks, lastUpdated: newLastUpdated })
+}
 
+const audit = async () => {
+  const { stacks, lastUpdated } = getOrSetStack()
+  const orderedStacks = orderStacksByImportance(stacks)
+
+  console.clear()
   addSpace()
-
+  echo('---------- STACK COINS ----------')
+  addSpace()
+  await displayStacks(orderedStacks)
+  addSpace()
+  await displayLastUpdated(lastUpdated)
+  addSpace()
+  const {
+    latestStacks,
+    latestStackedTransactions,
+    latestFreeTransactions,
+    deposits, income,
+    fatStacks,
+    stackPayments
+  } = await processAllData()
+  addSpace()
+  if([...latestFreeTransactions, ...latestStackedTransactions].length) {
+    await displayExpenseTransactions({ latestStackedTransactions, latestFreeTransactions })
+    addSpace()
+    await displayStackMinusExpenses({ stacks, latestStacks })
+  } else {
+    echo(yellow("EXPENSES: you have no expenses to calculate"))
+    await prompt.confirm('does this seem right?')
+  }
+  addSpace()
+  if(deposits.length) {
+    await displayDeposits(deposits)
+    addSpace()
+    await displayStackPlusIncome({ income, stackPayments, latestStacks, fatStacks })
+  } else {
+    echo(yellow("PAYDAY: you have no income to calculate"))
+    await prompt.confirm('does this seem right?')
+  }
+  addSpace()
+  await reviewAndAcceptAudit(fatStacks)
+  addSpace()
   echo(green("---------- audit is finished ----------"))
   echo(yellow("well done!").dim)
-
   addSpace()
 
 }

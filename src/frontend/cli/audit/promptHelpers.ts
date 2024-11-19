@@ -32,21 +32,13 @@ const OnDeclineResortTransactions = (transactions:Transactions) => async (confir
     const newlySortedTransactions = sortTransactions(transactions, sortType)
 
     addSpace()
-
-    console.log(`EXPENSES (sorted by ${sortType})`)
+    echo(yellow(`EXPENSES (sorted by ${sortType})`))
     console.table(normalizeTransactions(newlySortedTransactions))
     await prompt.confirm('done sorting?', OnDeclineResortTransactions(transactions))
   }
 }
 
-const onConfirmUpdateStacks = async (confirmed:string) => {
-  if(confirmed) {
-    console.log("fake saving stacks")
-  }
-}
-
 export {
   OnDeclineResortTransactions,
-  OnDeclineUpdateLastUpdated,
-  onConfirmUpdateStacks
+  OnDeclineUpdateLastUpdated
 }

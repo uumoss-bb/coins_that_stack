@@ -2,18 +2,21 @@ import filterTransactionsByDate from "../../businessLogic/filterTransactionsByDa
 import linkStacksAndTrans from "../../businessLogic/linkStacksAndTrans"
 import { convertDate } from "../../shared/normalizers"
 import getTransactions from "../Transactions/getTransactions"
-import getStacks from "./getStacks"
+import getStacks from "../Stacks/getStacks"
+import { Transactions } from "../../shared/types/transactions"
 
-function calculateLatestExpenses() {
+const depositSum = (deposit: Transactions) => deposit.reduce((total, { coins }) => total + coins, 0)
+
+function getRecentDeposits() {
   const { stacks, lastUpdated } = getStacks()
   const normaleTransactions = getTransactions("FORT_FINANCIAL")
   const latestTransactions = filterTransactionsByDate(normaleTransactions, convertDate.full(lastUpdated))
   if(latestTransactions) {
-    const { stacks: latestStacks, stackedTransactions, nonStackedTransactions } = linkStacksAndTrans(stacks, latestTransactions)
-    return { latestStacks, stackedTransactions, nonStackedTransactions }
+    const { deposits } = linkStacksAndTrans(stacks, latestTransactions)
+    return { deposits, income: depositSum(deposits) }
   } else {
     throw new Error('Missing latest transactions')
   }
 }
 
-export default calculateLatestExpenses
+export default getRecentDeposits
