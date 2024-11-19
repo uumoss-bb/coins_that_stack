@@ -1,8 +1,6 @@
 import filterTransactionsByDate from "../../businessLogic/filterTransactionsByDate"
 import linkStacksAndTrans from "../../businessLogic/linkStacksAndTrans"
 import { convertDate } from "../../shared/normalizers"
-import { Stacks } from "../../shared/types/stacks"
-import { Transactions } from "../../shared/types/transactions"
 import getTransactions from "../Transactions/getTransactions"
 import getStacks from "./getStacks"
 

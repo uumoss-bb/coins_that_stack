@@ -38,14 +38,7 @@ const OnDeclineResortTransactions = (transactions:Transactions) => async (confir
   }
 }
 
-const onConfirmUpdateStacks = async (confirmed:string) => {
-  if(confirmed) {
-    console.log("fake saving stacks")
-  }
-}
-
 export {
   OnDeclineResortTransactions,
-  OnDeclineUpdateLastUpdated,
-  onConfirmUpdateStacks
+  OnDeclineUpdateLastUpdated
 }

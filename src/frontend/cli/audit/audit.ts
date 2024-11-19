@@ -2,16 +2,15 @@
 import { echo } from 'shelljs'
 import { green, yellow } from '../../../shared/colors'
 import errorHandlerWrapper from '../../../shared/errorHandlerWrapper'
-import { defaultIncome, defaultStacks } from '../../../shared/defaultData'
+import { defaultStacks } from '../../../shared/defaultData'
 import { convertDate } from '../../../shared/normalizers'
 import * as prompt from '../../../shared/cliPrompt'
 import orderStacksByImportance from '../../../businessLogic/orderStacksByImportance'
 import sortTransactions from '../../../businessLogic/sortTransactions'
 import { calculateLatestExpenses, calculatePayDay, getStacks, updateStacksFile } from '../../../middleware/Stacks'
-import { getIncomeFile, getRecentDeposits, updateIncomeFile } from '../../../middleware/Income'
+import { getRecentDeposits } from '../../../middleware/Income'
 import { getDirtyTransactions, updateTransactionsFile } from '../../../middleware/Transactions'
 import {
-  onConfirmUpdateStacks,
   OnDeclineResortTransactions,
   OnDeclineUpdateLastUpdated
 } from './promptHelpers'
@@ -24,20 +23,12 @@ import {
   collectGroupCoins,
   normalizeDeposits
 } from './normalizers'
+import { Stacks, StacksArray } from '../../../shared/types/stacks'
+import { Transactions } from '../../../shared/types/transactions'
 
 const errorMessage = 'FAILED to Audit'
 
 const addSpace = () => echo('\n')
-
-const getOrSetIncome = () => {
-  try {
-    return getIncomeFile()
-  } catch (err) {
-    updateIncomeFile(defaultIncome)
-    echo(yellow("Setup new Income File"))
-    return defaultIncome
-  }
-}
 
 const getOrSetStack = () => {
   try {
@@ -51,6 +42,29 @@ const getOrSetStack = () => {
     }
   }
 }
+
+const prepareForUpdate = (stacks: StacksArray) =>
+  stacks.reduce((collection, stack) => {
+    if(stack.name !== "Non-Stacked") {
+      const coins = stack.name === "BB Owes" ? 0 : stack.coins
+      const freshStack = {
+        ...stack,
+        coins,
+        components: {
+          ...stack.components,
+          transactions: [] as Transactions
+        }
+      }
+      return [...collection, freshStack]
+    }
+    return collection
+  }, [] as StacksArray)
+
+const transformStacksToObject = (stacks: StacksArray) =>
+  stacks.reduce((prevValue, stack) => ({
+    ...prevValue,
+    [stack.name]: stack
+  }), {} as Stacks)
 
 const audit = async () => {
   const { stacks, lastUpdated } = getOrSetStack()
@@ -69,7 +83,7 @@ const audit = async () => {
 
   addSpace()
 
-  console.log(yellow('the last time you did an audit was: '), convertDate.full(lastUpdated))
+  echo(yellow('the last time you did an audit was: ') + convertDate.full(lastUpdated))
   await prompt.confirm('does this look right?', OnDeclineUpdateLastUpdated())
 
   addSpace()
@@ -130,8 +144,15 @@ const audit = async () => {
   addSpace()
 
   echo(yellow("STACKS: final review"))
-  console.table(collectGroupCoins(fatStacks))//TODO: Do more
-  await prompt.confirm('does this look right?', onConfirmUpdateStacks)
+  const newLastUpdated = convertDate.milliseconds(convertDate.full(Date.now()))
+  let newStacks: StacksArray|Stacks = prepareForUpdate(fatStacks) as StacksArray
+  newStacks = transformStacksToObject(newStacks) as Stacks
+  const orderedNewStacks = orderStacksByImportance(newStacks)
+  echo(yellow('Date saved as: ') + convertDate.full(newLastUpdated))
+  console.table(normalizeStacks(orderedNewStacks))
+  console.table(collectGroupCoins(fatStacks))
+  await prompt.confirm('does this look right?')
+  updateStacksFile({ ...newStacks, lastUpdated: newLastUpdated })
 
   addSpace()
 

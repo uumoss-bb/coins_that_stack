@@ -5,7 +5,7 @@ import getTransactions from "../Transactions/getTransactions"
 import getStacks from "../Stacks/getStacks"
 import { Transactions } from "../../shared/types/transactions"
 
-const depositSum = (deposit: Transactions) => deposit.map(({ coins }) => coins).concat()
+const depositSum = (deposit: Transactions) => deposit.reduce((total, { coins }) => total + coins, 0)
 
 function getRecentDeposits() {
   const { stacks, lastUpdated } = getStacks()
