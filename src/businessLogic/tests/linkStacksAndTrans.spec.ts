@@ -1,6 +1,6 @@
 import { Stack, Stacks } from "../../shared/types/stacks"
 import { Transaction, Transactions } from "../../shared/types/transactions"
-import linkStacksAndTrans, { ConnectedStacksAndTrans } from "../linkStacksAndTrans"
+import linkData, { LinkedData } from "../linkStacks&Transactions"
 
 describe("Link Stacks and Transactions", () => {
 
@@ -56,7 +56,7 @@ describe("Link Stacks and Transactions", () => {
     [stackA.name] : stackA
   }
 
-  const linkedResult: ConnectedStacksAndTrans = {
+  const linkedResult: LinkedData = {
     deposits: [ deposit ],
     stackedTransactions: [
       { ...amazonWithdraw, stacks: [ stackA.name ], keyword: stackA.components.keywords[0] }
@@ -83,7 +83,7 @@ describe("Link Stacks and Transactions", () => {
   }
 
   it("return transactions with accurate stacks and stacks with accurate transactions + coins", () => {
-    const result = linkStacksAndTrans(stacks, transactions)
+    const result = linkData(stacks, transactions)
     expect(result).toEqual(linkedResult)
   })
 })

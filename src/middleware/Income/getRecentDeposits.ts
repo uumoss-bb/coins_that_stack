@@ -1,5 +1,5 @@
 import filterTransactionsByDate from "../../businessLogic/filterTransactionsByDate"
-import linkStacksAndTrans from "../../businessLogic/linkStacksAndTrans"
+import linkData from "../../businessLogic/linkStacks&Transactions"
 import { convertDate } from "../../shared/normalizers"
 import getTransactions from "../Transactions/getTransactions"
 import getStacks from "../Stacks/getStacks"
@@ -12,7 +12,7 @@ function getRecentDeposits() {
   const normaleTransactions = getTransactions("FORT_FINANCIAL")
   const latestTransactions = filterTransactionsByDate(normaleTransactions, convertDate.full(lastUpdated))
   if(latestTransactions) {
-    const { deposits } = linkStacksAndTrans(stacks, latestTransactions)
+    const { deposits } = linkData(stacks, latestTransactions)
     return { deposits, income: depositSum(deposits) }
   } else {
     throw new Error('Missing latest transactions')
