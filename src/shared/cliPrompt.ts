@@ -29,6 +29,16 @@ const input = async (message:string,) => {
   return result.input
 }
 
+const inputNum = async (message:string,) => {
+  const result = await inquirer.prompt({
+    type:'number',
+    name: 'input',
+    message
+  })
+
+  return result.input
+}
+
 const choose = async (message:string, options: string[]) => {
   const answers = await inquirer.prompt([
     {
@@ -44,5 +54,6 @@ const choose = async (message:string, options: string[]) => {
 export {
   confirm,
   input,
+  inputNum,
   choose
 }

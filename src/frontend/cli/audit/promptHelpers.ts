@@ -1,13 +1,38 @@
 import { yellow } from '../../../shared/colors'
-import { echo } from 'shelljs'
-import { updateStacksFile } from '../../../middleware/Stacks'
+import { echo, exit } from 'shelljs'
+import { getStacks, updateStacksFile } from '../../../middleware/Stacks'
 import { convertDate } from '../../../shared/normalizers'
 import * as prompt from '../../../shared/cliPrompt'
 import { Transactions } from '../../../shared/types/transactions'
 import sortTransactions from '../../../businessLogic/sortTransactions'
 import { normalizeTransactions } from './normalizers'
+import { Stack, Stacks } from '../../../shared/types/stacks'
+import { displayStacks } from './audit'
+import orderStacksByImportance from '../../../businessLogic/orderStacksByImportance'
 
 const addSpace = () => echo('\n')
+
+const OnDeclineEditStacks = (stacks: Stacks) => async (confirmed:string ) => {
+  if(!confirmed) {
+    const operation = await prompt.choose('what would you like to do:', ['edit stack', 'continue', 'cancel'])
+    if(operation === 'edit stack') {
+      const stackNames = Object.keys(stacks)
+      const selectedStack = await prompt.choose('select stack:', [...stackNames])
+      const newAmount = await prompt.inputNum(`Enter new amount for ${selectedStack}`)
+      const newStack: Stack = { ...stacks[selectedStack], coins: newAmount }
+      updateStacksFile({ [selectedStack]: newStack })
+      const { stacks: freshStacks } = getStacks()
+      await displayStacks(freshStacks)
+    }
+    if(operation === 'continue') {
+      echo(yellow('moving on then...'))
+    }
+    if(operation === 'cancel') {
+      echo(yellow('canceled'))
+      exit(0)
+    }
+  }
+}
 
 const OnDeclineUpdateLastUpdated = (recursiveIndex = 0) => async (confirmed:string ) => {
   if(!confirmed) {
@@ -40,5 +65,6 @@ const OnDeclineResortTransactions = (transactions:Transactions) => async (confir
 
 export {
   OnDeclineResortTransactions,
-  OnDeclineUpdateLastUpdated
+  OnDeclineUpdateLastUpdated,
+  OnDeclineEditStacks
 }

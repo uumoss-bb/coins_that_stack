@@ -11,6 +11,7 @@ import { calculateLatestExpenses, calculatePayDay, getStacks, updateStacksFile }
 import { getRecentDeposits } from '../../../middleware/Income'
 import { getDirtyTransactions, updateTransactionsFile } from '../../../middleware/Transactions'
 import {
+  OnDeclineEditStacks,
   OnDeclineResortTransactions,
   OnDeclineUpdateLastUpdated
 } from './promptHelpers'
@@ -45,13 +46,16 @@ const getOrSetStack = () => {
   }
 }
 
-const displayStacks = async (stacks: StacksArray) => {
+export const displayStacks = async (stacks: Stacks, shouldPrompt: boolean = true) => {
+  const orderedStacks = orderStacksByImportance(stacks)
   echo(yellow('currently your stacks look like this.'))
-  console.table(normalizeStacks(stacks))
-  await prompt.confirm('does this look right?')
+  console.table(normalizeStacks(orderedStacks))
+  if(shouldPrompt) {
+    await prompt.confirm('does this look right?', OnDeclineEditStacks(stacks))
+  }
 }
 
-const displayLastUpdated = async (lastUpdated: number) => {
+export const displayLastUpdated = async (lastUpdated: number) => {
   echo(yellow('the last time you did an audit was: ') + convertDate.full(lastUpdated))
   await prompt.confirm('does this look right?', OnDeclineUpdateLastUpdated())
 }
@@ -87,7 +91,7 @@ const processAllData = async () => {
 }
 
 type DisplayStackExpenses = { latestStackedTransactions: Transactions, latestFreeTransactions: Transactions }
-const displayExpenseTransactions = async ({ latestStackedTransactions, latestFreeTransactions }: DisplayStackExpenses) => {
+export const displayExpenseTransactions = async ({ latestStackedTransactions, latestFreeTransactions }: DisplayStackExpenses) => {
   echo(yellow("EXPENSES (sorted by stack)"))
   const unsortedTransactions = [...latestStackedTransactions, ...latestFreeTransactions]
   const transactions = sortTransactions(unsortedTransactions, 'stack')
@@ -96,13 +100,13 @@ const displayExpenseTransactions = async ({ latestStackedTransactions, latestFre
 }
 
 type DisplayStackMinusExpenses = { stacks: Stacks, latestStacks: Stacks }
-const displayStackMinusExpenses = async ({ stacks, latestStacks }: DisplayStackMinusExpenses) => {
+export const displayStackMinusExpenses = async ({ stacks, latestStacks }: DisplayStackMinusExpenses) => {
   echo(yellow("CALCULATED EXPENSES"))
   console.table(compareStacks(stacks, orderStacksByImportance(latestStacks)))
   await prompt.confirm('does this look right?')
 }
 
-const displayDeposits = async (deposits: Transactions) => {
+export const displayDeposits = async (deposits: Transactions) => {
   echo(yellow("DEPOSITS"))
   const sortedDeposits = sortTransactions(deposits, 'date')
   console.table(normalizeDeposits(sortedDeposits))
@@ -110,7 +114,7 @@ const displayDeposits = async (deposits: Transactions) => {
 }
 
 type DisplayStackPlusIncome = { income: number, stackPayments: StackPayments, latestStacks: Stacks, fatStacks: StacksArray }
-const displayStackPlusIncome = async ({ income, stackPayments, latestStacks, fatStacks }: DisplayStackPlusIncome) => {
+export const displayStackPlusIncome = async ({ income, stackPayments, latestStacks, fatStacks }: DisplayStackPlusIncome) => {
   echo(yellow("STACKING COINS"))
   const {
     totalIncome,
@@ -138,13 +142,12 @@ const reviewAndAcceptAudit = async (fatStacks: StacksArray) => {
 
 const audit = async () => {
   const { stacks, lastUpdated } = getOrSetStack()
-  const orderedStacks = orderStacksByImportance(stacks)
 
   console.clear()
   addSpace()
   echo('---------- STACK COINS ----------')
   addSpace()
-  await displayStacks(orderedStacks)
+  await displayStacks(stacks)
   addSpace()
   await displayLastUpdated(lastUpdated)
   addSpace()
