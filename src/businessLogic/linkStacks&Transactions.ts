@@ -64,7 +64,7 @@ const updateStack = (newTransaction: Transaction, curStack: Stack) => {
   const { components: { transactions: curTransactions } } = curStack
   return {
     ...curStack,
-    coins: curStack.coins + newTransaction.coins,
+    coins: curStack.coins + newTransaction.coins, //TODO: if newCoins < 0 this make a new stack
     components: {
       ...curComponents,
       transactions: [ ...curTransactions, newTransaction ]
